@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XmlTheme xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ThemeName="Office2019LightPurple" ThemeVersion="2.0">
+  <BuilderRegistrations>
+    <XmlStyleBuilderRegistration BuilderType="">
+      <BuilderData xsi:type="XmlStyleSheet" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <PropertySettingGroups>
+          <XmlPropertySettingGroup BasedOn="Padding(15;15;15;15),AccentFill,CheckedForeColor,Padding(4;4;4;4)">
+            <Selectors>
+              <XmlClassSelector ElementClass="PageViewHeader" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="Padding(15;15;15;15),MainForeColor,AlternativeFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadPageViewStackItem" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="Padding(15;15;15;15),Padding(4;4;4;4),AlternativeFill,MainTopBorder">
+            <Selectors>
+              <XmlClassSelector ElementClass="PageViewFooter" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="DefaultFont,MainBorder">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.UI.RadPageViewElement.ItemDragHint" Value="77u/PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48UmFkSW1hZ2VTaGFwZSB4bWxuczp4c2Q9Imh0dHA6Ly93d3cudzMub3JnLzIwMDEvWE1MU2NoZW1hIiB4bWxuczp4c2k9Imh0dHA6Ly93d3cudzMub3JnLzIwMDEvWE1MU2NoZW1hLWluc3RhbmNlIj48UGFpbnRNb2RlPkNlbnRlcllTdHJldGNoWDwvUGFpbnRNb2RlPjxJbWFnZVN0cmVhbT5RazBTQmdBQUFBQUFBRFlBQUFBb0FBQUFEd0FBQUJrQUFBQUJBQ0FBQUFBQUFBQUFBQURFRGdBQXhBNEFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBUHgxam1iOGQ0NXJBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBLzMrVURQdDJqdmo3ZG83NC8zK1VEQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUEvSGFQemZ4MmovLzhkby8vL0hhUHpRQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUQ4ZFk1bS9IYVAvL3gyai8vOGRvLy8vSGFQLy94MWptWUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQVA5L2xBejdkbzc0L0hhUC8veDJqLy84ZG8vLy9IYVAvL3QyanZqL2Y1UU1BQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBUHgyajgzOGRvLy8vSGFQLy94MmovLzhkby8vL0hhUC8veDJqLy84ZG8vTkFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBL0hhUC8veDJqLy84ZG8vLy9IYVAvL3gyai8vOGRvLy8vSGFQLy94MmovLzhkby8vL0hhUC8veDJqLy84ZG8vLy9IYVAvL3gyai8vOGRvLy8vSGFQLy94MmovLzhkby8vL0hhUC8veDJqLy84ZG8vLy9IYVAvL3gyai8vOGRvLy8vSGFQLy94MmovLzhkby8vL0hhUC8veDJqLy84ZG8vLy9IYVAvL3gyai8vOGRvLy8vSGFQLy94MmovLzhkby8vL0hhUC8veDJqLy84ZG8vLy9IYVAvL3gyai8vOGRvLy8vSGFQLy94MmovLzhkby8vQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQVB4Mmo4Mzhkby8vL0hhUC8veDJqLy84ZG8vLy9IYVAvL3gyai8vOGRvL05BQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBUDkvbEF6N2RvNzQvSGFQLy94MmovLzhkby8vL0hhUC8vdDJqdmovZjVRTUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUQ4ZFk1bS9IYVAvL3gyai8vOGRvLy8vSGFQLy94MWptWUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBL0hhUHpmeDJqLy84ZG8vLy9IYVB6UUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUEvMytVRFB0Mmp2ajdkbzc0LzMrVURBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBUHgxam1iOGQ0NXJBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQTwvSW1hZ2VTdHJlYW0+PE1hcmdpbnM+PEFsbD4tMTwvQWxsPjxCb3R0b20+MDwvQm90dG9tPjxMZWZ0PjEzPC9MZWZ0PjxSaWdodD4wPC9SaWdodD48VG9wPjA8L1RvcD48L01hcmdpbnM+PFBhZGRpbmc+PEFsbD4tMTwvQWxsPjxCb3R0b20+MDwvQm90dG9tPjxMZWZ0PjEzPC9MZWZ0PjxSaWdodD4tMTAwMDwvUmlnaHQ+PFRvcD4wPC9Ub3A+PC9QYWRkaW5nPjwvUmFkSW1hZ2VTaGFwZT4=" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadPageViewStackElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AccentMouseOverFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadPageViewStackItem.MouseOver" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AccentPressedFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadPageViewStackItem.MouseDown" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AccentMouseOverFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadPageViewStackItem.Selected.MouseOver" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AlternativeFill,DisabledForeColor">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadPageViewStackItem.Disabled" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AlternativeFill,MainBottomBorder">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.RadPageViewContentAreaElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AccentPressedFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadPageViewStackItem.Selected" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+        </PropertySettingGroups>
+      </BuilderData>
+      <StylesheetRelations>
+        <RadStylesheetRelation ControlType="Telerik.WinControls.UI.RadPageView" ElementType="Telerik.WinControls.UI.RadPageViewStackElement" />
+        <RadStylesheetRelation RegistrationType="ElementTypeDefault" ElementType="Telerik.WinControls.UI.RadPageViewStackElement" />
+      </StylesheetRelations>
+    </XmlStyleBuilderRegistration>
+  </BuilderRegistrations>
+</XmlTheme>

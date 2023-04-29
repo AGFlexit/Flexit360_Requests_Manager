@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XmlTheme xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ThemeName="Office2019LightPurple" ThemeVersion="2.0">
+  <BuilderRegistrations>
+    <XmlStyleBuilderRegistration BuilderType="">
+      <BuilderData xsi:type="XmlStyleSheet" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <PropertySettingGroups>
+          <XmlPropertySettingGroup BasedOn="MainFill,MainBorder">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.UI.RadDataLayoutElement.ErrorIcon" Value="Qk02BAAAAAAAADYAAAAoAAAAEAAAABAAAAABACAAAAAAAAAAAADEDgAAxA4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA1TcAANW3AADR8QAA1f8AANX/AADR8QAA1bcAANU3AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADUBgAA1bcAANX0AADVjQAA2CEAAAAAAAAAAAAA2CEAANWNAADV9AAA1bcAANQGAAAAAAAAAAAAAAAAAADUBgAA09kAANXDAADUBgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA1AYAANXDAADT2QAA1AYAAAAAAAAAAAAA1LoAANW+AAAAAAAAAAAAAAAAAAAAAAAA1f8AANX/AAAAAAAAAAAAAAAAAAAAAAAA1b4AANS6AAAAAAAA00cAANTwAADUBgAAAAAAAAAAAAAAAAAAAAAAANX/AADV/wAAAAAAAAAAAAAAAAAAAAAAANQGAADU8AAA00cAANWxAADVjgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA1Y4AANWxAADV4wAA00AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA1f8AANX/AAAAAAAAAAAAAAAAAAAAAAAAAAAAANNAAADV4wAA1f8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAANX/AADV/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA1f8AANX/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADV/wAA1f8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAANX/AADV4wAA00AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA1f8AANX/AAAAAAAAAAAAAAAAAAAAAAAAAAAAANNAAADV4wAA1bEAANWOAAAAAAAAAAAAAAAAAAAAAAAAAAAAANX/AADV/wAAAAAAAAAAAAAAAAAAAAAAAAAAAADVjgAA1bEAANNHAADU8AAA1AYAAAAAAAAAAAAAAAAAAAAAAADV/wAA1f8AAAAAAAAAAAAAAAAAAAAAAADUBgAA1PAAANNHAAAAAAAA1LoAANW+AAAAAAAAAAAAAAAAAAAAAAAA1f8AANX/AAAAAAAAAAAAAAAAAAAAAAAA1b4AANS6AAAAAAAAAAAAANQGAADV3QAA1cMAANQGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADUBgAA1cMAANXdAADUBgAAAAAAAAAAAAAAAAAA1AYAANW3AADV9AAA1Y0AANghAAAAAAAAAAAAANghAADVjQAA1fQAANW3AADUBgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA1TcAANW3AADR8QAA1f8AANX/AADR8QAA1bcAANU3AAAAAAAAAAAAAAAAAAAAAA==" />
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.BackColor" Value="White" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.LightVisualElement.GradientStyle" Value="Solid" />
+            </PropertySettings>
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.RadDataLayoutElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="DefaultFont,MainForeColor">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.BackColor" Value="White" />
+            </PropertySettings>
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.RootRadElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+        </PropertySettingGroups>
+      </BuilderData>
+      <StylesheetRelations>
+        <RadStylesheetRelation ControlType="Telerik.WinControls.UI.RadDataLayout" ElementType="Telerik.WinControls.RootRadElement" />
+      </StylesheetRelations>
+    </XmlStyleBuilderRegistration>
+  </BuilderRegistrations>
+</XmlTheme>

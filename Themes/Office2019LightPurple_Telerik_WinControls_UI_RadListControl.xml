@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XmlTheme xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ThemeName="Office2019LightPurple" ThemeVersion="2.0">
+  <BuilderRegistrations>
+    <XmlStyleBuilderRegistration BuilderType="">
+      <BuilderData xsi:type="XmlStyleSheet" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <PropertySettingGroups>
+          <XmlPropertySettingGroup BasedOn="DefaultFont,MainForeColor">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadItem.UseDefaultDisabledPaint" Value="False" />
+            </PropertySettings>
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.RootRadElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="MainFill,MainBorder">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.UI.RadListElement.AlternatingItemColor" Value="241, 241, 241" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.RadListElement.ItemHeight" Value="22" />
+            </PropertySettings>
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.RadListElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentFill,Padding(4;0;4;0),MainForeColor,TransparentBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadListVisualItem" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="MainForeColor,TransparentBorder,AccentMouseOverFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadListVisualItem.MouseOver" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentFill,MainForeColor,AccentMouseOverBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadListVisualItem.Active" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="Padding(4;0;4;0)">
+            <Selectors>
+              <XmlClassSelector ElementClass="MainContent" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="DisabledForeColor,TransparentBorder,TransparentFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadListVisualItem.Disabled" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AccentFill,CheckedForeColor,TransparentBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadListVisualItem.Selected" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AccentFill,CheckedForeColor,AccentMouseOverBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadListVisualItem.Selected.Active" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="MainForeColor,AccentMouseOverFill,AccentMouseOverBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadListVisualItem.MouseOver.Active" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="MainForeColor,AccentMouseOverFill,AccentMouseOverBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadListVisualItem.MouseOver.Selected.Active" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="IconForeColor">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="DescriptionContent" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CheckedForeColor">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="DescriptionContent.Selected" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="DisabledForeColor">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="DescriptionContent.Disabled" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="HighlightedForeColor">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="DescriptionContent.MouseOver" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="HighlightedForeColor">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="DescriptionContent.MouseOver.Selected.Active" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CheckedForeColor">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="DescriptionContent.MouseOver.Selected" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+        </PropertySettingGroups>
+      </BuilderData>
+      <StylesheetRelations>
+        <RadStylesheetRelation ControlType="Telerik.WinControls.UI.RadListControl" ElementType="Telerik.WinControls.RootRadElement" />
+        <RadStylesheetRelation RegistrationType="ElementTypeDefault" ElementType="Telerik.WinControls.UI.RadListElement" />
+      </StylesheetRelations>
+    </XmlStyleBuilderRegistration>
+  </BuilderRegistrations>
+</XmlTheme>

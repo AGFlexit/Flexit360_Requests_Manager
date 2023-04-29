@@ -1,0 +1,158 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XmlTheme xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ThemeName="Office2019LightPurple" ThemeVersion="2.0">
+  <BuilderRegistrations>
+    <XmlStyleBuilderRegistration BuilderType="">
+      <BuilderData xsi:type="XmlStyleSheet" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <PropertySettingGroups>
+          <XmlPropertySettingGroup BasedOn="">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.UI.UISparkElement.BorderColor" Value="Black" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.UISparkElement.BorderWidth" Value="1" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.UISparkElement.SmoothingMode" Value="None" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="SparkCategoricalAxis" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.UI.UISparkElement.BorderColor" Value="Black" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.UISparkElement.BorderWidth" Value="1" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.SparkSeries.FirstPointBorderColor" Value="149, 147, 224" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.SparkSeries.FirstPointBackColor" Value="149, 147, 224" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.SparkPointSeries.FirstPointSize" Value="7, 7" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.SparkSeries.LastPointBorderColor" Value="149, 147, 224" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.SparkSeries.LastPointBackColor" Value="149, 147, 224" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.SparkPointSeries.LastPointSize" Value="7, 7" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.SparkSeries.HighPointBackColor" Value="143, 118, 252" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.SparkSeries.HighPointBorderColor" Value="143, 118, 252" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.SparkPointSeries.HighPointSize" Value="7, 7" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.SparkSeries.LowPointBackColor" Value="228, 62, 0" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.SparkSeries.LowPointBorderColor" Value="228, 62, 0" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.SparkPointSeries.LowPointSize" Value="7, 7" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.SparkSeries.MarkerBackColor" Value="Black" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.SparkSeries.MarkerBorderColor" Value="Black" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.SparkPointSeries.MarkerSize" Value="7, 7" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.SparkSeries.NegativePointBackColor" Value="White" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.SparkSeries.NegativePointBorderColor" Value="228, 62, 0" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.SparkPointSeries.NegativePointSize" Value="7, 7" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="SparkLineSeries" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.UI.UISparkElement.BorderColor" Value="Black" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.UISparkElement.BorderWidth" Value="1" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.UISparkElement.BackColor" Value="143, 118, 252" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.SparkSeries.FirstPointBorderColor" Value="149, 147, 224" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.SparkSeries.FirstPointBackColor" Value="149, 147, 224" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.SparkPointSeries.FirstPointSize" Value="7, 7" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.SparkSeries.LastPointBorderColor" Value="149, 147, 224" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.SparkSeries.LastPointBackColor" Value="149, 147, 224" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.SparkPointSeries.LastPointSize" Value="7, 7" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.SparkSeries.HighPointBackColor" Value="143, 118, 252" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.SparkSeries.HighPointBorderColor" Value="143, 118, 252" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.SparkPointSeries.HighPointSize" Value="7, 7" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.SparkSeries.LowPointBackColor" Value="232, 17, 35" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.SparkSeries.LowPointBorderColor" Value="232, 17, 35" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.SparkPointSeries.LowPointSize" Value="7, 7" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.SparkSeries.MarkerBackColor" Value="Black" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.SparkSeries.MarkerBorderColor" Value="Black" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.SparkPointSeries.MarkerSize" Value="7, 7" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.SparkSeries.NegativePointBorderColor" Value="232, 17, 35" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.SparkSeries.NegativePointBackColor" Value="White" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.SparkPointSeries.NegativePointSize" Value="7, 7" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="SparkAreaSeries" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.UI.SparkSeries.MarkerBorderColor" Value="172, 172, 172" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.SparkSeries.MarkerBackColor" Value="172, 172, 172" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.SparkSeries.NegativePointBackColor" Value="96, 96, 96" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.SparkSeries.NegativePointBorderColor" Value="96, 96, 96" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.SparkSeries.HighPointBackColor" Value="143, 118, 252" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.SparkSeries.HighPointBorderColor" Value="143, 118, 252" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.SparkSeries.LowPointBackColor" Value="228, 62, 0" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.SparkSeries.LowPointBorderColor" Value="228, 62, 0" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.SparkSeries.FirstPointBackColor" Value="149, 147, 224" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.SparkSeries.FirstPointBorderColor" Value="149, 147, 224" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.SparkSeries.LastPointBackColor" Value="149, 147, 224" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.SparkSeries.LastPointBorderColor" Value="149, 147, 224" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="SparkBarSeries" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.UI.SparkSeries.MarkerBackColor" Value="172, 172, 172" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.SparkSeries.MarkerBorderColor" Value="172, 172, 172" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.SparkSeries.NegativePointBackColor" Value="96, 96, 96" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.SparkSeries.NegativePointBorderColor" Value="96, 96, 96" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.SparkSeries.HighPointBackColor" Value="143, 118, 252" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.SparkSeries.HighPointBorderColor" Value="143, 118, 252" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.SparkSeries.LowPointBackColor" Value="228, 62, 0" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.SparkSeries.LowPointBorderColor" Value="228, 62, 0" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.SparkSeries.FirstPointBackColor" Value="149, 147, 224" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.SparkSeries.FirstPointBorderColor" Value="149, 147, 224" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.SparkSeries.LastPointBackColor" Value="149, 147, 224" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.SparkSeries.LastPointBorderColor" Value="149, 147, 224" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="SparkWinLossSeries" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.UI.UISparkElement.BorderColor" Value="Black" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.UISparkElement.BorderWidth" Value="1" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.UISparkElement.SmoothingMode" Value="None" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="SparkLinearAxis" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.UI.SparkSeries.MarkerBackColor" Value="Black" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.SparkSeries.MarkerBorderColor" Value="Black" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.SparkPointSeries.MarkerSize" Value="7, 7" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.SparkSeries.FirstPointBorderColor" Value="149, 147, 224" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.SparkSeries.FirstPointBackColor" Value="149, 147, 224" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.SparkPointSeries.FirstPointSize" Value="7, 7" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.SparkSeries.LastPointBorderColor" Value="149, 147, 224" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.SparkSeries.LastPointBackColor" Value="149, 147, 224" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.SparkPointSeries.LastPointSize" Value="7, 7" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.SparkSeries.HighPointBorderColor" Value="143, 118, 252" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.SparkSeries.HighPointBackColor" Value="143, 118, 252" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.SparkPointSeries.HighPointSize" Value="7, 7" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.SparkSeries.LowPointBackColor" Value="228, 62, 0" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.SparkSeries.LowPointBorderColor" Value="228, 62, 0" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.SparkPointSeries.LowPointSize" Value="7, 7" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.SparkSeries.NegativePointBorderColor" Value="228, 62, 0" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.SparkSeries.NegativePointBackColor" Value="White" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.SparkPointSeries.NegativePointSize" Value="7, 7" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="SparkScatterSeries" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="DefaultFont,MainForeColor">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.RootRadElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+        </PropertySettingGroups>
+      </BuilderData>
+      <StylesheetRelations>
+        <RadStylesheetRelation ControlType="Telerik.WinControls.UI.RadSparkline" ElementType="Telerik.WinControls.RootRadElement" />
+        <RadStylesheetRelation RegistrationType="ElementTypeDefault" ElementType="Telerik.WinControls.UI.RadSparklineElement" />
+      </StylesheetRelations>
+    </XmlStyleBuilderRegistration>
+  </BuilderRegistrations>
+</XmlTheme>

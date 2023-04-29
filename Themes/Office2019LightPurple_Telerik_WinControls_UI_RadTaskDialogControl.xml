@@ -1,0 +1,196 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XmlTheme xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ThemeName="Office2019LightPurple" ThemeVersion="2.0">
+  <BuilderRegistrations>
+    <XmlStyleBuilderRegistration BuilderType="">
+      <BuilderData xsi:type="XmlStyleSheet" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <PropertySettingGroups>
+          <XmlPropertySettingGroup BasedOn="MainForeColor,DefaultFont">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.RootRadElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="SegoeUI10Font">
+            <Selectors>
+              <XmlClassSelector ElementClass="HeaderTextElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="SegoeUI12Font">
+            <Selectors>
+              <XmlClassSelector ElementClass="LinkButtonTextElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentFill,TransparentBorder,AccentForeColor">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadTaskDialogCommandLinkButton" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AccentMouseOverBorder,AccentMouseOverBorderForeColor,AccentMouseOverFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadTaskDialogCommandLinkButton.MouseOver" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentFill,TransparentBorder,DisabledForeColor">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadTaskDialogCommandLinkButton.Disabled" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AccentMouseOverBorder,AccentPressedFill,AccentForeColor">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadTaskDialogCommandLinkButton.MouseDown" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AlternativeFill,MainBorder">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.TaskDialog.RadTaskDialogBottomLayout" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="MainBorderFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="FootnoteSeparator">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="Line1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="DescriptionSeparator">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="Line2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="FootnoteSeparator">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="Line2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="MainForeColor,Padding(3;2;3;2),MainBorder,ButtonBackgroundFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadTaskDialogButton" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AccentBorder,AccentPressedFill,HighlightedForeColor">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadTaskDialogButton.MouseDown" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="DisabledForeColor,DisabledBorder,AlternativeFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadTaskDialogButton.Disabled" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="IconForeColor,Margin(1;1;1;1),Padding(0;2;0;0),GlyphText,ButtonBackgroundFill,TransparentBorder">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadItem.Text" Value="" />
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.SmoothingMode" Value="HighQuality" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="ExpandElement.Expanded" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="HighlightedForeColor,AccentMouseOverFill">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadItem.Text" Value="" />
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.SmoothingMode" Value="HighQuality" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="ExpandElement.MouseOver.Expanded" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="HighlightedForeColor,AccentPressedFill">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadItem.Text" Value="" />
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.SmoothingMode" Value="HighQuality" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="ExpandElement.MouseDown.Expanded" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="IconForeColor,Margin(1;1;1;1),GlyphText,Padding(0;2;0;0),ButtonBackgroundFill,TransparentBorder">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadItem.Text" Value="" />
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.SmoothingMode" Value="HighQuality" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="ExpandElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AccentMouseOverFill,HighlightedForeColor">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadItem.Text" Value="" />
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.SmoothingMode" Value="HighQuality" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="ExpandElement.MouseOver" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="HighlightedForeColor,AccentPressedFill">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadItem.Text" Value="" />
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.SmoothingMode" Value="HighQuality" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="ExpandElement.MouseDown" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentFill,AccentForeColor,AccentBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadTaskDialogCommandLinkButton.Focused" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AccentMouseOverBorder,AccentPressedFill,AccentForeColor">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadTaskDialogCommandLinkButton.MouseDown.Focused" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AccentMouseOverBorder,AccentMouseOverBorderForeColor,AccentMouseOverFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadTaskDialogCommandLinkButton.MouseOver.Focused" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AccentBorder,AccentPressedFill,HighlightedForeColor">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadTaskDialogButton.MouseDown.Focused" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="MainForeColor,ButtonBackgroundFill,AccentBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadTaskDialogButton.Focused" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="MainFill">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.TaskDialog.RadTaskDialogControlElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="MainBorderFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="DescriptionSeparator">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="Line1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AccentMouseOverFill,AccentMouseOverBorder,HighlightedForeColor">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadTaskDialogButton.MouseOver.Focused" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AccentMouseOverFill,AccentMouseOverBorder,HighlightedForeColor">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadTaskDialogButton.MouseOver" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="Padding(0;3;0;0)">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.TaskDialog.RadTaskDialogHeaderLayout" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+        </PropertySettingGroups>
+      </BuilderData>
+      <StylesheetRelations>
+        <RadStylesheetRelation ControlType="Telerik.WinControls.UI.RadTaskDialogControl" ElementType="Telerik.WinControls.RootRadElement" />
+      </StylesheetRelations>
+    </XmlStyleBuilderRegistration>
+  </BuilderRegistrations>
+</XmlTheme>

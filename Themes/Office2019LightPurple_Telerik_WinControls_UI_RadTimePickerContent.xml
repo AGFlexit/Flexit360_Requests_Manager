@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XmlTheme xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ThemeName="Office2019LightPurple" ThemeVersion="2.0">
+  <BuilderRegistrations>
+    <XmlStyleBuilderRegistration BuilderType="">
+      <BuilderData xsi:type="XmlStyleSheet" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <PropertySettingGroups>
+          <XmlPropertySettingGroup BasedOn="MainForeColor,MainFill">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.RadTimePickerContentElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AlternativeFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TimePickerContainerHoursHeader" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentFill,IconForeColor,GlyphText12">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadItem.Text" Value="" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.LightVisualElement.DrawText" Value="True" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TimeTableHeaderElementLeftArrow" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentFill,GlyphText12,IconForeColor">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadItem.Text" Value="" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.LightVisualElement.DrawText" Value="True" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TimeTableHeaderElementRightArrow" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="MouseOverFill,HighlightedForeColor">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TimeTableHeaderElementLeftArrow.MouseOver" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="MouseOverFill,HighlightedForeColor">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TimeTableHeaderElementRightArrow.MouseOver" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="PressedFill,HighlightedForeColor">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TimeTableHeaderElementRightArrow.MouseDown" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="PressedFill,HighlightedForeColor">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TimeTableHeaderElementLeftArrow.MouseDown" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="Padding(4;4;4;4),AlternativeFill">
+            <Selectors>
+              <XmlClassSelector ElementClass="ClockHeaderElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentFill,MainForeColor">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TimeTableVisualElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CheckedForeColor,AccentFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TimeTableVisualElement.Selected" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentBottomBorder1px,Padding(0;5;0;0)">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.UI.LightVisualElement.DrawBorder" Value="False" />
+            </PropertySettings>
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.TimePickerDoneButtonElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="DisabledForeColor">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TimeTableVisualElement.Disabled" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="DefaultFont">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.RootRadElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="MainBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TimeTableStackLayoutElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AlternativeFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TimePickerContainerMinutesHeader" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="Padding(4;4;4;4)">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TimeTableHeaderElementheaderElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AccentMouseOverFill,MainForeColor">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="TimeTableVisualElement.MouseOver" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+        </PropertySettingGroups>
+      </BuilderData>
+      <StylesheetRelations>
+        <RadStylesheetRelation ControlType="Telerik.WinControls.UI.RadTimePickerContent" ElementType="Telerik.WinControls.RootRadElement" />
+        <RadStylesheetRelation RegistrationType="ElementTypeDefault" ElementType="Telerik.WinControls.UI.RadTimePickerContentElement" />
+      </StylesheetRelations>
+    </XmlStyleBuilderRegistration>
+  </BuilderRegistrations>
+</XmlTheme>

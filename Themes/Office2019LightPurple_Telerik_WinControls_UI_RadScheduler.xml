@@ -1,0 +1,448 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XmlTheme xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ThemeName="Office2019LightPurple" ThemeVersion="2.0">
+  <BuilderRegistrations>
+    <XmlStyleBuilderRegistration BuilderType="">
+      <BuilderData xsi:type="XmlStyleSheet" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <PropertySettingGroups>
+          <XmlPropertySettingGroup BasedOn="DefaultFont,MainForeColor">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.RootRadElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="MainForeColor,MainBorder">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.UI.RadSchedulerElement.AppointmentShape" Value="(none)" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.RadSchedulerElement.NavigatorsWidth" Value="26" />
+            </PropertySettings>
+            <Selectors>
+              <XmlClassSelector ElementClass="SchedulerVisualElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="MainFill">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.UI.RulerPrimitive.CurrentTimePointerColor" Value="75, 40, 109" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.RulerPrimitive.HourLineColor" Value="172, 172, 172" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.RulerPrimitive.HourLineStartPosition" Value="5" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.RulerPrimitive.SectionLineColor" Value="172, 172, 172" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.RulerPrimitive.TimePointerStyle" Value="SimpleLine" />
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.SmoothingMode" Value="None" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.RulerPrimitive.MinutesFont" Value="Segoe UI, 9pt" />
+            </PropertySettings>
+            <Selectors>
+              <XmlClassSelector ElementClass="SchedulerVisualElement">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="Ruler" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlClassSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="MainFill">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.UI.DayViewHeader.HeaderHeight" Value="28" />
+            </PropertySettings>
+            <Selectors>
+              <XmlClassSelector ElementClass="DayViewHeader" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="MainFill">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.UI.DayViewAllDayHeader.HeaderHeight" Value="28" />
+            </PropertySettings>
+            <Selectors>
+              <XmlClassSelector ElementClass="DayViewAllDayHeader" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="Margin(-1;0;0;0),TransparentBorder,AccentMouseOverFill,MainForeColor">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.SmoothingMode" Value="None" />
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.ZIndex" Value="0" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="SchedulerHeaderCellElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="MainForeColor,AccentPressedFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="SchedulerHeaderCellElement.MouseOver" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="MainForeColor,AccentMouseOverFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="SchedulerHeaderCellElement.MouseDown" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CheckedForeColor,AccentMouseOverBorderFill">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.SmoothingMode" Value="None" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="SchedulerHeaderCellElement.IsToday" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AccentMouseOverFill,MainForeColor">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="SchedulerHeaderCellElement.MouseOver.IsToday" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="RoundRectShapeShape0,Margin(1;0;1;0),MainForeColor,ArrowDownIconImage,ButtonBackgroundFill,MainBorder">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.UI.LightVisualElement.TextImageRelation" Value="TextBeforeImage" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="ViewNavigationElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="MainForeColor,ArrowDownIconImage,MainBorder,ButtonBackgroundFill">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.UI.LightVisualElement.TextImageRelation" Value="TextBeforeImage" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="ViewNavigationElement.NavigateForward" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="Margin(-1;0;0;0),MainFill,MainBorder">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.SmoothingMode" Value="None" />
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.ZIndex" Value="0" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="SchedulerCellElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="MainTopRightBorder">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.Visibility" Value="Visible" />
+            </PropertySettings>
+            <Selectors>
+              <XmlClassSelector ElementClass="SchedulerVisualElement">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="RulerBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlClassSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="MainBorder,AccentMouseOverFill">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.ZIndex" Value="0" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="SchedulerCellElement.MouseOver" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="MainBorder,ButtonBackgroundFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="SchedulerCellElement.Selected" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="MainBorder,AlternativeFill">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.SmoothingMode" Value="None" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="SchedulerCellElement.IsWorkTime" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AccentMouseOverBorderLeftRightMainTopBottom,MainFill">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.SmoothingMode" Value="None" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="SchedulerCellElement.IsToday" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AccentMouseOverBorderLeftRightMainTopBottom,AlternativeFill">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.SmoothingMode" Value="None" />
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.ZIndex" Value="2" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="SchedulerCellElement.IsToday.IsWorkTime" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AccentMouseOverBorderLeftRightMainTopBottom,AccentMouseOverFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="SchedulerCellElement.MouseOver.IsToday" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AccentMouseOverBorderLeftRightMainTopBottom,AccentMouseOverFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="SchedulerCellElement.MouseOver.IsToday.IsWorkTime" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AccentMouseOverBorderLeftRightMainTopBottom,ButtonBackgroundFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="SchedulerCellElement.Selected.IsToday" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AccentMouseOverBorderLeftRightMainTopBottom,ButtonBackgroundFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="SchedulerCellElement.Selected.IsToday.IsWorkTime" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="MainBorder,ButtonBackgroundFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="SchedulerCellElement.Selected.IsWorkTime" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="MainFill,AccentMouseOverFill">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.UI.LightVisualElement.DrawBorder" Value="False" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="CornerHeaderCell2" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="MainFill">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.UI.LightVisualElement.DrawBorder" Value="False" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="CornerHeaderCell3" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="Margin(-1;-1;0;-1),MainBorder,MainFill">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.SmoothingMode" Value="None" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="SchedulerAllDayElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AccentMouseOverFill,MainBorder">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.SmoothingMode" Value="None" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="SchedulerAllDayElement.MouseOver" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="MainBorder,ButtonBackgroundFill">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.SmoothingMode" Value="None" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="SchedulerAllDayElement.Selected" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="MainFill,AccentMouseOverBorderLeftRightMainTopBottom">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="SchedulerAllDayElement.IsToday" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AccentMouseOverFill,AccentMouseOverBorderLeftRightMainTopBottom">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="SchedulerAllDayElement.MouseOver.IsToday" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ButtonBackgroundFill,AccentMouseOverBorderLeftRightMainTopBottom">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="SchedulerAllDayElement.Selected.IsToday" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="MainFill">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.UI.SchedulerMonthViewElement.AppointmentHeight" Value="24" />
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.SmoothingMode" Value="None" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.SchedulerMonthViewElement.AppointmentMargin" Value="3, 0, 3, 0" />
+            </PropertySettings>
+            <Selectors>
+              <XmlClassSelector ElementClass="SchedulerMonthViewElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="MainForeColor,MainBorder,MainFill">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.SmoothingMode" Value="None" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.MonthCellElement.HeaderHeight" Value="24" />
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.ZIndex" Value="1" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.MonthCellElement.ArrowImage" Value="Qk02BAAAAAAAADYAAAAoAAAAEAAAABAAAAABACAAAAAAAAAAAADEDgAAxA4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAdHR0cnNzc2wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAbW1tHG5ubvBubm7wbW1tHAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHNzc751dXX/dXV1/3Nzc74AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHNzc2x1dXX/dXV1/3V1df91dXX/c3NzbAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAG1tbRxubm7wdXV1/3V1df91dXX/dXV1/25ubvBtbW0cAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABzc3O+dXV1/3V1df91dXX/dXV1/3V1df91dXX/c3NzvgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.MonthCellElement.LineColor" Value="Transparent" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="MonthCellElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AccentMouseOverBorder2px,MainFill">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.ZIndex" Value="2" />
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.SmoothingMode" Value="None" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="MonthCellElement.IsToday" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="MainBorder,AccentMouseOverFill">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.ZIndex" Value="3" />
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.SmoothingMode" Value="None" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="MonthCellElement.MouseOver" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="MainFill,MainBorder">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.ZIndex" Value="1" />
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.SmoothingMode" Value="None" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="MonthCellElement.IsWorkTime" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AccentMouseOverBorder2px,MainFill">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.ZIndex" Value="2" />
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.SmoothingMode" Value="None" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="MonthCellElement.IsToday.IsWorkTime" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AccentMouseOverBorder2px,AccentMouseOverFill">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.ZIndex" Value="3" />
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.SmoothingMode" Value="None" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="MonthCellElement.MouseOver.IsToday" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AccentMouseOverBorder2px,AccentMouseOverFill">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.ZIndex" Value="3" />
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.SmoothingMode" Value="None" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="MonthCellElement.MouseOver.IsToday.IsWorkTime" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AccentMouseOverBorder2px,ButtonBackgroundFill">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.ZIndex" Value="4" />
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.SmoothingMode" Value="None" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="MonthCellElement.Selected.IsToday" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AccentMouseOverBorder2px,ButtonBackgroundFill">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.ZIndex" Value="3" />
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.SmoothingMode" Value="None" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="MonthCellElement.Selected.IsToday.IsWorkTime" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="MainBorder,ButtonBackgroundFill">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.ZIndex" Value="3" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="MonthCellElement.Selected.IsWorkTime" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="MainBorder,ButtonBackgroundFill">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.ZIndex" Value="4" />
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.SmoothingMode" Value="None" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="MonthCellElement.Selected" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="MainBorder,AccentMouseOverFill">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.ZIndex" Value="2" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="MonthCellElement.MouseOver.IsWorkTime" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentFill,Padding(16;12;16;12),SegoeUI11.25Font">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadItem.FlipText" Value="False" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.LightVisualElement.DrawBorder" Value="False" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="MonthViewHeaderCellElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="BasicBorder,NoMarginPadding,SegoeUI9.5Font,MainForeColor,MainFill">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadItem.FlipText" Value="True" />
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.SmoothingMode" Value="None" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="MonthViewHeaderCellElement.IsVertical" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="SegoeUISemibold10.5Font,CheckedForeColor,AccentMouseOverBorderFill">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.SmoothingMode" Value="None" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="MonthViewHeaderCellElement.IsToday" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="MainTopBorder,AccentMouseOverFill,MainForeColor,Margin(0;-1;0;-1)">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="MonthViewMainHeaderCellElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="MainFill">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.UI.SchedulerTimelineViewElement.ColumnHeaderHeight" Value="26" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.SchedulerTimelineViewElement.ViewHeaderHeight" Value="26" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.SchedulerTimelineViewElement.AppointmentMargin" Value="3, 0, 3, 0" />
+            </PropertySettings>
+            <Selectors>
+              <XmlClassSelector ElementClass="SchedulerTimelineViewElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="MainBorder,AccentMouseOverFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="SchedulerCellElement.MouseOver.IsWorkTime" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ZIndex1">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.UI.MonthViewHeader.HeaderHeight" Value="24" />
+            </PropertySettings>
+            <Selectors>
+              <XmlClassSelector ElementClass="MonthViewHeader" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AccentPressedFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="MonthViewHeaderCellElement.MouseDown.IsVertical" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AccentMouseOverFill,AccentMouseOverBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="ViewNavigationElement.MouseOver.NavigateForward" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AccentMouseOverFill,AccentMouseOverBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="ViewNavigationElement.MouseOver" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="MainFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="CornerHeaderCell2.IsToday" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AccentPressedFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="MonthViewMainHeaderCellElement.MouseOver" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AccentMouseOverFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="MonthViewHeaderCellElement.MouseOver.IsVertical" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+        </PropertySettingGroups>
+      </BuilderData>
+      <StylesheetRelations>
+        <RadStylesheetRelation ControlType="Telerik.WinControls.UI.RadScheduler" ElementType="Telerik.WinControls.RootRadElement" />
+      </StylesheetRelations>
+    </XmlStyleBuilderRegistration>
+  </BuilderRegistrations>
+</XmlTheme>

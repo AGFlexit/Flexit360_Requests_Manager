@@ -1,0 +1,384 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XmlTheme xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ThemeName="Office2019LightPurple" ThemeVersion="2.0">
+  <BuilderRegistrations>
+    <XmlStyleBuilderRegistration BuilderType="">
+      <BuilderData xsi:type="XmlStyleSheet" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <PropertySettingGroups>
+          <XmlPropertySettingGroup BasedOn="">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.BackColor" Value="229, 229, 229" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.LightVisualElement.BorderColor" Value="172, 172, 172" />
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.ForeColor" Value="Black" />
+              <XmlPropertySetting Property="Telerik.WinControls.RadItem.Text" Value="" />
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.CustomFontSize" Value="12" />
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.Padding" Value="0, 2, 0, 0" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="StepItemIndicatorElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.UI.LightVisualElement.BorderColor" Value="143, 118, 252" />
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.BackColor" Value="166, 165, 230" />
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.ForeColor" Value="47, 47, 47" />
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.CustomFontSize" Value="12" />
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.Padding" Value="0, 2, 0, 0" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="StepItemIndicatorElement.MouseOver" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.ForeColor" Value="White" />
+              <XmlPropertySetting Property="Telerik.WinControls.RadItem.Text" Value="" />
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.BackColor" Value="75, 40, 109" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.LightVisualElement.BorderColor" Value="75, 40, 109" />
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.CustomFontSize" Value="12" />
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.Padding" Value="0, 2, 0, 0" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="StepItemIndicatorElement.Completed" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.BackColor" Value="75, 40, 109" />
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.ForeColor" Value="White" />
+              <XmlPropertySetting Property="Telerik.WinControls.RadItem.Text" Value="" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.LightVisualElement.BorderColor" Value="143, 118, 252" />
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.CustomFontSize" Value="12" />
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.Padding" Value="0, 2, 0, 0" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="StepItemIndicatorElement.Completed.IsActive" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.UI.LightVisualElement.BorderColor" Value="143, 118, 252" />
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.BackColor" Value="White" />
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.ForeColor" Value="143, 118, 252" />
+              <XmlPropertySetting Property="Telerik.WinControls.RadItem.Text" Value="" />
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.CustomFontSize" Value="18" />
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.Padding" Value="0, 4, 0, 0" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="StepItemIndicatorElement.InProgress" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.CustomFontSize" Value="12" />
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.Padding" Value="0, 2, 0, 0" />
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.BackColor" Value="White" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.LightVisualElement.BorderColor" Value="214, 214, 214" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="StepItemIndicatorElement.Disabled" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.CustomFontSize" Value="12" />
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.Padding" Value="0, 2, 0, 0" />
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.BackColor" Value="166, 165, 230" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.LightVisualElement.BorderColor" Value="143, 118, 252" />
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.ForeColor" Value="47, 47, 47" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="StepItemIndicatorElement.MouseOver.Completed" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.CustomFontSize" Value="12" />
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.Padding" Value="0, 2, 0, 0" />
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.BackColor" Value="166, 165, 230" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.LightVisualElement.BorderColor" Value="143, 118, 252" />
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.ForeColor" Value="47, 47, 47" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="StepItemIndicatorElement.MouseOver.MouseDown.Completed" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.CustomFontSize" Value="12" />
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.Padding" Value="0, 2, 0, 0" />
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.BackColor" Value="166, 165, 230" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.LightVisualElement.BorderColor" Value="143, 118, 252" />
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.ForeColor" Value="47, 47, 47" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="StepItemIndicatorElement.MouseOver.Completed.IsActive" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.CustomFontSize" Value="12" />
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.Padding" Value="0, 2, 0, 0" />
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.BackColor" Value="166, 165, 230" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.LightVisualElement.BorderColor" Value="143, 118, 252" />
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.ForeColor" Value="47, 47, 47" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="StepItemIndicatorElement.MouseOver.MouseDown.Completed.IsActive" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.Padding" Value="0, 2, 0, 0" />
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.BackColor" Value="White" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.LightVisualElement.BorderColor" Value="228, 62, 0" />
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.ForeColor" Value="228, 62, 0" />
+              <XmlPropertySetting Property="Telerik.WinControls.RadItem.Text" Value="!" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="StepItemIndicatorElement.IsError" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.BackColor" Value="172, 172, 172" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.StepConnectionElement.ProgressColor" Value="75, 40, 109" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="StepConnectionElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.BackColor" Value="214, 214, 214" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="StepConnectionElement.Disabled" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="DefaultFont">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.ForeColor" Value="Black" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="StepContentElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.ForeColor" Value="228, 62, 0" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="StepContentElement.IsError" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.ForeColor" Value="179, 179, 179" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="StepContentElement.Disabled" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="DefaultFont,Padding(4;4;4;4),MainForeColor">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.Padding" Value="0, 3, 0, 1" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="PreviousStepNavigationButton" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="DisabledForeColor">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="PreviousStepNavigationButton.Disabled" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ButtonBackgroundFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="PreviousStepNavigationButton">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AccentMouseOverFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="PreviousStepNavigationButton.MouseOver">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AccentPressedFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="PreviousStepNavigationButton.MouseDown">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AccentPressedFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="PreviousStepNavigationButton.Pressed">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ButtonBackgroundFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="PreviousStepNavigationButton.IsDefault">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AlternativeFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="PreviousStepNavigationButton.Disabled">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="MainBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="PreviousStepNavigationButton">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AccentMouseOverBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="PreviousStepNavigationButton.MouseOver">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AccentBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="PreviousStepNavigationButton.MouseDown">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AccentBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="PreviousStepNavigationButton.Pressed">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AccentBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="PreviousStepNavigationButton.IsDefault">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="DisabledBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="PreviousStepNavigationButton.Disabled">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="DefaultFont,Padding(4;4;4;4),MainForeColor">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.Padding" Value="0, 3, 0, 1" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="NextStepNavigationButton" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="DisabledForeColor">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="NextStepNavigationButton.Disabled" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ButtonBackgroundFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="NextStepNavigationButton">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AccentMouseOverFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="NextStepNavigationButton.MouseOver">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AccentPressedFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="NextStepNavigationButton.MouseDown">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AccentPressedFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="NextStepNavigationButton.Pressed">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ButtonBackgroundFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="NextStepNavigationButton.IsDefault">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AlternativeFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="NextStepNavigationButton.Disabled">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="MainBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="NextStepNavigationButton">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AccentMouseOverBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="NextStepNavigationButton.MouseOver">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AccentBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="NextStepNavigationButton.MouseDown">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AccentBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="NextStepNavigationButton.Pressed">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AccentBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="NextStepNavigationButton.IsDefault">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="DisabledBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="NextStepNavigationButton.Disabled">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+        </PropertySettingGroups>
+      </BuilderData>
+      <StylesheetRelations>
+        <RadStylesheetRelation ControlType="Telerik.WinControls.UI.RadStepProgressBar" ElementType="Telerik.WinControls.RootRadElement" />
+      </StylesheetRelations>
+    </XmlStyleBuilderRegistration>
+  </BuilderRegistrations>
+</XmlTheme>

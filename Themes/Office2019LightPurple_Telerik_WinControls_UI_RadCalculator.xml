@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XmlTheme xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ThemeName="Office2019LightPurple" ThemeVersion="2.0">
+  <BuilderRegistrations>
+    <XmlStyleBuilderRegistration BuilderType="">
+      <BuilderData xsi:type="XmlStyleSheet" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <PropertySettingGroups>
+          <XmlPropertySettingGroup BasedOn="DefaultFont,MainForeColor">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.RootRadElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AlternativeFill,MainBorder">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.RadCalculatorElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ButtonBackgroundFill,TransparentBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadCalculatorDigitButtonElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AccentMouseOverFill,AccentMouseOverBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadCalculatorDigitButtonElement.MouseOver" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AccentBorder,AccentPressedFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadCalculatorDigitButtonElement.MouseDown" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentBorder,SecondaryFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadCalculatorOperationButtonElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AccentMouseOverFill,AccentMouseOverBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadCalculatorOperationButtonElement.MouseOver" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AccentBorder,AccentPressedFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadCalculatorOperationButtonElement.MouseDown" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentBorder,SecondaryFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadCalculatorCommandButtonElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AccentMouseOverFill,AccentMouseOverBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadCalculatorCommandButtonElement.MouseOver" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AccentBorder,AccentPressedFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadCalculatorCommandButtonElement.MouseDown" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentFill,TransparentBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadCalculatorMemoryButtonElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AccentMouseOverFill,AccentMouseOverBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadCalculatorMemoryButtonElement.MouseOver" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AccentPressedFill,AccentBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadCalculatorMemoryButtonElement.MouseDown" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentBorder,SecondaryFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadCalculatorDeleteButtonElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AccentMouseOverFill,AccentMouseOverBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadCalculatorDeleteButtonElement.MouseOver" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AccentPressedFill,AccentBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadCalculatorDeleteButtonElement.MouseDown" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentBorder,SecondaryFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadCalculatorEqualsButtonElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AccentMouseOverFill,AccentMouseOverBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadCalculatorEqualsButtonElement.MouseOver" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AccentBorder,AccentPressedFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadCalculatorEqualsButtonElement.MouseDown" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+        </PropertySettingGroups>
+      </BuilderData>
+      <StylesheetRelations>
+        <RadStylesheetRelation ControlType="Telerik.WinControls.UI.RadCalculator" ElementType="Telerik.WinControls.RootRadElement" />
+        <RadStylesheetRelation RegistrationType="ElementTypeDefault" ElementType="Telerik.WinControls.UI.RadCalculatorElement" />
+      </StylesheetRelations>
+    </XmlStyleBuilderRegistration>
+  </BuilderRegistrations>
+</XmlTheme>

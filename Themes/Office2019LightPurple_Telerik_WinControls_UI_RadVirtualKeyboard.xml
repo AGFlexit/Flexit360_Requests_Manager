@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XmlTheme xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ThemeName="Office2019LightPurple" ThemeVersion="2.0">
+  <BuilderRegistrations>
+    <XmlStyleBuilderRegistration BuilderType="">
+      <BuilderData xsi:type="XmlStyleSheet" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <PropertySettingGroups>
+          <XmlPropertySettingGroup BasedOn="DefaultFont,MainForeColor">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.RootRadElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AlternativeFill,SegoeUI12Font">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.UI.LightVisualElement.DrawBorder" Value="False" />
+            </PropertySettings>
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.RadVirtualKeyboardElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="MainBorder,ButtonBackgroundFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="Key" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="MainForeColor,MainBorder,ButtonBackgroundFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="ToggleKey" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="MainForeColor,AccentMouseOverFill,AccentMouseOverBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="ToggleKey.MouseOver" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="MainForeColor,AccentPressedFill,AccentBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="ToggleKey.Pressed" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="MainForeColor,MainBorder,SecondaryFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="ToggleKey.IsSharpStyle" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AccentFill,CheckedForeColor,AccentBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="ToggleKey.ToggleState=On" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AccentMouseOverFill,MainForeColor,AccentMouseOverBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="ToggleKey.ToggleState=On.MouseOver" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AccentPressedFill,AccentBorder,MainForeColor">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="ToggleKey.ToggleState=On.Pressed" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="SecondaryFill,MainBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="Key.IsSharpStyle" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AccentPressedFill,AccentBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="Key.MouseDown" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AccentMouseOverBorder,AccentMouseOverFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="Key.MouseOver" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+        </PropertySettingGroups>
+      </BuilderData>
+      <StylesheetRelations>
+        <RadStylesheetRelation ControlType="Telerik.WinControls.UI.RadVirtualKeyboard" ElementType="Telerik.WinControls.RootRadElement" />
+      </StylesheetRelations>
+    </XmlStyleBuilderRegistration>
+  </BuilderRegistrations>
+</XmlTheme>

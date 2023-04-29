@@ -1,0 +1,1561 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XmlTheme xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ThemeName="Office2019LightPurple" ThemeVersion="2.0">
+  <StyleRepository>
+    <RepositoryItems>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Gradient" DisplayName="MainFill" Key="MainFill" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.FillPrimitive.GradientStyle" Value="Solid" />
+        <XmlPropertySetting Property="Telerik.WinControls.VisualElement.BackColor" Value="White" />
+        <XmlPropertySetting Property="Telerik.WinControls.VisualElement.SmoothingMode" Value="None" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Gradient" DisplayName="MouseOverFill" Key="MouseOverFill" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.FillPrimitive.GradientStyle" Value="Solid" />
+        <XmlPropertySetting Property="Telerik.WinControls.VisualElement.BackColor" Value="200, 199, 196" />
+        <XmlPropertySetting Property="Telerik.WinControls.VisualElement.SmoothingMode" Value="None" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Gradient" DisplayName="PressedFill" Key="PressedFill" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.FillPrimitive.GradientStyle" Value="Solid" />
+        <XmlPropertySetting Property="Telerik.WinControls.VisualElement.BackColor" Value="179, 175, 173" />
+        <XmlPropertySetting Property="Telerik.WinControls.VisualElement.SmoothingMode" Value="None" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Text" DisplayName="DefaultFont" Key="DefaultFont" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.VisualElement.Font" Value="Segoe UI, 9pt" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Text" DisplayName="CheckedForeColor" Key="CheckedForeColor" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.VisualElement.ForeColor" Value="White" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Border" DisplayName="CollapsedBorder" Key="CollapsedBorder" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.RadElement.Visibility" Value="Collapsed" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Text" DisplayName="GlyphText" Key="GlyphText" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.VisualElement.CustomFont" Value="TelerikWebUI" />
+        <XmlPropertySetting Property="Telerik.WinControls.VisualElement.CustomFontSize" Value="10" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Gradient" DisplayName="TransparentFill" Key="TransparentFill" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.FillPrimitive.GradientStyle" Value="Solid" />
+        <XmlPropertySetting Property="Telerik.WinControls.VisualElement.BackColor" Value="Transparent" />
+        <XmlPropertySetting Property="Telerik.WinControls.VisualElement.SmoothingMode" Value="None" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Layout" DisplayName="MinSize(20;20)" Key="MinSize(20;20)" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.RadElement.MinSize" Value="20, 20" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Layout" DisplayName="MinSize(10;10)" Key="MinSize(10;10)" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.RadElement.MinSize" Value="10, 10" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Border" DisplayName="MainForeColorBorder2px" Key="MainForeColorBorder2px" Capacity="8">
+        <XmlPropertySetting Property="Telerik.WinControls.VisualElement.ForeColor" Value="Black" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.GradientStyle" Value="Solid" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.Width" Value="2" />
+        <XmlPropertySetting Property="Telerik.WinControls.VisualElement.SmoothingMode" Value="None" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.BoxStyle" Value="SingleBorder" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Border" DisplayName="AccentBorder2px" Key="AccentBorder2px" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.VisualElement.ForeColor" Value="75, 40, 109" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.GradientStyle" Value="Solid" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.Width" Value="2" />
+        <XmlPropertySetting Property="Telerik.WinControls.VisualElement.SmoothingMode" Value="None" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Text" DisplayName="IconForeColor" Key="IconForeColor" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.VisualElement.ForeColor" Value="96, 96, 96" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Layout" DisplayName="NoMarginPadding" Key="NoMarginPadding" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.RadElement.Margin" Value="0, 0, 0, 0" />
+        <XmlPropertySetting Property="Telerik.WinControls.RadElement.Padding" Value="0, 0, 0, 0" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Layout" DisplayName="Padding(4;4;4;4)" Key="Padding(4;4;4;4)" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.RadElement.Padding" Value="4, 4, 4, 4" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Shape" DisplayName="RoundRectShapeShape0" Key="RoundRectShapeShape0" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.RadElement.Shape" Value="Telerik.WinControls.RoundRectShape|0" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Gradient" DisplayName="AccentFill" Key="AccentFill" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.FillPrimitive.GradientStyle" Value="Solid" />
+        <XmlPropertySetting Property="Telerik.WinControls.VisualElement.BackColor" Value="75, 40, 109" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.FillPrimitive.NumberOfColors" Value="1" />
+        <XmlPropertySetting Property="Telerik.WinControls.VisualElement.SmoothingMode" Value="None" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Text" DisplayName="SegoeUISemibold15Font" Key="SegoeUISemibold15Font" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.VisualElement.Font" Value="Segoe UI Semibold, 15pt" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Layout" DisplayName="Padding(0;5;0;4)" Key="Padding(0;5;0;4)" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.RadElement.Padding" Value="0, 5, 0, 4" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Shape" DisplayName="RoundRectShapeShape12" Key="RoundRectShapeShape12" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.RadElement.Shape" Value="Telerik.WinControls.RoundRectShape|20" />
+        <XmlPropertySetting Property="Telerik.WinControls.VisualElement.SmoothingMode" Value="HighQuality" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Gradient" DisplayName="IconFill" Key="IconFill" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.FillPrimitive.GradientStyle" Value="Solid" />
+        <XmlPropertySetting Property="Telerik.WinControls.VisualElement.BackColor" Value="96, 96, 96" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Shape" DisplayName="RoundRectShapeShape20" Key="RoundRectShapeShape20" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.RadElement.Shape" Value="Telerik.WinControls.RoundRectShape|50" />
+        <XmlPropertySetting Property="Telerik.WinControls.VisualElement.SmoothingMode" Value="HighQuality" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Layout" DisplayName="Padding(1;2;0;0)" Key="Padding(1;2;0;0)" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.RadElement.Padding" Value="1, 2, 0, 0" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Gradient" DisplayName="VisibleFill" Key="VisibleFill" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.RadElement.Visibility" Value="Visible" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Border" DisplayName="AlternativeBorder" Key="AlternativeBorder" Capacity="8">
+        <XmlPropertySetting Property="Telerik.WinControls.VisualElement.ForeColor" Value="242, 242, 242" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.GradientStyle" Value="Solid" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.Width" Value="1" />
+        <XmlPropertySetting Property="Telerik.WinControls.VisualElement.SmoothingMode" Value="HighQuality" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.BoxStyle" Value="SingleBorder" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Image" DisplayName="GripNSEWImage" Key="GripNSEWImage" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.ImagePrimitive.Image" Value="Qk12AgAAAAAAADYAAAAoAAAADAAAAAwAAAABACAAAAAAAAAAAADEDgAAxA4AAAAAAAAAAAAArKys/6ysrP+srKz/rKys/6ysrP+srKz/rKys/6ysrP+srKz/rKys/6ysrP+srKz/rKys/6ysrP+srKz/rKys/6ysrP+srKz/rKys/6ysrP+srKz/rKys/6ysrP+srKz/rKys/6ysrP+srKz/rKys/6ysrP+srKz/rKys/6ysrP+srKz/rKys/6ysrP+srKz/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAArKys/6ysrP+srKz/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAArKys/6ysrP+srKz/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAArKys/6ysrP+srKz/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAArKys/6ysrP+srKz/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAArKys/6ysrP+srKz/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAArKys/6ysrP+srKz/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAArKys/6ysrP+srKz/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAArKys/6ysrP+srKz/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAArKys/6ysrP+srKz/" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Image" DisplayName="GripNSImage" Key="GripNSImage" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.ImagePrimitive.Image" Value="Qk3aAQAAAAAAADYAAAAoAAAAIwAAAAMAAAABACAAAAAAAAAAAADEDgAAxA4AAAAAAAAAAAAArKys/6ysrP+srKz/rKys/6ysrP+srKz/rKys/6ysrP+srKz/rKys/6ysrP+srKz/rKys/6ysrP+srKz/rKys/6ysrP+srKz/rKys/6ysrP+srKz/rKys/6ysrP+srKz/rKys/6ysrP+srKz/rKys/6ysrP+srKz/rKys/6ysrP+srKz/rKys/6ysrP+srKz/rKys/6ysrP+srKz/rKys/6ysrP+srKz/rKys/6ysrP+srKz/rKys/6ysrP+srKz/rKys/6ysrP+srKz/rKys/6ysrP+srKz/rKys/6ysrP+srKz/rKys/6ysrP+srKz/rKys/6ysrP+srKz/rKys/6ysrP+srKz/rKys/6ysrP+srKz/rKys/6ysrP+srKz/rKys/6ysrP+srKz/rKys/6ysrP+srKz/rKys/6ysrP+srKz/rKys/6ysrP+srKz/rKys/6ysrP+srKz/rKys/6ysrP+srKz/rKys/6ysrP+srKz/rKys/6ysrP+srKz/rKys/6ysrP+srKz/rKys/6ysrP+srKz/rKys/6ysrP+srKz/" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Layout" DisplayName="Padding(1;1;1;0)" Key="Padding(1;1;1;0)" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.RadElement.Padding" Value="1, 1, 1, 0" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Border" DisplayName="TransparentBorder" Key="TransparentBorder" Capacity="8">
+        <XmlPropertySetting Property="Telerik.WinControls.VisualElement.ForeColor" Value="Transparent" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.GradientStyle" Value="Solid" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.Width" Value="1" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.BoxStyle" Value="SingleBorder" />
+        <XmlPropertySetting Property="Telerik.WinControls.VisualElement.SmoothingMode" Value="None" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Border" DisplayName="HiddenBorder" Key="HiddenBorder" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.RadElement.Visibility" Value="Hidden" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Border" DisplayName="BlackBorder" Key="BlackBorder" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.VisualElement.ForeColor" Value="Black" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Border" DisplayName="ChartViewPointBorderNone" Key="ChartViewPointBorderNone" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.Width" Value="0" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Border" DisplayName="SolidWhiteBorder" Key="SolidWhiteBorder" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.VisualElement.ForeColor" Value="White" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.Width" Value="2" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.GradientStyle" Value="Solid" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Border" DisplayName="SolidWhiteBorderChart" Key="SolidWhiteBorderChart" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.VisualElement.ForeColor" Value="White" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.Width" Value="2" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.GradientStyle" Value="Solid" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Gradient" DisplayName="TransparentBackground" Key="TransparentBackground" Capacity="8">
+        <XmlPropertySetting Property="Telerik.WinControls.VisualElement.BackColor" Value="Transparent" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.FillPrimitive.BackColor2" Value="Transparent" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.FillPrimitive.BackColor3" Value="Transparent" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.FillPrimitive.BackColor4" Value="Transparent" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.FillPrimitive.NumberOfColors" Value="1" />
+        <XmlPropertySetting Property="Telerik.WinControls.RadElement.Visibility" Value="Visible" />
+        <XmlPropertySetting Property="Telerik.WinControls.RadElement.ShouldPaint" Value="True" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Border" DisplayName="TransparentBorderChart" Key="TransparentBorderChart" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.VisualElement.ForeColor" Value="Transparent" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.GradientStyle" Value="Solid" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.BoxStyle" Value="SingleBorder" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Gradient" DisplayName="WhiteFill" Key="WhiteFill" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.VisualElement.BackColor" Value="White" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.FillPrimitive.GradientStyle" Value="Solid" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Border" DisplayName="WhiteBorder" Key="WhiteBorder" Capacity="8">
+        <XmlPropertySetting Property="Telerik.WinControls.VisualElement.ForeColor" Value="White" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.GradientStyle" Value="Solid" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.Width" Value="1" />
+        <XmlPropertySetting Property="Telerik.WinControls.RadElement.Visibility" Value="Visible" />
+        <XmlPropertySetting Property="Telerik.WinControls.RadElement.ShouldPaint" Value="True" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Gradient" DisplayName="ChartViewWaterfallFillFalling" Key="ChartViewWaterfallFillFalling" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.FillPrimitive.GradientStyle" Value="Solid" />
+        <XmlPropertySetting Property="Telerik.WinControls.VisualElement.BackColor" Value="249, 75, 75" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Gradient" DisplayName="ChartViewWaterfallFillRaising" Key="ChartViewWaterfallFillRaising" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.FillPrimitive.GradientStyle" Value="Solid" />
+        <XmlPropertySetting Property="Telerik.WinControls.VisualElement.BackColor" Value="40, 188, 74" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Gradient" DisplayName="ChartViewWaterfallFillFallingHover" Key="ChartViewWaterfallFillFallingHover" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.FillPrimitive.GradientStyle" Value="Solid" />
+        <XmlPropertySetting Property="Telerik.WinControls.VisualElement.BackColor" Value="211, 7, 7" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Gradient" DisplayName="ChartViewWaterfallFillRaisingHover" Key="ChartViewWaterfallFillRaisingHover" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.FillPrimitive.GradientStyle" Value="Solid" />
+        <XmlPropertySetting Property="Telerik.WinControls.VisualElement.BackColor" Value="63, 234, 95" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Border" DisplayName="ChartViewAreaBorder" Key="ChartViewAreaBorder" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.VisualElement.ForeColor" Value="160, 160, 160" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.Width" Value="2" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Border" DisplayName="ChartViewAreaBorder2" Key="ChartViewAreaBorder2" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.Width" Value="2" />
+        <XmlPropertySetting Property="Telerik.WinControls.VisualElement.ForeColor" Value="246, 178, 155" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Border" DisplayName="ChartViewAreaBorder3" Key="ChartViewAreaBorder3" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.Width" Value="2" />
+        <XmlPropertySetting Property="Telerik.WinControls.VisualElement.ForeColor" Value="200, 242, 173" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Border" DisplayName="ChartViewAreaBorder4" Key="ChartViewAreaBorder4" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.Width" Value="2" />
+        <XmlPropertySetting Property="Telerik.WinControls.VisualElement.ForeColor" Value="136, 167, 216" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Border" DisplayName="ChartViewAreaBorder5" Key="ChartViewAreaBorder5" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.Width" Value="2" />
+        <XmlPropertySetting Property="Telerik.WinControls.VisualElement.ForeColor" Value="244, 184, 235" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Border" DisplayName="ChartViewAreaBorder6" Key="ChartViewAreaBorder6" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.Width" Value="2" />
+        <XmlPropertySetting Property="Telerik.WinControls.VisualElement.ForeColor" Value="175, 249, 247" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Border" DisplayName="ChartViewAreaBorder7" Key="ChartViewAreaBorder7" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.Width" Value="2" />
+        <XmlPropertySetting Property="Telerik.WinControls.VisualElement.ForeColor" Value="60, 211, 204" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Border" DisplayName="ChartViewAreaBorder8" Key="ChartViewAreaBorder8" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.Width" Value="2" />
+        <XmlPropertySetting Property="Telerik.WinControls.VisualElement.ForeColor" Value="252, 195, 182" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Gradient" DisplayName="ChartViewAreaSolid" Key="ChartViewAreaSolid" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.FillPrimitive.GradientStyle" Value="Solid" />
+        <XmlPropertySetting Property="Telerik.WinControls.VisualElement.BackColor" Value="125, 125, 125" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Gradient" DisplayName="ChartViewAreaSolid2" Key="ChartViewAreaSolid2" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.FillPrimitive.GradientStyle" Value="Solid" />
+        <XmlPropertySetting Property="Telerik.WinControls.VisualElement.BackColor" Value="233, 132, 132" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Gradient" DisplayName="ChartViewAreaSolid3" Key="ChartViewAreaSolid3" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.FillPrimitive.GradientStyle" Value="Solid" />
+        <XmlPropertySetting Property="Telerik.WinControls.VisualElement.BackColor" Value="185, 220, 165" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Gradient" DisplayName="ChartViewAreaSolid4" Key="ChartViewAreaSolid4" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.VisualElement.BackColor" Value="132, 144, 183" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.FillPrimitive.GradientStyle" Value="Solid" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Gradient" DisplayName="ChartViewAreaSolid5" Key="ChartViewAreaSolid5" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.FillPrimitive.GradientStyle" Value="Solid" />
+        <XmlPropertySetting Property="Telerik.WinControls.VisualElement.BackColor" Value="212, 142, 191" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Gradient" DisplayName="ChartViewAreaSolid6" Key="ChartViewAreaSolid6" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.FillPrimitive.GradientStyle" Value="Solid" />
+        <XmlPropertySetting Property="Telerik.WinControls.VisualElement.BackColor" Value="165, 220, 220" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Gradient" DisplayName="ChartViewAreaSolid7" Key="ChartViewAreaSolid7" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.FillPrimitive.GradientStyle" Value="Solid" />
+        <XmlPropertySetting Property="Telerik.WinControls.VisualElement.BackColor" Value="74, 175, 175" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Gradient" DisplayName="ChartViewAreaSolid8" Key="ChartViewAreaSolid8" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.FillPrimitive.GradientStyle" Value="Solid" />
+        <XmlPropertySetting Property="Telerik.WinControls.VisualElement.BackColor" Value="220, 181, 165" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Gradient" DisplayName="ChartViewAreaTransparent" Key="ChartViewAreaTransparent" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.FillPrimitive.GradientStyle" Value="Solid" />
+        <XmlPropertySetting Property="Telerik.WinControls.VisualElement.BackColor" Value="215, 125, 125, 125" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Gradient" DisplayName="ChartViewAreaTransparent2" Key="ChartViewAreaTransparent2" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.FillPrimitive.GradientStyle" Value="Solid" />
+        <XmlPropertySetting Property="Telerik.WinControls.VisualElement.BackColor" Value="215, 233, 132, 132" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Gradient" DisplayName="ChartViewAreaTransparent3" Key="ChartViewAreaTransparent3" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.FillPrimitive.GradientStyle" Value="Solid" />
+        <XmlPropertySetting Property="Telerik.WinControls.VisualElement.BackColor" Value="215, 185, 220, 165" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Gradient" DisplayName="ChartViewAreaTransparent4" Key="ChartViewAreaTransparent4" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.VisualElement.BackColor" Value="215, 132, 144, 183" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.FillPrimitive.GradientStyle" Value="Solid" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Gradient" DisplayName="ChartViewAreaTransparent5" Key="ChartViewAreaTransparent5" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.FillPrimitive.GradientStyle" Value="Solid" />
+        <XmlPropertySetting Property="Telerik.WinControls.VisualElement.BackColor" Value="215, 212, 142, 191" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Gradient" DisplayName="ChartViewAreaTransparent6" Key="ChartViewAreaTransparent6" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.FillPrimitive.GradientStyle" Value="Solid" />
+        <XmlPropertySetting Property="Telerik.WinControls.VisualElement.BackColor" Value="215, 165, 220, 220" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Gradient" DisplayName="ChartViewAreaTransparent7" Key="ChartViewAreaTransparent7" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.FillPrimitive.GradientStyle" Value="Solid" />
+        <XmlPropertySetting Property="Telerik.WinControls.VisualElement.BackColor" Value="215, 74, 175, 175" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Gradient" DisplayName="ChartViewAreaTransparent8" Key="ChartViewAreaTransparent8" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.FillPrimitive.GradientStyle" Value="Solid" />
+        <XmlPropertySetting Property="Telerik.WinControls.VisualElement.BackColor" Value="215, 220, 181, 165" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Gradient" DisplayName="ChartViewBarAreaAnimated" Key="ChartViewBarAreaAnimated" Capacity="4">
+        <XmlAnimatedPropertySetting StartValueIsCurrentValue="False" EndValue="102, 102, 102" Property="Telerik.WinControls.VisualElement.BackColor" Value="" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.FillPrimitive.GradientStyle" Value="Solid" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Gradient" DisplayName="ChartViewBarAreaAnimated2" Key="ChartViewBarAreaAnimated2" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.FillPrimitive.GradientStyle" Value="Solid" />
+        <XmlAnimatedPropertySetting StartValueIsCurrentValue="False" EndValue="230, 115, 115" Property="Telerik.WinControls.VisualElement.BackColor" Value="" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Gradient" DisplayName="ChartViewBarAreaAnimated3" Key="ChartViewBarAreaAnimated3" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.FillPrimitive.GradientStyle" Value="Solid" />
+        <XmlAnimatedPropertySetting StartValueIsCurrentValue="False" EndValue="173, 214, 149" Property="Telerik.WinControls.VisualElement.BackColor" Value="" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Gradient" DisplayName="ChartViewBarAreaAnimated4" Key="ChartViewBarAreaAnimated4" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.FillPrimitive.GradientStyle" Value="Solid" />
+        <XmlAnimatedPropertySetting StartValueIsCurrentValue="False" EndValue="110, 125, 170" Property="Telerik.WinControls.VisualElement.BackColor" Value="" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Gradient" DisplayName="ChartViewBarAreaAnimated5" Key="ChartViewBarAreaAnimated5" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.FillPrimitive.GradientStyle" Value="Solid" />
+        <XmlAnimatedPropertySetting StartValueIsCurrentValue="False" EndValue="204, 122, 180" Property="Telerik.WinControls.VisualElement.BackColor" Value="" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Gradient" DisplayName="ChartViewBarAreaAnimated6" Key="ChartViewBarAreaAnimated6" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.FillPrimitive.GradientStyle" Value="Solid" />
+        <XmlAnimatedPropertySetting StartValueIsCurrentValue="False" EndValue="149, 214, 214" Property="Telerik.WinControls.VisualElement.BackColor" Value="" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Gradient" DisplayName="ChartViewBarAreaAnimated7" Key="ChartViewBarAreaAnimated7" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.FillPrimitive.GradientStyle" Value="Solid" />
+        <XmlAnimatedPropertySetting StartValueIsCurrentValue="False" EndValue="42, 161, 161" Property="Telerik.WinControls.VisualElement.BackColor" Value="" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Gradient" DisplayName="ChartViewBarAreaAnimated8" Key="ChartViewBarAreaAnimated8" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.FillPrimitive.GradientStyle" Value="Solid" />
+        <XmlAnimatedPropertySetting StartValueIsCurrentValue="False" EndValue="214, 168, 149" Property="Telerik.WinControls.VisualElement.BackColor" Value="" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Gradient" DisplayName="ChartViewBarAreaHoverAnimated" Key="ChartViewBarAreaHoverAnimated" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.FillPrimitive.GradientStyle" Value="Solid" />
+        <XmlAnimatedPropertySetting StartValueIsCurrentValue="False" EndValue="68, 68, 68" Property="Telerik.WinControls.VisualElement.BackColor" Value="" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Gradient" DisplayName="ChartViewBarAreaHoverAnimated2" Key="ChartViewBarAreaHoverAnimated2" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.FillPrimitive.GradientStyle" Value="Solid" />
+        <XmlAnimatedPropertySetting StartValueIsCurrentValue="False" EndValue="224, 90, 90" Property="Telerik.WinControls.VisualElement.BackColor" Value="" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Gradient" DisplayName="ChartViewBarAreaHoverAnimated3" Key="ChartViewBarAreaHoverAnimated3" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.FillPrimitive.GradientStyle" Value="Solid" />
+        <XmlAnimatedPropertySetting StartValueIsCurrentValue="False" EndValue="144, 206, 103" Property="Telerik.WinControls.VisualElement.BackColor" Value="" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Gradient" DisplayName="ChartViewBarAreaHoverAnimated4" Key="ChartViewBarAreaHoverAnimated4" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.FillPrimitive.GradientStyle" Value="Solid" />
+        <XmlAnimatedPropertySetting StartValueIsCurrentValue="False" EndValue="77, 110, 163" Property="Telerik.WinControls.VisualElement.BackColor" Value="" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Gradient" DisplayName="ChartViewBarAreaHoverAnimated5" Key="ChartViewBarAreaHoverAnimated5" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.FillPrimitive.GradientStyle" Value="Solid" />
+        <XmlAnimatedPropertySetting StartValueIsCurrentValue="False" EndValue="204, 94, 183" Property="Telerik.WinControls.VisualElement.BackColor" Value="" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Gradient" DisplayName="ChartViewBarAreaHoverAnimated6" Key="ChartViewBarAreaHoverAnimated6" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.FillPrimitive.GradientStyle" Value="Solid" />
+        <XmlAnimatedPropertySetting StartValueIsCurrentValue="False" EndValue="101, 206, 198" Property="Telerik.WinControls.VisualElement.BackColor" Value="" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Gradient" DisplayName="ChartViewBarAreaHoverAnimated7" Key="ChartViewBarAreaHoverAnimated7" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.FillPrimitive.GradientStyle" Value="Solid" />
+        <XmlAnimatedPropertySetting StartValueIsCurrentValue="False" EndValue="0, 145, 138" Property="Telerik.WinControls.VisualElement.BackColor" Value="" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Gradient" DisplayName="ChartViewBarAreaHoverAnimated8" Key="ChartViewBarAreaHoverAnimated8" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.FillPrimitive.GradientStyle" Value="Solid" />
+        <XmlAnimatedPropertySetting StartValueIsCurrentValue="False" EndValue="211, 146, 122" Property="Telerik.WinControls.VisualElement.BackColor" Value="" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Border" DisplayName="ChartViewBarBorderAnimated" Key="ChartViewBarBorderAnimated" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.BoxStyle" Value="SingleBorder" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.GradientStyle" Value="Solid" />
+        <XmlAnimatedPropertySetting StartValueIsCurrentValue="False" EndValue="102, 102, 102" Property="Telerik.WinControls.VisualElement.ForeColor" Value="" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Border" DisplayName="ChartViewBarBorderAnimated2" Key="ChartViewBarBorderAnimated2" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.BoxStyle" Value="SingleBorder" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.GradientStyle" Value="Solid" />
+        <XmlAnimatedPropertySetting StartValueIsCurrentValue="False" EndValue="230, 115, 115" Property="Telerik.WinControls.VisualElement.ForeColor" Value="" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Border" DisplayName="ChartViewBarBorderAnimated3" Key="ChartViewBarBorderAnimated3" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.BoxStyle" Value="SingleBorder" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.GradientStyle" Value="Solid" />
+        <XmlAnimatedPropertySetting StartValueIsCurrentValue="False" EndValue="173, 214, 149" Property="Telerik.WinControls.VisualElement.ForeColor" Value="" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Border" DisplayName="ChartViewBarBorderAnimated4" Key="ChartViewBarBorderAnimated4" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.BoxStyle" Value="SingleBorder" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.GradientStyle" Value="Solid" />
+        <XmlAnimatedPropertySetting StartValueIsCurrentValue="False" EndValue="110, 125, 170" Property="Telerik.WinControls.VisualElement.ForeColor" Value="" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Border" DisplayName="ChartViewBarBorderAnimated5" Key="ChartViewBarBorderAnimated5" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.BoxStyle" Value="SingleBorder" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.GradientStyle" Value="Solid" />
+        <XmlAnimatedPropertySetting StartValueIsCurrentValue="False" EndValue="204, 122, 180" Property="Telerik.WinControls.VisualElement.ForeColor" Value="" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Border" DisplayName="ChartViewBarBorderAnimated6" Key="ChartViewBarBorderAnimated6" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.BoxStyle" Value="SingleBorder" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.GradientStyle" Value="Solid" />
+        <XmlAnimatedPropertySetting StartValueIsCurrentValue="False" EndValue="149, 214, 214" Property="Telerik.WinControls.VisualElement.ForeColor" Value="" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Border" DisplayName="ChartViewBarBorderAnimated7" Key="ChartViewBarBorderAnimated7" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.BoxStyle" Value="SingleBorder" />
+        <XmlAnimatedPropertySetting StartValueIsCurrentValue="False" EndValue="1" Property="Telerik.WinControls.Primitives.BorderPrimitive.Width" Value="" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.GradientStyle" Value="Solid" />
+        <XmlAnimatedPropertySetting StartValueIsCurrentValue="False" EndValue="0, 145, 138" Property="Telerik.WinControls.VisualElement.ForeColor" Value="" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Border" DisplayName="ChartViewBarBorderAnimated8" Key="ChartViewBarBorderAnimated8" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.BoxStyle" Value="SingleBorder" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.GradientStyle" Value="Solid" />
+        <XmlAnimatedPropertySetting StartValueIsCurrentValue="False" EndValue="214, 168, 149" Property="Telerik.WinControls.VisualElement.ForeColor" Value="" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Border" DisplayName="ChartViewBarBorderHoverAnimated" Key="ChartViewBarBorderHoverAnimated" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.BoxStyle" Value="SingleBorder" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.Width" Value="1" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.GradientStyle" Value="Solid" />
+        <XmlPropertySetting Property="Telerik.WinControls.VisualElement.ForeColor" Value="68, 68, 68" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Border" DisplayName="ChartViewBarBorderHoverAnimated2" Key="ChartViewBarBorderHoverAnimated2" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.BoxStyle" Value="SingleBorder" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.Width" Value="1" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.GradientStyle" Value="Solid" />
+        <XmlPropertySetting Property="Telerik.WinControls.VisualElement.ForeColor" Value="224, 90, 90" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Border" DisplayName="ChartViewBarBorderHoverAnimated3" Key="ChartViewBarBorderHoverAnimated3" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.BoxStyle" Value="SingleBorder" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.Width" Value="1" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.GradientStyle" Value="Solid" />
+        <XmlPropertySetting Property="Telerik.WinControls.VisualElement.ForeColor" Value="144, 206, 103" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Border" DisplayName="ChartViewBarBorderHoverAnimated4" Key="ChartViewBarBorderHoverAnimated4" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.BoxStyle" Value="SingleBorder" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.Width" Value="1" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.GradientStyle" Value="Solid" />
+        <XmlPropertySetting Property="Telerik.WinControls.VisualElement.ForeColor" Value="77, 110, 163" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Border" DisplayName="ChartViewBarBorderHoverAnimated5" Key="ChartViewBarBorderHoverAnimated5" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.BoxStyle" Value="SingleBorder" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.Width" Value="1" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.GradientStyle" Value="Solid" />
+        <XmlPropertySetting Property="Telerik.WinControls.VisualElement.ForeColor" Value="204, 94, 183" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Border" DisplayName="ChartViewBarBorderHoverAnimated6" Key="ChartViewBarBorderHoverAnimated6" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.BoxStyle" Value="SingleBorder" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.Width" Value="1" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.GradientStyle" Value="Solid" />
+        <XmlPropertySetting Property="Telerik.WinControls.VisualElement.ForeColor" Value="101, 206, 198" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Border" DisplayName="ChartViewBarBorderHoverAnimated7" Key="ChartViewBarBorderHoverAnimated7" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.BoxStyle" Value="SingleBorder" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.Width" Value="1" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.GradientStyle" Value="Solid" />
+        <XmlPropertySetting Property="Telerik.WinControls.VisualElement.ForeColor" Value="0, 145, 138" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Border" DisplayName="ChartViewBarBorderHoverAnimated8" Key="ChartViewBarBorderHoverAnimated8" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.BoxStyle" Value="SingleBorder" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.Width" Value="1" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.GradientStyle" Value="Solid" />
+        <XmlPropertySetting Property="Telerik.WinControls.VisualElement.ForeColor" Value="211, 146, 122" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Border" DisplayName="ChartViewLineFalling" Key="ChartViewLineFalling" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.BoxStyle" Value="SingleBorder" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.GradientStyle" Value="Solid" />
+        <XmlPropertySetting Property="Telerik.WinControls.VisualElement.ForeColor" Value="175, 175, 175" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Border" DisplayName="ChartViewLineFalling2" Key="ChartViewLineFalling2" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.BoxStyle" Value="SingleBorder" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.GradientStyle" Value="Solid" />
+        <XmlPropertySetting Property="Telerik.WinControls.VisualElement.ForeColor" Value="252, 13, 13" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Border" DisplayName="ChartViewLineFalling3" Key="ChartViewLineFalling3" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.BoxStyle" Value="SingleBorder" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.GradientStyle" Value="Solid" />
+        <XmlPropertySetting Property="Telerik.WinControls.VisualElement.ForeColor" Value="6, 239, 77" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Border" DisplayName="ChartViewLineFalling4" Key="ChartViewLineFalling4" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.BoxStyle" Value="SingleBorder" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.GradientStyle" Value="Solid" />
+        <XmlPropertySetting Property="Telerik.WinControls.VisualElement.ForeColor" Value="6, 75, 249" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Border" DisplayName="ChartViewLineFalling5" Key="ChartViewLineFalling5" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.BoxStyle" Value="SingleBorder" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.GradientStyle" Value="Solid" />
+        <XmlPropertySetting Property="Telerik.WinControls.VisualElement.ForeColor" Value="247, 8, 191" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Border" DisplayName="ChartViewLineFalling6" Key="ChartViewLineFalling6" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.BoxStyle" Value="SingleBorder" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.GradientStyle" Value="Solid" />
+        <XmlPropertySetting Property="Telerik.WinControls.VisualElement.ForeColor" Value="6, 247, 240" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Border" DisplayName="ChartViewLineFalling7" Key="ChartViewLineFalling7" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.BoxStyle" Value="SingleBorder" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.GradientStyle" Value="Solid" />
+        <XmlPropertySetting Property="Telerik.WinControls.VisualElement.ForeColor" Value="0, 84, 82" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Border" DisplayName="ChartViewLineFalling8" Key="ChartViewLineFalling8" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.BoxStyle" Value="SingleBorder" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.GradientStyle" Value="Solid" />
+        <XmlPropertySetting Property="Telerik.WinControls.VisualElement.ForeColor" Value="237, 72, 15" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Border" DisplayName="ChartViewLine" Key="ChartViewLine" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.BoxStyle" Value="SingleBorder" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.GradientStyle" Value="Solid" />
+        <XmlPropertySetting Property="Telerik.WinControls.VisualElement.ForeColor" Value="102, 102, 102" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.Width" Value="2" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Border" DisplayName="ChartViewLine2" Key="ChartViewLine2" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.BoxStyle" Value="SingleBorder" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.GradientStyle" Value="Solid" />
+        <XmlPropertySetting Property="Telerik.WinControls.VisualElement.ForeColor" Value="230, 115, 115" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.Width" Value="2" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Border" DisplayName="ChartViewLine3" Key="ChartViewLine3" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.BoxStyle" Value="SingleBorder" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.GradientStyle" Value="Solid" />
+        <XmlPropertySetting Property="Telerik.WinControls.VisualElement.ForeColor" Value="173, 214, 149" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.Width" Value="2" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Border" DisplayName="ChartViewLine4" Key="ChartViewLine4" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.BoxStyle" Value="SingleBorder" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.GradientStyle" Value="Solid" />
+        <XmlPropertySetting Property="Telerik.WinControls.VisualElement.ForeColor" Value="110, 125, 170" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.Width" Value="2" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Border" DisplayName="ChartViewLine5" Key="ChartViewLine5" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.BoxStyle" Value="SingleBorder" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.GradientStyle" Value="Solid" />
+        <XmlPropertySetting Property="Telerik.WinControls.VisualElement.ForeColor" Value="204, 122, 180" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.Width" Value="2" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Border" DisplayName="ChartViewLine6" Key="ChartViewLine6" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.BoxStyle" Value="SingleBorder" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.GradientStyle" Value="Solid" />
+        <XmlPropertySetting Property="Telerik.WinControls.VisualElement.ForeColor" Value="149, 214, 214" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.Width" Value="2" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Border" DisplayName="ChartViewLine7" Key="ChartViewLine7" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.BoxStyle" Value="SingleBorder" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.GradientStyle" Value="Solid" />
+        <XmlPropertySetting Property="Telerik.WinControls.VisualElement.ForeColor" Value="42, 161, 161" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.Width" Value="2" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Border" DisplayName="ChartViewLine8" Key="ChartViewLine8" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.BoxStyle" Value="SingleBorder" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.GradientStyle" Value="Solid" />
+        <XmlPropertySetting Property="Telerik.WinControls.VisualElement.ForeColor" Value="214, 168, 149" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.Width" Value="2" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Border" DisplayName="ChartViewLineRaising" Key="ChartViewLineRaising" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.BoxStyle" Value="SingleBorder" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.GradientStyle" Value="Solid" />
+        <XmlPropertySetting Property="Telerik.WinControls.VisualElement.ForeColor" Value="102, 102, 102" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Border" DisplayName="ChartViewLineRaising2" Key="ChartViewLineRaising2" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.BoxStyle" Value="SingleBorder" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.GradientStyle" Value="Solid" />
+        <XmlPropertySetting Property="Telerik.WinControls.VisualElement.ForeColor" Value="230, 115, 115" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Border" DisplayName="ChartViewLineRaising3" Key="ChartViewLineRaising3" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.BoxStyle" Value="SingleBorder" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.GradientStyle" Value="Solid" />
+        <XmlPropertySetting Property="Telerik.WinControls.VisualElement.ForeColor" Value="173, 214, 149" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Border" DisplayName="ChartViewLineRaising4" Key="ChartViewLineRaising4" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.BoxStyle" Value="SingleBorder" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.GradientStyle" Value="Solid" />
+        <XmlPropertySetting Property="Telerik.WinControls.VisualElement.ForeColor" Value="110, 125, 170" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Border" DisplayName="ChartViewLineRaising5" Key="ChartViewLineRaising5" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.BoxStyle" Value="SingleBorder" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.GradientStyle" Value="Solid" />
+        <XmlPropertySetting Property="Telerik.WinControls.VisualElement.ForeColor" Value="204, 122, 180" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Border" DisplayName="ChartViewLineRaising6" Key="ChartViewLineRaising6" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.BoxStyle" Value="SingleBorder" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.GradientStyle" Value="Solid" />
+        <XmlPropertySetting Property="Telerik.WinControls.VisualElement.ForeColor" Value="149, 214, 214" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Border" DisplayName="ChartViewLineRaising7" Key="ChartViewLineRaising7" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.BoxStyle" Value="SingleBorder" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.GradientStyle" Value="Solid" />
+        <XmlPropertySetting Property="Telerik.WinControls.VisualElement.ForeColor" Value="42, 161, 161" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Border" DisplayName="ChartViewLineRaising8" Key="ChartViewLineRaising8" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.BoxStyle" Value="SingleBorder" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.GradientStyle" Value="Solid" />
+        <XmlPropertySetting Property="Telerik.WinControls.VisualElement.ForeColor" Value="214, 168, 149" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Text" DisplayName="SegoeUISemibold9Font" Key="SegoeUISemibold9Font" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.VisualElement.Font" Value="Segoe UI Semibold, 9pt" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Border" DisplayName="MainBorderLeftRight" Key="MainBorderLeftRight" Capacity="16">
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.GradientStyle" Value="Solid" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.Width" Value="1" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.BoxStyle" Value="FourBorders" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.BottomColor" Value="Transparent" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.LeftColor" Value="172, 172, 172" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.RightColor" Value="172, 172, 172" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.TopShadowColor" Value="Transparent" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.TopColor" Value="Transparent" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.RightShadowColor" Value="Transparent" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.LeftShadowColor" Value="Transparent" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.BottomShadowColor" Value="Transparent" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.BorderDrawMode" Value="VerticalOverHorizontal" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Layout" DisplayName="Margin(1;0;0;0)" Key="Margin(1;0;0;0)" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.RadElement.Margin" Value="1, 0, 0, 0" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Layout" DisplayName="Margin(-2;0;0;0)" Key="Margin(-2;0;0;0)" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.RadElement.Margin" Value="-2, 0, 0, 0" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Layout" DisplayName="Margin(0;3;0;2)" Key="Margin(0;3;0;2)" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.RadElement.Margin" Value="0, 3, 0, 2" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Gradient" DisplayName="AccentPressedFill" Key="AccentPressedFill" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.FillPrimitive.GradientStyle" Value="Solid" />
+        <XmlPropertySetting Property="Telerik.WinControls.VisualElement.BackColor" Value="149, 147, 224" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.FillPrimitive.NumberOfColors" Value="1" />
+        <XmlPropertySetting Property="Telerik.WinControls.VisualElement.SmoothingMode" Value="None" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Layout" DisplayName="Padding(0;0;0;2)" Key="Padding(0;0;0;2)" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.RadElement.Padding" Value="0, 0, 0, 2" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Border" DisplayName="LeftTransparentBorder" Key="LeftTransparentBorder" Capacity="16">
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.BoxStyle" Value="FourBorders" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.TopWidth" Value="0" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.RightWidth" Value="0" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.LeftWidth" Value="1" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.BottomShadowColor" Value="Transparent" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.BottomWidth" Value="0" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.LeftColor" Value="Transparent" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.LeftShadowColor" Value="Transparent" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.RightShadowColor" Value="Transparent" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.TopShadowColor" Value="Transparent" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Text" DisplayName="AccentForeColor" Key="AccentForeColor" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.VisualElement.ForeColor" Value="75, 40, 109" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Layout" DisplayName="Padding(1;3;1;3)" Key="Padding(1;3;1;3)" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.RadElement.Padding" Value="1, 3, 1, 3" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Text" DisplayName="MainForeColor" Key="MainForeColor" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.VisualElement.ForeColor" Value="Black" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Layout" DisplayName="Margin(4;4;4;4)" Key="Margin(4;4;4;4)" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.RadElement.Margin" Value="4, 4, 4, 4" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Border" DisplayName="TransparentBottomBorder" Key="TransparentBottomBorder" Capacity="8">
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.BoxStyle" Value="FourBorders" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.TopWidth" Value="0" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.RightWidth" Value="0" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.LeftWidth" Value="0" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.BottomShadowColor" Value="Transparent" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.BottomColor" Value="Transparent" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.BottomWidth" Value="3" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Border" DisplayName="AccentBottomBorder3px" Key="AccentBottomBorder3px" Capacity="8">
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.BoxStyle" Value="FourBorders" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.TopWidth" Value="0" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.RightWidth" Value="0" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.LeftWidth" Value="0" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.BottomShadowColor" Value="Transparent" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.BottomColor" Value="75, 40, 109" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.BottomWidth" Value="3" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Image" DisplayName="OptionsButtonImage" Key="OptionsButtonImage" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.ImagePrimitive.Image" Value="Qk02BAAAAAAAADYAAAAoAAAAEAAAABAAAAABACAAAAAAAAAAAADEDgAAxA4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADIyMpgzMzP/MzMz/zIyMqIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAxMTG+MzMz/zMzM/8xMTG+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAyMjJ5MTExgjExMRozMzO3Hx8f+zMzM/8zMzP/Hx8f+zMzM7cxMTEaMTExgjIyMnkAAAAAAAAAAAAAAAA2NjYcHx8f+zMzM/8zMzP/MzMz/zMzM/8zMzP/MzMz/zMzM/8zMzP/MzMz/zMzM/8fHx/7NjY2HAAAAAAAAAAAMzMzrTMzM/8zMzP/MzMz/zMzM/8wMDDiMzMzgTMzM4EwMDDiMzMz/zMzM/8zMzP/MzMz/zIyMrEAAAAAAAAAADY2NhwyMjLZMzMz/zMzM/8zMzPgKioqBgAAAAAAAAAAKioqBjMzM+AzMzP/MzMz/zIyMtk2NjYcAAAAAAAAAAAAAAAAMzMzQDMzM/8zMzP/MjIyiQAAAAAAAAAAAAAAAAAAAAAyMjKJMzMz/zMzM/8zMzNAAAAAAAAAAAAAAAAAAAAAADQ0NDozMzP/MzMz/zIyMokAAAAAAAAAAAAAAAAAAAAAMjIyiTMzM/8zMzP/NDQ0OgAAAAAAAAAAAAAAADIyMiMyMjLZMzMz/zMzM/8zMzPgKioqBgAAAAAAAAAAKioqBjMzM+AzMzP/MzMz/zIyMtk2NjYcAAAAAAAAAAAzMzOtMzMz/zMzM/8zMzP/MzMz/zAwMOIzMzOBMzMzgTAwMOIzMzP/MzMz/zMzM/8zMzP/MzMzrQAAAAAAAAAANjY2HB8fH/szMzP/MzMz/zMzM/8zMzP/MzMz/zMzM/8zMzP/MzMz/zMzM/8zMzP/Hx8f+zY2NhwAAAAAAAAAAAAAAAAyMjJ5MTExgjExMRozMzO3Hx8f+zMzM/8zMzP/Hx8f+zMzM7cxMTEaMTExgjIyMnkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADExMb4zMzP/MzMz/zExMb4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAyMjKiMzMz/zMzM/8yMjKiAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Gradient" DisplayName="AccentMouseOverFill" Key="AccentMouseOverFill" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.FillPrimitive.GradientStyle" Value="Solid" />
+        <XmlPropertySetting Property="Telerik.WinControls.VisualElement.BackColor" Value="166, 165, 230" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.FillPrimitive.NumberOfColors" Value="1" />
+        <XmlPropertySetting Property="Telerik.WinControls.VisualElement.SmoothingMode" Value="None" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Layout" DisplayName="Margin(-1;0;0;0)" Key="Margin(-1;0;0;0)" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.RadElement.Margin" Value="-1, 0, 0, 0" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Border" DisplayName="AccentMouseOverBorderLeftRightMainTopBottom" Key="AccentMouseOverBorderLeftRightMainTopBottom" Capacity="32">
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.GradientStyle" Value="Solid" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.Width" Value="1" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.BoxStyle" Value="FourBorders" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.BottomColor" Value="172, 172, 172" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.LeftColor" Value="143, 118, 252" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.RightColor" Value="143, 118, 252" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.TopShadowColor" Value="Transparent" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.TopColor" Value="172, 172, 172" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.RightShadowColor" Value="Transparent" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.LeftShadowColor" Value="Transparent" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.BottomShadowColor" Value="Transparent" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.BorderDrawMode" Value="VerticalOverHorizontal" />
+        <XmlPropertySetting Property="Telerik.WinControls.RadElement.Visibility" Value="Visible" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.RightWidth" Value="3" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.LeftWidth" Value="3" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.TopWidth" Value="1" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.BottomWidth" Value="1" />
+        <XmlPropertySetting Property="Telerik.WinControls.RadElement.ZIndex" Value="2" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Layout" DisplayName="Margin(-1;-1;0;-1)" Key="Margin(-1;-1;0;-1)" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.RadElement.Margin" Value="-1, -1, 0, -1" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Layout" DisplayName="MaxSize(1;0)" Key="MaxSize(1;0)" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.RadElement.MaxSize" Value="1, 0" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Layout" DisplayName="Padding(0;3;0;2)" Key="Padding(0;3;0;2)" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.RadElement.Padding" Value="0, 3, 0, 2" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Text" DisplayName="GlyphText18" Key="GlyphText18" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.VisualElement.CustomFont" Value="TelerikWebUI" />
+        <XmlPropertySetting Property="Telerik.WinControls.VisualElement.CustomFontSize" Value="18" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Layout" DisplayName="Margin(0;8;0;8)" Key="Margin(0;8;0;8)" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.RadElement.Margin" Value="0, 8, 0, 8" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Layout" DisplayName="Margin(8;0;8;0)" Key="Margin(8;0;8;0)" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.RadElement.Margin" Value="8, 0, 8, 0" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Layout" DisplayName="Margin(0;-1;0;0)" Key="Margin(0;-1;0;0)" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.RadElement.Margin" Value="0, -1, 0, 0" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Image" DisplayName="HelpIconImage" Key="HelpIconImage" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.ImagePrimitive.Image" Value="Qk02BAAAAAAAADYAAAAoAAAAEAAAABAAAAABACAAAAAAAAAAAADEDgAAxA4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGFhYTdgYGC3YGBg8WBgYP9gYGD/YGBg8WBgYLdhYWE3AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAVVVVBmBgYLdgYGD0X19fjVxcXCEAAAAAAAAAAFxcXCFfX1+NYGBg9GBgYLdVVVUGAAAAAAAAAAAAAAAAVVVVBmBgYNlfX1/DVVVVBgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFVVVQZfX1/DYGBg2VVVVQYAAAAAAAAAAF5eXrpgYGC+AAAAAAAAAAAAAAAAAAAAAGBgYP9gYGD/AAAAAAAAAAAAAAAAAAAAAGBgYL5eXl66AAAAAGBgYEddXV3wVVVVBgAAAAAAAAAAAAAAAAAAAABgYGD/YGBg/wAAAAAAAAAAAAAAAAAAAABVVVUGXV1d8GBgYEdgYGCxX19fjgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAF9fX45gYGCxX19f419fX0AAAAAAAAAAAAAAAAAAAAAAAAAAAGBgYP9gYGD/YWFhFQAAAAAAAAAAAAAAAAAAAABfX19AX19f42BgYP8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABeXl7QYGBg/15eXtBVVVUGAAAAAAAAAAAAAAAAAAAAAGBgYP9gYGD/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAZGRkHF1dXfBgYGD/Xl5eugAAAAAAAAAAAAAAAAAAAABgYGD/X19f419fX0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABfX18zYGBg/19fX/sAAAAAAAAAAAAAAABfX19AX19f42BgYLFfX1+OAAAAAAAAAAAAAAAAX19f+2BgYP9fX19AX19fQGBgYP9fX1/7AAAAAAAAAAAAAAAAX19fjmBgYLFgYGBHXV1d8FVVVQYAAAAAAAAAAGBgYLFgYGD/YGBg/2BgYP9gYGD/YGBgsQAAAAAAAAAAVVVVBl1dXfBgYGBHAAAAAF5eXrpgYGC+AAAAAAAAAABVVVUGYGBgt19fX/tfX1/7YGBgt1VVVQYAAAAAAAAAAGBgYL5eXl66AAAAAAAAAABVVVUGXV1d3V9fX8NVVVUGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAVVVVBl9fX8NdXV3dVVVVBgAAAAAAAAAAAAAAAFVVVQZgYGC3YGBg9F9fX41cXFwhAAAAAAAAAABcXFwhX19fjWBgYPRgYGC3VVVVBgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGFhYTdgYGC3YGBg8WBgYP9gYGD/YGBg8WBgYLdhYWE3AAAAAAAAAAAAAAAAAAAAAA==" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="ImageShape" DisplayName="WizardWelcomeCompletionImageShape" Key="WizardWelcomeCompletionImageShape" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.RadElement.BackgroundShape" Value="77u/PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48UmFkSW1hZ2VTaGFwZSB4bWxuczp4c2Q9Imh0dHA6Ly93d3cudzMub3JnLzIwMDEvWE1MU2NoZW1hIiB4bWxuczp4c2k9Imh0dHA6Ly93d3cudzMub3JnLzIwMDEvWE1MU2NoZW1hLWluc3RhbmNlIj48UGFpbnRNb2RlPkNlbnRlclhTdHJldGNoWTwvUGFpbnRNb2RlPjxJbWFnZVN0cmVhbT5RazJPQWdBQUFBQUFBRFlBQUFBb0FBQUFsZ0FBQUFFQUFBQUJBQ0FBQUFBQUFBQUFBQURFRGdBQXhBNEFBQUFBQUFBQUFBQUEvSGFQLy94MmovLzhkby8vL0hhUC8veDJqLy84ZG8vLy9IYVAvL3gyai8vOGRvLy8vSGFQLy94MmovLzhkby8vL0hhUC8veDJqLy84ZG8vLy9IYVAvL3gyai8vOGRvLy8vSGFQLy94MmovLzhkby8vL0hhUC8veDJqLy84ZG8vLy9IYVAvL3gyai8vOGRvLy8vSGFQLy94MmovLzhkby8vL0hhUC8veDJqLy84ZG8vLy9IYVAvL3gyai8vOGRvLy8vSGFQLy94MmovLzhkby8vL0hhUC8veDJqLy84ZG8vLy9IYVAvL3gyai8vOGRvLy8vSGFQLy94MmovLzhkby8vL0hhUC8veDJqLy84ZG8vLy9IYVAvL3gyai8vOGRvLy8vSGFQLy94MmovLzhkby8vL0hhUC8veDJqLy84ZG8vLy9IYVAvL3gyai8vOGRvLy8vSGFQLy94MmovLzhkby8vL0hhUC8veDJqLy84ZG8vLy9IYVAvL3gyai8vOGRvLy8vSGFQLy94MmovLzhkby8vL0hhUC8veDJqLy84ZG8vLy9IYVAvL3gyai8vOGRvLy8vSGFQLy94MmovLzhkby8vL0hhUC8veDJqLy84ZG8vLy9IYVAvL3gyai8vOGRvLy8vSGFQLy94MmovLzhkby8vL0hhUC8veDJqLy84ZG8vLy9IYVAvL3gyai8vOGRvLy8vSGFQLy94MmovLzhkby8vL0hhUC8veDJqLy84ZG8vLy9IYVAvL3gyai8vOGRvLy8vSGFQLy94MmovLzhkby8vL0hhUC8veDJqLy84ZG8vLy9IYVAvL3gyai8vOGRvLy8vSGFQLy94MmovLzhkby8vL0hhUC8veDJqLy84ZG8vLy9IYVAvL3gyai8vOGRvLy8vSGFQLy94MmovLzhkby8vL0hhUC8veDJqLy84ZG8vLy9IYVAvL3gyai8vOGRvLy8vSGFQLy94MmovLzhkby8vL0hhUC8veDJqLy84ZG8vLy9IYVAvL3gyai8vOGRvLy8vSGFQLy94MmovLzhkby8vL0hhUC8veDJqLy84ZG8vLzwvSW1hZ2VTdHJlYW0+PFBhZGRpbmc+PEFsbD4tMTwvQWxsPjxCb3R0b20+LTIwMDA8L0JvdHRvbT48TGVmdD4wPC9MZWZ0PjxSaWdodD4wPC9SaWdodD48VG9wPjA8L1RvcD48L1BhZGRpbmc+PC9SYWRJbWFnZVNoYXBlPg==" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Layout" DisplayName="Padding(-1;-1;-1;-1)" Key="Padding(-1;-1;-1;-1)" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.RadElement.Padding" Value="-1, -1, -1, -1" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Layout" DisplayName="Padding(5;0;5;0)" Key="Padding(5;0;5;0)" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.RadElement.Padding" Value="5, 0, 5, 0" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Layout" DisplayName="Padding(4;3;4;3)" Key="Padding(4;3;4;3)" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.RadElement.Padding" Value="4, 3, 4, 3" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Layout" DisplayName="Padding(1;0;1;0)" Key="Padding(1;0;1;0)" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.RadElement.Padding" Value="1, 0, 1, 0" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Layout" DisplayName="Padding(-4;0;-5;-3)" Key="Padding(-4;0;-5;-3)" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.RadElement.Padding" Value="-4, 0, -5, -3" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Layout" DisplayName="Padding(0;0;0;-1)" Key="Padding(0;0;0;-1)" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.RadElement.Padding" Value="0, 0, 0, -1" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Layout" DisplayName="Margin(7;7;7;7)" Key="Margin(7;7;7;7)" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.RadElement.Margin" Value="7, 7, 7, 7" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Layout" DisplayName="Padding(7;10;7;8)" Key="Padding(7;10;7;8)" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.RadElement.Padding" Value="7, 10, 7, 8" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Layout" DisplayName="Padding(1;1;1;1)" Key="Padding(1;1;1;1)" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.RadElement.Padding" Value="1, 1, 1, 1" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Image" DisplayName="MenuWhiteImage" Key="MenuWhiteImage" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.ImagePrimitive.Image" Value="Qk02BAAAAAAAADYAAAAoAAAAEAAAABAAAAABACAAAAAAAAAAAADEDgAAxA4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA//////////////////////////////////////////////////////////////////////////8AAAAAAAAAAP//////////////////////////////////////////////////////////////////////////AAAAAAAAAAD//////////////////////////////////////////////////////////////////////////wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD//////////////////////////////////////////////////////////////////////////wAAAAAAAAAA//////////////////////////////////////////////////////////////////////////8AAAAAAAAAAP//////////////////////////////////////////////////////////////////////////AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP//////////////////////////////////////////////////////////////////////////AAAAAAAAAAD//////////////////////////////////////////////////////////////////////////wAAAAAAAAAA//////////////////////////////////////////////////////////////////////////8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Text" DisplayName="AccentPressedForeColor" Key="AccentPressedForeColor" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.VisualElement.ForeColor" Value="149, 147, 224" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Layout" DisplayName="Padding(0;0;0;1)" Key="Padding(0;0;0;1)" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.RadElement.Padding" Value="0, 0, 0, 1" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Layout" DisplayName="Margin(4;0;4;0)" Key="Margin(4;0;4;0)" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.RadElement.Margin" Value="4, 0, 4, 0" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Layout" DisplayName="Margin(0;0;0;-1)" Key="Margin(0;0;0;-1)" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.RadElement.Margin" Value="0, 0, 0, -1" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Layout" DisplayName="Padding(0;1;0;0)" Key="Padding(0;1;0;0)" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.RadElement.Padding" Value="0, 1, 0, 0" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Layout" DisplayName="MinSize(0;8)" Key="MinSize(0;8)" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.RadElement.MinSize" Value="0, 8" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Layout" DisplayName="MinSize(24;24)" Key="MinSize(24;24)" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.RadElement.MinSize" Value="24, 24" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Layout" DisplayName="MinSize(0;48)" Key="MinSize(0;48)" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.RadElement.MinSize" Value="0, 48" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="ImageShape" DisplayName="RightMainShrunkBorderImageShape" Key="RightMainShrunkBorderImageShape" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.RadElement.BackgroundShape" Value="77u/PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48UmFkSW1hZ2VTaGFwZSB4bWxuczp4c2Q9Imh0dHA6Ly93d3cudzMub3JnLzIwMDEvWE1MU2NoZW1hIiB4bWxuczp4c2k9Imh0dHA6Ly93d3cudzMub3JnLzIwMDEvWE1MU2NoZW1hLWluc3RhbmNlIj48UGFpbnRNb2RlPlN0cmV0Y2hYVGlsZVk8L1BhaW50TW9kZT48SW1hZ2VTdHJlYW0+UWsxZUFBQUFBQUFBQURZQUFBQW9BQUFBQ2dBQUFBRUFBQUFCQUNBQUFBQUFBQUFBQUFERURnQUF4QTRBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBckt5cy93PT08L0ltYWdlU3RyZWFtPjxNYXJnaW5zPjxBbGw+LTE8L0FsbD48Qm90dG9tPjA8L0JvdHRvbT48TGVmdD4wPC9MZWZ0PjxSaWdodD4yPC9SaWdodD48VG9wPjA8L1RvcD48L01hcmdpbnM+PFBhZGRpbmc+PEFsbD4tMTwvQWxsPjxCb3R0b20+NjwvQm90dG9tPjxMZWZ0PjA8L0xlZnQ+PFJpZ2h0PjA8L1JpZ2h0PjxUb3A+NjwvVG9wPjwvUGFkZGluZz48L1JhZEltYWdlU2hhcGU+" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Layout" DisplayName="Margin(0;1;0;0)" Key="Margin(0;1;0;0)" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.RadElement.Margin" Value="0, 1, 0, 0" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Layout" DisplayName="MinSize(12;12)" Key="MinSize(12;12)" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.RadElement.MinSize" Value="12, 12" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Shape" DisplayName="RombShape" Key="RombShape" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.RadElement.Shape" Value="Telerik.WinControls.CustomShape|20,20,200,100:120,21.62393,False,0,0,0,0,0:217.6068,70.85471,False,0,0,0,0,0:120,120,False,0,0,0,0,0:20,71.53846,False,0,0,0,0,0:" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Layout" DisplayName="Margin(0;0;-1;0)" Key="Margin(0;0;-1;0)" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.RadElement.Margin" Value="0, 0, -1, 0" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Text" DisplayName="DisabledForeColor" Key="DisabledForeColor" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.VisualElement.ForeColor" Value="166, 166, 166" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Layout" DisplayName="Padding(2;2;2;2)" Key="Padding(2;2;2;2)" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.RadElement.Padding" Value="2, 2, 2, 2" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Layout" DisplayName="Padding(3;3;3;3)" Key="Padding(3;3;3;3)" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.RadElement.Padding" Value="3, 3, 3, 3" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Layout" DisplayName="MinSize(9;10)" Key="MinSize(9;10)" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.RadElement.MinSize" Value="9, 10" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Layout" DisplayName="Margin(1;0;1;0)" Key="Margin(1;0;1;0)" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.RadElement.Margin" Value="1, 0, 1, 0" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Border" DisplayName="TransparentBottomBorder1px" Key="TransparentBottomBorder1px" Capacity="8">
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.BoxStyle" Value="FourBorders" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.TopWidth" Value="0" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.RightWidth" Value="0" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.LeftWidth" Value="0" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.BottomShadowColor" Value="Transparent" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.BottomColor" Value="Transparent" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.BottomWidth" Value="1" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Layout" DisplayName="Margin(0;0;-1;-1)" Key="Margin(0;0;-1;-1)" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.RadElement.Margin" Value="0, 0, -1, -1" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Layout" DisplayName="Margin(0;0;1;1)" Key="Margin(0;0;1;1)" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.RadElement.Margin" Value="0, 0, 1, 1" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Layout" DisplayName="Padding(1;0;0;0)" Key="Padding(1;0;0;0)" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.RadElement.Padding" Value="1, 0, 0, 0" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Layout" DisplayName="Margin(0;0;2;2)" Key="Margin(0;0;2;2)" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.RadElement.Margin" Value="0, 0, 2, 2" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Layout" DisplayName="Margin(0;-1;-1;-1)" Key="Margin(0;-1;-1;-1)" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.RadElement.Margin" Value="0, -1, -1, -1" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Layout" DisplayName="Margin(0;0;0;0)" Key="Margin(0;0;0;0)" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.RadElement.Margin" Value="0, 0, 0, 0" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Layout" DisplayName="Margin(0;-2;0;0)" Key="Margin(0;-2;0;0)" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.RadElement.Margin" Value="0, -2, 0, 0" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Layout" DisplayName="MinSize(0;0)" Key="MinSize(0;0)" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.RadElement.MinSize" Value="0, 0" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Layout" DisplayName="Padding(0;0;-1;-1)" Key="Padding(0;0;-1;-1)" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.RadElement.Padding" Value="0, 0, -1, -1" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Layout" DisplayName="Margin(2;0;2;0)" Key="Margin(2;0;2;0)" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.RadElement.Margin" Value="2, 0, 2, 0" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Layout" DisplayName="Margin(5;0;5;0)" Key="Margin(5;0;5;0)" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.RadElement.Margin" Value="5, 0, 5, 0" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Text" DisplayName="SegoeUI10.5Font" Key="SegoeUI10.5Font" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.VisualElement.Font" Value="Segoe UI, 10.5pt" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Gradient" DisplayName="AlternativeFill" Key="AlternativeFill" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.FillPrimitive.GradientStyle" Value="Solid" />
+        <XmlPropertySetting Property="Telerik.WinControls.VisualElement.BackColor" Value="241, 241, 241" />
+        <XmlPropertySetting Property="Telerik.WinControls.VisualElement.SmoothingMode" Value="None" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Text" DisplayName="CheckedForeColor30PercentOpacityOverAccent" Key="CheckedForeColor30PercentOpacityOverAccent" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.VisualElement.ForeColor" Value="129, 105, 153" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Layout" DisplayName="Margin(6;5;6;0)" Key="Margin(6;5;6;0)" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.RadElement.Margin" Value="6, 5, 6, 0" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Border" DisplayName="DisabledBorder" Key="DisabledBorder" Capacity="8">
+        <XmlPropertySetting Property="Telerik.WinControls.VisualElement.ForeColor" Value="214, 214, 214" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.GradientStyle" Value="Solid" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.Width" Value="1" />
+        <XmlPropertySetting Property="Telerik.WinControls.VisualElement.SmoothingMode" Value="None" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.BoxStyle" Value="SingleBorder" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Layout" DisplayName="Padding(5;5;5;5)" Key="Padding(5;5;5;5)" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.RadElement.Padding" Value="5, 5, 5, 5" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Border" DisplayName="AccentMouseOverBorder2px" Key="AccentMouseOverBorder2px" Capacity="8">
+        <XmlPropertySetting Property="Telerik.WinControls.VisualElement.ForeColor" Value="143, 118, 252" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.GradientStyle" Value="Solid" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.Width" Value="2" />
+        <XmlPropertySetting Property="Telerik.WinControls.VisualElement.SmoothingMode" Value="None" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.BoxStyle" Value="SingleBorder" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Layout" DisplayName="Padding(2;3;2;2)" Key="Padding(2;3;2;2)" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.RadElement.Padding" Value="2, 3, 2, 2" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Layout" DisplayName="Margin(0;-1;0;-1)" Key="Margin(0;-1;0;-1)" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.RadElement.Margin" Value="0, -1, 0, -1" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Layout" DisplayName="Padding(0;1;0;1)" Key="Padding(0;1;0;1)" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.RadElement.Padding" Value="0, 1, 0, 1" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Layout" DisplayName="Margin(0;0;0;1)" Key="Margin(0;0;0;1)" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.RadElement.Margin" Value="0, 0, 0, 1" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Text" DisplayName="PressedForeColor" Key="PressedForeColor" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.VisualElement.ForeColor" Value="164, 164, 164" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Layout" DisplayName="Margin(0;3;0;3)" Key="Margin(0;3;0;3)" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.RadElement.Margin" Value="0, 3, 0, 3" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Layout" DisplayName="Margin(-1;-1;-1;0)" Key="Margin(-1;-1;-1;0)" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.RadElement.Margin" Value="-1, -1, -1, 0" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Layout" DisplayName="Padding(3;0;3;0)" Key="Padding(3;0;3;0)" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.RadElement.Padding" Value="3, 0, 3, 0" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Border" DisplayName="VisibleBorder" Key="VisibleBorder" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.RadElement.Visibility" Value="Visible" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Border" DisplayName="MainLeftBorder" Key="MainLeftBorder" Capacity="16">
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.BoxStyle" Value="FourBorders" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.TopWidth" Value="0" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.RightWidth" Value="0" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.LeftWidth" Value="1" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.BottomShadowColor" Value="Transparent" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.BottomWidth" Value="0" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.LeftColor" Value="172, 172, 172" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.LeftShadowColor" Value="Transparent" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.RightShadowColor" Value="Transparent" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.TopShadowColor" Value="Transparent" />
+        <XmlPropertySetting Property="Telerik.WinControls.VisualElement.SmoothingMode" Value="None" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Layout" DisplayName="Padding(2;0;2;0)" Key="Padding(2;0;2;0)" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.RadElement.Padding" Value="2, 0, 2, 0" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Layout" DisplayName="Padding(3;4;3;3)" Key="Padding(3;4;3;3)" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.RadElement.Padding" Value="3, 4, 3, 3" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Layout" DisplayName="Padding(0;3;1;2)" Key="Padding(0;3;1;2)" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.RadElement.Padding" Value="0, 3, 1, 2" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Text" DisplayName="SegoeUISemibold10Font" Key="SegoeUISemibold10Font" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.VisualElement.Font" Value="Segoe UI Semibold, 10pt" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Text" DisplayName="SegoeUI10Font" Key="SegoeUI10Font" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.VisualElement.Font" Value="Segoe UI, 10pt" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Layout" DisplayName="Padding(0;1;1;1)" Key="Padding(0;1;1;1)" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.RadElement.Padding" Value="0, 1, 1, 1" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Text" DisplayName="SegoeUI9.5Font" Key="SegoeUI9.5Font" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.VisualElement.Font" Value="Segoe UI, 9.5pt" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Text" DisplayName="SegoeUISemibold9.5Font" Key="SegoeUISemibold9.5Font" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.VisualElement.Font" Value="Segoe UI Semibold, 9.5pt" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Layout" DisplayName="Padding(3;2;0;0)" Key="Padding(3;2;0;0)" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.RadElement.Padding" Value="3, 2, 0, 0" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Layout" DisplayName="MinSize(0;6)" Key="MinSize(0;6)" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.RadElement.MinSize" Value="0, 6" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Text" DisplayName="GlyphText12" Key="GlyphText12" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.VisualElement.CustomFont" Value="TelerikWebUI" />
+        <XmlPropertySetting Property="Telerik.WinControls.VisualElement.CustomFontSize" Value="12" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Border" DisplayName="MainBottomBorder" Key="MainBottomBorder" Capacity="8">
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.BoxStyle" Value="FourBorders" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.TopWidth" Value="0" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.RightWidth" Value="0" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.LeftWidth" Value="0" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.BottomShadowColor" Value="Transparent" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.BottomColor" Value="172, 172, 172" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Border" DisplayName="MainTopBorder" Key="MainTopBorder" Capacity="8">
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.BoxStyle" Value="FourBorders" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.TopWidth" Value="1" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.RightWidth" Value="0" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.LeftWidth" Value="0" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.TopColor" Value="172, 172, 172" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.TopShadowColor" Value="Transparent" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.BottomWidth" Value="0" />
+        <XmlPropertySetting Property="Telerik.WinControls.VisualElement.SmoothingMode" Value="None" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Layout" DisplayName="Margin(0;20;0;0)" Key="Margin(0;20;0;0)" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.RadElement.Margin" Value="0, 20, 0, 0" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Border" DisplayName="MainBorderBottomLeftRight" Key="MainBorderBottomLeftRight" Capacity="16">
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.GradientStyle" Value="Solid" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.Width" Value="1" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.BoxStyle" Value="FourBorders" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.BottomColor" Value="172, 172, 172" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.LeftColor" Value="172, 172, 172" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.RightColor" Value="172, 172, 172" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.TopShadowColor" Value="Transparent" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.TopColor" Value="Transparent" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.RightShadowColor" Value="Transparent" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.LeftShadowColor" Value="Transparent" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.BottomShadowColor" Value="Transparent" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.BorderDrawMode" Value="VerticalOverHorizontal" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.RightWidth" Value="1" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.LeftWidth" Value="1" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.BottomWidth" Value="1" />
+        <XmlPropertySetting Property="Telerik.WinControls.VisualElement.SmoothingMode" Value="None" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Layout" DisplayName="MinSize(1;0)" Key="MinSize(1;0)" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.RadElement.MinSize" Value="1, 0" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Layout" DisplayName="Padding(0;2;0;2)" Key="Padding(0;2;0;2)" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.RadElement.Padding" Value="0, 2, 0, 2" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Border" DisplayName="MainBorderBottomLeftRight3px" Key="MainBorderBottomLeftRight3px" Capacity="16">
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.GradientStyle" Value="Solid" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.Width" Value="1" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.BoxStyle" Value="FourBorders" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.BottomColor" Value="172, 172, 172" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.LeftColor" Value="172, 172, 172" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.RightColor" Value="172, 172, 172" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.TopShadowColor" Value="Transparent" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.TopColor" Value="Transparent" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.RightShadowColor" Value="Transparent" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.LeftShadowColor" Value="Transparent" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.BottomShadowColor" Value="Transparent" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.BorderDrawMode" Value="VerticalOverHorizontal" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.RightWidth" Value="3" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.LeftWidth" Value="3" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.BottomWidth" Value="3" />
+        <XmlPropertySetting Property="Telerik.WinControls.VisualElement.SmoothingMode" Value="None" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Border" DisplayName="MainBorderTopLeftRight" Key="MainBorderTopLeftRight" Capacity="16">
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.GradientStyle" Value="Solid" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.Width" Value="1" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.BoxStyle" Value="FourBorders" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.BottomColor" Value="Transparent" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.LeftColor" Value="172, 172, 172" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.RightColor" Value="172, 172, 172" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.TopShadowColor" Value="Transparent" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.TopColor" Value="172, 172, 172" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.RightShadowColor" Value="Transparent" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.LeftShadowColor" Value="Transparent" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.BottomShadowColor" Value="Transparent" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.BorderDrawMode" Value="VerticalOverHorizontal" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.RightWidth" Value="1" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.LeftWidth" Value="1" />
+        <XmlPropertySetting Property="Telerik.WinControls.VisualElement.SmoothingMode" Value="None" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.TopWidth" Value="1" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Layout" DisplayName="Margin(0;2;0;2)" Key="Margin(0;2;0;2)" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.RadElement.Margin" Value="0, 2, 0, 2" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Layout" DisplayName="MaxSize(18;18)" Key="MaxSize(18;18)" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.RadElement.MaxSize" Value="18, 18" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Layout" DisplayName="MinSize(16;16)" Key="MinSize(16;16)" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.RadElement.MinSize" Value="16, 16" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Image" DisplayName="CheckIcon12x12Image" Key="CheckIcon12x12Image" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.ImagePrimitive.Image" Value="Qk1GAwAAAAAAADYAAAAoAAAADgAAAA4AAAABACAAAAAAAAAAAADEDgAAxA4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABfX1+YX19fmAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAX19fmGBgYP9gYGD/X19fmAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAF9fX5hgYGD/YGBg/2BgYP9gYGD/X19fmAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABfX1+YYGBg/2BgYP9gYGBsYGBgbGBgYP9gYGD/X19fmAAAAAAAAAAAAAAAAAAAAAAAAAAAYGBgnGBgYP9gYGD/YGBgbAAAAAAAAAAAYGBgbGBgYP9gYGD/X19fmAAAAAAAAAAAAAAAAAAAAABfX1+YYGBg/2BgYGwAAAAAAAAAAAAAAAAAAAAAYGBgbGBgYP9gYGD/X19fmAAAAAAAAAAAAAAAAAAAAABeXl4jAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAYGBgbGBgYP9gYGD/X19fmAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAYGBgbGBgYP9gYGD/X19fmAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAYGBgbGBgYP9gYGD/YGBgnAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAYGBgbGBgYP9fX1+YAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAXl5eIwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.ImagePrimitive.ScaleSize" Value="12, 12" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.ImagePrimitive.ImageScaling" Value="SizeToFit" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Layout" DisplayName="Padding(3;4;3;4)" Key="Padding(3;4;3;4)" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.RadElement.Padding" Value="3, 4, 3, 4" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Layout" DisplayName="Margin(2;2;0;0)" Key="Margin(2;2;0;0)" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.RadElement.Margin" Value="2, 2, 0, 0" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Layout" DisplayName="MinSize(48;28)" Key="MinSize(48;28)" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.RadElement.MinSize" Value="48, 28" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Layout" DisplayName="Padding(7;7;7;7)" Key="Padding(7;7;7;7)" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.RadElement.Padding" Value="7, 7, 7, 7" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Gradient" DisplayName="ValidationFill" Key="ValidationFill" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.FillPrimitive.GradientStyle" Value="Solid" />
+        <XmlPropertySetting Property="Telerik.WinControls.VisualElement.BackColor" Value="232, 17, 35" />
+        <XmlPropertySetting Property="Telerik.WinControls.VisualElement.SmoothingMode" Value="None" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Layout" DisplayName="Padding(3;5;3;5)" Key="Padding(3;5;3;5)" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.RadElement.Padding" Value="3, 5, 3, 5" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Layout" DisplayName="Padding(3;2;3;2)" Key="Padding(3;2;3;2)" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.RadElement.Padding" Value="3, 2, 3, 2" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Layout" DisplayName="Padding(6;6;6;6)" Key="Padding(6;6;6;6)" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.RadElement.Padding" Value="6, 6, 6, 6" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Layout" DisplayName="Margin(1;1;1;1)" Key="Margin(1;1;1;1)" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.RadElement.Margin" Value="1, 1, 1, 1" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Layout" DisplayName="Padding(5;5;5;4)" Key="Padding(5;5;5;4)" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.RadElement.Padding" Value="5, 5, 5, 4" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Layout" DisplayName="MinSize(22;22)" Key="MinSize(22;22)" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.RadElement.MinSize" Value="22, 22" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Text" DisplayName="SegoeUISemibold10.5Font" Key="SegoeUISemibold10.5Font" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.VisualElement.Font" Value="Segoe UI Semibold, 10.5pt" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Layout" DisplayName="MinSize(0;30)" Key="MinSize(0;30)" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.RadElement.MinSize" Value="0, 30" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Layout" DisplayName="Padding(4;0;4;0)" Key="Padding(4;0;4;0)" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.RadElement.Padding" Value="4, 0, 4, 0" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Border" DisplayName="MainBorder" Key="MainBorder" Capacity="8">
+        <XmlPropertySetting Property="Telerik.WinControls.VisualElement.ForeColor" Value="172, 172, 172" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.GradientStyle" Value="Solid" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.Width" Value="1" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.BoxStyle" Value="SingleBorder" />
+        <XmlPropertySetting Property="Telerik.WinControls.VisualElement.SmoothingMode" Value="None" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Border" DisplayName="MouseOverBorder" Key="MouseOverBorder" Capacity="8">
+        <XmlPropertySetting Property="Telerik.WinControls.VisualElement.ForeColor" Value="199, 199, 199" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.GradientStyle" Value="Solid" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.Width" Value="1" />
+        <XmlPropertySetting Property="Telerik.WinControls.VisualElement.SmoothingMode" Value="HighQuality" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.BoxStyle" Value="SingleBorder" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Border" DisplayName="PressedBorder" Key="PressedBorder" Capacity="8">
+        <XmlPropertySetting Property="Telerik.WinControls.VisualElement.ForeColor" Value="164, 164, 164" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.GradientStyle" Value="Solid" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.Width" Value="1" />
+        <XmlPropertySetting Property="Telerik.WinControls.VisualElement.SmoothingMode" Value="HighQuality" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.BoxStyle" Value="SingleBorder" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Border" DisplayName="TransparentBorder2px" Key="TransparentBorder2px" Capacity="8">
+        <XmlPropertySetting Property="Telerik.WinControls.VisualElement.ForeColor" Value="Transparent" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.GradientStyle" Value="Solid" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.Width" Value="2" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.BoxStyle" Value="SingleBorder" />
+        <XmlPropertySetting Property="Telerik.WinControls.VisualElement.SmoothingMode" Value="None" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Layout" DisplayName="Padding(5;3;5;3)" Key="Padding(5;3;5;3)" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.RadElement.Padding" Value="5, 3, 5, 3" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Border" DisplayName="MainRightBorder" Key="MainRightBorder" Capacity="16">
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.BoxStyle" Value="FourBorders" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.TopWidth" Value="0" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.RightWidth" Value="1" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.LeftWidth" Value="0" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.BottomShadowColor" Value="Transparent" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.BottomWidth" Value="0" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.LeftShadowColor" Value="Transparent" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.RightShadowColor" Value="Transparent" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.TopShadowColor" Value="Transparent" />
+        <XmlPropertySetting Property="Telerik.WinControls.VisualElement.SmoothingMode" Value="None" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.RightColor" Value="172, 172, 172" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Border" DisplayName="MainBottomBorderOtherTransparent" Key="MainBottomBorderOtherTransparent" Capacity="16">
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.BoxStyle" Value="FourBorders" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.TopWidth" Value="2" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.RightWidth" Value="2" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.LeftWidth" Value="2" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.BottomShadowColor" Value="Transparent" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.BottomColor" Value="172, 172, 172" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.TopColor" Value="Transparent" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.RightColor" Value="Transparent" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.LeftColor" Value="Transparent" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.BottomWidth" Value="2" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.LeftShadowColor" Value="Transparent" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.RightShadowColor" Value="Transparent" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.TopShadowColor" Value="Transparent" />
+        <XmlPropertySetting Property="Telerik.WinControls.VisualElement.SmoothingMode" Value="None" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Layout" DisplayName="Padding(0;2;0;0)" Key="Padding(0;2;0;0)" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.RadElement.Padding" Value="0, 2, 0, 0" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Layout" DisplayName="MinSize(10;28)" Key="MinSize(10;28)" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.RadElement.MinSize" Value="10, 28" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Layout" DisplayName="MaxSize(14;0)" Key="MaxSize(14;0)" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.RadElement.MaxSize" Value="14, 0" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Layout" DisplayName="Margin(-3;0;0;0)" Key="Margin(-3;0;0;0)" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.RadElement.Margin" Value="-3, 0, 0, 0" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Layout" DisplayName="Padding(0;3;0;3)" Key="Padding(0;3;0;3)" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.RadElement.Padding" Value="0, 3, 0, 3" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Layout" DisplayName="Padding(2;4;2;4)" Key="Padding(2;4;2;4)" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.RadElement.Padding" Value="2, 4, 2, 4" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Layout" DisplayName="Margin(6;6;6;6)" Key="Margin(6;6;6;6)" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.RadElement.Margin" Value="6, 6, 6, 6" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Border" DisplayName="AccentBorder" Key="AccentBorder" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.VisualElement.ForeColor" Value="75, 40, 109" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.GradientStyle" Value="Solid" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.Width" Value="1" />
+        <XmlPropertySetting Property="Telerik.WinControls.VisualElement.SmoothingMode" Value="None" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Border" DisplayName="AccentMouseOverBorder" Key="AccentMouseOverBorder" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.VisualElement.ForeColor" Value="143, 118, 252" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.GradientStyle" Value="Solid" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.Width" Value="1" />
+        <XmlPropertySetting Property="Telerik.WinControls.VisualElement.SmoothingMode" Value="None" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Layout" DisplayName="Padding(3;3;3;2)" Key="Padding(3;3;3;2)" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.RadElement.Padding" Value="3, 3, 3, 2" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Image" DisplayName="CheckDisabled12x12Image" Key="CheckDisabled12x12Image" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.ImagePrimitive.Image" Value="Qk1GAwAAAAAAADYAAAAoAAAADgAAAA4AAAABACAAAAAAAAAAAADEDgAAxA4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACpqamYqampmAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAqampmKqqqv+qqqr/qampmAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAKmpqZiqqqr/qqqq/6qqqv+qqqr/qampmAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACpqamYqqqq/6qqqv+pqalsqampbKqqqv+qqqr/qampmAAAAAAAAAAAAAAAAAAAAAAAAAAAqKionKqqqv+qqqr/qampbAAAAAAAAAAAqampbKqqqv+qqqr/qampmAAAAAAAAAAAAAAAAAAAAACpqamYqqqq/6mpqWwAAAAAAAAAAAAAAAAAAAAAqampbKqqqv+qqqr/qampmAAAAAAAAAAAAAAAAAAAAACnp6cjAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAqampbKqqqv+qqqr/qampmAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAqampbKqqqv+qqqr/qampmAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAqampbKqqqv+qqqr/qKionAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAqampbKqqqv+pqamYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAp6enIwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.ImagePrimitive.ScaleSize" Value="12, 12" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.ImagePrimitive.ImageScaling" Value="SizeToFit" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Border" DisplayName="MainBorder2px" Key="MainBorder2px" Capacity="8">
+        <XmlPropertySetting Property="Telerik.WinControls.VisualElement.ForeColor" Value="172, 172, 172" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.GradientStyle" Value="Solid" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.Width" Value="2" />
+        <XmlPropertySetting Property="Telerik.WinControls.VisualElement.SmoothingMode" Value="None" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.BoxStyle" Value="SingleBorder" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Border" DisplayName="MainBorderBottomRight" Key="MainBorderBottomRight" Capacity="16">
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.GradientStyle" Value="Solid" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.Width" Value="1" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.BoxStyle" Value="FourBorders" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.BottomColor" Value="172, 172, 172" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.LeftColor" Value="Transparent" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.RightColor" Value="172, 172, 172" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.TopShadowColor" Value="Transparent" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.TopColor" Value="Transparent" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.RightShadowColor" Value="Transparent" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.LeftShadowColor" Value="Transparent" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.BottomShadowColor" Value="Transparent" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.BorderDrawMode" Value="VerticalOverHorizontal" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.RightWidth" Value="1" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.BottomWidth" Value="1" />
+        <XmlPropertySetting Property="Telerik.WinControls.VisualElement.SmoothingMode" Value="None" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Border" DisplayName="MainTopBottomBorderOtherTransparent" Key="MainTopBottomBorderOtherTransparent" Capacity="16">
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.BoxStyle" Value="FourBorders" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.TopWidth" Value="2" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.RightWidth" Value="2" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.LeftWidth" Value="2" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.BottomShadowColor" Value="Transparent" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.BottomColor" Value="172, 172, 172" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.TopColor" Value="172, 172, 172" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.RightColor" Value="Transparent" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.LeftColor" Value="Transparent" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.BottomWidth" Value="2" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.LeftShadowColor" Value="Transparent" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.RightShadowColor" Value="Transparent" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.TopShadowColor" Value="Transparent" />
+        <XmlPropertySetting Property="Telerik.WinControls.VisualElement.SmoothingMode" Value="None" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Layout" DisplayName="Padding(0;5;0;0)" Key="Padding(0;5;0;0)" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.RadElement.Padding" Value="0, 5, 0, 0" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Layout" DisplayName="Padding(0;3;0;0)" Key="Padding(0;3;0;0)" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.RadElement.Padding" Value="0, 3, 0, 0" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Border" DisplayName="MainTopRightBorder" Key="MainTopRightBorder" Capacity="16">
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.BoxStyle" Value="FourBorders" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.TopWidth" Value="1" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.RightWidth" Value="1" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.LeftWidth" Value="0" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.BottomShadowColor" Value="Transparent" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.BottomWidth" Value="0" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.LeftShadowColor" Value="Transparent" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.RightShadowColor" Value="Transparent" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.TopShadowColor" Value="Transparent" />
+        <XmlPropertySetting Property="Telerik.WinControls.VisualElement.SmoothingMode" Value="None" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.RightColor" Value="172, 172, 172" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.TopColor" Value="172, 172, 172" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Layout" DisplayName="Padding(2;2;2;3)" Key="Padding(2;2;2;3)" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.RadElement.Padding" Value="2, 2, 2, 3" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Layout" DisplayName="Margin(0;3;0;0)" Key="Margin(0;3;0;0)" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.RadElement.Margin" Value="0, 3, 0, 0" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Text" DisplayName="SegoeUI7Font" Key="SegoeUI7Font" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.VisualElement.Font" Value="Segoe UI, 6.75pt" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Layout" DisplayName="Padding(10;5;10;5)" Key="Padding(10;5;10;5)" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.RadElement.Padding" Value="10, 5, 10, 5" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Image" DisplayName="ChatSendButtonImageNormal" Key="ChatSendButtonImageNormal" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.ImagePrimitive.Image" Value="Qk02BAAAAAAAADYAAAAoAAAAEAAAABAAAAABACAAAAAAAAAAAADEDgAAxA4AAAAAAAAAAAAAbChKymwpSmO/Xx8IAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGwnStNtKEv/bChK620oS4NwKEcZAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABtJ0qvbShL/20oS/9tKEv/sm4Q+mwoSqRrJ0k0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAbChLi20oS/9tKEv/bShL/20oS/9tKEv/bShL/20oS8RtJ0tUv38ABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGwoS2VtKEv/bShL/20oS/9tKEv/bShL/20oS/9tKEv/bShL/20nS+BtJ0p0by9PEAAAAAAAAAAAAAAAAAAAAABtJ0pBbShL/20oS/9tKEv/bShL/20oS/9tKEv/bShL/20oS/9tKEv/bShL/2wnS/RsJ0uUayhJJgAAAAAAAAAAaStPHW0oS/9tKEv/bShL/20oS/9tKEv/bShL/20oS/9tKEv/bShL/20oS/9tKEv/bShL/39uEP5tJ0u0bClLRAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAaStPHW0oS/9tKEv/bShL/20oS/9tKEv/bShL/20oS/9tKEv/bShL/20oS/9tKEv/bShL/39uEP5tJ0u0bClLRG0nSkFtKEv/bShL/20oS/9tKEv/bShL/20oS/9tKEv/bShL/20oS/9tKEv/bCdL9GwnS5RrKEkmAAAAAAAAAABsKEtlbShL/20oS/9tKEv/bShL/20oS/9tKEv/bShL/20oS/9tJ0vgbSdKdG8vTxAAAAAAAAAAAAAAAAAAAAAAbChLi20oS/9tKEv/bShL/20oS/9tKEv/bShL/20oS8RtJ0tUv38ABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAG0nSq9tKEv/bShL/20oS/+ybhD6bChKpGsnSTQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABsJ0rTbShL/2woSuttKEuDcChHGQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAbChKymwpSmO/Xx8IAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Image" DisplayName="ChatSendButtonImageHover" Key="ChatSendButtonImageHover" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.ImagePrimitive.Image" Value="Qk02BAAAAAAAADYAAAAoAAAAEAAAABAAAAABACAAAAAAAAAAAADEDgAAxA4AAAAAAAAAAAAA/HWOyvx2kGPfnx8IAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPx2jtP8do//+3aP6/t2joP+eo4ZAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD8do6v/HaP//x2j//8do//5X8Z+vt2j6T6dY40AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA+3WPi/x2j//8do///HaP//x2j//8do///HaP//x2j8T7do5U/38/BAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPx2j2X8do///HaP//x2j//8do///HaP//x2j//8do///HaP//t2j+D8do50/2+PEAAAAAAAAAAAAAAAAAAAAAD7dY1B/HaP//x2j//8do///HaP//x2j//8do///HaP//x2j//8do///HaP//t2j/T7dY+U/niMJgAAAAAAAAAA/nKMHfx2j//8do///HaP//x2j//8do///HaP//x2j//8do///HaP//x2j//8do///HaP/39/L/78dY+0+3SORAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/nKMHfx2j//8do///HaP//x2j//8do///HaP//x2j//8do///HaP//x2j//8do///HaP/39/L/78dY+0+3SORPt1jUH8do///HaP//x2j//8do///HaP//x2j//8do///HaP//x2j//8do//+3aP9Pt1j5T+eIwmAAAAAAAAAAD8do9l/HaP//x2j//8do///HaP//x2j//8do///HaP//x2j//7do/g/HaOdP9vjxAAAAAAAAAAAAAAAAAAAAAA+3WPi/x2j//8do///HaP//x2j//8do///HaP//x2j8T7do5U/38/BAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPx2jq/8do///HaP//x2j//lfxn6+3aPpPp1jjQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD8do7T/HaP//t2j+v7do6D/nqOGQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/HWOyvx2kGPfnx8IAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Layout" DisplayName="Padding(9;8;9;7)" Key="Padding(9;8;9;7)" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.RadElement.Padding" Value="9, 8, 9, 7" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Layout" DisplayName="Padding(10;10;10;10)" Key="Padding(10;10;10;10)" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.RadElement.Padding" Value="10, 10, 10, 10" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Layout" DisplayName="Padding(8;8;8;8)" Key="Padding(8;8;8;8)" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.RadElement.Padding" Value="8, 8, 8, 8" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Layout" DisplayName="Padding(0;0;1;1)" Key="Padding(0;0;1;1)" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.RadElement.Padding" Value="0, 0, 1, 1" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Layout" DisplayName="Margin(-1;-1;-1;-1)" Key="Margin(-1;-1;-1;-1)" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.RadElement.Margin" Value="-1, -1, -1, -1" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Gradient" DisplayName="Fill;SmoothingMode;None" Key="Fill;SmoothingMode;None" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.VisualElement.SmoothingMode" Value="None" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Text" DisplayName="SegoeUI12Font" Key="SegoeUI12Font" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.VisualElement.Font" Value="Segoe UI, 12pt" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Gradient" DisplayName="ButtonBackgroundFill" Key="ButtonBackgroundFill" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.FillPrimitive.GradientStyle" Value="Solid" />
+        <XmlPropertySetting Property="Telerik.WinControls.VisualElement.BackColor" Value="229, 229, 229" />
+        <XmlPropertySetting Property="Telerik.WinControls.VisualElement.SmoothingMode" Value="None" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Text" DisplayName="HighlightedForeColor" Key="HighlightedForeColor" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.VisualElement.ForeColor" Value="47, 47, 47" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Gradient" DisplayName="AccentMouseOverBorderFill" Key="AccentMouseOverBorderFill" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.FillPrimitive.GradientStyle" Value="Solid" />
+        <XmlPropertySetting Property="Telerik.WinControls.VisualElement.BackColor" Value="143, 118, 252" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.FillPrimitive.NumberOfColors" Value="1" />
+        <XmlPropertySetting Property="Telerik.WinControls.VisualElement.SmoothingMode" Value="None" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Layout" DisplayName="MaxSize(8;8)" Key="MaxSize(8;8)" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.RadElement.MaxSize" Value="8, 8" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Text" DisplayName="DisabledBorderForeColor" Key="DisabledBorderForeColor" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.VisualElement.ForeColor" Value="214, 214, 214" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Gradient" DisplayName="CheckedFill30PercentOpacityOverAccent" Key="CheckedFill30PercentOpacityOverAccent" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.FillPrimitive.GradientStyle" Value="Solid" />
+        <XmlPropertySetting Property="Telerik.WinControls.VisualElement.BackColor" Value="129, 105, 153" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.FillPrimitive.NumberOfColors" Value="1" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Gradient" DisplayName="MainBorderFill" Key="MainBorderFill" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.FillPrimitive.GradientStyle" Value="Solid" />
+        <XmlPropertySetting Property="Telerik.WinControls.VisualElement.BackColor" Value="172, 172, 172" />
+        <XmlPropertySetting Property="Telerik.WinControls.VisualElement.SmoothingMode" Value="None" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Border" DisplayName="IconBorder" Key="IconBorder" Capacity="8">
+        <XmlPropertySetting Property="Telerik.WinControls.VisualElement.ForeColor" Value="96, 96, 96" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.GradientStyle" Value="Solid" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.Width" Value="1" />
+        <XmlPropertySetting Property="Telerik.WinControls.VisualElement.SmoothingMode" Value="None" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.BoxStyle" Value="SingleBorder" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Image" DisplayName="CheckAccentMouseOverBorder12x12Image" Key="CheckAccentMouseOverBorder12x12Image" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.ImagePrimitive.Image" Value="Qk1GAwAAAAAAADYAAAAoAAAADgAAAA4AAAABACAAAAAAAAAAAADEDgAAxA4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD7dY6Y+3WOmAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA+3WOmPx2j//8do//+3WOmAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPt1jpj8do///HaP//x2j//8do//+3WOmAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD7dY6Y/HaP//x2j//8dpBs/HaQbPx2j//8do//+3WOmAAAAAAAAAAAAAAAAAAAAAAAAAAA+3WOnPx2j//8do///HaQbAAAAAAAAAAA/HaQbPx2j//8do//+3WOmAAAAAAAAAAAAAAAAAAAAAD7dY6Y/HaP//x2kGwAAAAAAAAAAAAAAAAAAAAA/HaQbPx2j//8do//+3WOmAAAAAAAAAAAAAAAAAAAAAD+dJEjAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/HaQbPx2j//8do//+3WOmAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/HaQbPx2j//8do//+3WOmAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/HaQbPx2j//8do//+3WOnAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/HaQbPx2j//7dY6YAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/nSRIwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.ImagePrimitive.ScaleSize" Value="12, 12" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.ImagePrimitive.ImageScaling" Value="SizeToFit" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Image" DisplayName="CheckAccent12x12Image" Key="CheckAccent12x12Image" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.ImagePrimitive.Image" Value="Qk1GAwAAAAAAADYAAAAoAAAADgAAAA4AAAABACAAAAAAAAAAAADEDgAAxA4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABtKEuYbShLmAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAbShLmG0oS/9tKEv/bShLmAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAG0oS5htKEv/bShL/20oS/9tKEv/bShLmAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABtKEuYbShL/20oS/9sKEtsbChLbG0oS/9tKEv/bShLmAAAAAAAAAAAAAAAAAAAAAAAAAAAbSdLnG0oS/9tKEv/bChLbAAAAAAAAAAAbChLbG0oS/9tKEv/bShLmAAAAAAAAAAAAAAAAAAAAABtKEuYbShL/2woS2wAAAAAAAAAAAAAAAAAAAAAbChLbG0oS/9tKEv/bShLmAAAAAAAAAAAAAAAAAAAAABtJEgjAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAbChLbG0oS/9tKEv/bShLmAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAbChLbG0oS/9tKEv/bShLmAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAbChLbG0oS/9tKEv/bSdLnAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAbChLbG0oS/9tKEuYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAbSRIIwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.ImagePrimitive.ScaleSize" Value="12, 12" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.ImagePrimitive.ImageScaling" Value="SizeToFit" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Layout" DisplayName="Padding(1;1;0;0)" Key="Padding(1;1;0;0)" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.RadElement.Padding" Value="1, 1, 0, 0" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Gradient" DisplayName="DisabledBorderFill" Key="DisabledBorderFill" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.FillPrimitive.GradientStyle" Value="Solid" />
+        <XmlPropertySetting Property="Telerik.WinControls.VisualElement.BackColor" Value="214, 214, 214" />
+        <XmlPropertySetting Property="Telerik.WinControls.VisualElement.SmoothingMode" Value="None" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Layout" DisplayName="MinSize(15;15)" Key="MinSize(15;15)" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.RadElement.MinSize" Value="15, 15" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Layout" DisplayName="Margin(1;1;0;0)" Key="Margin(1;1;0;0)" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.RadElement.Margin" Value="1, 1, 0, 0" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Layout" DisplayName="MinSize(6;8)" Key="MinSize(6;8)" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.RadElement.MinSize" Value="6, 8" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Layout" DisplayName="MinSize(8;6)" Key="MinSize(8;6)" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.RadElement.MinSize" Value="8, 6" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Gradient" DisplayName="SecondaryFill" Key="SecondaryFill" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.FillPrimitive.GradientStyle" Value="Solid" />
+        <XmlPropertySetting Property="Telerik.WinControls.VisualElement.BackColor" Value="214, 213, 213" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Layout" DisplayName="Padding(-1;2;-1;0)" Key="Padding(-1;2;-1;0)" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.RadElement.Padding" Value="-1, 2, -1, 0" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Text" DisplayName="GlyphText16" Key="GlyphText16" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.VisualElement.CustomFont" Value="TelerikWebUI" />
+        <XmlPropertySetting Property="Telerik.WinControls.VisualElement.CustomFontSize" Value="16" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Layout" DisplayName="Margin(-1;-1;-1;-2)" Key="Margin(-1;-1;-1;-2)" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.RadElement.Margin" Value="-1, -1, -1, -2" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Layout" DisplayName="Margin(4;6;4;0)" Key="Margin(4;6;4;0)" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.RadElement.Margin" Value="4, 6, 4, 0" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Layout" DisplayName="MinSize(7;9)" Key="MinSize(7;9)" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.RadElement.MinSize" Value="7, 9" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Layout" DisplayName="Margin(3;1;3;0)" Key="Margin(3;1;3;0)" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.RadElement.Margin" Value="3, 1, 3, 0" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Text" DisplayName="AccentMouseOverBorderForeColor" Key="AccentMouseOverBorderForeColor" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.VisualElement.ForeColor" Value="143, 118, 252" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Gradient" DisplayName="FillCollapsed" Key="FillCollapsed" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.RadElement.Visibility" Value="Collapsed" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Text" DisplayName="SegoeUI11Font" Key="SegoeUI11Font" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.VisualElement.Font" Value="Segoe UI, 11pt" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Layout" DisplayName="Padding(0;3;0;1)" Key="Padding(0;3;0;1)" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.RadElement.Padding" Value="0, 3, 0, 1" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Gradient" DisplayName="MainFill50PercentOpacityOverAlternative" Key="MainFill50PercentOpacityOverAlternative" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.FillPrimitive.GradientStyle" Value="Solid" />
+        <XmlPropertySetting Property="Telerik.WinControls.VisualElement.BackColor" Value="248, 248, 248" />
+        <XmlPropertySetting Property="Telerik.WinControls.VisualElement.SmoothingMode" Value="None" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Layout" DisplayName="Margin(4;5;4;4)" Key="Margin(4;5;4;4)" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.RadElement.Margin" Value="4, 5, 4, 4" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Layout" DisplayName="Padding(-1;0;-1;0)" Key="Padding(-1;0;-1;0)" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.RadElement.Padding" Value="-1, 0, -1, 0" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Layout" DisplayName="Margin(2;3;2;2)" Key="Margin(2;3;2;2)" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.RadElement.Margin" Value="2, 3, 2, 2" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Gradient" DisplayName="BaseBackgroundFill" Key="BaseBackgroundFill" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.FillPrimitive.GradientStyle" Value="Solid" />
+        <XmlPropertySetting Property="Telerik.WinControls.VisualElement.BackColor" Value="223, 223, 223" />
+        <XmlPropertySetting Property="Telerik.WinControls.VisualElement.SmoothingMode" Value="None" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Border" DisplayName="AccentLeftBorder" Key="AccentLeftBorder" Capacity="16">
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.BoxStyle" Value="FourBorders" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.TopWidth" Value="0" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.RightWidth" Value="0" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.LeftWidth" Value="1" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.BottomShadowColor" Value="Transparent" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.BottomWidth" Value="0" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.LeftColor" Value="75, 40, 109" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.LeftShadowColor" Value="Transparent" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.RightShadowColor" Value="Transparent" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.TopShadowColor" Value="Transparent" />
+        <XmlPropertySetting Property="Telerik.WinControls.VisualElement.SmoothingMode" Value="None" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Border" DisplayName="AccentMouseOverLeftBorder" Key="AccentMouseOverLeftBorder" Capacity="16">
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.BoxStyle" Value="FourBorders" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.TopWidth" Value="0" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.RightWidth" Value="0" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.LeftWidth" Value="1" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.BottomShadowColor" Value="Transparent" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.BottomWidth" Value="0" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.LeftColor" Value="143, 118, 252" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.LeftShadowColor" Value="Transparent" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.RightShadowColor" Value="Transparent" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.TopShadowColor" Value="Transparent" />
+        <XmlPropertySetting Property="Telerik.WinControls.VisualElement.SmoothingMode" Value="None" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Border" DisplayName="DisabledLeftBorder" Key="DisabledLeftBorder" Capacity="16">
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.BoxStyle" Value="FourBorders" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.TopWidth" Value="0" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.RightWidth" Value="0" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.LeftWidth" Value="1" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.BottomShadowColor" Value="Transparent" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.BottomWidth" Value="0" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.LeftColor" Value="214, 214, 214" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.LeftShadowColor" Value="Transparent" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.RightShadowColor" Value="Transparent" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.TopShadowColor" Value="Transparent" />
+        <XmlPropertySetting Property="Telerik.WinControls.VisualElement.SmoothingMode" Value="None" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Layout" DisplayName="Padding(0;2;0;1)" Key="Padding(0;2;0;1)" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.RadElement.Padding" Value="0, 2, 0, 1" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Layout" DisplayName="Padding(-1;-1;-1;-4)" Key="Padding(-1;-1;-1;-4)" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.RadElement.Padding" Value="-1, -1, -1, -4" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Layout" DisplayName="Padding(-1;-3;-1;-2)" Key="Padding(-1;-3;-1;-2)" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.RadElement.Padding" Value="-1, -3, -1, -2" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Border" DisplayName="TransparentLeftBorder" Key="TransparentLeftBorder" Capacity="16">
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.BoxStyle" Value="FourBorders" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.TopWidth" Value="0" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.RightWidth" Value="0" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.LeftWidth" Value="1" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.BottomShadowColor" Value="Transparent" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.BottomWidth" Value="0" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.LeftColor" Value="Transparent" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.LeftShadowColor" Value="Transparent" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.RightShadowColor" Value="Transparent" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.TopShadowColor" Value="Transparent" />
+        <XmlPropertySetting Property="Telerik.WinControls.VisualElement.SmoothingMode" Value="None" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Layout" DisplayName="Padding(-1;2;0;2)" Key="Padding(-1;2;0;2)" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.RadElement.Padding" Value="-1, 2, 0, 2" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Border" DisplayName="MainForeColorBorder" Key="MainForeColorBorder" Capacity="8">
+        <XmlPropertySetting Property="Telerik.WinControls.VisualElement.ForeColor" Value="Black" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.GradientStyle" Value="Solid" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.Width" Value="1" />
+        <XmlPropertySetting Property="Telerik.WinControls.VisualElement.SmoothingMode" Value="None" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.BoxStyle" Value="SingleBorder" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Layout" DisplayName="Padding(-6;1;-6;0)" Key="Padding(-6;1;-6;0)" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.RadElement.Padding" Value="-6, 1, -6, 0" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Layout" DisplayName="Margin(1;3;1;3)" Key="Margin(1;3;1;3)" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.RadElement.Margin" Value="1, 3, 1, 3" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Layout" DisplayName="Padding(0;-1;0;-2)" Key="Padding(0;-1;0;-2)" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.RadElement.Padding" Value="0, -1, 0, -2" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Layout" DisplayName="Padding(2;2;0;0)" Key="Padding(2;2;0;0)" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.RadElement.Padding" Value="2, 2, 0, 0" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Layout" DisplayName="Margin(1;4;0;0)" Key="Margin(1;4;0;0)" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.RadElement.Margin" Value="1, 4, 0, 0" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Gradient" DisplayName="MainForeColorFill" Key="MainForeColorFill" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.FillPrimitive.GradientStyle" Value="Solid" />
+        <XmlPropertySetting Property="Telerik.WinControls.VisualElement.BackColor" Value="Black" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Layout" DisplayName="Padding(2;1;2;1)" Key="Padding(2;1;2;1)" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.RadElement.Padding" Value="2, 1, 2, 1" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Layout" DisplayName="Padding(2;1;2;0)" Key="Padding(2;1;2;0)" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.RadElement.Padding" Value="2, 1, 2, 0" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Text" DisplayName="SegoeUI825Font" Key="SegoeUI825Font" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.VisualElement.Font" Value="Segoe UI, 8.25pt" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Layout" DisplayName="Padding(2;2;2;0)" Key="Padding(2;2;2;0)" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.RadElement.Padding" Value="2, 2, 2, 0" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Border" DisplayName="MainBorderTopBottm" Key="MainBorderTopBottm" Capacity="16">
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.GradientStyle" Value="Solid" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.Width" Value="1" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.BoxStyle" Value="FourBorders" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.BottomColor" Value="172, 172, 172" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.LeftColor" Value="Transparent" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.RightColor" Value="Transparent" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.TopShadowColor" Value="Transparent" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.TopColor" Value="172, 172, 172" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.RightShadowColor" Value="Transparent" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.LeftShadowColor" Value="Transparent" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.BottomShadowColor" Value="Transparent" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.BorderDrawMode" Value="VerticalOverHorizontal" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Layout" DisplayName="MaxSize(7;0)" Key="MaxSize(7;0)" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.RadElement.MaxSize" Value="7, 0" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Image" DisplayName="ArrowDownIconImage" Key="ArrowDownIconImage" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.ImagePrimitive.Image" Value="Qk02BAAAAAAAADYAAAAoAAAAEAAAABAAAAABACAAAAAAAAAAAADEDgAAxA4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAX19fa19fX2YAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAampqDFtbW/hbW1v4ampqDAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAF5eXs1gYGD/YGBg/15eXs0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAF9fX2ZgYGD/YGBg/2BgYP9gYGD/X19fZgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGpqagxbW1v4YGBg/2BgYP9gYGD/YGBg/1tbW/hqamoMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABeXl7NYGBg/2BgYP9gYGD/YGBg/2BgYP9gYGD/Xl5ezQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Image" DisplayName="ArrowRightIconImage" Key="ArrowRightIconImage" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.ImagePrimitive.Image" Value="Qk02BAAAAAAAADYAAAAoAAAAEAAAABAAAAABACAAAAAAAAAAAADEDgAAxA4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAXl5ezWpqagwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGBgYP9bW1v4X19fZgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABgYGD/YGBg/2BgYP9eXl7NampqDAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAYGBg/2BgYP9gYGD/YGBg/1tbW/hfX19rAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGBgYP9gYGD/YGBg/2BgYP9bW1v4X19fZgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABgYGD/YGBg/2BgYP9eXl7NampqDAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAYGBg/1tbW/hfX19mAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAF5eXs1qamoMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Layout" DisplayName="Margin(0;-1;-1;0)" Key="Margin(0;-1;-1;0)" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.RadElement.Margin" Value="0, -1, -1, 0" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Border" DisplayName="MainBorderBottom" Key="MainBorderBottom" Capacity="16">
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.GradientStyle" Value="Solid" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.Width" Value="1" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.BoxStyle" Value="FourBorders" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.BottomColor" Value="172, 172, 172" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.LeftColor" Value="Transparent" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.RightColor" Value="Transparent" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.TopShadowColor" Value="Transparent" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.TopColor" Value="Transparent" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.RightShadowColor" Value="Transparent" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.LeftShadowColor" Value="Transparent" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.BottomShadowColor" Value="Transparent" />
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.BorderPrimitive.BorderDrawMode" Value="VerticalOverHorizontal" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Layout" DisplayName="Padding(0;-2;0;-1)" Key="Padding(0;-2;0;-1)" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.RadElement.Padding" Value="0, -2, 0, -1" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Border" DisplayName="ZIndex1" Key="ZIndex1" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.RadElement.ZIndex" Value="1" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Border" DisplayName="ZIndex0" Key="ZIndex0" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.RadElement.ZIndex" Value="0" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Layout" DisplayName="Margin(-1;-1;0;0)" Key="Margin(-1;-1;0;0)" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.RadElement.Margin" Value="-1, -1, 0, 0" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Layout" DisplayName="Padding(-1;-1;-1;0)" Key="Padding(-1;-1;-1;0)" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.RadElement.Padding" Value="-1, -1, -1, 0" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Layout" DisplayName="Padding(2;4;1;3)" Key="Padding(2;4;1;3)" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.RadElement.Padding" Value="2, 4, 1, 3" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Gradient" DisplayName="TaskBoardColumnFill" Key="TaskBoardColumnFill" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.Primitives.FillPrimitive.GradientStyle" Value="Solid" />
+        <XmlPropertySetting Property="Telerik.WinControls.VisualElement.BackColor" Value="241, 241, 241" />
+        <XmlPropertySetting Property="Telerik.WinControls.VisualElement.SmoothingMode" Value="None" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Text" DisplayName="SegoeUI9Font" Key="SegoeUI9Font" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.VisualElement.Font" Value="Segoe UI, 9pt" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+      <Telerik.WinControls.Styles.XmlRepositoryItem ItemType="Text" DisplayName="SegoeUISemilight19Font" Key="SegoeUISemilight19Font" Capacity="4">
+        <XmlPropertySetting Property="Telerik.WinControls.VisualElement.Font" Value="Segoe UI Semilight, 18pt" />
+      </Telerik.WinControls.Styles.XmlRepositoryItem>
+    </RepositoryItems>
+  </StyleRepository>
+</XmlTheme>

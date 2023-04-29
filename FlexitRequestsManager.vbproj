@@ -1,0 +1,499 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6275A8C0-9503-451D-8DA0-EE1D51A29E30}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>RequestsManager.My.MyApplication</StartupObject>
+    <RootNamespace>RequestsManager</RootNamespace>
+    <AssemblyName>Requests_Manager</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Requests_Manager.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Requests_Manager.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Web Error.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CustomControls">
+      <HintPath>C:\Users\hellf\Downloads\Custom-TextBox-2--Rounded-Placeholder-main\RJControls-main\CustomControls\bin\Debug\CustomControls.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.CodeParser.v21.2, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Data.Desktop.v21.2, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v21.2, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.DataAccess.v21.2, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.DataAccess.v21.2.UI, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Diagram.v21.2.Core, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Images.v21.2, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v21.2.Core, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v21.2.Core, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v21.2, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v21.2.UI, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Xpo.v21.2, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v21.2, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraDiagram.v21.2, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraEditors.v21.2, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v21.2, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v21.2, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraNavBar.v21.2, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v21.2, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraRichEdit.v21.2, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraScheduler.v21.2, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraScheduler.v21.2.Core, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraScheduler.v21.2.Core.Desktop, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraTreeList.v21.2, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.mshtml, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\hellf\source\repos\Report Generator v2\bin\Debug\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Telerik.WinControls, Version=2022.3.913.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>D:\Telerik UI for WinForms R3 2022\Bin40\Telerik.WinControls.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.ChartView, Version=2022.3.913.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e" />
+    <Reference Include="Telerik.WinControls.GridView, Version=2022.3.913.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.RadDock, Version=2022.3.913.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.RadMap, Version=2022.3.913.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.RadMarkupEditor, Version=2022.3.913.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.RadSpreadsheet, Version=2022.3.913.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.RichTextEditor, Version=2022.3.913.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.Scheduler, Version=2022.3.913.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.UI, Version=2022.3.913.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>D:\Telerik UI for WinForms R3 2022\Bin40\Telerik.WinControls.UI.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.Windows.Documents.Core, Version=2022.3.906.40, Culture=neutral, PublicKeyToken=5803cfa389c90ce7" />
+    <Reference Include="Telerik.Windows.Documents.Spreadsheet, Version=2022.3.906.40, Culture=neutral, PublicKeyToken=5803cfa389c90ce7" />
+    <Reference Include="Telerik.Windows.Documents.Spreadsheet.FormatProviders.OpenXml, Version=2022.3.906.40, Culture=neutral, PublicKeyToken=5803cfa389c90ce7" />
+    <Reference Include="Telerik.Windows.Documents.Spreadsheet.FormatProviders.Pdf, Version=2022.3.906.40, Culture=neutral, PublicKeyToken=5803cfa389c90ce7" />
+    <Reference Include="Telerik.Windows.Documents.Spreadsheet.FormatProviders.Xls, Version=2022.3.906.40, Culture=neutral, PublicKeyToken=5803cfa389c90ce7" />
+    <Reference Include="TelerikCommon, Version=2022.3.913.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>D:\Telerik UI for WinForms R3 2022\Bin40\TelerikCommon.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="CustomGridHeaderCellElement.vb" />
+    <Compile Include="Forms\FLEXS_Mgmt.Designer.vb">
+      <DependentUpon>FLEXS_Mgmt.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FLEXS_Mgmt.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FlyoutLogHours.Designer.vb">
+      <DependentUpon>FlyoutLogHours.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FlyoutLogHours.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\FlyoutInteractiveContent.Designer.vb">
+      <DependentUpon>FlyoutInteractiveContent.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FlyoutInteractiveContent.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\HoursSummary.Designer.vb">
+      <DependentUpon>HoursSummary.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\HoursSummary.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Jira.vb" />
+    <Compile Include="Forms\JIRADetails.Designer.vb">
+      <DependentUpon>JIRADetails.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\JIRADetails.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\JIRASearch.Designer.vb">
+      <DependentUpon>JIRASearch.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\JIRASearch.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuV2.Designer.vb">
+      <DependentUpon>MenuV2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MenuV2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProdSupport_DataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProdSupport_DataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ProdSupport_DataSet.vb">
+      <DependentUpon>ProdSupport_DataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\RadForm1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\RadForm1.Designer.vb">
+      <DependentUpon>RadForm1.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\RadForm2.Designer.vb">
+      <DependentUpon>RadForm2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\RadForm2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main.Designer.vb">
+      <DependentUpon>Main.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Main.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ShapedForm2.Designer.vb">
+      <DependentUpon>ShapedForm2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ShapedForm2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SplashScreen.Designer.vb">
+      <DependentUpon>SplashScreen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SplashScreen.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <EmbeddedResource Include="Forms\FLEXS_Mgmt.en-CA.resx">
+      <DependentUpon>FLEXS_Mgmt.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FLEXS_Mgmt.resx">
+      <DependentUpon>FLEXS_Mgmt.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FlyoutLogHours.resx">
+      <DependentUpon>FlyoutLogHours.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FlyoutInteractiveContent.resx">
+      <DependentUpon>FlyoutInteractiveContent.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\HoursSummary.resx">
+      <DependentUpon>HoursSummary.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\JIRADetails.resx">
+      <DependentUpon>JIRADetails.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\JIRASearch.resx">
+      <DependentUpon>JIRASearch.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuV2.resx">
+      <DependentUpon>MenuV2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\licenses.licx" />
+    <EmbeddedResource Include="Forms\RadForm1.resx">
+      <DependentUpon>RadForm1.vb</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Forms\RadForm2.resx">
+      <DependentUpon>RadForm2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main.resx">
+      <DependentUpon>Main.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ShapedForm2.resx">
+      <DependentUpon>ShapedForm2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SplashScreen.resx">
+      <DependentUpon>SplashScreen.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+    <EmbeddedResource Include="Themes\Office2019LightPurple.tssp" />
+    <None Include="ProdSupport_DataSet.xsc">
+      <DependentUpon>ProdSupport_DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ProdSupport_DataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ProdSupport_DataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ProdSupport_DataSet.xss">
+      <DependentUpon>ProdSupport_DataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Themes\Office2019LightPurple_DockSplitContainer.xml" />
+    <Content Include="Themes\Office2019LightPurple_RadCheckmark.xml" />
+    <Content Include="Themes\Office2019LightPurple_RadPageView_Telerik_WinControls_RootRadElement.xml" />
+    <Content Include="Themes\Office2019LightPurple_RadPageView_Telerik_WinControls_UI_RadOfficeNavigationBarElement.xml" />
+    <Content Include="Themes\Office2019LightPurple_RadPageView_Telerik_WinControls_UI_RadPageViewBackstageElement.xml" />
+    <Content Include="Themes\Office2019LightPurple_RadPageView_Telerik_WinControls_UI_RadPageViewExplorerBarElement.xml" />
+    <Content Include="Themes\Office2019LightPurple_RadPageView_Telerik_WinControls_UI_RadPageViewNavigationViewElement.xml" />
+    <Content Include="Themes\Office2019LightPurple_RadPageView_Telerik_WinControls_UI_RadPageViewOutlookElement.xml" />
+    <Content Include="Themes\Office2019LightPurple_RadPageView_Telerik_WinControls_UI_RadPageViewStackElement.xml" />
+    <Content Include="Themes\Office2019LightPurple_RadPageView_Telerik_WinControls_UI_RadPageViewStripElement.xml" />
+    <Content Include="Themes\Office2019LightPurple_RadWizard_Telerik_WinControls_RootRadElement.xml" />
+    <Content Include="Themes\Office2019LightPurple_RadWizard_Telerik_WinControls_UI_Wizard97View.xml" />
+    <Content Include="Themes\Office2019LightPurple_RadWizard_Telerik_WinControls_UI_WizardAeroView.xml" />
+    <Content Include="Themes\Office2019LightPurple_Repository.xml" />
+    <Content Include="Themes\Office2019LightPurple_Telerik_WinControls_UI_ColumnChooserControl.xml" />
+    <Content Include="Themes\Office2019LightPurple_Telerik_WinControls_UI_DesktopAlertPopup.xml" />
+    <Content Include="Themes\Office2019LightPurple_Telerik_WinControls_UI_Docking_AutoHideTabStrip.xml" />
+    <Content Include="Themes\Office2019LightPurple_Telerik_WinControls_UI_Docking_DockingGuidesControl.xml" />
+    <Content Include="Themes\Office2019LightPurple_Telerik_WinControls_UI_Docking_DocumentContainer.xml" />
+    <Content Include="Themes\Office2019LightPurple_Telerik_WinControls_UI_Docking_DocumentTabStrip.xml" />
+    <Content Include="Themes\Office2019LightPurple_Telerik_WinControls_UI_Docking_FloatingWindow.xml" />
+    <Content Include="Themes\Office2019LightPurple_Telerik_WinControls_UI_Docking_QuickNavigator.xml" />
+    <Content Include="Themes\Office2019LightPurple_Telerik_WinControls_UI_Docking_RadDock.xml" />
+    <Content Include="Themes\Office2019LightPurple_Telerik_WinControls_UI_Docking_ToolTabStrip.xml" />
+    <Content Include="Themes\Office2019LightPurple_Telerik_WinControls_UI_RadApplicationMenu.xml" />
+    <Content Include="Themes\Office2019LightPurple_Telerik_WinControls_UI_RadApplicationMenuDropDown.xml" />
+    <Content Include="Themes\Office2019LightPurple_Telerik_WinControls_UI_RadAutoCompleteBox.xml" />
+    <Content Include="Themes\Office2019LightPurple_Telerik_WinControls_UI_RadBindingNavigator.xml" />
+    <Content Include="Themes\Office2019LightPurple_Telerik_WinControls_UI_RadBreadCrumb.xml" />
+    <Content Include="Themes\Office2019LightPurple_Telerik_WinControls_UI_RadBrowseEditor.xml" />
+    <Content Include="Themes\Office2019LightPurple_Telerik_WinControls_UI_RadButton.xml" />
+    <Content Include="Themes\Office2019LightPurple_Telerik_WinControls_UI_RadCalculator.xml" />
+    <Content Include="Themes\Office2019LightPurple_Telerik_WinControls_UI_RadCalculatorDropDown.xml" />
+    <Content Include="Themes\Office2019LightPurple_Telerik_WinControls_UI_RadCalendar.xml" />
+    <Content Include="Themes\Office2019LightPurple_Telerik_WinControls_UI_RadCalendarFastNavigationControl.xml" />
+    <Content Include="Themes\Office2019LightPurple_Telerik_WinControls_UI_RadCardView.xml" />
+    <Content Include="Themes\Office2019LightPurple_Telerik_WinControls_UI_RadChartView.xml" />
+    <Content Include="Themes\Office2019LightPurple_Telerik_WinControls_UI_RadChat.xml" />
+    <Content Include="Themes\Office2019LightPurple_Telerik_WinControls_UI_RadCheckBox.xml" />
+    <Content Include="Themes\Office2019LightPurple_Telerik_WinControls_UI_RadClock.xml" />
+    <Content Include="Themes\Office2019LightPurple_Telerik_WinControls_UI_RadCollapsiblePanel.xml" />
+    <Content Include="Themes\Office2019LightPurple_Telerik_WinControls_UI_RadColorBox.xml" />
+    <Content Include="Themes\Office2019LightPurple_Telerik_WinControls_UI_RadCommandBar.xml" />
+    <Content Include="Themes\Office2019LightPurple_Telerik_WinControls_UI_RadDataEntry.xml" />
+    <Content Include="Themes\Office2019LightPurple_Telerik_WinControls_UI_RadDataFilter.xml" />
+    <Content Include="Themes\Office2019LightPurple_Telerik_WinControls_UI_RadDataLayout.xml" />
+    <Content Include="Themes\Office2019LightPurple_Telerik_WinControls_UI_RadDateTimePicker.xml" />
+    <Content Include="Themes\Office2019LightPurple_Telerik_WinControls_UI_RadDomainUpDown.xml" />
+    <Content Include="Themes\Office2019LightPurple_Telerik_WinControls_UI_RadDropDownButton.xml" />
+    <Content Include="Themes\Office2019LightPurple_Telerik_WinControls_UI_RadDropDownList.xml" />
+    <Content Include="Themes\Office2019LightPurple_Telerik_WinControls_UI_RadDropDownMenu.xml" />
+    <Content Include="Themes\Office2019LightPurple_Telerik_WinControls_UI_RadFilterView.xml" />
+    <Content Include="Themes\Office2019LightPurple_Telerik_WinControls_UI_RadForm.xml" />
+    <Content Include="Themes\Office2019LightPurple_Telerik_WinControls_UI_RadGanttView.xml" />
+    <Content Include="Themes\Office2019LightPurple_Telerik_WinControls_UI_RadGridView.xml" />
+    <Content Include="Themes\Office2019LightPurple_Telerik_WinControls_UI_RadGroupBox.xml" />
+    <Content Include="Themes\Office2019LightPurple_Telerik_WinControls_UI_RadImageEditor.xml" />
+    <Content Include="Themes\Office2019LightPurple_Telerik_WinControls_UI_RadLabel.xml" />
+    <Content Include="Themes\Office2019LightPurple_Telerik_WinControls_UI_RadLayoutControl.xml" />
+    <Content Include="Themes\Office2019LightPurple_Telerik_WinControls_UI_RadListControl.xml" />
+    <Content Include="Themes\Office2019LightPurple_Telerik_WinControls_UI_RadListView.xml" />
+    <Content Include="Themes\Office2019LightPurple_Telerik_WinControls_UI_RadMap.xml" />
+    <Content Include="Themes\Office2019LightPurple_Telerik_WinControls_UI_RadMaskedEditBox.xml" />
+    <Content Include="Themes\Office2019LightPurple_Telerik_WinControls_UI_RadMenu.xml" />
+    <Content Include="Themes\Office2019LightPurple_Telerik_WinControls_UI_RadMultiColumnComboBox.xml" />
+    <Content Include="Themes\Office2019LightPurple_Telerik_WinControls_UI_RadOffice2007ScreenTip.xml" />
+    <Content Include="Themes\Office2019LightPurple_Telerik_WinControls_UI_RadPanel.xml" />
+    <Content Include="Themes\Office2019LightPurple_Telerik_WinControls_UI_RadPanorama.xml" />
+    <Content Include="Themes\Office2019LightPurple_Telerik_WinControls_UI_RadPdfViewer.xml" />
+    <Content Include="Themes\Office2019LightPurple_Telerik_WinControls_UI_RadPictureBox.xml" />
+    <Content Include="Themes\Office2019LightPurple_Telerik_WinControls_UI_RadPivotGrid.xml" />
+    <Content Include="Themes\Office2019LightPurple_Telerik_WinControls_UI_RadProgressBar.xml" />
+    <Content Include="Themes\Office2019LightPurple_Telerik_WinControls_UI_RadPropertyGrid.xml" />
+    <Content Include="Themes\Office2019LightPurple_Telerik_WinControls_UI_RadRadioButton.xml" />
+    <Content Include="Themes\Office2019LightPurple_Telerik_WinControls_UI_RadRangeSelector.xml" />
+    <Content Include="Themes\Office2019LightPurple_Telerik_WinControls_UI_RadRating.xml" />
+    <Content Include="Themes\Office2019LightPurple_Telerik_WinControls_UI_RadRepeatButton.xml" />
+    <Content Include="Themes\Office2019LightPurple_Telerik_WinControls_UI_RadRibbonBar.xml" />
+    <Content Include="Themes\Office2019LightPurple_Telerik_WinControls_UI_RadRibbonBarBackstageView.xml" />
+    <Content Include="Themes\Office2019LightPurple_Telerik_WinControls_UI_RadRibbonForm.xml" />
+    <Content Include="Themes\Office2019LightPurple_Telerik_WinControls_UI_RadRichTextEditor.xml" />
+    <Content Include="Themes\Office2019LightPurple_Telerik_WinControls_UI_RadScheduler.xml" />
+    <Content Include="Themes\Office2019LightPurple_Telerik_WinControls_UI_RadSchedulerNavigator.xml" />
+    <Content Include="Themes\Office2019LightPurple_Telerik_WinControls_UI_RadScrollablePanel.xml" />
+    <Content Include="Themes\Office2019LightPurple_Telerik_WinControls_UI_RadScrollBar.xml" />
+    <Content Include="Themes\Office2019LightPurple_Telerik_WinControls_UI_RadSeparator.xml" />
+    <Content Include="Themes\Office2019LightPurple_Telerik_WinControls_UI_RadSizablePopupControl.xml" />
+    <Content Include="Themes\Office2019LightPurple_Telerik_WinControls_UI_RadSparkline.xml" />
+    <Content Include="Themes\Office2019LightPurple_Telerik_WinControls_UI_RadSpinEditor.xml" />
+    <Content Include="Themes\Office2019LightPurple_Telerik_WinControls_UI_RadSplitButton.xml" />
+    <Content Include="Themes\Office2019LightPurple_Telerik_WinControls_UI_RadSplitContainer.xml" />
+    <Content Include="Themes\Office2019LightPurple_Telerik_WinControls_UI_RadSpreadsheet.xml" />
+    <Content Include="Themes\Office2019LightPurple_Telerik_WinControls_UI_RadStatusStrip.xml" />
+    <Content Include="Themes\Office2019LightPurple_Telerik_WinControls_UI_RadStepProgressBar.xml" />
+    <Content Include="Themes\Office2019LightPurple_Telerik_WinControls_UI_RadSyntaxEditor.xml" />
+    <Content Include="Themes\Office2019LightPurple_Telerik_WinControls_UI_RadTabbedForm.xml" />
+    <Content Include="Themes\Office2019LightPurple_Telerik_WinControls_UI_RadTabbedFormControl.xml" />
+    <Content Include="Themes\Office2019LightPurple_Telerik_WinControls_UI_RadTaskBoard.xml" />
+    <Content Include="Themes\Office2019LightPurple_Telerik_WinControls_UI_RadTaskDialogControl.xml" />
+    <Content Include="Themes\Office2019LightPurple_Telerik_WinControls_UI_RadTextBox.xml" />
+    <Content Include="Themes\Office2019LightPurple_Telerik_WinControls_UI_RadTextBoxControl.xml" />
+    <Content Include="Themes\Office2019LightPurple_Telerik_WinControls_UI_RadTimePicker.xml" />
+    <Content Include="Themes\Office2019LightPurple_Telerik_WinControls_UI_RadTimePickerContent.xml" />
+    <Content Include="Themes\Office2019LightPurple_Telerik_WinControls_UI_RadTitleBar.xml" />
+    <Content Include="Themes\Office2019LightPurple_Telerik_WinControls_UI_RadToggleButton.xml" />
+    <Content Include="Themes\Office2019LightPurple_Telerik_WinControls_UI_RadToggleSwitch.xml" />
+    <Content Include="Themes\Office2019LightPurple_Telerik_WinControls_UI_RadTrackBar.xml" />
+    <Content Include="Themes\Office2019LightPurple_Telerik_WinControls_UI_RadTreeMap.xml" />
+    <Content Include="Themes\Office2019LightPurple_Telerik_WinControls_UI_RadTreeView.xml" />
+    <Content Include="Themes\Office2019LightPurple_Telerik_WinControls_UI_RadVirtualGrid.xml" />
+    <Content Include="Themes\Office2019LightPurple_Telerik_WinControls_UI_RadVirtualKeyboard.xml" />
+    <Content Include="Themes\Office2019LightPurple_Telerik_WinControls_UI_RadWaitingBar.xml" />
+    <Content Include="Themes\Office2019LightPurple_Telerik_WinControls_UI_RadWebCam.xml" />
+    <Content Include="Themes\Office2019LightPurple_Telerik_WinControls_UI_ShapedFormControl.xml" />
+    <Content Include="Themes\Office2019LightPurple_Telerik_WinControls_UI_SplitPanel.xml" />
+    <Content Include="Themes\Office2019LightPurple_Telerik_WinControls_UI_ValidationPanel.xml" />
+    <Content Include="Web Error.ico" />
+    <None Include="Resources\addhours.png" />
+    <None Include="Resources\refresh.png" />
+    <None Include="Resources\foldall.png" />
+    <None Include="Resources\view_all.png" />
+    <None Include="Resources\people.png" />
+    <None Include="Resources\jira.png" />
+    <None Include="Resources\document_selected.png" />
+    <None Include="Resources\document.png" />
+    <None Include="Resources\time.png" />
+    <None Include="Resources\organization.png" />
+    <None Include="Resources\90349552_10158241574599808_4335550149922127872_n.jpg" />
+    <None Include="Resources\hiclipart.com %286%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties ShouldAddDPIScalingManifest="True" />
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

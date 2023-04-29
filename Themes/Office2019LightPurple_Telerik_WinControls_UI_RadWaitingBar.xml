@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XmlTheme xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ThemeName="Office2019LightPurple" ThemeVersion="2.0">
+  <BuilderRegistrations>
+    <XmlStyleBuilderRegistration BuilderType="">
+      <BuilderData xsi:type="XmlStyleSheet" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <PropertySettingGroups>
+          <XmlPropertySettingGroup BasedOn="Padding(-1;-1;-1;-1),MainBorderFill">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.UI.LightVisualElement.DrawBorder" Value="False" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.RadWaitingBarElement.WaitingIndicatorSize" Value="100, 14" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="RadWaitingBarElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="DefaultFont,MainForeColor">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.RootRadElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.BackColor" Value="75, 40, 109" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.LightVisualElement.NumberOfColors" Value="1" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.WaitingBarSeparatorElement.SeparatorWidth" Value="8" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="WaitingBarSeparator" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.UI.BaseWaitingBarIndicatorElement.ElementColor" Value="75, 40, 109" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.DotsLineWaitingBarIndicatorElement.DotRadius" Value="6" />
+            </PropertySettings>
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.DotsLineWaitingBarIndicatorElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.UI.BaseWaitingBarIndicatorElement.ElementColor" Value="75, 40, 109" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.BaseRingWaitingBarIndicatorElement.InitialStartElementAngle" Value="270" />
+            </PropertySettings>
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.DotsSpinnerWaitingBarIndicatorElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.UI.BaseWaitingBarIndicatorElement.ElementColor" Value="75, 40, 109" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.BaseWaitingBarIndicatorElement.ElementCount" Value="24" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.BaseWaitingBarIndicatorElement.ElementColor2" Value="Transparent" />
+            </PropertySettings>
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.LineRingWaitingBarIndicatorElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.UI.BaseWaitingBarIndicatorElement.ElementColor" Value="75, 40, 109" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.BaseWaitingBarIndicatorElement.ElementCount" Value="8" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.BaseWaitingBarIndicatorElement.ElementColor2" Value="Transparent" />
+            </PropertySettings>
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.SegmentedRingWaitingBarIndicatorElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.UI.BaseWaitingBarIndicatorElement.ElementColor" Value="75, 40, 109" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.BaseWaitingBarIndicatorElement.ElementColor2" Value="Transparent" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.BaseWaitingBarIndicatorElement.ElementCount" Value="12" />
+            </PropertySettings>
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.DotsRingWaitingBarIndicatorElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.UI.BaseWaitingBarIndicatorElement.ElementColor" Value="75, 40, 109" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.BaseRingWaitingBarIndicatorElement.ElementNumberOfColors" Value="1" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.BaseRingWaitingBarIndicatorElement.InnerRadius" Value="17" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.BaseRingWaitingBarIndicatorElement.Radius" Value="21" />
+            </PropertySettings>
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.FadingRingWaitingBarIndicatorElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.UI.BaseRingWaitingBarIndicatorElement.InnerRadius" Value="11" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.BaseRingWaitingBarIndicatorElement.Radius" Value="21" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.RotatingRingsWaitingBarIndicatorElement.InnerRingBackgroundColor" Value="172, 172, 172" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.BaseWaitingBarIndicatorElement.ElementColor" Value="75, 40, 109" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.BaseWaitingBarIndicatorElement.ElementColor2" Value="75, 40, 109" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.RotatingRingsWaitingBarIndicatorElement.OuterRingBackgroundColor" Value="172, 172, 172" />
+            </PropertySettings>
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.RotatingRingsWaitingBarIndicatorElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AccentFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="WaitingBarIndicatorElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+        </PropertySettingGroups>
+      </BuilderData>
+      <StylesheetRelations>
+        <RadStylesheetRelation ControlType="Telerik.WinControls.UI.RadWaitingBar" ElementType="Telerik.WinControls.RootRadElement" />
+        <RadStylesheetRelation RegistrationType="ElementTypeDefault" ElementType="Telerik.WinControls.UI.RadWaitingBarElement" />
+      </StylesheetRelations>
+    </XmlStyleBuilderRegistration>
+  </BuilderRegistrations>
+</XmlTheme>

@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XmlTheme xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ThemeName="Office2019LightPurple" ThemeVersion="2.0">
+  <BuilderRegistrations>
+    <XmlStyleBuilderRegistration BuilderType="">
+      <BuilderData xsi:type="XmlStyleSheet" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <PropertySettingGroups>
+          <XmlPropertySettingGroup BasedOn="AlternativeFill,MainForeColor,MainBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="BackstageViewElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CheckedForeColor,AccentFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="BackstageViewHeader" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AccentFill,CheckedForeColor">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="BackstageItemsPanelElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AlternativeBorder,AlternativeFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="BackstageContentPanelElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentFill,MinSize(0;30),CheckedForeColor">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="BackstageTabItem" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentFill,CheckedForeColor">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="BackstageButtonItem" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AccentPressedFill,MainForeColor">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="BackstageTabItem.Selected" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="MainForeColor,AccentMouseOverFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="BackstageTabItem.MouseOver" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="MainForeColor,AccentPressedFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="BackstageTabItem.MouseDown" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="MainForeColor,AccentPressedFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="BackstageButtonItem.MouseDown" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="MainForeColor,AccentMouseOverFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="BackstageButtonItem.MouseOver" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="DefaultFont,MainForeColor">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadItem.UseDefaultDisabledPaint" Value="False" />
+            </PropertySettings>
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.RootRadElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CheckedForeColor30PercentOpacityOverAccent">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="BackstageItemsPanelElement.Disabled" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CheckedForeColor30PercentOpacityOverAccent,TransparentFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="BackstageButtonItem.Disabled" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CheckedForeColor30PercentOpacityOverAccent,TransparentFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="BackstageTabItem.Disabled" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+        </PropertySettingGroups>
+      </BuilderData>
+      <StylesheetRelations>
+        <RadStylesheetRelation ControlType="Telerik.WinControls.UI.RadRibbonBarBackstageView" ElementType="Telerik.WinControls.RootRadElement" />
+        <RadStylesheetRelation RegistrationType="ElementTypeDefault" ElementType="Telerik.WinControls.UI.BackstageViewElement" />
+      </StylesheetRelations>
+    </XmlStyleBuilderRegistration>
+  </BuilderRegistrations>
+</XmlTheme>

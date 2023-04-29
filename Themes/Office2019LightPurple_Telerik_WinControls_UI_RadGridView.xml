@@ -1,0 +1,2123 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XmlTheme xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ThemeName="Office2019LightPurple" ThemeVersion="2.0">
+  <BuilderRegistrations>
+    <XmlStyleBuilderRegistration BuilderType="">
+      <BuilderData xsi:type="XmlStyleSheet" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <PropertySettingGroups>
+          <XmlPropertySettingGroup BasedOn="DefaultFont,MainForeColor">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.RootRadElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="Margin(-1;-1;-1;0)">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.UI.GridTableElement.AlternatingRowColor" Value="241, 241, 241" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.GridTableElement.FilterRowHeight" Value="26" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.GridTableElement.RowHeight" Value="24" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.GridTableElement.TableHeaderHeight" Value="26" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.GridTableElement.CurrentRowHeaderImage" Value="Qk02BAAAAAAAADYAAAAoAAAAEAAAABAAAAABACAAAAAAAAAAAADEDgAAxA4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMDAwzSoqKgwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADMzM/8yMjL4MjIyZgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAzMzP/MzMz/zMzM/8wMDDNKioqDAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMzMz/zMzM/8zMzP/MzMz/zIyMvgyMjJrAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADMzM/8zMzP/MzMz/zMzM/8yMjL4MjIyZgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAzMzP/MzMz/zMzM/8wMDDNKioqDAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMzMz/zIyMvgyMjJmAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADAwMM0qKioMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.GridTableElement.EditRowHeaderImage" Value="Qk02BAAAAAAAADYAAAAoAAAAEAAAABAAAAABACAAAAAAAAAAAADEDgAAxA4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAzMzP/MzMz/zMzM/8zMzNsAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMzMz/zMzM/8zMzP/MzMz/zMzM2wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADMzM/8zMzPLMjIynDMzM/8zMzP/MzMzbAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAzMzNsMzMz8DMzM0AyMjKYMzMz/zMzM/8zMzNsAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADMzM2wzMzPwMzMzQDIyMpgzMzP/MzMz/zMzM2wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMzMzbDMzM/AzMzNAMjIymDMzM/8zMzP/MzMzbAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAzMzNsMzMz8DMzM0AyMjKYMzMz/zMzM/8zMzNsAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADMzM2wzMzPwMzMzQDIyMpgzMzP/MzMz/zMzM2wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMzMzbDMzM/AzMzNAMjIymDMzM/8zMzP/MjIycwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAzMzNsMzMz8DMzM0AxMTHJMDAw3TU1NRM0NDRTAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADMzM2wfHx/7MDAw3TU1NRMzMzPHMzMz/zMzM2wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAANDQ0UzU1NRMzMzPHMzMz/zMzM/8fHx/7AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA0NDRiMzMz/zMzM/8zMzP/MjIymAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADMzM2wfHx/7MzMzlAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.GridTableElement.ErrorRowHeaderImage" Value="Qk02BAAAAAAAADYAAAAoAAAAEAAAABAAAAABACAAAAAAAAAAAADEDgAAxA4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA1TcAANW3AADR8QAA1f8AANX/AADR8QAA1bcAANU3AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADUBgAA1bcAANX0AADVjQAA2CEAAAAAAAAAAAAA2CEAANWNAADV9AAA1bcAANQGAAAAAAAAAAAAAAAAAADUBgAA09kAANXDAADUBgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA1AYAANXDAADT2QAA1AYAAAAAAAAAAAAA1LoAANW+AAAAAAAAAAAAAAAAAAAAAAAA1f8AANX/AAAAAAAAAAAAAAAAAAAAAAAA1b4AANS6AAAAAAAA00cAANTwAADUBgAAAAAAAAAAAAAAAAAAAAAAANX/AADV/wAAAAAAAAAAAAAAAAAAAAAAANQGAADU8AAA00cAANWxAADVjgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA1Y4AANWxAADV4wAA00AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA1f8AANX/AAAAAAAAAAAAAAAAAAAAAAAAAAAAANNAAADV4wAA1f8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAANX/AADV/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA1f8AANX/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADV/wAA1f8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAANX/AADV4wAA00AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA1f8AANX/AAAAAAAAAAAAAAAAAAAAAAAAAAAAANNAAADV4wAA1bEAANWOAAAAAAAAAAAAAAAAAAAAAAAAAAAAANX/AADV/wAAAAAAAAAAAAAAAAAAAAAAAAAAAADVjgAA1bEAANNHAADU8AAA1AYAAAAAAAAAAAAAAAAAAAAAAADV/wAA1f8AAAAAAAAAAAAAAAAAAAAAAADUBgAA1PAAANNHAAAAAAAA1LoAANW+AAAAAAAAAAAAAAAAAAAAAAAA1f8AANX/AAAAAAAAAAAAAAAAAAAAAAAA1b4AANS6AAAAAAAAAAAAANQGAADV3QAA1cMAANQGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADUBgAA1cMAANXdAADUBgAAAAAAAAAAAAAAAAAA1AYAANW3AADV9AAA1Y0AANghAAAAAAAAAAAAANghAADVjQAA1fQAANW3AADUBgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA1TcAANW3AADR8QAA1f8AANX/AADR8QAA1bcAANU3AAAAAAAAAAAAAAAAAAAAAA==" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.GridTableElement.NewRowHeaderImage" Value="Qk02BAAAAAAAADYAAAAoAAAAEAAAABAAAAABACAAAAAAAAAAAADEDgAAxA4AAAAAAAAAAAAAAAAAAAAAAAAzMzP/MzMz/zMzM/8zMzP/MzMz/zMzM/8zMzP/MzMz/zMzM/8zMzP/MzMz/zMzM/8zMzP/AAAAAAAAAAAAAAAAMzMz/wAAAAAAAAAAAAAAADMzM/8AAAAAAAAAAAAAAAAzMzP/AAAAAAAAAAAAAAAAMzMz/wAAAAAAAAAAAAAAADMzM/8AAAAAAAAAAAAAAAAzMzP/AAAAAAAAAAAAAAAAMzMz/wAAAAAAAAAAAAAAADMzM/8AAAAAAAAAAAAAAAAzMzP/AAAAAAAAAAAAAAAAMzMz/wAAAAAAAAAAAAAAADMzM/8AAAAAAAAAAAAAAAAzMzP/AAAAAAAAAAAAAAAAMzMz/zMzM/8zMzP/MzMz/zMzM/8zMzP/MzMz/zMzM/8zMzP/MzMz/zMzM/8zMzP/MzMz/wAAAAAAAAAAAAAAADMzM/8AAAAAAAAAAAAAAAAzMzP/AAAAAAAAAAAAAAAAMzMz/wAAAAAAAAAAAAAAADMzM/8AAAAAAAAAAAAAAAAzMzP/AAAAAAAAAAAAAAAAMzMz/wAAAAAAAAAAAAAAADMzM/8AAAAAAAAAAAAAAAAzMzP/AAAAAAAAAAAAAAAAMzMz/wAAAAAAAAAAAAAAADMzM/8AAAAAAAAAAAAAAAAzMzP/AAAAAAAAAAAAAAAAMzMz/wAAAAAAAAAAAAAAADMzM/8zMzP/MzMz/zMzM/8zMzP/MzMz/zMzM/8zMzP/MzMz/zMzM/8zMzP/MzMz/zMzM/8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADMzM/8AAAAAAAAAAAAAAAAzMzP/AAAAAAAAAAAAAAAAMzMz/zMzM/8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAzMzP/AAAAAAAAAAAAAAAAMzMz/wAAAAAAAAAAAAAAADMzM/8zMzP/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMzMz/wAAAAAAAAAAAAAAADMzM/8AAAAAMzMz/zMzM/8zMzP/MzMz/zMzM/8zMzP/AAAAADMzM/8zMzP/MzMz/zMzM/8zMzP/MzMz/zMzM/8zMzP/AAAAADMzM/8zMzP/MzMz/zMzM/8zMzP/MzMz/wAAAAAzMzP/MzMz/zMzM/8zMzP/MzMz/zMzM/8zMzP/MzMz/wAAAAAAAAAAAAAAADMzM/8zMzP/AAAAAAAAAAAAAAAAMzMz/zMzM/8zMzP/MzMz/zMzM/8zMzP/MzMz/zMzM/8AAAAAAAAAAAAAAAAzMzP/MzMz/wAAAAAAAAAAAAAAADMzM/8zMzP/MzMz/zMzM/8zMzP/MzMz/zMzM/8zMzP/AAAAAA==" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.GridTableElement.GroupIndent" Value="24" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.GridTableElement.SearchHighlightColor" Value="149, 147, 224" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.GridTableElement.GroupHeaderHeight" Value="24" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.GridTableElement.TreeLevelIndent" Value="24" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.GridTableElement.ColumnDragHint" Value="77u/PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48UmFkSW1hZ2VTaGFwZSB4bWxuczp4c2Q9Imh0dHA6Ly93d3cudzMub3JnLzIwMDEvWE1MU2NoZW1hIiB4bWxuczp4c2k9Imh0dHA6Ly93d3cudzMub3JnLzIwMDEvWE1MU2NoZW1hLWluc3RhbmNlIj48UGFpbnRNb2RlPkNlbnRlclhTdHJldGNoWTwvUGFpbnRNb2RlPjxJbWFnZVN0cmVhbT5RazBTQmdBQUFBQUFBRFlBQUFBb0FBQUFHUUFBQUE4QUFBQUJBQ0FBQUFBQUFBQUFBQURFRGdBQXhBNEFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBRDhkby8vL0hhUC8veDJqLzhBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUEvSGFQLy94MmovLzhkby8vQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBUHgyai8vOGRvLy8vSGFQL3dBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBUDkvbEF6OGRvL05BQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUQ4ZG8vLy9IYVAvL3gyai84QUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFQeDJqODMvZjVRTUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFQeDFqbWI3ZG83NC9IYVAvd0FBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBL0hhUC8veDJqLy84ZG8vL0FBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBRDhkby8vKzNhTytQeDFqbVlBQUFBQUFBQUFBQUFBQUFBQUFBQUEvMytVRFB4Mmo4Mzhkby8vL0hhUC8veDJqLzhBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQVB4MmovLzhkby8vL0hhUC93QUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUEvSGFQLy94MmovLzhkby8vL0hhUHpmOS9sQXdBQUFBQS9IZU9hL3QyanZqOGRvLy8vSGFQLy94MmovLzhkby8vQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFEOGRvLy8vSGFQLy94MmovOEFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBUHgyai8vOGRvLy8vSGFQLy94MmovLzdkbzc0L0hlT2EveDFqbWI3ZG83NC9IYVAvL3gyai8vOGRvLy8vSGFQL3dBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQS9IYVAvL3gyai8vOGRvLy9BQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUQ4ZG8vLy9IYVAvL3gyai8vOGRvLy8rM2FPK1B4MWptWUFBQUFBLzMrVURQeDJqODM4ZG8vLy9IYVAvL3gyai84QUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFQeDJqLy84ZG8vLy9IYVAvd0FBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBL0hhUC8veDJqLy84ZG8vLy9IYVB6ZjkvbEF3QUFBQUFBQUFBQUFBQUFBQUFBQUFBL0hXT1p2dDJqdmo4ZG8vL0FBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBRDhkby8vL0hhUC8veDJqLzhBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQVB4MmovLzdkbzc0L0hXT1pnQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBRC9mNVFNL0hhUHpRQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUEvSGFQLy94MmovLzhkby8vQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFEOGRvL04vMytVREFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBUHgyai8vOGRvLy8vSGFQL3dBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUQ4ZG8vLy9IYVAvL3gyai84QUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBL0hhUC8veDJqLy84ZG8vL0FBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQVB4MmovLzhkby8vL0hhUC93QUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQTwvSW1hZ2VTdHJlYW0+PE1hcmdpbnM+PEFsbD4tMTwvQWxsPjxCb3R0b20+MDwvQm90dG9tPjxMZWZ0PjA8L0xlZnQ+PFJpZ2h0PjA8L1JpZ2h0PjxUb3A+MTM8L1RvcD48L01hcmdpbnM+PFBhZGRpbmc+PEFsbD4tMTwvQWxsPjxCb3R0b20+LTEwMDA8L0JvdHRvbT48TGVmdD4wPC9MZWZ0PjxSaWdodD4wPC9SaWdodD48VG9wPjEzPC9Ub3A+PC9QYWRkaW5nPjwvUmFkSW1hZ2VTaGFwZT4=" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.GridTableElement.RowHeaderColumnWidth" Value="24" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.GridTableElement.RowDragHint" Value="77u/PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48UmFkSW1hZ2VTaGFwZSB4bWxuczp4c2Q9Imh0dHA6Ly93d3cudzMub3JnLzIwMDEvWE1MU2NoZW1hIiB4bWxuczp4c2k9Imh0dHA6Ly93d3cudzMub3JnLzIwMDEvWE1MU2NoZW1hLWluc3RhbmNlIj48UGFpbnRNb2RlPkNlbnRlcllTdHJldGNoWDwvUGFpbnRNb2RlPjxJbWFnZVN0cmVhbT5RazBTQmdBQUFBQUFBRFlBQUFBb0FBQUFEd0FBQUJrQUFBQUJBQ0FBQUFBQUFBQUFBQURFRGdBQXhBNEFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBUHgxam1iOGQ0NXJBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBLzMrVURQdDJqdmo3ZG83NC8zK1VEQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUEvSGFQemZ4MmovLzhkby8vL0hhUHpRQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUQ4ZFk1bS9IYVAvL3gyai8vOGRvLy8vSGFQLy94MWptWUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQVA5L2xBejdkbzc0L0hhUC8veDJqLy84ZG8vLy9IYVAvL3QyanZqL2Y1UU1BQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBUHgyajgzOGRvLy8vSGFQLy94MmovLzhkby8vL0hhUC8veDJqLy84ZG8vTkFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBL0hhUC8veDJqLy84ZG8vLy9IYVAvL3gyai8vOGRvLy8vSGFQLy94MmovLzhkby8vL0hhUC8veDJqLy84ZG8vLy9IYVAvL3gyai8vOGRvLy8vSGFQLy94MmovLzhkby8vL0hhUC8veDJqLy84ZG8vLy9IYVAvL3gyai8vOGRvLy8vSGFQLy94MmovLzhkby8vL0hhUC8veDJqLy84ZG8vLy9IYVAvL3gyai8vOGRvLy8vSGFQLy94MmovLzhkby8vL0hhUC8veDJqLy84ZG8vLy9IYVAvL3gyai8vOGRvLy8vSGFQLy94MmovLzhkby8vQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQVB4Mmo4Mzhkby8vL0hhUC8veDJqLy84ZG8vLy9IYVAvL3gyai8vOGRvL05BQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBUDkvbEF6N2RvNzQvSGFQLy94MmovLzhkby8vL0hhUC8vdDJqdmovZjVRTUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUQ4ZFk1bS9IYVAvL3gyai8vOGRvLy8vSGFQLy94MWptWUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBL0hhUHpmeDJqLy84ZG8vLy9IYVB6UUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUEvMytVRFB0Mmp2ajdkbzc0LzMrVURBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBUHgxam1iOGQ0NXJBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQTwvSW1hZ2VTdHJlYW0+PE1hcmdpbnM+PEFsbD4tMTwvQWxsPjxCb3R0b20+MDwvQm90dG9tPjxMZWZ0PjEzPC9MZWZ0PjxSaWdodD4wPC9SaWdodD48VG9wPjA8L1RvcD48L01hcmdpbnM+PFBhZGRpbmc+PEFsbD4tMTwvQWxsPjxCb3R0b20+MDwvQm90dG9tPjxMZWZ0PjEzPC9MZWZ0PjxSaWdodD4tMTAwMDwvUmlnaHQ+PFRvcD4wPC9Ub3A+PC9QYWRkaW5nPjwvUmFkSW1hZ2VTaGFwZT4=" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.GridTableElement.SearchRowHeight" Value="25" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.GridTableElement.SearchRowHeaderImage" Value="Qk02BAAAAAAAADYAAAAoAAAAEAAAABAAAAABACAAAAAAAAAAAADEDgAAxA4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADY2NhwzMzPWNTU1MAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADY2NhwtLS3mMzMz/zMzM9YAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADY2NhwtLS3mMzMz/y0tLeY2NjYcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAtLS3mMzMz/y0tLeY2NjYcAAAAAAAAAAAAAAAAAAAAAAAAAAA0NDRYMzMz2jMzM/8zMzP/MzMz2jQ0NFgyMjJGMzMz/y0tLeY2NjYcAAAAAAAAAAAAAAAAAAAAAAAAAAAyMjKnLS0t5jMzM1AqKioGKioqBjMzM1AtLS3mMzMz/zIyMkYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAzMzNnMzMz4CoqKgYAAAAAAAAAAAAAAAAAAAAAKioqBjMzM+AzMzNnAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMjIy1DIyMmAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAyMjJgMjIy1AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADMzM/8qKioGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAKioqBjMzM/8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAzMzP/KioqBgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACoqKgYzMzP/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMjIy1DIyMmAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAyMjJgMjIy1AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADMzM2czMzPgKioqBgAAAAAAAAAAAAAAAAAAAAAqKioGMzMz4DMzM2cAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMjIypy0tLeYzMzNQKioqBioqKgYzMzNQLS0t5jIyMqcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA0NDRYMzMz2jMzM/8zMzP/MzMz2jQ0NFgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.GridTableElement.CellSpacing" Value="-1" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.GridTableElement.RowSpacing" Value="-1" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="GridTableElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="MainBorder">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.ZIndex" Value="2" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="GridTableHeaderRowElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="MainBorder">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.ZIndex" Value="2" />
+            </PropertySettings>
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.GridTableHeaderRowElement">
+                <ChildSelector xsi:type="XmlVisualStateSelector" VisualState="GridTableHeaderCellElement" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlTypeSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="MainBorder">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.ZIndex" Value="1" />
+            </PropertySettings>
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.GridTableHeaderRowElement">
+                <ChildSelector xsi:type="XmlVisualStateSelector" VisualState="GridHeaderIndentCellElement" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlTypeSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentFill,MainForeColor,MainBorder">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.ZIndex" Value="1" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="GridHeaderCellElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="GridHeaderCellElement.IsSortedAscending" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="GridHeaderCellElement.IsSortedDescending" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AccentMouseOverFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="HeaderFilterFunctionButton.MouseOver">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentFill">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.SmoothingMode" Value="None" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="HeaderFilterFunctionButton">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="IconForeColor,Margin(1;0;1;0),GlyphText,GlyphText12,Padding(0;-1;0;-2),MaxSize(18;18)">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.UI.RadButtonItem.DisplayStyle" Value="Text" />
+              <XmlPropertySetting Property="Telerik.WinControls.RadItem.Text" Value="" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="HeaderFilterFunctionButton" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="HeaderFilterFunctionButton.IsFilterApplied">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AlternativeFill,MainBorderBottomLeftRight">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="GridFilterRowElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="Margin(1;0;1;0),IconForeColor,GlyphText12,MaxSize(18;18),Padding(0;-1;0;-2)">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.UI.RadButtonItem.DisplayStyle" Value="Text" />
+              <XmlPropertySetting Property="Telerik.WinControls.RadItem.Text" Value="" />
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.StretchVertically" Value="False" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="FilterFunctionButton" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="HighlightedForeColor">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="FilterFunctionButton.MouseOver" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="HighlightedForeColor">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="FilterFunctionButton.MouseDown" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="FilterFunctionButton">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="FilterFunctionButton">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="FilterFunctionButton.IsFilterApplied">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentFill">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.SmoothingMode" Value="None" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="FilterFunctionButton.IsFilterMenuShown">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="DefaultFont,MainForeColor,MainBorder,MainFill">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.ZIndex" Value="1" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="GridDataRowElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AccentFill,CheckedForeColor,MainBorder">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.ZIndex" Value="2" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="GridDataRowElement.IsSelected" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AccentFill,CheckedForeColor,MainBorder">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.ZIndex" Value="3" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="GridDataRowElement.IsCurrent" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="MainForeColor,MainBorder,AccentMouseOverFill">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.ZIndex" Value="2" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="GridDataRowElement.HotTracking" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AccentFill,CheckedForeColor,MainBorder">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.ZIndex" Value="3" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="GridDataRowElement.IsSelected.IsCurrent" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AccentFill,CheckedForeColor,MainBorder">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.ZIndex" Value="3" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="GridDataRowElement.IsSelected.IsCurrent.HotTracking" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AccentFill,CheckedForeColor,MainBorder">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.ZIndex" Value="2" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="GridDataRowElement.IsSelected.HotTracking" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AccentFill,CheckedForeColor,MainBorder">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.ZIndex" Value="3" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="GridDataRowElement.IsCurrent.HotTracking" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="MainForeColor,MainBorder,MainFill">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.ZIndex" Value="2" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="GridDataRowElement.ContainsSelectedCells" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="MainForeColor,MainBorder,MainFill">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.ZIndex" Value="3" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="GridDataRowElement.ContainsCurrentCell" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="MainForeColor,MainBorder,MainFill">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.ZIndex" Value="3" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="GridDataRowElement.ContainsCurrentCell.ContainsSelectedCells" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="IconForeColor,GlyphText12">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.UI.ExpanderItem.SignStyle" Value="Image" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.ExpanderItem.DrawSignFill" Value="False" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.ExpanderItem.DrawSignBorder" Value="False" />
+              <XmlPropertySetting Property="Telerik.WinControls.RadItem.Text" Value="" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="HierarchyExpander" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="IconForeColor">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.UI.ExpanderItem.SignStyle" Value="Image" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.ExpanderItem.DrawSignFill" Value="False" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.ExpanderItem.DrawSignBorder" Value="False" />
+              <XmlPropertySetting Property="Telerik.WinControls.RadItem.Text" Value="" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="HierarchyExpander.IsExpanded" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="GlyphText12">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.UI.ExpanderItem.DrawSignBorder" Value="False" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.ExpanderItem.DrawSignFill" Value="False" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.ExpanderItem.SignStyle" Value="Image" />
+              <XmlPropertySetting Property="Telerik.WinControls.RadItem.Text" Value="" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="GroupExpander" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="GlyphText12">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.UI.ExpanderItem.SignStyle" Value="Image" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.ExpanderItem.DrawSignBorder" Value="False" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.ExpanderItem.DrawSignFill" Value="False" />
+              <XmlPropertySetting Property="Telerik.WinControls.RadItem.Text" Value="" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="GroupExpander.IsExpanded" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="MainForeColor,MainBorder,SecondaryFill,ZIndex0">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.GridDataRowElement">
+                <ChildSelector xsi:type="XmlVisualStateSelector" VisualState="GridDataCellElement.IsPinned" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlTypeSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentFill,MainForeColor,MainBorder,ZIndex0">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.GridDataRowElement">
+                <ChildSelector xsi:type="XmlVisualStateSelector" VisualState="GridDataCellElement" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlTypeSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="GlyphText12,IconForeColor">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.UI.ExpanderItem.DrawSignBorder" Value="False" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.ExpanderItem.DrawSignFill" Value="False" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.ExpanderItem.SignStyle" Value="Image" />
+              <XmlPropertySetting Property="Telerik.WinControls.RadItem.Text" Value="" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="SelfReferencingExpander" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="GlyphText12,IconForeColor">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.UI.ExpanderItem.DrawSignBorder" Value="False" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.ExpanderItem.DrawSignFill" Value="False" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.ExpanderItem.SignStyle" Value="Image" />
+              <XmlPropertySetting Property="Telerik.WinControls.RadItem.Text" Value="" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="SelfReferencingExpander.IsExpanded" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="Padding(24;0;24;0),MainForeColor,AlternativeFill,Margin(0;-1;0;0)">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.GroupPanelElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="DefaultFont,Padding(4;3;4;3),MainForeColor,MainBorder,ButtonBackgroundFill">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.SmoothingMode" Value="HighQuality" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="GroupFieldElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="PositionOffset(8:0),GlyphText12,Padding(0;1;0;0),MainForeColor">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadItem.Text" Value="" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="HeaderItemButtonElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AccentMouseOverFill,AccentMouseOverBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="GroupFieldElement.MouseOver" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="IconForeColor,GlyphText12,Padding(5;3;5;3)">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadItem.Text" Value="" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="SearchRowCloseButton" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="MainRightBorder">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.GridGroupHeaderRowElement">
+                <ChildSelector xsi:type="XmlVisualStateSelector" VisualState="GridRowHeaderCellElement" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlTypeSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AccentFill,CheckedForeColor,MainBorder,ZIndex0">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.GridDataRowElement">
+                <ChildSelector xsi:type="XmlVisualStateSelector" VisualState="GridDataCellElement.IsSelected" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlTypeSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="MainForeColor,MainForeColorBorder2px,SecondaryFill,ZIndex1">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.GridDataRowElement">
+                <ChildSelector xsi:type="XmlVisualStateSelector" VisualState="GridDataCellElement.IsPinned.IsCurrent" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlTypeSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AccentPressedFill,MainBorder,MainForeColor,ZIndex0">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.GridDataRowElement">
+                <ChildSelector xsi:type="XmlVisualStateSelector" VisualState="GridDataCellElement.IsPinned.IsSelected" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlTypeSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentFill,MainForeColor,MainForeColorBorder2px,ZIndex1">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.GridDataRowElement">
+                <ChildSelector xsi:type="XmlVisualStateSelector" VisualState="GridDataCellElement.IsCurrent" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlTypeSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AccentPressedFill,MainBorder,MainForeColor,ZIndex0">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.GridDataRowElement">
+                <ChildSelector xsi:type="XmlVisualStateSelector" VisualState="GridDataCellElement.IsRowSelected.IsCurrentRow.IsPinned" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlTypeSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AccentPressedFill,MainForeColor,ZIndex0">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.GridDataRowElement">
+                <ChildSelector xsi:type="XmlVisualStateSelector" VisualState="GridDataCellElement.IsRowSelected.IsCurrentColumn.IsPinned" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlTypeSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AccentPressedFill,MainForeColor,ZIndex0">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.GridDataRowElement">
+                <ChildSelector xsi:type="XmlVisualStateSelector" VisualState="GridDataCellElement.IsRowSelected.IsPinned" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlTypeSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ButtonBackgroundFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="DropDownButton">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="RadArrowButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadElement.Visibility" Value="Collapsed" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="DropDownButton">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="RadArrowButtonArrow" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CollapsedBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="DropDownButton">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="RadArrowButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="Padding(4;0;4;0)">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="DropDownButton">
+                <ChildSelector xsi:type="XmlTypeSelector" ElementType="Telerik.WinControls.UI.ActionButtonElement" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="OptionsButtonImage">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="DropDownButton" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CollapsedBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="DropDownButton">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="Padding(0;-2;0;-1)">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.UI.GridSearchCellElement.DistanceBetweenNextAndPreviousButton" Value="-1" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="GridSearchCellElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CollapsedBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="HeaderItemButtonElement">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="HeaderItemButtonElementBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentFill">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.SmoothingMode" Value="None" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="HeaderItemButtonElement">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="HeaderItemButtonElementFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.VisualElement.ForeColor" Value="51, 51, 51" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="GroupFieldElement">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="GroupFieldArrowElement" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="MainFill">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.UI.LightVisualElement.DrawBorder" Value="False" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.PagingPanelElement.FirstPageButtonImage" Value="Qk02BAAAAAAAADYAAAAoAAAAEAAAABAAAAABACAAAAAAAAAAAADEDgAAxA4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAzMzP/AAAAAAAAAAAAAAAAAAAAACoqKgwwMDDNAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMzMz/wAAAAAAAAAAAAAAADIyMmYzMzP4MzMz/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADMzM/8AAAAAKioqDDAwMM0zMzP/MzMz/zMzM/8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAzMzP/MjIyazMzM/gzMzP/MzMz/zMzM/8zMzP/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMzMz/zIyMmYzMzP4MzMz/zMzM/8zMzP/MzMz/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADMzM/8AAAAAKioqDDAwMM0zMzP/MzMz/zMzM/8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAzMzP/AAAAAAAAAAAAAAAAMjIyZjMzM/gzMzP/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMzMz/wAAAAAAAAAAAAAAAAAAAAAqKioMMDAwzQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.PagingPanelElement.LastPageButtonImage" Value="Qk02BAAAAAAAADYAAAAoAAAAEAAAABAAAAABACAAAAAAAAAAAADEDgAAxA4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAwMDDNKioqDAAAAAAAAAAAAAAAAAAAAAAzMzP/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMzMz/zMzM/gyMjJmAAAAAAAAAAAAAAAAMzMz/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADMzM/8zMzP/MzMz/zAwMM0qKioMAAAAADMzM/8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAzMzP/MzMz/zMzM/8zMzP/MzMz+DIyMmszMzP/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMzMz/zMzM/8zMzP/MzMz/zMzM/gyMjJmMzMz/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADMzM/8zMzP/MzMz/zAwMM0qKioMAAAAADMzM/8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAzMzP/MzMz+DIyMmYAAAAAAAAAAAAAAAAzMzP/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMDAwzSoqKgwAAAAAAAAAAAAAAAAAAAAAMzMz/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.PagingPanelElement.NextPageButtonImage" Value="Qk02BAAAAAAAADYAAAAoAAAAEAAAABAAAAABACAAAAAAAAAAAADEDgAAxA4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMDAwzSoqKgwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADMzM/8zMzP4MjIyZgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAzMzP/MzMz/zMzM/8wMDDNKioqDAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMzMz/zMzM/8zMzP/MzMz/zMzM/gyMjJrAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADMzM/8zMzP/MzMz/zMzM/8zMzP4MjIyZgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAzMzP/MzMz/zMzM/8wMDDNKioqDAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMzMz/zMzM/gyMjJmAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADAwMM0qKioMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==" />
+              <XmlPropertySetting Property="Telerik.WinControls.UI.PagingPanelElement.PreviousPageButtonImage" Value="Qk02BAAAAAAAADYAAAAoAAAAEAAAABAAAAABACAAAAAAAAAAAADEDgAAxA4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACoqKgwwMDDNAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADIyMmYzMzP4MzMz/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAKioqDDAwMM0zMzP/MzMz/zMzM/8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMjIyazMzM/gzMzP/MzMz/zMzM/8zMzP/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADIyMmYzMzP4MzMz/zMzM/8zMzP/MzMz/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAKioqDDAwMM0zMzP/MzMz/zMzM/8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMjIyZjMzM/gzMzP/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAqKioMMDAwzQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==" />
+            </PropertySettings>
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.PagingPanelElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AccentFill,CheckedForeColor,MainForeColorBorder2px,ZIndex1">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.GridDataRowElement">
+                <ChildSelector xsi:type="XmlVisualStateSelector" VisualState="GridDataCellElement.IsCurrent.IsSelected" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlTypeSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="Padding(0;1;0;0),MainBorder,MainFill">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.RadGridViewElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="HeaderFilterFunctionButton.IsFilterMenuShown">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="IconForeColor,GlyphText12">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="DropDownButton">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="DropDownButtonArrowButton" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="DisabledForeColor">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="SearchRowCloseButton.Disabled" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AlternativeFill,MainBorder,AccentForeColor,SegoeUISemibold9Font">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="GridGroupHeaderRowElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="MainRightBorder">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.GridSummaryRowElement">
+                <ChildSelector xsi:type="XmlVisualStateSelector" VisualState="GridRowHeaderCellElement" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlTypeSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="MainRightBorder">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.GridNewRowElement">
+                <ChildSelector xsi:type="XmlVisualStateSelector" VisualState="GridRowHeaderCellElement" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlTypeSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="MainRightBorder">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.GridFilterRowElement">
+                <ChildSelector xsi:type="XmlVisualStateSelector" VisualState="GridRowHeaderCellElement" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlTypeSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="MainRightBorder">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.GridDataRowElement">
+                <ChildSelector xsi:type="XmlVisualStateSelector" VisualState="GridRowHeaderCellElement" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlTypeSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AccentFill,CheckedForeColor">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="GridGroupHeaderRowElement.IsCurrent" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadItem.Text" Value="" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="GroupExpander.IsCurrentRow" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadItem.Text" Value="" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="GroupExpander.IsCurrentRow.IsExpanded" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AccentMouseOverFill,AccentForeColor">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="GridGroupHeaderRowElement.HotTracking" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AccentFill,CheckedForeColor">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="GridGroupHeaderRowElement.IsCurrent.HotTracking" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CheckedForeColor">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadItem.Text" Value="" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="HierarchyExpander.IsCurrentRow" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CheckedForeColor">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadItem.Text" Value="" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="HierarchyExpander.IsCurrentRow.IsExpanded" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="MainBorder,ZIndex0">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.GridDataRowElement">
+                <ChildSelector xsi:type="XmlVisualStateSelector" VisualState="GridDataCellElement.IsInEditMode" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlTypeSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CheckedForeColor">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadItem.Text" Value="" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="HierarchyExpander.IsRowSelected" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CheckedForeColor">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadItem.Text" Value="" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="HierarchyExpander.IsRowSelected.IsExpanded" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CheckedForeColor,MainBorder,ZIndex0">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.GridDataRowElement">
+                <ChildSelector xsi:type="XmlVisualStateSelector" VisualState="GridDataCellElement.IsRowSelected" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlTypeSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CheckedForeColor">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadItem.Text" Value="" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="SelfReferencingExpander.IsCurrentRow" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CheckedForeColor">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadItem.Text" Value="" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="SelfReferencingExpander.IsRowSelected" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CheckedForeColor">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadItem.Text" Value="" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="SelfReferencingExpander.IsCurrentRow.IsExpanded" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CheckedForeColor">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.RadItem.Text" Value="" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="SelfReferencingExpander.IsRowSelected.IsExpanded" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="Padding(5;5;5;5),SecondaryFill">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.GridDetailViewRowElement">
+                <ChildSelector xsi:type="XmlVisualStateSelector" VisualState="GridDetailViewCellElement" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlTypeSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="IconForeColor">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.GroupLinkElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AccentForeColor">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="HeaderItemButtonElement.MouseOver" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AccentPressedForeColor">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="HeaderItemButtonElement.MouseDown" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AccentFill,CheckedForeColor,MainForeColorBorder2px,ZIndex1">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.GridDataRowElement">
+                <ChildSelector xsi:type="XmlVisualStateSelector" VisualState="GridDataCellElement.IsCurrentRow.IsCurrentColumn.IsCurrent" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlTypeSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AccentPressedFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="GridHeaderCellElement.MouseDown.IsSortedAscending" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AccentPressedFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="GridHeaderCellElement.MouseDown.IsSortedDescending" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AccentPressedFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="GridHeaderCellElement.MouseDown" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AccentMouseOverFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="GridHeaderCellElement.MouseOver" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AccentMouseOverFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="GridHeaderCellElement.MouseOver.IsSortedAscending" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AccentMouseOverFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="GridHeaderCellElement.MouseOver.IsSortedDescending" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AccentMouseOverFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="HeaderFilterFunctionButton.MouseOver.IsFilterApplied">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AccentPressedFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="HeaderFilterFunctionButton.MouseDown.IsFilterApplied">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AccentPressedFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="HeaderFilterFunctionButton.MouseDown">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="HeaderFilterFunctionButton">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="HeaderFilterFunctionButton.IsFilterApplied">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="FilterFunctionButton.IsFilterApplied">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AccentMouseOverFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="FilterFunctionButton.MouseOver">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AccentMouseOverFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="FilterFunctionButton.MouseOver.IsFilterApplied">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AccentPressedFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="FilterFunctionButton.MouseDown.IsFilterApplied">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AccentPressedFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="FilterFunctionButton.MouseDown">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AccentMouseOverBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="FilterFunctionButton.MouseOver">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AccentMouseOverBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="FilterFunctionButton.MouseOver.IsFilterApplied">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AccentMouseOverBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="HeaderFilterFunctionButton.MouseOver.IsFilterApplied">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AccentMouseOverBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="HeaderFilterFunctionButton.MouseOver">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AccentBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="HeaderFilterFunctionButton.MouseDown">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AccentBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="HeaderFilterFunctionButton.MouseDown.IsFilterApplied">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="HeaderFilterFunctionButton.IsFilterMenuShown">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="FilterFunctionButton.IsFilterMenuShown">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AccentBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="FilterFunctionButton.MouseDown.IsFilterApplied">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AccentBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="FilterFunctionButton.MouseDown">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="HighlightedForeColor">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="HeaderFilterFunctionButton.MouseDown" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="HighlightedForeColor">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="HeaderFilterFunctionButton.MouseOver" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AccentForeColor">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="FilterFunctionButton.IsFilterApplied" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AccentForeColor">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="FilterFunctionButton.MouseOver.IsFilterApplied" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AccentForeColor">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="FilterFunctionButton.MouseDown.IsFilterApplied" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AccentForeColor">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="FilterFunctionButton.IsFilterMenuShown" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AccentForeColor">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="HeaderFilterFunctionButton.IsFilterApplied" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AccentForeColor">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="HeaderFilterFunctionButton.MouseOver.IsFilterApplied" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AccentForeColor">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="HeaderFilterFunctionButton.MouseDown.IsFilterApplied" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AccentForeColor">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="HeaderFilterFunctionButton.IsFilterMenuShown" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="MainBorderBottomLeftRight,TransparentFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="GridFilterCellElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="MainBorder,AlternativeFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="GridSummaryRowElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="MainBorderBottomLeftRight">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="GridSearchRowElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="MainBorderBottomLeftRight">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="GridNewRowElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="MainBorder">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.GridDataRowElement">
+                <ChildSelector xsi:type="XmlVisualStateSelector" VisualState="GridIndentCellElement" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlTypeSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="MainBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="HierarchyExpanderCell" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AccentMouseOverFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="GridFilterCellElement.MouseOver" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AccentPressedFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="GridFilterCellElement.MouseDown" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="MainRightBorder">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.GridSearchRowElement">
+                <ChildSelector xsi:type="XmlVisualStateSelector" VisualState="GridRowHeaderCellElement" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlTypeSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AccentPressedForeColor">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="SearchRowCloseButton.MouseDown" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AccentForeColor">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="SearchRowCloseButton.MouseOver" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="MainBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="DropDownButton">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="DropDownButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AccentMouseOverBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="DropDownButton.MouseOver">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="DropDownButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AccentBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="DropDownButton.Pressed">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="DropDownButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AccentBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="DropDownButton.DropDownOpened">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="DropDownButtonBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AccentPressedFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="DropDownButton.DropDownOpened">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="RadArrowButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AccentPressedFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="DropDownButton.Pressed">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="RadArrowButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AccentPressedFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="DropDownButton.Pressed">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AccentPressedFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="DropDownButton.DropDownOpened">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="ButtonBackgroundFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="DropDownButton">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AccentMouseOverFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="DropDownButton.MouseOver.ActionPart">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="RadArrowButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AccentMouseOverFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="DropDownButton.MouseOver.ArrowPart">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="RadArrowButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AccentMouseOverFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="DropDownButton.MouseOver.ArrowPart">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AccentMouseOverFill">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="DropDownButton.MouseOver.ActionPart">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="ButtonFill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.Primitives.TextPrimitive.Text" Value="" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="DropDownButton">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="RadArrowButtonTextGlyph" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="HighlightedForeColor">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="DropDownButton.MouseOver">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="DropDownButtonArrowButton" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="HighlightedForeColor">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="DropDownButton.Pressed">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="DropDownButtonArrowButton" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="HighlightedForeColor">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="DropDownButton.DropDownOpened">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="DropDownButtonArrowButton" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="MainRightBorder">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.GridGroupHeaderRowElement">
+                <ChildSelector xsi:type="XmlVisualStateSelector" VisualState="GridIndentCellElement" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlTypeSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="MainRightBorder">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.GridSummaryRowElement">
+                <ChildSelector xsi:type="XmlVisualStateSelector" VisualState="GridIndentCellElement" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlTypeSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentFill,MainForeColor,MainBorder,ZIndex0">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.GridDataRowElement">
+                <ChildSelector xsi:type="XmlVisualStateSelector" VisualState="GridCommandCellElement" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlTypeSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="MainForeColor,MainBorder,SecondaryFill,ZIndex0">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.GridDataRowElement">
+                <ChildSelector xsi:type="XmlVisualStateSelector" VisualState="GridCommandCellElement.IsPinned" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlTypeSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AccentFill,CheckedForeColor,MainBorder,ZIndex0">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.GridDataRowElement">
+                <ChildSelector xsi:type="XmlVisualStateSelector" VisualState="GridCommandCellElement.IsSelected" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlTypeSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="MainForeColor,MainForeColorBorder2px,SecondaryFill,ZIndex1">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.GridDataRowElement">
+                <ChildSelector xsi:type="XmlVisualStateSelector" VisualState="GridCommandCellElement.IsPinned.IsCurrent" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlTypeSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AccentPressedFill,MainBorder,MainForeColor,ZIndex0">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.GridDataRowElement">
+                <ChildSelector xsi:type="XmlVisualStateSelector" VisualState="GridCommandCellElement.IsPinned.IsSelected" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlTypeSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentFill,MainForeColor,MainForeColorBorder2px,ZIndex1">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.GridDataRowElement">
+                <ChildSelector xsi:type="XmlVisualStateSelector" VisualState="GridCommandCellElement.IsCurrent" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlTypeSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AccentPressedFill,MainBorder,MainForeColor,ZIndex0">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.GridDataRowElement">
+                <ChildSelector xsi:type="XmlVisualStateSelector" VisualState="GridCommandCellElement.IsRowSelected.IsCurrentRow.IsPinned" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlTypeSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AccentPressedFill,MainForeColor,ZIndex0">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.GridDataRowElement">
+                <ChildSelector xsi:type="XmlVisualStateSelector" VisualState="GridCommandCellElement.IsRowSelected.IsCurrentColumn.IsPinned" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlTypeSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AccentPressedFill,MainForeColor,ZIndex0">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.GridDataRowElement">
+                <ChildSelector xsi:type="XmlVisualStateSelector" VisualState="GridCommandCellElement.IsRowSelected.IsPinned" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlTypeSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AccentFill,CheckedForeColor,MainForeColorBorder2px,ZIndex1">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.GridDataRowElement">
+                <ChildSelector xsi:type="XmlVisualStateSelector" VisualState="GridCommandCellElement.IsCurrent.IsSelected" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlTypeSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="MainBorder,ZIndex0">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.GridDataRowElement">
+                <ChildSelector xsi:type="XmlVisualStateSelector" VisualState="GridCommandCellElement.IsInEditMode" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlTypeSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CheckedForeColor,MainBorder,ZIndex0">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.GridDataRowElement">
+                <ChildSelector xsi:type="XmlVisualStateSelector" VisualState="GridCommandCellElement.IsRowSelected" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlTypeSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AccentFill,CheckedForeColor,MainForeColorBorder2px,ZIndex1">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.GridDataRowElement">
+                <ChildSelector xsi:type="XmlVisualStateSelector" VisualState="GridCommandCellElement.IsCurrentRow.IsCurrentColumn.IsCurrent" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlTypeSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentFill,MainForeColor,MainBorder,ZIndex0">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.GridDataRowElement">
+                <ChildSelector xsi:type="XmlVisualStateSelector" VisualState="GridComboBoxCellElement" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlTypeSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="MainForeColor,MainBorder,SecondaryFill,ZIndex0">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.GridDataRowElement">
+                <ChildSelector xsi:type="XmlVisualStateSelector" VisualState="GridComboBoxCellElement.IsPinned" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlTypeSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AccentFill,CheckedForeColor,MainBorder,ZIndex0">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.GridDataRowElement">
+                <ChildSelector xsi:type="XmlVisualStateSelector" VisualState="GridComboBoxCellElement.IsSelected" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlTypeSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="MainForeColor,MainForeColorBorder2px,SecondaryFill,ZIndex1">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.GridDataRowElement">
+                <ChildSelector xsi:type="XmlVisualStateSelector" VisualState="GridComboBoxCellElement.IsPinned.IsCurrent" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlTypeSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AccentPressedFill,MainBorder,MainForeColor,ZIndex0">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.GridDataRowElement">
+                <ChildSelector xsi:type="XmlVisualStateSelector" VisualState="GridComboBoxCellElement.IsPinned.IsSelected" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlTypeSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentFill,MainForeColor,MainForeColorBorder2px,ZIndex1">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.GridDataRowElement">
+                <ChildSelector xsi:type="XmlVisualStateSelector" VisualState="GridComboBoxCellElement.IsCurrent" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlTypeSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AccentPressedFill,MainBorder,MainForeColor,ZIndex0">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.GridDataRowElement">
+                <ChildSelector xsi:type="XmlVisualStateSelector" VisualState="GridComboBoxCellElement.IsRowSelected.IsCurrentRow.IsPinned" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlTypeSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AccentPressedFill,MainForeColor,ZIndex0">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.GridDataRowElement">
+                <ChildSelector xsi:type="XmlVisualStateSelector" VisualState="GridComboBoxCellElement.IsRowSelected.IsCurrentColumn.IsPinned" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlTypeSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AccentPressedFill,MainForeColor,ZIndex0">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.GridDataRowElement">
+                <ChildSelector xsi:type="XmlVisualStateSelector" VisualState="GridComboBoxCellElement.IsRowSelected.IsPinned" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlTypeSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AccentFill,CheckedForeColor,MainForeColorBorder2px,ZIndex1">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.GridDataRowElement">
+                <ChildSelector xsi:type="XmlVisualStateSelector" VisualState="GridComboBoxCellElement.IsCurrent.IsSelected" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlTypeSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="MainBorder,ZIndex0">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.GridDataRowElement">
+                <ChildSelector xsi:type="XmlVisualStateSelector" VisualState="GridComboBoxCellElement.IsInEditMode" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlTypeSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CheckedForeColor,MainBorder,ZIndex0">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.GridDataRowElement">
+                <ChildSelector xsi:type="XmlVisualStateSelector" VisualState="GridComboBoxCellElement.IsRowSelected" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlTypeSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AccentFill,CheckedForeColor,MainForeColorBorder2px,ZIndex1">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.GridDataRowElement">
+                <ChildSelector xsi:type="XmlVisualStateSelector" VisualState="GridComboBoxCellElement.IsCurrentRow.IsCurrentColumn.IsCurrent" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlTypeSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentFill,MainForeColor,MainBorder,ZIndex0">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.GridDataRowElement">
+                <ChildSelector xsi:type="XmlVisualStateSelector" VisualState="GridCheckBoxCellElement" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlTypeSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="MainForeColor,MainBorder,SecondaryFill,ZIndex0">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.GridDataRowElement">
+                <ChildSelector xsi:type="XmlVisualStateSelector" VisualState="GridCheckBoxCellElement.IsPinned" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlTypeSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AccentFill,CheckedForeColor,MainBorder,ZIndex0">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.GridDataRowElement">
+                <ChildSelector xsi:type="XmlVisualStateSelector" VisualState="GridCheckBoxCellElement.IsSelected" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlTypeSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="MainForeColor,MainForeColorBorder2px,SecondaryFill,ZIndex1">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.GridDataRowElement">
+                <ChildSelector xsi:type="XmlVisualStateSelector" VisualState="GridCheckBoxCellElement.IsPinned.IsCurrent" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlTypeSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AccentPressedFill,MainBorder,MainForeColor,ZIndex0">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.GridDataRowElement">
+                <ChildSelector xsi:type="XmlVisualStateSelector" VisualState="GridCheckBoxCellElement.IsPinned.IsSelected" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlTypeSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentFill,MainForeColor,MainForeColorBorder2px,ZIndex1">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.GridDataRowElement">
+                <ChildSelector xsi:type="XmlVisualStateSelector" VisualState="GridCheckBoxCellElement.IsCurrent" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlTypeSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AccentPressedFill,MainBorder,MainForeColor,ZIndex0">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.GridDataRowElement">
+                <ChildSelector xsi:type="XmlVisualStateSelector" VisualState="GridCheckBoxCellElement.IsRowSelected.IsCurrentRow.IsPinned" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlTypeSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AccentPressedFill,MainForeColor,ZIndex0">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.GridDataRowElement">
+                <ChildSelector xsi:type="XmlVisualStateSelector" VisualState="GridCheckBoxCellElement.IsRowSelected.IsCurrentColumn.IsPinned" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlTypeSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AccentPressedFill,MainForeColor,ZIndex0">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.GridDataRowElement">
+                <ChildSelector xsi:type="XmlVisualStateSelector" VisualState="GridCheckBoxCellElement.IsRowSelected.IsPinned" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlTypeSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AccentFill,CheckedForeColor,MainForeColorBorder2px,ZIndex1">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.GridDataRowElement">
+                <ChildSelector xsi:type="XmlVisualStateSelector" VisualState="GridCheckBoxCellElement.IsCurrent.IsSelected" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlTypeSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="MainBorder,ZIndex0">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.GridDataRowElement">
+                <ChildSelector xsi:type="XmlVisualStateSelector" VisualState="GridCheckBoxCellElement.IsInEditMode" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlTypeSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CheckedForeColor,MainBorder,ZIndex0">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.GridDataRowElement">
+                <ChildSelector xsi:type="XmlVisualStateSelector" VisualState="GridCheckBoxCellElement.IsRowSelected" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlTypeSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AccentFill,CheckedForeColor,MainForeColorBorder2px,ZIndex1">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.GridDataRowElement">
+                <ChildSelector xsi:type="XmlVisualStateSelector" VisualState="GridCheckBoxCellElement.IsCurrentRow.IsCurrentColumn.IsCurrent" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlTypeSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentFill,MainForeColor,MainBorder,ZIndex0">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.GridDataRowElement">
+                <ChildSelector xsi:type="XmlVisualStateSelector" VisualState="GridDateTimeCellElement" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlTypeSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="MainForeColor,MainBorder,SecondaryFill,ZIndex0">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.GridDataRowElement">
+                <ChildSelector xsi:type="XmlVisualStateSelector" VisualState="GridDateTimeCellElement.IsPinned" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlTypeSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AccentFill,CheckedForeColor,MainBorder,ZIndex0">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.GridDataRowElement">
+                <ChildSelector xsi:type="XmlVisualStateSelector" VisualState="GridDateTimeCellElement.IsSelected" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlTypeSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="MainForeColor,MainForeColorBorder2px,SecondaryFill,ZIndex1">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.GridDataRowElement">
+                <ChildSelector xsi:type="XmlVisualStateSelector" VisualState="GridDateTimeCellElement.IsPinned.IsCurrent" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlTypeSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AccentPressedFill,MainBorder,MainForeColor,ZIndex0">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.GridDataRowElement">
+                <ChildSelector xsi:type="XmlVisualStateSelector" VisualState="GridDateTimeCellElement.IsPinned.IsSelected" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlTypeSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentFill,MainForeColor,MainForeColorBorder2px,ZIndex1">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.GridDataRowElement">
+                <ChildSelector xsi:type="XmlVisualStateSelector" VisualState="GridDateTimeCellElement.IsCurrent" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlTypeSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AccentPressedFill,MainBorder,MainForeColor,ZIndex0">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.GridDataRowElement">
+                <ChildSelector xsi:type="XmlVisualStateSelector" VisualState="GridDateTimeCellElement.IsRowSelected.IsCurrentRow.IsPinned" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlTypeSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AccentPressedFill,MainForeColor,ZIndex0">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.GridDataRowElement">
+                <ChildSelector xsi:type="XmlVisualStateSelector" VisualState="GridDateTimeCellElement.IsRowSelected.IsCurrentColumn.IsPinned" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlTypeSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AccentPressedFill,MainForeColor,ZIndex0">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.GridDataRowElement">
+                <ChildSelector xsi:type="XmlVisualStateSelector" VisualState="GridDateTimeCellElement.IsRowSelected.IsPinned" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlTypeSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AccentFill,CheckedForeColor,MainForeColorBorder2px,ZIndex1">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.GridDataRowElement">
+                <ChildSelector xsi:type="XmlVisualStateSelector" VisualState="GridDateTimeCellElement.IsCurrent.IsSelected" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlTypeSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="MainBorder,ZIndex0">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.GridDataRowElement">
+                <ChildSelector xsi:type="XmlVisualStateSelector" VisualState="GridDateTimeCellElement.IsInEditMode" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlTypeSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CheckedForeColor,MainBorder,ZIndex0">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.GridDataRowElement">
+                <ChildSelector xsi:type="XmlVisualStateSelector" VisualState="GridDateTimeCellElement.IsRowSelected" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlTypeSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AccentFill,CheckedForeColor,MainForeColorBorder2px,ZIndex1">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.GridDataRowElement">
+                <ChildSelector xsi:type="XmlVisualStateSelector" VisualState="GridDateTimeCellElement.IsCurrentRow.IsCurrentColumn.IsCurrent" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlTypeSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentFill,MainForeColor,MainBorder,ZIndex0">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.GridDataRowElement">
+                <ChildSelector xsi:type="XmlVisualStateSelector" VisualState="GridImageCellElement" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlTypeSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="MainForeColor,MainBorder,SecondaryFill,ZIndex0">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.GridDataRowElement">
+                <ChildSelector xsi:type="XmlVisualStateSelector" VisualState="GridImageCellElement.IsPinned" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlTypeSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AccentFill,CheckedForeColor,MainBorder,ZIndex0">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.GridDataRowElement">
+                <ChildSelector xsi:type="XmlVisualStateSelector" VisualState="GridImageCellElement.IsSelected" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlTypeSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="MainForeColor,MainForeColorBorder2px,SecondaryFill,ZIndex1">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.GridDataRowElement">
+                <ChildSelector xsi:type="XmlVisualStateSelector" VisualState="GridImageCellElement.IsPinned.IsCurrent" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlTypeSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AccentPressedFill,MainBorder,MainForeColor,ZIndex0">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.GridDataRowElement">
+                <ChildSelector xsi:type="XmlVisualStateSelector" VisualState="GridImageCellElement.IsPinned.IsSelected" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlTypeSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentFill,MainForeColor,MainForeColorBorder2px,ZIndex1">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.GridDataRowElement">
+                <ChildSelector xsi:type="XmlVisualStateSelector" VisualState="GridImageCellElement.IsCurrent" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlTypeSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AccentPressedFill,MainBorder,MainForeColor,ZIndex0">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.GridDataRowElement">
+                <ChildSelector xsi:type="XmlVisualStateSelector" VisualState="GridImageCellElement.IsRowSelected.IsCurrentRow.IsPinned" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlTypeSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AccentPressedFill,MainForeColor,ZIndex0">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.GridDataRowElement">
+                <ChildSelector xsi:type="XmlVisualStateSelector" VisualState="GridImageCellElement.IsRowSelected.IsCurrentColumn.IsPinned" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlTypeSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AccentPressedFill,MainForeColor,ZIndex0">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.GridDataRowElement">
+                <ChildSelector xsi:type="XmlVisualStateSelector" VisualState="GridImageCellElement.IsRowSelected.IsPinned" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlTypeSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AccentFill,CheckedForeColor,MainForeColorBorder2px,ZIndex1">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.GridDataRowElement">
+                <ChildSelector xsi:type="XmlVisualStateSelector" VisualState="GridImageCellElement.IsCurrent.IsSelected" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlTypeSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="MainBorder,ZIndex0">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.GridDataRowElement">
+                <ChildSelector xsi:type="XmlVisualStateSelector" VisualState="GridImageCellElement.IsInEditMode" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlTypeSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CheckedForeColor,MainBorder,ZIndex0">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.GridDataRowElement">
+                <ChildSelector xsi:type="XmlVisualStateSelector" VisualState="GridImageCellElement.IsRowSelected" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlTypeSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AccentFill,CheckedForeColor,MainForeColorBorder2px,ZIndex1">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.GridDataRowElement">
+                <ChildSelector xsi:type="XmlVisualStateSelector" VisualState="GridImageCellElement.IsCurrentRow.IsCurrentColumn.IsCurrent" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlTypeSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentFill,MainForeColor,MainBorder,ZIndex0">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="GridHyperlinkCellElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="MainForeColor,MainBorder,SecondaryFill,ZIndex0">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="GridHyperlinkCellElement.IsPinned" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AccentFill,CheckedForeColor,MainBorder,ZIndex0">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="GridHyperlinkCellElement.IsSelected" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="MainForeColor,MainForeColorBorder2px,SecondaryFill,ZIndex1">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="GridHyperlinkCellElement.IsPinned.IsCurrent" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AccentPressedFill,MainBorder,MainForeColor,ZIndex0">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="GridHyperlinkCellElement.IsPinned.IsSelected" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentFill,MainForeColor,MainForeColorBorder2px,ZIndex1">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="GridHyperlinkCellElement.IsCurrent" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AccentPressedFill,MainBorder,MainForeColor,ZIndex0">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="GridHyperlinkCellElement.IsRowSelected.IsCurrentRow.IsPinned" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AccentPressedFill,MainForeColor,ZIndex0">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="GridHyperlinkCellElement.IsRowSelected.IsCurrentColumn.IsPinned" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AccentPressedFill,MainForeColor,ZIndex0">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="GridHyperlinkCellElement.IsRowSelected.IsPinned" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AccentFill,CheckedForeColor,MainForeColorBorder2px,ZIndex1">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="GridHyperlinkCellElement.IsCurrent.IsSelected" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="MainBorder,ZIndex0">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="GridHyperlinkCellElement.IsInEditMode" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CheckedForeColor,MainBorder,ZIndex0">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="GridHyperlinkCellElement.IsRowSelected" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AccentFill,CheckedForeColor,MainForeColorBorder2px,ZIndex1">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="GridHyperlinkCellElement.IsCurrentRow.IsCurrentColumn.IsCurrent" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentFill,MainForeColor,MainBorder,ZIndex0">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.GridDataRowElement">
+                <ChildSelector xsi:type="XmlVisualStateSelector" VisualState="GridCalculatorCellElement" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlTypeSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="MainForeColor,MainBorder,SecondaryFill,ZIndex0">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.GridDataRowElement">
+                <ChildSelector xsi:type="XmlVisualStateSelector" VisualState="GridCalculatorCellElement.IsPinned" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlTypeSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AccentFill,CheckedForeColor,MainBorder,ZIndex0">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.GridDataRowElement">
+                <ChildSelector xsi:type="XmlVisualStateSelector" VisualState="GridCalculatorCellElement.IsSelected" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlTypeSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="MainForeColor,MainForeColorBorder2px,SecondaryFill,ZIndex1">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.GridDataRowElement">
+                <ChildSelector xsi:type="XmlVisualStateSelector" VisualState="GridCalculatorCellElement.IsPinned.IsCurrent" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlTypeSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AccentPressedFill,MainBorder,MainForeColor,ZIndex0">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.GridDataRowElement">
+                <ChildSelector xsi:type="XmlVisualStateSelector" VisualState="GridCalculatorCellElement.IsPinned.IsSelected" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlTypeSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentFill,MainForeColor,MainForeColorBorder2px,ZIndex1">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.GridDataRowElement">
+                <ChildSelector xsi:type="XmlVisualStateSelector" VisualState="GridCalculatorCellElement.IsCurrent" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlTypeSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AccentPressedFill,MainBorder,MainForeColor,ZIndex0">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.GridDataRowElement">
+                <ChildSelector xsi:type="XmlVisualStateSelector" VisualState="GridCalculatorCellElement.IsRowSelected.IsCurrentRow.IsPinned" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlTypeSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AccentPressedFill,MainForeColor,ZIndex0">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.GridDataRowElement">
+                <ChildSelector xsi:type="XmlVisualStateSelector" VisualState="GridCalculatorCellElement.IsRowSelected.IsCurrentColumn.IsPinned" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlTypeSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AccentPressedFill,MainForeColor,ZIndex0">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.GridDataRowElement">
+                <ChildSelector xsi:type="XmlVisualStateSelector" VisualState="GridCalculatorCellElement.IsRowSelected.IsPinned" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlTypeSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AccentFill,CheckedForeColor,MainForeColorBorder2px,ZIndex1">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.GridDataRowElement">
+                <ChildSelector xsi:type="XmlVisualStateSelector" VisualState="GridCalculatorCellElement.IsCurrent.IsSelected" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlTypeSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="MainBorder,ZIndex0">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.GridDataRowElement">
+                <ChildSelector xsi:type="XmlVisualStateSelector" VisualState="GridCalculatorCellElement.IsInEditMode" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlTypeSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CheckedForeColor,MainBorder,ZIndex0">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.GridDataRowElement">
+                <ChildSelector xsi:type="XmlVisualStateSelector" VisualState="GridCalculatorCellElement.IsRowSelected" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlTypeSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AccentFill,CheckedForeColor,MainForeColorBorder2px,ZIndex1">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.GridDataRowElement">
+                <ChildSelector xsi:type="XmlVisualStateSelector" VisualState="GridCalculatorCellElement.IsCurrentRow.IsCurrentColumn.IsCurrent" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlTypeSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentFill,MainForeColor,MainBorder,ZIndex0">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.GridDataRowElement">
+                <ChildSelector xsi:type="XmlVisualStateSelector" VisualState="GridColorCellElement" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlTypeSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="MainForeColor,MainBorder,SecondaryFill,ZIndex0">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.GridDataRowElement">
+                <ChildSelector xsi:type="XmlVisualStateSelector" VisualState="GridColorCellElement.IsPinned" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlTypeSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AccentFill,CheckedForeColor,MainBorder,ZIndex0">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.GridDataRowElement">
+                <ChildSelector xsi:type="XmlVisualStateSelector" VisualState="GridColorCellElement.IsSelected" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlTypeSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="MainForeColor,MainForeColorBorder2px,SecondaryFill,ZIndex1">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.GridDataRowElement">
+                <ChildSelector xsi:type="XmlVisualStateSelector" VisualState="GridColorCellElement.IsPinned.IsCurrent" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlTypeSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AccentPressedFill,MainBorder,MainForeColor,ZIndex0">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.GridDataRowElement">
+                <ChildSelector xsi:type="XmlVisualStateSelector" VisualState="GridColorCellElement.IsPinned.IsSelected" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlTypeSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentFill,MainForeColor,MainForeColorBorder2px,ZIndex1">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.GridDataRowElement">
+                <ChildSelector xsi:type="XmlVisualStateSelector" VisualState="GridColorCellElement.IsCurrent" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlTypeSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AccentPressedFill,MainBorder,MainForeColor,ZIndex0">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.GridDataRowElement">
+                <ChildSelector xsi:type="XmlVisualStateSelector" VisualState="GridColorCellElement.IsRowSelected.IsCurrentRow.IsPinned" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlTypeSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AccentPressedFill,MainForeColor,ZIndex0">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.GridDataRowElement">
+                <ChildSelector xsi:type="XmlVisualStateSelector" VisualState="GridColorCellElement.IsRowSelected.IsCurrentColumn.IsPinned" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlTypeSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AccentPressedFill,MainForeColor,ZIndex0">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.GridDataRowElement">
+                <ChildSelector xsi:type="XmlVisualStateSelector" VisualState="GridColorCellElement.IsRowSelected.IsPinned" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlTypeSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AccentFill,CheckedForeColor,MainForeColorBorder2px,ZIndex1">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.GridDataRowElement">
+                <ChildSelector xsi:type="XmlVisualStateSelector" VisualState="GridColorCellElement.IsCurrent.IsSelected" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlTypeSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="MainBorder,ZIndex0">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.GridDataRowElement">
+                <ChildSelector xsi:type="XmlVisualStateSelector" VisualState="GridColorCellElement.IsInEditMode" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlTypeSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CheckedForeColor,MainBorder,ZIndex0">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.GridDataRowElement">
+                <ChildSelector xsi:type="XmlVisualStateSelector" VisualState="GridColorCellElement.IsRowSelected" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlTypeSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AccentFill,CheckedForeColor,MainForeColorBorder2px,ZIndex1">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.GridDataRowElement">
+                <ChildSelector xsi:type="XmlVisualStateSelector" VisualState="GridColorCellElement.IsCurrentRow.IsCurrentColumn.IsCurrent" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlTypeSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentFill,MainForeColor,MainBorder,ZIndex0">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.GridDataRowElement">
+                <ChildSelector xsi:type="XmlVisualStateSelector" VisualState="GridBrowseCellElement" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlTypeSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="MainForeColor,MainBorder,SecondaryFill,ZIndex0">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.GridDataRowElement">
+                <ChildSelector xsi:type="XmlVisualStateSelector" VisualState="GridBrowseCellElement.IsPinned" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlTypeSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AccentFill,CheckedForeColor,MainBorder,ZIndex0">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.GridDataRowElement">
+                <ChildSelector xsi:type="XmlVisualStateSelector" VisualState="GridBrowseCellElement.IsSelected" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlTypeSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="MainForeColor,MainForeColorBorder2px,SecondaryFill,ZIndex1">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.GridDataRowElement">
+                <ChildSelector xsi:type="XmlVisualStateSelector" VisualState="GridBrowseCellElement.IsPinned.IsCurrent" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlTypeSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AccentPressedFill,MainBorder,MainForeColor,ZIndex0">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.GridDataRowElement">
+                <ChildSelector xsi:type="XmlVisualStateSelector" VisualState="GridBrowseCellElement.IsPinned.IsSelected" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlTypeSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentFill,MainForeColor,MainForeColorBorder2px,ZIndex1">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.GridDataRowElement">
+                <ChildSelector xsi:type="XmlVisualStateSelector" VisualState="GridBrowseCellElement.IsCurrent" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlTypeSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AccentPressedFill,MainBorder,MainForeColor,ZIndex0">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.GridDataRowElement">
+                <ChildSelector xsi:type="XmlVisualStateSelector" VisualState="GridBrowseCellElement.IsRowSelected.IsCurrentRow.IsPinned" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlTypeSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AccentPressedFill,MainForeColor,ZIndex0">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.GridDataRowElement">
+                <ChildSelector xsi:type="XmlVisualStateSelector" VisualState="GridBrowseCellElement.IsRowSelected.IsCurrentColumn.IsPinned" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlTypeSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AccentPressedFill,MainForeColor,ZIndex0">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.GridDataRowElement">
+                <ChildSelector xsi:type="XmlVisualStateSelector" VisualState="GridBrowseCellElement.IsRowSelected.IsPinned" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlTypeSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AccentFill,CheckedForeColor,MainForeColorBorder2px,ZIndex1">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.GridDataRowElement">
+                <ChildSelector xsi:type="XmlVisualStateSelector" VisualState="GridBrowseCellElement.IsCurrent.IsSelected" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlTypeSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="MainBorder,ZIndex0">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.GridDataRowElement">
+                <ChildSelector xsi:type="XmlVisualStateSelector" VisualState="GridBrowseCellElement.IsInEditMode" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlTypeSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CheckedForeColor,MainBorder,ZIndex0">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.GridDataRowElement">
+                <ChildSelector xsi:type="XmlVisualStateSelector" VisualState="GridBrowseCellElement.IsRowSelected" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlTypeSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AccentFill,CheckedForeColor,MainForeColorBorder2px,ZIndex1">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.GridDataRowElement">
+                <ChildSelector xsi:type="XmlVisualStateSelector" VisualState="GridBrowseCellElement.IsCurrentRow.IsCurrentColumn.IsCurrent" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlTypeSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentFill,MainForeColor,MainBorder,ZIndex0">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.GridDataRowElement">
+                <ChildSelector xsi:type="XmlVisualStateSelector" VisualState="GridRatingCellElement" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlTypeSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="MainForeColor,MainBorder,SecondaryFill,ZIndex0">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.GridDataRowElement">
+                <ChildSelector xsi:type="XmlVisualStateSelector" VisualState="GridRatingCellElement.IsPinned" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlTypeSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AccentFill,CheckedForeColor,MainBorder,ZIndex0">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.GridDataRowElement">
+                <ChildSelector xsi:type="XmlVisualStateSelector" VisualState="GridRatingCellElement.IsSelected" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlTypeSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="MainForeColor,MainForeColorBorder2px,SecondaryFill,ZIndex1">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.GridDataRowElement">
+                <ChildSelector xsi:type="XmlVisualStateSelector" VisualState="GridRatingCellElement.IsPinned.IsCurrent" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlTypeSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AccentPressedFill,MainBorder,MainForeColor,ZIndex0">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.GridDataRowElement">
+                <ChildSelector xsi:type="XmlVisualStateSelector" VisualState="GridRatingCellElement.IsPinned.IsSelected" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlTypeSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="TransparentFill,MainForeColorBorder2px,ZIndex1,MainForeColor">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.GridDataRowElement">
+                <ChildSelector xsi:type="XmlVisualStateSelector" VisualState="GridRatingCellElement.IsCurrent" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlTypeSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AccentPressedFill,MainBorder,MainForeColor,ZIndex0">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.GridDataRowElement">
+                <ChildSelector xsi:type="XmlVisualStateSelector" VisualState="GridRatingCellElement.IsRowSelected.IsCurrentRow.IsPinned" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlTypeSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AccentPressedFill,MainForeColor,ZIndex0">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.GridDataRowElement">
+                <ChildSelector xsi:type="XmlVisualStateSelector" VisualState="GridRatingCellElement.IsRowSelected.IsCurrentColumn.IsPinned" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlTypeSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AccentPressedFill,MainForeColor,ZIndex0">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.GridDataRowElement">
+                <ChildSelector xsi:type="XmlVisualStateSelector" VisualState="GridRatingCellElement.IsRowSelected.IsPinned" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlTypeSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AccentFill,CheckedForeColor,MainForeColorBorder2px,ZIndex1">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.GridDataRowElement">
+                <ChildSelector xsi:type="XmlVisualStateSelector" VisualState="GridRatingCellElement.IsCurrent.IsSelected" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlTypeSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="MainBorder,ZIndex0">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.GridDataRowElement">
+                <ChildSelector xsi:type="XmlVisualStateSelector" VisualState="GridRatingCellElement.IsInEditMode" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlTypeSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CheckedForeColor,MainBorder,ZIndex0">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.GridDataRowElement">
+                <ChildSelector xsi:type="XmlVisualStateSelector" VisualState="GridRatingCellElement.IsRowSelected" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlTypeSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AccentFill,CheckedForeColor,MainForeColorBorder2px,ZIndex1">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.GridDataRowElement">
+                <ChildSelector xsi:type="XmlVisualStateSelector" VisualState="GridRatingCellElement.IsCurrentRow.IsCurrentColumn.IsCurrent" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlTypeSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AccentPressedFill,AccentBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="GroupFieldElement.MouseDown" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="MainBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="GridDetailViewRowElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="MainRightBorder,Margin(-1;0;0;0)">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.GridDetailViewRowElement">
+                <ChildSelector xsi:type="XmlVisualStateSelector" VisualState="DetailRowHeaderCell" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlTypeSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CheckedForeColor,MainForeColorBorder2px,AccentFill,ZIndex1">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.GridDataRowElement">
+                <ChildSelector xsi:type="XmlVisualStateSelector" VisualState="GridDataCellElement.IsCurrentRow.IsCurrentColumn.IsSorted.IsCurrent" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlTypeSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CheckedForeColor,MainForeColorBorder2px,AccentFill,ZIndex1">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.GridDataRowElement">
+                <ChildSelector xsi:type="XmlVisualStateSelector" VisualState="GridCommandCellElement.IsCurrentRow.IsCurrentColumn.IsSorted.IsCurrent" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlTypeSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CheckedForeColor,MainForeColorBorder2px,AccentFill,ZIndex1">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.GridDataRowElement">
+                <ChildSelector xsi:type="XmlVisualStateSelector" VisualState="GridComboBoxCellElement.IsCurrentRow.IsCurrentColumn.IsSorted.IsCurrent" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlTypeSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CheckedForeColor,MainForeColorBorder2px,AccentFill,ZIndex1">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.GridDataRowElement">
+                <ChildSelector xsi:type="XmlVisualStateSelector" VisualState="GridCheckBoxCellElement.IsCurrentRow.IsCurrentColumn.IsSorted.IsCurrent" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlTypeSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CheckedForeColor,MainForeColorBorder2px,AccentFill,ZIndex1">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.GridDataRowElement">
+                <ChildSelector xsi:type="XmlVisualStateSelector" VisualState="GridDateTimeCellElement.IsCurrentRow.IsCurrentColumn.IsSorted.IsCurrent" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlTypeSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CheckedForeColor,MainForeColorBorder2px,AccentFill,ZIndex1">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.GridDataRowElement">
+                <ChildSelector xsi:type="XmlVisualStateSelector" VisualState="GridImageCellElement.IsCurrentRow.IsCurrentColumn.IsSorted.IsCurrent" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlTypeSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CheckedForeColor,MainForeColorBorder2px,AccentFill,ZIndex1">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="GridHyperlinkCellElement.IsCurrentRow.IsCurrentColumn.IsSorted.IsCurrent" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CheckedForeColor,MainForeColorBorder2px,AccentFill,ZIndex1">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.GridDataRowElement">
+                <ChildSelector xsi:type="XmlVisualStateSelector" VisualState="GridCalculatorCellElement.IsCurrentRow.IsCurrentColumn.IsSorted.IsCurrent" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlTypeSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CheckedForeColor,MainForeColorBorder2px,AccentFill,ZIndex1">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.GridDataRowElement">
+                <ChildSelector xsi:type="XmlVisualStateSelector" VisualState="GridColorCellElement.IsCurrentRow.IsCurrentColumn.IsSorted.IsCurrent" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlTypeSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CheckedForeColor,MainForeColorBorder2px,AccentFill,ZIndex1">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.GridDataRowElement">
+                <ChildSelector xsi:type="XmlVisualStateSelector" VisualState="GridBrowseCellElement.IsCurrentRow.IsCurrentColumn.IsSorted.IsCurrent" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlTypeSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CheckedForeColor,MainForeColorBorder2px,AccentFill,ZIndex1">
+            <Selectors>
+              <XmlTypeSelector ElementType="Telerik.WinControls.UI.GridDataRowElement">
+                <ChildSelector xsi:type="XmlVisualStateSelector" VisualState="GridRatingCellElement.IsCurrentRow.IsCurrentColumn.IsSorted.IsCurrent" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlTypeSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+        </PropertySettingGroups>
+      </BuilderData>
+      <StylesheetRelations>
+        <RadStylesheetRelation ControlType="Telerik.WinControls.UI.RadGridView" ElementType="Telerik.WinControls.RootRadElement" />
+        <RadStylesheetRelation ControlType="Telerik.WinControls.UI.RadGridView" ElementType="Telerik.WinControls.UI.GridTableElement" />
+        <RadStylesheetRelation ControlType="Telerik.WinControls.UI.RadGridView" ElementType="Telerik.WinControls.UI.GroupPanelElement" />
+      </StylesheetRelations>
+    </XmlStyleBuilderRegistration>
+  </BuilderRegistrations>
+</XmlTheme>

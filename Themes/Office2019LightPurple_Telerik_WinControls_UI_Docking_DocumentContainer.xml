@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XmlTheme xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ThemeName="Office2019LightPurple" ThemeVersion="2.0">
+  <BuilderRegistrations>
+    <XmlStyleBuilderRegistration BuilderType="">
+      <BuilderData xsi:type="XmlStyleSheet" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <PropertySettingGroups>
+          <XmlPropertySettingGroup BasedOn="">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.UI.SplitContainerElement.SplitterWidth" Value="8" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="SplitContainerElement" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.UI.SplitContainerElement.SplitterWidth" Value="8" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="SplitContainerElement.IsVertical" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CollapsedBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="SplitterElement">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="SplitterBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="CollapsedBorder">
+            <Selectors>
+              <XmlVisualStateSelector VisualState="SplitterElement.IsVertical">
+                <ChildSelector xsi:type="XmlClassSelector" ElementClass="SplitterBorder" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+              </XmlVisualStateSelector>
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AlternativeFill">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.UI.LightVisualElement.BackgroundImage" Value="Qk22AQAAAAAAADYAAAAoAAAABgAAABAAAAABACAAAAAAAAAAAADEDgAAxA4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAF9fX2BbW1v4W1tb+F9fX2AAAAAAAAAAAGBgYPRgYGD/YGBg/2BgYPQAAAAAAAAAAGBgYPRgYGD/YGBg/2BgYPQAAAAAAAAAAF9fX2BbW1v4W1tb+F9fX2AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAF9fX2BbW1v4W1tb+F9fX2AAAAAAAAAAAGBgYPRgYGD/YGBg/2BgYPQAAAAAAAAAAGBgYPRgYGD/YGBg/2BgYPQAAAAAAAAAAF9fX2BbW1v4W1tb+F9fX2AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAF9fX2BbW1v4W1tb+F9fX2AAAAAAAAAAAGBgYPRgYGD/YGBg/2BgYPQAAAAAAAAAAGBgYPRgYGD/YGBg/2BgYPQAAAAAAAAAAF9fX2BbW1v4W1tb+F9fX2AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="SplitterElementLayout.IsVertical" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+          <XmlPropertySettingGroup BasedOn="AlternativeFill">
+            <PropertySettings>
+              <XmlPropertySetting Property="Telerik.WinControls.UI.LightVisualElement.BackgroundImage" Value="Qk22AQAAAAAAADYAAAAoAAAAEAAAAAYAAAABACAAAAAAAAAAAADEDgAAxA4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABfX19gW1tb+FtbW/hfX19gAAAAAF9fX2BbW1v4W1tb+F9fX2AAAAAAX19fYFtbW/hbW1v4X19fYAAAAAAAAAAAYGBg9GBgYP9gYGD/YGBg9AAAAABgYGD0YGBg/2BgYP9gYGD0AAAAAGBgYPRgYGD/YGBg/2BgYPQAAAAAAAAAAGBgYPRgYGD/YGBg/2BgYPQAAAAAYGBg9GBgYP9gYGD/YGBg9AAAAABgYGD0YGBg/2BgYP9gYGD0AAAAAAAAAABfX19gW1tb+FtbW/hfX19gAAAAAF9fX2BbW1v4W1tb+F9fX2AAAAAAX19fYFtbW/hbW1v4X19fYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA" />
+            </PropertySettings>
+            <Selectors>
+              <XmlVisualStateSelector VisualState="SplitterElementLayout" />
+            </Selectors>
+          </XmlPropertySettingGroup>
+        </PropertySettingGroups>
+      </BuilderData>
+      <StylesheetRelations>
+        <RadStylesheetRelation ControlType="Telerik.WinControls.UI.Docking.DocumentContainer" ElementType="Telerik.WinControls.RootRadElement" />
+      </StylesheetRelations>
+    </XmlStyleBuilderRegistration>
+  </BuilderRegistrations>
+</XmlTheme>
