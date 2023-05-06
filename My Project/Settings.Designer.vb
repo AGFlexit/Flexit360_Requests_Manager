@@ -68,8 +68,9 @@ Namespace My
         <Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.Configuration.SpecialSettingAttribute(Global.System.Configuration.SpecialSetting.ConnectionString),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=""D:\Work\TELUS\DB\20230419. 43358.P"& _ 
-            "rod_Support_Issue_Tracking_be.accdb""")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=""I:\Shared drives\Flexit360 Apps (A"& _ 
+            "lain)\Access DBs\Backups\Tests_Dev\20230412.180525.Prod_Support_Issue_Tracking_b"& _ 
+            "e.accdb""")>  _
         Public ReadOnly Property DB_Connection() As String
             Get
                 Return CType(Me("DB_Connection"),String)

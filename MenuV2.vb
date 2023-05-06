@@ -9,6 +9,7 @@ Imports System.Text
 Imports System.Threading
 Imports DevExpress.XtraEditors.Controls
 Imports System.ComponentModel
+Imports System.Linq
 
 Partial Public Class MenuV2
     Private CurrentUserID As Integer
@@ -28,6 +29,26 @@ Partial Public Class MenuV2
                 'Me.GridControl1.Visible = True
                 'Me.GridControl2.Visible = False
         End Select
+        'Dim RichTxtEdit As RichTextBox
+        AddHandler GVIssues.EditFormPrepared, Sub(s, e)
+                                                  ' The 'e.BindableControls' collection contains the editors in the Edit Form.
+                                                  Dim RichTxtEdit As Control = e.BindableControls(GridColumn34)
+                                                  'RichTxtEdit.Text = e.RowHandle
+                                                  Dim row As DataRow = GVIssues.GetDataRow(e.RowHandle)
+                                                  'Dim description As String = row("Description").ToString()
+                                                  RichTxtEdit.Text = If(String.IsNullOrEmpty(row("Description").ToString()), String.Empty, String.Format(StripTags(row("Description").ToString()))) 'StripTags(row("Description").ToString())
+                                                  'For Each item As Control In e.BindableControls
+                                                  Dim MemoAudit As Control = e.BindableControls(colAudit)
+                                                  Dim rowAudit As DataRow() = row.GetChildRows("IssuesAudit")
+                                                  If rowAudit.Count > 0 Then
+                                                      'MemoAudit.Text = rowAudit(rowAudit.Count - 1)("Comment").ToString
+                                                      Dim highestID As Integer = rowAudit.Max(Function(r) Convert.ToInt32(r("ID")))
+                                                      Dim highestIDRow As DataRow = rowAudit.FirstOrDefault(Function(r) Convert.ToInt32(r("ID")) = highestID)
+                                                      If highestIDRow IsNot Nothing Then
+                                                          MemoAudit.Text = highestIDRow("Comment").ToString()
+                                                      End If
+                                                  End If
+                                              End Sub
 
     End Sub
     Private Sub navBarControl_ActiveGroupChanged(ByVal sender As Object, ByVal e As DevExpress.XtraNavBar.NavBarGroupEventArgs) Handles navBarControl.ActiveGroupChanged
@@ -168,7 +189,7 @@ Partial Public Class MenuV2
 
     Private Sub RepositoryItemRichTextEdit1_EditValueChanged(sender As Object, e As EventArgs) Handles RepositoryItemRichTextEdit1.EditValueChanged
         'Me.RepositoryItemRichTextEdit1.DocumentFormat
-        Me.RepositoryItemRichTextEdit1.ConvertEditValueToPlainText(Me.RepositoryItemRichTextEdit1.ToString)
+        'Me.RepositoryItemRichTextEdit1.ConvertEditValueToPlainText(Me.RepositoryItemRichTextEdit1.ToString)
     End Sub
 
 #Region "JIRA"

@@ -89,6 +89,8 @@ Partial Public Class MenuV2
         Me.colLastStatusUpdate = New DevExpress.XtraGrid.Columns.GridColumn()
         Me.colFLEXTicket = New DevExpress.XtraGrid.Columns.GridColumn()
         Me.colFLEXSTicket = New DevExpress.XtraGrid.Columns.GridColumn()
+        Me.colAudit = New DevExpress.XtraGrid.Columns.GridColumn()
+        Me.RepoMemoCurrAudit = New DevExpress.XtraEditors.Repository.RepositoryItemMemoEdit()
         Me.GridColumn34 = New DevExpress.XtraGrid.Columns.GridColumn()
         Me.RepositoryItemRichTextEdit1 = New DevExpress.XtraEditors.Repository.RepositoryItemRichTextEdit()
         Me.btnLogHours = New DevExpress.XtraGrid.Columns.GridColumn()
@@ -168,12 +170,26 @@ Partial Public Class MenuV2
         Me.LayoutControlItem3 = New DevExpress.XtraLayout.LayoutControlItem()
         Me.PopupMenu1 = New DevExpress.XtraBars.PopupMenu(Me.components)
         Me.RepositoryItemCheckedComboBoxEdit1 = New DevExpress.XtraEditors.Repository.RepositoryItemCheckedComboBoxEdit()
-        Me.RepositoryItemMemoEdit1 = New DevExpress.XtraEditors.Repository.RepositoryItemMemoEdit()
         Me.RepositoryItemTextEdit1 = New DevExpress.XtraEditors.Repository.RepositoryItemTextEdit()
         Me.RepositoryItemPopupContainerEdit1 = New DevExpress.XtraEditors.Repository.RepositoryItemPopupContainerEdit()
         Me.RepositoryItemButtonEdit1 = New DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit()
         Me.RepositoryItemHyperLinkEdit1 = New DevExpress.XtraEditors.Repository.RepositoryItemHyperLinkEdit()
         Me.RepositoryItemHypertextLabel1 = New DevExpress.XtraEditors.Repository.RepositoryItemHypertextLabel()
+        Me.RepositoryItemRichTextEdit3 = New DevExpress.XtraEditors.Repository.RepositoryItemRichTextEdit()
+        Me.RepoPopupComment = New DevExpress.XtraEditors.Repository.RepositoryItemPopupContainerEdit()
+        Me.RepositoryItemLookUpEdit1 = New DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit()
+        Me.AnalystsAuditBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.RepoGrdLkupAudit = New DevExpress.XtraEditors.Repository.RepositoryItemGridLookUpEdit()
+        Me.IssuesAuditBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.BandedGridView1 = New DevExpress.XtraGrid.Views.BandedGrid.BandedGridView()
+        Me.gridBand2 = New DevExpress.XtraGrid.Views.BandedGrid.GridBand()
+        Me.colComment1 = New DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn()
+        Me.colAnalyst = New DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn()
+        Me.colID2 = New DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn()
+        Me.colIssueID1 = New DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn()
+        Me.colDateAdded1 = New DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn()
+        Me.colUsername1 = New DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn()
+        Me.RepositoryItemLookUpEdit2 = New DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit()
         Me.GridView6 = New DevExpress.XtraGrid.Views.Grid.GridView()
         Me.GridColumn2 = New DevExpress.XtraGrid.Columns.GridColumn()
         Me.GridColumn3 = New DevExpress.XtraGrid.Columns.GridColumn()
@@ -275,6 +291,7 @@ Partial Public Class MenuV2
         CType(Me.AssigneeCbo, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.RepoAssigneeCboView, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.StatusCbo, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.RepoMemoCurrAudit, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.RepositoryItemRichTextEdit1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.RepoButtonHours, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ribbonControl, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -318,12 +335,19 @@ Partial Public Class MenuV2
         CType(Me.LayoutControlItem3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PopupMenu1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.RepositoryItemCheckedComboBoxEdit1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.RepositoryItemMemoEdit1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.RepositoryItemTextEdit1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.RepositoryItemPopupContainerEdit1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.RepositoryItemButtonEdit1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.RepositoryItemHyperLinkEdit1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.RepositoryItemHypertextLabel1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.RepositoryItemRichTextEdit3, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.RepoPopupComment, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.RepositoryItemLookUpEdit1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.AnalystsAuditBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.RepoGrdLkupAudit, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.IssuesAuditBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.BandedGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.RepositoryItemLookUpEdit2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.GridView6, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.RepositoryItemGridLookUpEdit2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.GridView8, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -470,7 +494,7 @@ Partial Public Class MenuV2
         Me.GCtrlRequests.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.GCtrlRequests.MenuManager = Me.ribbonControl
         Me.GCtrlRequests.Name = "GCtrlRequests"
-        Me.GCtrlRequests.RepositoryItems.AddRange(New DevExpress.XtraEditors.Repository.RepositoryItem() {Me.RepositoryItemGridLookUpEdit1, Me.ClCbo, Me.ChanCbo, Me.RepositoryItemCheckedComboBoxEdit1, Me.AssigneeCbo, Me.RepositoryItemMemoEdit1, Me.RepositoryItemRichTextEdit1, Me.RepositoryItemTextEdit1, Me.RepositoryItemPopupContainerEdit1, Me.RepositoryItemButtonEdit1, Me.RepositoryItemHyperLinkEdit1, Me.RepositoryItemHypertextLabel1, Me.RepoButtonHours, Me.PriorityCbo, Me.StatusCbo, Me.CategoryCbo, Me.ReporterCbo})
+        Me.GCtrlRequests.RepositoryItems.AddRange(New DevExpress.XtraEditors.Repository.RepositoryItem() {Me.RepositoryItemGridLookUpEdit1, Me.ClCbo, Me.ChanCbo, Me.RepositoryItemCheckedComboBoxEdit1, Me.AssigneeCbo, Me.RepoMemoCurrAudit, Me.RepositoryItemRichTextEdit1, Me.RepositoryItemTextEdit1, Me.RepositoryItemPopupContainerEdit1, Me.RepositoryItemButtonEdit1, Me.RepositoryItemHyperLinkEdit1, Me.RepositoryItemHypertextLabel1, Me.RepoButtonHours, Me.PriorityCbo, Me.StatusCbo, Me.CategoryCbo, Me.ReporterCbo, Me.RepositoryItemRichTextEdit3, Me.RepoPopupComment, Me.RepositoryItemLookUpEdit1, Me.RepoGrdLkupAudit, Me.RepositoryItemLookUpEdit2})
         Me.GCtrlRequests.ShowOnlyPredefinedDetails = True
         Me.GCtrlRequests.Size = New System.Drawing.Size(884, 480)
         Me.GCtrlRequests.TabIndex = 1
@@ -563,7 +587,7 @@ Partial Public Class MenuV2
         Me.GVIssues.Appearance.Row.FontSizeDelta = -1
         Me.GVIssues.Appearance.Row.Options.UseBackColor = True
         Me.GVIssues.Appearance.Row.Options.UseFont = True
-        Me.GVIssues.Columns.AddRange(New DevExpress.XtraGrid.Columns.GridColumn() {Me.colID, Me.colCLID, Me.ChannelName, Me.ClientName, Me.colDateReceived, Me.ReporterName, Me.colTitle, Me.colPriority, Me.colCategory, Me.AssigneeName, Me.colStatus, Me.colLastStatusUpdate, Me.colFLEXTicket, Me.colFLEXSTicket, Me.GridColumn34, Me.btnLogHours})
+        Me.GVIssues.Columns.AddRange(New DevExpress.XtraGrid.Columns.GridColumn() {Me.colID, Me.colCLID, Me.ChannelName, Me.ClientName, Me.colDateReceived, Me.ReporterName, Me.colTitle, Me.colPriority, Me.colCategory, Me.AssigneeName, Me.colStatus, Me.colLastStatusUpdate, Me.colFLEXTicket, Me.colFLEXSTicket, Me.colAudit, Me.GridColumn34, Me.btnLogHours})
         Me.GVIssues.CustomizationFormBounds = New System.Drawing.Rectangle(1027, 336, 264, 312)
         Me.GVIssues.DetailHeight = 458
         Me.GVIssues.GridControl = Me.GCtrlRequests
@@ -575,7 +599,7 @@ Partial Public Class MenuV2
         Me.GVIssues.OptionsDetail.AllowOnlyOneMasterRowExpanded = True
         Me.GVIssues.OptionsEditForm.ActionOnModifiedRowChange = DevExpress.XtraGrid.Views.Grid.EditFormModifiedAction.Save
         Me.GVIssues.OptionsEditForm.BindingMode = DevExpress.XtraGrid.Views.Grid.EditFormBindingMode.Direct
-        Me.GVIssues.OptionsEditForm.EditFormColumnCount = 5
+        Me.GVIssues.OptionsEditForm.EditFormColumnCount = 10
         Me.GVIssues.OptionsEditForm.PopupEditFormWidth = 1100
         Me.GVIssues.OptionsEditForm.ShowOnDoubleClick = DevExpress.Utils.DefaultBoolean.[True]
         Me.GVIssues.OptionsEditForm.ShowUpdateCancelPanel = DevExpress.Utils.DefaultBoolean.[True]
@@ -587,7 +611,7 @@ Partial Public Class MenuV2
         Me.GVIssues.PreviewFieldName = "Description"
         Me.GVIssues.PreviewLineCount = 8
         Me.GVIssues.RowHeight = 13
-        Me.GVIssues.SortInfo.AddRange(New DevExpress.XtraGrid.Columns.GridColumnSortInfo() {New DevExpress.XtraGrid.Columns.GridColumnSortInfo(Me.colID, DevExpress.Data.ColumnSortOrder.Descending), New DevExpress.XtraGrid.Columns.GridColumnSortInfo(Me.colCategory, DevExpress.Data.ColumnSortOrder.Ascending)})
+        Me.GVIssues.SortInfo.AddRange(New DevExpress.XtraGrid.Columns.GridColumnSortInfo() {New DevExpress.XtraGrid.Columns.GridColumnSortInfo(Me.colID, DevExpress.Data.ColumnSortOrder.Descending)})
         '
         'colID
         '
@@ -625,6 +649,9 @@ Partial Public Class MenuV2
         Me.ChannelName.FieldName = "Channel"
         Me.ChannelName.MinWidth = 17
         Me.ChannelName.Name = "ChannelName"
+        Me.ChannelName.OptionsEditForm.ColumnSpan = 2
+        Me.ChannelName.OptionsEditForm.StartNewRow = True
+        Me.ChannelName.OptionsEditForm.UseEditorColRowSpan = False
         Me.ChannelName.Visible = True
         Me.ChannelName.VisibleIndex = 2
         '
@@ -676,7 +703,7 @@ Partial Public Class MenuV2
         Me.ClientName.FieldName = "Client"
         Me.ClientName.MinWidth = 23
         Me.ClientName.Name = "ClientName"
-        Me.ClientName.OptionsEditForm.ColumnSpan = 2
+        Me.ClientName.OptionsEditForm.ColumnSpan = 3
         Me.ClientName.OptionsEditForm.UseEditorColRowSpan = False
         Me.ClientName.SortMode = DevExpress.XtraGrid.ColumnSortMode.DisplayText
         Me.ClientName.Visible = True
@@ -729,7 +756,10 @@ Partial Public Class MenuV2
         Me.colDateReceived.FieldName = "Date Received"
         Me.colDateReceived.MinWidth = 23
         Me.colDateReceived.Name = "colDateReceived"
-        Me.colDateReceived.OptionsEditForm.VisibleIndex = -1
+        Me.colDateReceived.OptionsEditForm.ColumnSpan = 2
+        Me.colDateReceived.OptionsEditForm.StartNewRow = True
+        Me.colDateReceived.OptionsEditForm.UseEditorColRowSpan = False
+        Me.colDateReceived.OptionsEditForm.VisibleIndex = 1
         Me.colDateReceived.Visible = True
         Me.colDateReceived.VisibleIndex = 8
         Me.colDateReceived.Width = 45
@@ -741,7 +771,7 @@ Partial Public Class MenuV2
         Me.ReporterName.FieldName = "Reported By"
         Me.ReporterName.MinWidth = 17
         Me.ReporterName.Name = "ReporterName"
-        Me.ReporterName.OptionsEditForm.ColumnSpan = 2
+        Me.ReporterName.OptionsEditForm.ColumnSpan = 4
         Me.ReporterName.OptionsEditForm.UseEditorColRowSpan = False
         Me.ReporterName.SortMode = DevExpress.XtraGrid.ColumnSortMode.DisplayText
         Me.ReporterName.Visible = True
@@ -786,9 +816,9 @@ Partial Public Class MenuV2
         Me.colTitle.FieldName = "Title"
         Me.colTitle.MinWidth = 23
         Me.colTitle.Name = "colTitle"
-        Me.colTitle.OptionsEditForm.ColumnSpan = 3
+        Me.colTitle.OptionsEditForm.ColumnSpan = 7
         Me.colTitle.OptionsEditForm.UseEditorColRowSpan = False
-        Me.colTitle.OptionsEditForm.VisibleIndex = 2
+        Me.colTitle.OptionsEditForm.VisibleIndex = -1
         Me.colTitle.Visible = True
         Me.colTitle.VisibleIndex = 6
         Me.colTitle.Width = 99
@@ -799,7 +829,9 @@ Partial Public Class MenuV2
         Me.colPriority.FieldName = "Priority"
         Me.colPriority.MinWidth = 23
         Me.colPriority.Name = "colPriority"
-        Me.colPriority.OptionsEditForm.VisibleIndex = -1
+        Me.colPriority.OptionsEditForm.ColumnSpan = 3
+        Me.colPriority.OptionsEditForm.UseEditorColRowSpan = False
+        Me.colPriority.OptionsEditForm.VisibleIndex = 1
         Me.colPriority.Visible = True
         Me.colPriority.VisibleIndex = 5
         Me.colPriority.Width = 49
@@ -818,7 +850,7 @@ Partial Public Class MenuV2
         Me.colCategory.FieldName = "Category"
         Me.colCategory.MinWidth = 23
         Me.colCategory.Name = "colCategory"
-        Me.colCategory.OptionsEditForm.ColumnSpan = 2
+        Me.colCategory.OptionsEditForm.ColumnSpan = 4
         Me.colCategory.OptionsEditForm.UseEditorColRowSpan = False
         Me.colCategory.OptionsEditForm.VisibleIndex = 2
         Me.colCategory.Visible = True
@@ -890,7 +922,7 @@ Partial Public Class MenuV2
         Me.colStatus.FieldName = "Status"
         Me.colStatus.MinWidth = 23
         Me.colStatus.Name = "colStatus"
-        Me.colStatus.OptionsEditForm.ColumnSpan = 2
+        Me.colStatus.OptionsEditForm.ColumnSpan = 5
         Me.colStatus.OptionsEditForm.UseEditorColRowSpan = False
         Me.colStatus.OptionsEditForm.VisibleIndex = 3
         Me.colStatus.Visible = True
@@ -911,6 +943,8 @@ Partial Public Class MenuV2
         Me.colLastStatusUpdate.FieldName = "Last Status Update"
         Me.colLastStatusUpdate.MinWidth = 23
         Me.colLastStatusUpdate.Name = "colLastStatusUpdate"
+        Me.colLastStatusUpdate.OptionsEditForm.ColumnSpan = 2
+        Me.colLastStatusUpdate.OptionsEditForm.UseEditorColRowSpan = False
         Me.colLastStatusUpdate.OptionsEditForm.VisibleIndex = 3
         Me.colLastStatusUpdate.Visible = True
         Me.colLastStatusUpdate.VisibleIndex = 11
@@ -921,6 +955,7 @@ Partial Public Class MenuV2
         Me.colFLEXTicket.FieldName = "FLEX Ticket"
         Me.colFLEXTicket.MinWidth = 23
         Me.colFLEXTicket.Name = "colFLEXTicket"
+        Me.colFLEXTicket.OptionsEditForm.StartNewRow = True
         Me.colFLEXTicket.OptionsEditForm.VisibleIndex = 4
         Me.colFLEXTicket.Visible = True
         Me.colFLEXTicket.VisibleIndex = 12
@@ -936,6 +971,24 @@ Partial Public Class MenuV2
         Me.colFLEXSTicket.VisibleIndex = 13
         Me.colFLEXSTicket.Width = 34
         '
+        'colAudit
+        '
+        Me.colAudit.Caption = "Audit"
+        Me.colAudit.ColumnEdit = Me.RepoMemoCurrAudit
+        Me.colAudit.FieldName = "IssuesAudit.Comment"
+        Me.colAudit.Name = "colAudit"
+        Me.colAudit.Visible = True
+        Me.colAudit.VisibleIndex = 14
+        '
+        'RepoMemoCurrAudit
+        '
+        Me.RepoMemoCurrAudit.AllowGlyphSkinning = DevExpress.Utils.DefaultBoolean.[True]
+        Me.RepoMemoCurrAudit.AllowHtmlDraw = DevExpress.Utils.DefaultBoolean.[True]
+        Me.RepoMemoCurrAudit.ContextImageOptions.AllowGlyphSkinning = DevExpress.Utils.DefaultBoolean.[True]
+        Me.RepoMemoCurrAudit.LinesCount = 3
+        Me.RepoMemoCurrAudit.Name = "RepoMemoCurrAudit"
+        Me.RepoMemoCurrAudit.ReadOnly = True
+        '
         'GridColumn34
         '
         Me.GridColumn34.Caption = "Description"
@@ -944,7 +997,7 @@ Partial Public Class MenuV2
         Me.GridColumn34.FilterMode = DevExpress.XtraGrid.ColumnFilterMode.DisplayText
         Me.GridColumn34.MinWidth = 17
         Me.GridColumn34.Name = "GridColumn34"
-        Me.GridColumn34.OptionsEditForm.ColumnSpan = 5
+        Me.GridColumn34.OptionsEditForm.ColumnSpan = 10
         Me.GridColumn34.OptionsEditForm.RowSpan = 8
         Me.GridColumn34.OptionsEditForm.StartNewRow = True
         Me.GridColumn34.OptionsEditForm.UseEditorColRowSpan = False
@@ -954,9 +1007,9 @@ Partial Public Class MenuV2
         '
         'RepositoryItemRichTextEdit1
         '
+        Me.RepositoryItemRichTextEdit1.AcceptsTab = True
         Me.RepositoryItemRichTextEdit1.AllowHtmlDraw = DevExpress.Utils.DefaultBoolean.[True]
         Me.RepositoryItemRichTextEdit1.CustomHeight = 250
-        Me.RepositoryItemRichTextEdit1.DocumentFormat = DevExpress.XtraRichEdit.DocumentFormat.Html
         Me.RepositoryItemRichTextEdit1.ExportMode = DevExpress.XtraEditors.Repository.ExportMode.DisplayText
         Me.RepositoryItemRichTextEdit1.Name = "RepositoryItemRichTextEdit1"
         Me.RepositoryItemRichTextEdit1.OptionsBehavior.Copy = DevExpress.XtraRichEdit.DocumentCapability.Enabled
@@ -966,6 +1019,7 @@ Partial Public Class MenuV2
         Me.RepositoryItemRichTextEdit1.OptionsBehavior.PasteSingleCellAsText = True
         Me.RepositoryItemRichTextEdit1.OptionsBehavior.ShowPopupMenu = DevExpress.XtraRichEdit.DocumentCapability.Enabled
         Me.RepositoryItemRichTextEdit1.OptionsBehavior.Zooming = DevExpress.XtraRichEdit.DocumentCapability.Enabled
+        Me.RepositoryItemRichTextEdit1.OptionsImport.FallbackFormat = DevExpress.XtraRichEdit.DocumentFormat.Undefined
         Me.RepositoryItemRichTextEdit1.OptionsImport.Html.IgnoreFloatProperty = True
         Me.RepositoryItemRichTextEdit1.OptionsImport.Html.IgnoreMediaQueries = True
         Me.RepositoryItemRichTextEdit1.OptionsImport.Html.IgnoreMetaCharset = True
@@ -977,12 +1031,15 @@ Partial Public Class MenuV2
         Me.btnLogHours.AppearanceCell.Options.UseImage = True
         Me.btnLogHours.Caption = "Hours"
         Me.btnLogHours.ColumnEdit = Me.RepoButtonHours
+        Me.btnLogHours.FieldName = "btnLogHours"
         Me.btnLogHours.MinWidth = 17
         Me.btnLogHours.Name = "btnLogHours"
-        Me.btnLogHours.OptionsColumn.ReadOnly = True
+        Me.btnLogHours.OptionsEditForm.Visible = DevExpress.Utils.DefaultBoolean.[True]
+        Me.btnLogHours.OptionsEditForm.VisibleIndex = 6
         Me.btnLogHours.ShowButtonMode = DevExpress.XtraGrid.Views.Base.ShowButtonModeEnum.ShowAlways
+        Me.btnLogHours.UnboundDataType = GetType(Object)
         Me.btnLogHours.Visible = True
-        Me.btnLogHours.VisibleIndex = 14
+        Me.btnLogHours.VisibleIndex = 15
         Me.btnLogHours.Width = 52
         '
         'RepoButtonHours
@@ -1807,13 +1864,6 @@ Partial Public Class MenuV2
         Me.RepositoryItemCheckedComboBoxEdit1.ShowPopupCloseButton = False
         Me.RepositoryItemCheckedComboBoxEdit1.ValueMember = "ID"
         '
-        'RepositoryItemMemoEdit1
-        '
-        Me.RepositoryItemMemoEdit1.AllowGlyphSkinning = DevExpress.Utils.DefaultBoolean.[True]
-        Me.RepositoryItemMemoEdit1.AllowHtmlDraw = DevExpress.Utils.DefaultBoolean.[True]
-        Me.RepositoryItemMemoEdit1.ContextImageOptions.AllowGlyphSkinning = DevExpress.Utils.DefaultBoolean.[True]
-        Me.RepositoryItemMemoEdit1.Name = "RepositoryItemMemoEdit1"
-        '
         'RepositoryItemTextEdit1
         '
         Me.RepositoryItemTextEdit1.AutoHeight = False
@@ -1839,6 +1889,126 @@ Partial Public Class MenuV2
         'RepositoryItemHypertextLabel1
         '
         Me.RepositoryItemHypertextLabel1.Name = "RepositoryItemHypertextLabel1"
+        '
+        'RepositoryItemRichTextEdit3
+        '
+        Me.RepositoryItemRichTextEdit3.AllowHtmlDraw = DevExpress.Utils.DefaultBoolean.[True]
+        Me.RepositoryItemRichTextEdit3.DocumentFormat = DevExpress.XtraRichEdit.DocumentFormat.Html
+        Me.RepositoryItemRichTextEdit3.Name = "RepositoryItemRichTextEdit3"
+        Me.RepositoryItemRichTextEdit3.ShowCaretInReadOnly = False
+        '
+        'RepoPopupComment
+        '
+        Me.RepoPopupComment.AutoHeight = False
+        Me.RepoPopupComment.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
+        Me.RepoPopupComment.Name = "RepoPopupComment"
+        '
+        'RepositoryItemLookUpEdit1
+        '
+        Me.RepositoryItemLookUpEdit1.AutoHeight = False
+        Me.RepositoryItemLookUpEdit1.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
+        Me.RepositoryItemLookUpEdit1.CascadingMember = "IssueID"
+        Me.RepositoryItemLookUpEdit1.Columns.AddRange(New DevExpress.XtraEditors.Controls.LookUpColumnInfo() {New DevExpress.XtraEditors.Controls.LookUpColumnInfo("DateAdded", "Date Added", 72, DevExpress.Utils.FormatType.DateTime, "dd/MM/yyyy", True, DevExpress.Utils.HorzAlignment.Near, DevExpress.Data.ColumnSortOrder.None, DevExpress.Utils.DefaultBoolean.[Default]), New DevExpress.XtraEditors.Controls.LookUpColumnInfo("Analyst", "Analyst", 47, DevExpress.Utils.FormatType.None, "", True, DevExpress.Utils.HorzAlignment.Near, DevExpress.Data.ColumnSortOrder.None, DevExpress.Utils.DefaultBoolean.[Default]), New DevExpress.XtraEditors.Controls.LookUpColumnInfo("Comment", "Comment", 61, DevExpress.Utils.FormatType.None, "", True, DevExpress.Utils.HorzAlignment.Near, DevExpress.Data.ColumnSortOrder.None, DevExpress.Utils.DefaultBoolean.[Default])})
+        Me.RepositoryItemLookUpEdit1.DataSource = Me.AnalystsAuditBindingSource
+        Me.RepositoryItemLookUpEdit1.DisplayMember = "Comment"
+        Me.RepositoryItemLookUpEdit1.KeyMember = "ID"
+        Me.RepositoryItemLookUpEdit1.Name = "RepositoryItemLookUpEdit1"
+        Me.RepositoryItemLookUpEdit1.ReadOnly = True
+        Me.RepositoryItemLookUpEdit1.ValueMember = "ID"
+        '
+        'AnalystsAuditBindingSource
+        '
+        Me.AnalystsAuditBindingSource.DataMember = "Analysts_Audit"
+        Me.AnalystsAuditBindingSource.DataSource = Me.AnalystsBindingSource
+        '
+        'RepoGrdLkupAudit
+        '
+        Me.RepoGrdLkupAudit.Appearance.ForeColor = System.Drawing.Color.Olive
+        Me.RepoGrdLkupAudit.Appearance.Options.UseForeColor = True
+        Me.RepoGrdLkupAudit.AppearanceDisabled.ForeColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.RepoGrdLkupAudit.AppearanceDisabled.Options.UseForeColor = True
+        Me.RepoGrdLkupAudit.AppearanceDropDown.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.RepoGrdLkupAudit.AppearanceDropDown.Options.UseForeColor = True
+        Me.RepoGrdLkupAudit.AppearanceFocused.ForeColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.RepoGrdLkupAudit.AppearanceFocused.Options.UseForeColor = True
+        Me.RepoGrdLkupAudit.AppearanceReadOnly.ForeColor = System.Drawing.Color.Blue
+        Me.RepoGrdLkupAudit.AppearanceReadOnly.Options.UseForeColor = True
+        Me.RepoGrdLkupAudit.AutoHeight = False
+        Me.RepoGrdLkupAudit.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
+        Me.RepoGrdLkupAudit.CascadingMember = "IssueID"
+        Me.RepoGrdLkupAudit.DataSource = Me.IssuesAuditBindingSource
+        Me.RepoGrdLkupAudit.DisplayMember = "Comment"
+        Me.RepoGrdLkupAudit.Name = "RepoGrdLkupAudit"
+        Me.RepoGrdLkupAudit.PopupView = Me.BandedGridView1
+        Me.RepoGrdLkupAudit.ReadOnly = True
+        Me.RepoGrdLkupAudit.ValueMember = "ID"
+        Me.RepoGrdLkupAudit.ViewType = DevExpress.XtraEditors.Repository.GridLookUpViewType.BandedView
+        '
+        'IssuesAuditBindingSource
+        '
+        Me.IssuesAuditBindingSource.DataMember = "IssuesAudit"
+        Me.IssuesAuditBindingSource.DataSource = Me.issuesBindingSource
+        '
+        'BandedGridView1
+        '
+        Me.BandedGridView1.Appearance.EvenRow.ForeColor = System.Drawing.Color.Red
+        Me.BandedGridView1.Appearance.EvenRow.Options.UseForeColor = True
+        Me.BandedGridView1.Bands.AddRange(New DevExpress.XtraGrid.Views.BandedGrid.GridBand() {Me.gridBand2})
+        Me.BandedGridView1.Columns.AddRange(New DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn() {Me.colID2, Me.colIssueID1, Me.colDateAdded1, Me.colUsername1, Me.colComment1, Me.colAnalyst})
+        Me.BandedGridView1.FocusRectStyle = DevExpress.XtraGrid.Views.Grid.DrawFocusRectStyle.RowFocus
+        Me.BandedGridView1.Name = "BandedGridView1"
+        Me.BandedGridView1.OptionsSelection.EnableAppearanceFocusedCell = False
+        Me.BandedGridView1.OptionsView.ShowGroupPanel = False
+        '
+        'gridBand2
+        '
+        Me.gridBand2.Caption = "gridBand2"
+        Me.gridBand2.Columns.Add(Me.colComment1)
+        Me.gridBand2.Columns.Add(Me.colAnalyst)
+        Me.gridBand2.Name = "gridBand2"
+        Me.gridBand2.VisibleIndex = 0
+        Me.gridBand2.Width = 75
+        '
+        'colComment1
+        '
+        Me.colComment1.FieldName = "Comment"
+        Me.colComment1.Name = "colComment1"
+        Me.colComment1.Visible = True
+        '
+        'colAnalyst
+        '
+        Me.colAnalyst.FieldName = "Analyst"
+        Me.colAnalyst.Name = "colAnalyst"
+        '
+        'colID2
+        '
+        Me.colID2.FieldName = "ID"
+        Me.colID2.Name = "colID2"
+        Me.colID2.Visible = True
+        '
+        'colIssueID1
+        '
+        Me.colIssueID1.FieldName = "IssueID"
+        Me.colIssueID1.Name = "colIssueID1"
+        Me.colIssueID1.Visible = True
+        '
+        'colDateAdded1
+        '
+        Me.colDateAdded1.FieldName = "DateAdded"
+        Me.colDateAdded1.Name = "colDateAdded1"
+        Me.colDateAdded1.Visible = True
+        '
+        'colUsername1
+        '
+        Me.colUsername1.FieldName = "Username"
+        Me.colUsername1.Name = "colUsername1"
+        Me.colUsername1.Visible = True
+        '
+        'RepositoryItemLookUpEdit2
+        '
+        Me.RepositoryItemLookUpEdit2.AutoHeight = False
+        Me.RepositoryItemLookUpEdit2.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
+        Me.RepositoryItemLookUpEdit2.Name = "RepositoryItemLookUpEdit2"
         '
         'GridView6
         '
@@ -2619,6 +2789,7 @@ Partial Public Class MenuV2
         CType(Me.AssigneeCbo, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.RepoAssigneeCboView, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.StatusCbo, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.RepoMemoCurrAudit, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.RepositoryItemRichTextEdit1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.RepoButtonHours, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.ribbonControl, System.ComponentModel.ISupportInitialize).EndInit()
@@ -2662,12 +2833,19 @@ Partial Public Class MenuV2
         CType(Me.LayoutControlItem3, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PopupMenu1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.RepositoryItemCheckedComboBoxEdit1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.RepositoryItemMemoEdit1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.RepositoryItemTextEdit1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.RepositoryItemPopupContainerEdit1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.RepositoryItemButtonEdit1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.RepositoryItemHyperLinkEdit1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.RepositoryItemHypertextLabel1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.RepositoryItemRichTextEdit3, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.RepoPopupComment, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.RepositoryItemLookUpEdit1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.AnalystsAuditBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.RepoGrdLkupAudit, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.IssuesAuditBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.BandedGridView1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.RepositoryItemLookUpEdit2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.GridView6, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.RepositoryItemGridLookUpEdit2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.GridView8, System.ComponentModel.ISupportInitialize).EndInit()
@@ -2810,7 +2988,7 @@ Partial Public Class MenuV2
     Friend WithEvents RepositoryItemCheckedComboBoxEdit2 As DevExpress.XtraEditors.Repository.RepositoryItemCheckedComboBoxEdit
     Friend WithEvents NavBarAllRequests As DevExpress.XtraNavBar.NavBarItem
     Friend WithEvents NavBarFLEXSDone As DevExpress.XtraNavBar.NavBarItem
-    Friend WithEvents RepositoryItemMemoEdit1 As DevExpress.XtraEditors.Repository.RepositoryItemMemoEdit
+    Friend WithEvents RepoMemoCurrAudit As DevExpress.XtraEditors.Repository.RepositoryItemMemoEdit
     Friend WithEvents GridColumn34 As DevExpress.XtraGrid.Columns.GridColumn
     Friend WithEvents RepositoryItemRichTextEdit1 As DevExpress.XtraEditors.Repository.RepositoryItemRichTextEdit
     Friend WithEvents RepositoryItemTextEdit1 As DevExpress.XtraEditors.Repository.RepositoryItemTextEdit
@@ -2916,4 +3094,20 @@ Partial Public Class MenuV2
     Friend WithEvents colContactName2 As DevExpress.XtraGrid.Columns.GridColumn
     Friend WithEvents colID1 As DevExpress.XtraGrid.Columns.GridColumn
     Friend WithEvents colContactName3 As DevExpress.XtraGrid.Columns.GridColumn
+    Friend WithEvents RepositoryItemRichTextEdit3 As DevExpress.XtraEditors.Repository.RepositoryItemRichTextEdit
+    Friend WithEvents RepoPopupComment As DevExpress.XtraEditors.Repository.RepositoryItemPopupContainerEdit
+    Friend WithEvents colAudit As DevExpress.XtraGrid.Columns.GridColumn
+    Friend WithEvents RepoGrdLkupAudit As DevExpress.XtraEditors.Repository.RepositoryItemGridLookUpEdit
+    Friend WithEvents IssuesAuditBindingSource As BindingSource
+    Friend WithEvents BandedGridView1 As DevExpress.XtraGrid.Views.BandedGrid.BandedGridView
+    Friend WithEvents RepositoryItemLookUpEdit1 As DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit
+    Friend WithEvents gridBand2 As DevExpress.XtraGrid.Views.BandedGrid.GridBand
+    Friend WithEvents colComment1 As DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn
+    Friend WithEvents colAnalyst As DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn
+    Friend WithEvents colID2 As DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn
+    Friend WithEvents colIssueID1 As DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn
+    Friend WithEvents colDateAdded1 As DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn
+    Friend WithEvents colUsername1 As DevExpress.XtraGrid.Views.BandedGrid.BandedGridColumn
+    Friend WithEvents AnalystsAuditBindingSource As BindingSource
+    Friend WithEvents RepositoryItemLookUpEdit2 As DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit
 End Class
