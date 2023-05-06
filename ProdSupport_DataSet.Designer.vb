@@ -51,6 +51,8 @@ Partial Public Class ProdSupport_DataSet
     
     Private tableStatusReportAudit_ALL As StatusReportAudit_ALLDataTable
     
+    Private tableFLEXSMgmt As FLEXSMgmtDataTable
+    
     Private relationContactsAudit As Global.System.Data.DataRelation
     
     Private relationIssuesAudit As Global.System.Data.DataRelation
@@ -68,6 +70,18 @@ Partial Public Class ProdSupport_DataSet
     Private relationAnalysts_Audit As Global.System.Data.DataRelation
     
     Private relationPriorities_Issues As Global.System.Data.DataRelation
+    
+    Private relationChannelsIssues1 As Global.System.Data.DataRelation
+    
+    Private relationClientsIssues1 As Global.System.Data.DataRelation
+    
+    Private relationContacts_FLEXSMgmt As Global.System.Data.DataRelation
+    
+    Private relationFLEXSMgmt_Audit As Global.System.Data.DataRelation
+    
+    Private relationContacts_FLEXSMgmt1 As Global.System.Data.DataRelation
+    
+    Private relationFLEXSMgmt_tbl_HoursWorkedLog As Global.System.Data.DataRelation
     
     Private _schemaSerializationMode As Global.System.Data.SchemaSerializationMode = Global.System.Data.SchemaSerializationMode.IncludeSchema
     
@@ -136,6 +150,9 @@ Partial Public Class ProdSupport_DataSet
             End If
             If (Not (ds.Tables("StatusReportAudit_ALL")) Is Nothing) Then
                 MyBase.Tables.Add(New StatusReportAudit_ALLDataTable(ds.Tables("StatusReportAudit_ALL")))
+            End If
+            If (Not (ds.Tables("FLEXSMgmt")) Is Nothing) Then
+                MyBase.Tables.Add(New FLEXSMgmtDataTable(ds.Tables("FLEXSMgmt")))
             End If
             Me.DataSetName = ds.DataSetName
             Me.Prefix = ds.Prefix
@@ -286,6 +303,16 @@ Partial Public Class ProdSupport_DataSet
     
     <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
      Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0"),  _
+     Global.System.ComponentModel.Browsable(false),  _
+     Global.System.ComponentModel.DesignerSerializationVisibility(Global.System.ComponentModel.DesignerSerializationVisibility.Content)>  _
+    Public ReadOnly Property FLEXSMgmt() As FLEXSMgmtDataTable
+        Get
+            Return Me.tableFLEXSMgmt
+        End Get
+    End Property
+    
+    <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+     Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0"),  _
      Global.System.ComponentModel.BrowsableAttribute(true),  _
      Global.System.ComponentModel.DesignerSerializationVisibilityAttribute(Global.System.ComponentModel.DesignerSerializationVisibility.Visible)>  _
     Public Overrides Property SchemaSerializationMode() As Global.System.Data.SchemaSerializationMode
@@ -389,6 +416,9 @@ Partial Public Class ProdSupport_DataSet
             End If
             If (Not (ds.Tables("StatusReportAudit_ALL")) Is Nothing) Then
                 MyBase.Tables.Add(New StatusReportAudit_ALLDataTable(ds.Tables("StatusReportAudit_ALL")))
+            End If
+            If (Not (ds.Tables("FLEXSMgmt")) Is Nothing) Then
+                MyBase.Tables.Add(New FLEXSMgmtDataTable(ds.Tables("FLEXSMgmt")))
             End If
             Me.DataSetName = ds.DataSetName
             Me.Prefix = ds.Prefix
@@ -500,6 +530,12 @@ Partial Public Class ProdSupport_DataSet
                 Me.tableStatusReportAudit_ALL.InitVars
             End If
         End If
+        Me.tableFLEXSMgmt = CType(MyBase.Tables("FLEXSMgmt"),FLEXSMgmtDataTable)
+        If (initTable = true) Then
+            If (Not (Me.tableFLEXSMgmt) Is Nothing) Then
+                Me.tableFLEXSMgmt.InitVars
+            End If
+        End If
         Me.relationContactsAudit = Me.Relations("ContactsAudit")
         Me.relationIssuesAudit = Me.Relations("IssuesAudit")
         Me.relationClientsIssues = Me.Relations("ClientsIssues")
@@ -509,6 +545,12 @@ Partial Public Class ProdSupport_DataSet
         Me.relationChannelsIssues = Me.Relations("ChannelsIssues")
         Me.relationAnalysts_Audit = Me.Relations("Analysts_Audit")
         Me.relationPriorities_Issues = Me.Relations("Priorities_Issues")
+        Me.relationChannelsIssues1 = Me.Relations("ChannelsIssues1")
+        Me.relationClientsIssues1 = Me.Relations("ClientsIssues1")
+        Me.relationContacts_FLEXSMgmt = Me.Relations("Contacts_FLEXSMgmt")
+        Me.relationFLEXSMgmt_Audit = Me.Relations("FLEXSMgmt_Audit")
+        Me.relationContacts_FLEXSMgmt1 = Me.Relations("Contacts_FLEXSMgmt1")
+        Me.relationFLEXSMgmt_tbl_HoursWorkedLog = Me.Relations("FLEXSMgmt_tbl_HoursWorkedLog")
     End Sub
     
     <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
@@ -545,6 +587,8 @@ Partial Public Class ProdSupport_DataSet
         MyBase.Tables.Add(Me.tableHours_Summary_Details)
         Me.tableStatusReportAudit_ALL = New StatusReportAudit_ALLDataTable()
         MyBase.Tables.Add(Me.tableStatusReportAudit_ALL)
+        Me.tableFLEXSMgmt = New FLEXSMgmtDataTable()
+        MyBase.Tables.Add(Me.tableFLEXSMgmt)
         Me.relationContactsAudit = New Global.System.Data.DataRelation("ContactsAudit", New Global.System.Data.DataColumn() {Me.tableContacts.TELUS_IDColumn}, New Global.System.Data.DataColumn() {Me.tableAudit.UsernameColumn}, false)
         Me.Relations.Add(Me.relationContactsAudit)
         Me.relationIssuesAudit = New Global.System.Data.DataRelation("IssuesAudit", New Global.System.Data.DataColumn() {Me.tableIssues.IDColumn}, New Global.System.Data.DataColumn() {Me.tableAudit.IssueIDColumn}, false)
@@ -563,6 +607,18 @@ Partial Public Class ProdSupport_DataSet
         Me.Relations.Add(Me.relationAnalysts_Audit)
         Me.relationPriorities_Issues = New Global.System.Data.DataRelation("Priorities_Issues", New Global.System.Data.DataColumn() {Me.tablePriorities.PriorityColumn}, New Global.System.Data.DataColumn() {Me.tableIssues.PriorityColumn}, false)
         Me.Relations.Add(Me.relationPriorities_Issues)
+        Me.relationChannelsIssues1 = New Global.System.Data.DataRelation("ChannelsIssues1", New Global.System.Data.DataColumn() {Me.tableChannels.IDColumn}, New Global.System.Data.DataColumn() {Me.tableFLEXSMgmt.ChannelColumn}, false)
+        Me.Relations.Add(Me.relationChannelsIssues1)
+        Me.relationClientsIssues1 = New Global.System.Data.DataRelation("ClientsIssues1", New Global.System.Data.DataColumn() {Me.tableClients.IDColumn}, New Global.System.Data.DataColumn() {Me.tableFLEXSMgmt.ClientColumn}, false)
+        Me.Relations.Add(Me.relationClientsIssues1)
+        Me.relationContacts_FLEXSMgmt = New Global.System.Data.DataRelation("Contacts_FLEXSMgmt", New Global.System.Data.DataColumn() {Me.tableContacts.IDColumn}, New Global.System.Data.DataColumn() {Me.tableFLEXSMgmt.AssigneeColumn}, false)
+        Me.Relations.Add(Me.relationContacts_FLEXSMgmt)
+        Me.relationFLEXSMgmt_Audit = New Global.System.Data.DataRelation("FLEXSMgmt_Audit", New Global.System.Data.DataColumn() {Me.tableFLEXSMgmt.IssueIDColumn}, New Global.System.Data.DataColumn() {Me.tableAudit.IssueIDColumn}, false)
+        Me.Relations.Add(Me.relationFLEXSMgmt_Audit)
+        Me.relationContacts_FLEXSMgmt1 = New Global.System.Data.DataRelation("Contacts_FLEXSMgmt1", New Global.System.Data.DataColumn() {Me.tableContacts.IDColumn}, New Global.System.Data.DataColumn() {Me.tableFLEXSMgmt.ReporterColumn}, false)
+        Me.Relations.Add(Me.relationContacts_FLEXSMgmt1)
+        Me.relationFLEXSMgmt_tbl_HoursWorkedLog = New Global.System.Data.DataRelation("FLEXSMgmt_tbl_HoursWorkedLog", New Global.System.Data.DataColumn() {Me.tableFLEXSMgmt.IssueIDColumn}, New Global.System.Data.DataColumn() {Me.tabletbl_HoursWorkedLog.Issue_IDColumn}, false)
+        Me.Relations.Add(Me.relationFLEXSMgmt_tbl_HoursWorkedLog)
     End Sub
     
     <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
@@ -640,6 +696,12 @@ Partial Public Class ProdSupport_DataSet
     <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
      Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
     Private Function ShouldSerializeStatusReportAudit_ALL() As Boolean
+        Return false
+    End Function
+    
+    <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+     Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+    Private Function ShouldSerializeFLEXSMgmt() As Boolean
         Return false
     End Function
     
@@ -739,6 +801,9 @@ Partial Public Class ProdSupport_DataSet
     
     <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
     Public Delegate Sub StatusReportAudit_ALLRowChangeEventHandler(ByVal sender As Object, ByVal e As StatusReportAudit_ALLRowChangeEvent)
+    
+    <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+    Public Delegate Sub FLEXSMgmtRowChangeEventHandler(ByVal sender As Object, ByVal e As FLEXSMgmtRowChangeEvent)
     
     '''<summary>
     '''Represents the strongly named DataTable class.
@@ -5425,6 +5490,456 @@ Partial Public Class ProdSupport_DataSet
     End Class
     
     '''<summary>
+    '''Represents the strongly named DataTable class.
+    '''</summary>
+    <Global.System.Serializable(),  _
+     Global.System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")>  _
+    Partial Public Class FLEXSMgmtDataTable
+        Inherits Global.System.Data.TypedTableBase(Of FLEXSMgmtRow)
+        
+        Private columnChannel As Global.System.Data.DataColumn
+        
+        Private columnClient As Global.System.Data.DataColumn
+        
+        Private columnTitle As Global.System.Data.DataColumn
+        
+        Private columnStatus As Global.System.Data.DataColumn
+        
+        Private columnPriority As Global.System.Data.DataColumn
+        
+        Private columnDescription As Global.System.Data.DataColumn
+        
+        Private columnFLEXS As Global.System.Data.DataColumn
+        
+        Private columnCreated As Global.System.Data.DataColumn
+        
+        Private columnClientTracking As Global.System.Data.DataColumn
+        
+        Private columnUpdated As Global.System.Data.DataColumn
+        
+        Private columnReporter As Global.System.Data.DataColumn
+        
+        Private columnAssignee As Global.System.Data.DataColumn
+        
+        Private columnFLEX As Global.System.Data.DataColumn
+        
+        Private columnIssueID As Global.System.Data.DataColumn
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public Sub New()
+            MyBase.New
+            Me.TableName = "FLEXSMgmt"
+            Me.BeginInit
+            Me.InitClass
+            Me.EndInit
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Friend Sub New(ByVal table As Global.System.Data.DataTable)
+            MyBase.New
+            Me.TableName = table.TableName
+            If (table.CaseSensitive <> table.DataSet.CaseSensitive) Then
+                Me.CaseSensitive = table.CaseSensitive
+            End If
+            If (table.Locale.ToString <> table.DataSet.Locale.ToString) Then
+                Me.Locale = table.Locale
+            End If
+            If (table.Namespace <> table.DataSet.Namespace) Then
+                Me.Namespace = table.Namespace
+            End If
+            Me.Prefix = table.Prefix
+            Me.MinimumCapacity = table.MinimumCapacity
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Protected Sub New(ByVal info As Global.System.Runtime.Serialization.SerializationInfo, ByVal context As Global.System.Runtime.Serialization.StreamingContext)
+            MyBase.New(info, context)
+            Me.InitVars
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public ReadOnly Property ChannelColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnChannel
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public ReadOnly Property ClientColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnClient
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public ReadOnly Property TitleColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnTitle
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public ReadOnly Property StatusColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnStatus
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public ReadOnly Property PriorityColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnPriority
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public ReadOnly Property DescriptionColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnDescription
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public ReadOnly Property FLEXSColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnFLEXS
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public ReadOnly Property CreatedColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnCreated
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public ReadOnly Property ClientTrackingColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnClientTracking
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public ReadOnly Property UpdatedColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnUpdated
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public ReadOnly Property ReporterColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnReporter
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public ReadOnly Property AssigneeColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnAssignee
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public ReadOnly Property FLEXColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnFLEX
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public ReadOnly Property IssueIDColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnIssueID
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0"),  _
+         Global.System.ComponentModel.Browsable(false)>  _
+        Public ReadOnly Property Count() As Integer
+            Get
+                Return Me.Rows.Count
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public Default ReadOnly Property Item(ByVal index As Integer) As FLEXSMgmtRow
+            Get
+                Return CType(Me.Rows(index),FLEXSMgmtRow)
+            End Get
+        End Property
+        
+        <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public Event FLEXSMgmtRowChanging As FLEXSMgmtRowChangeEventHandler
+        
+        <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public Event FLEXSMgmtRowChanged As FLEXSMgmtRowChangeEventHandler
+        
+        <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public Event FLEXSMgmtRowDeleting As FLEXSMgmtRowChangeEventHandler
+        
+        <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public Event FLEXSMgmtRowDeleted As FLEXSMgmtRowChangeEventHandler
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public Overloads Sub AddFLEXSMgmtRow(ByVal row As FLEXSMgmtRow)
+            Me.Rows.Add(row)
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public Overloads Function AddFLEXSMgmtRow(ByVal parentChannelsRowByChannelsIssues1 As ChannelsRow, ByVal parentClientsRowByClientsIssues1 As ClientsRow, ByVal Title As String, ByVal Status As String, ByVal Priority As String, ByVal Description As String, ByVal FLEXS As Integer, ByVal Created As Date, ByVal ClientTracking As String, ByVal Updated As Date, ByVal parentContactsRowByContacts_FLEXSMgmt1 As ContactsRow, ByVal parentContactsRowByContacts_FLEXSMgmt As ContactsRow, ByVal FLEX As Integer) As FLEXSMgmtRow
+            Dim rowFLEXSMgmtRow As FLEXSMgmtRow = CType(Me.NewRow,FLEXSMgmtRow)
+            Dim columnValuesArray() As Object = New Object() {Nothing, Nothing, Title, Status, Priority, Description, FLEXS, Created, ClientTracking, Updated, Nothing, Nothing, FLEX, Nothing}
+            If (Not (parentChannelsRowByChannelsIssues1) Is Nothing) Then
+                columnValuesArray(0) = parentChannelsRowByChannelsIssues1(0)
+            End If
+            If (Not (parentClientsRowByClientsIssues1) Is Nothing) Then
+                columnValuesArray(1) = parentClientsRowByClientsIssues1(0)
+            End If
+            If (Not (parentContactsRowByContacts_FLEXSMgmt1) Is Nothing) Then
+                columnValuesArray(10) = parentContactsRowByContacts_FLEXSMgmt1(0)
+            End If
+            If (Not (parentContactsRowByContacts_FLEXSMgmt) Is Nothing) Then
+                columnValuesArray(11) = parentContactsRowByContacts_FLEXSMgmt(0)
+            End If
+            rowFLEXSMgmtRow.ItemArray = columnValuesArray
+            Me.Rows.Add(rowFLEXSMgmtRow)
+            Return rowFLEXSMgmtRow
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public Function FindByIssueID(ByVal IssueID As Integer) As FLEXSMgmtRow
+            Return CType(Me.Rows.Find(New Object() {IssueID}),FLEXSMgmtRow)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public Overrides Function Clone() As Global.System.Data.DataTable
+            Dim cln As FLEXSMgmtDataTable = CType(MyBase.Clone,FLEXSMgmtDataTable)
+            cln.InitVars
+            Return cln
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Protected Overrides Function CreateInstance() As Global.System.Data.DataTable
+            Return New FLEXSMgmtDataTable()
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Friend Sub InitVars()
+            Me.columnChannel = MyBase.Columns("Channel")
+            Me.columnClient = MyBase.Columns("Client")
+            Me.columnTitle = MyBase.Columns("Title")
+            Me.columnStatus = MyBase.Columns("Status")
+            Me.columnPriority = MyBase.Columns("Priority")
+            Me.columnDescription = MyBase.Columns("Description")
+            Me.columnFLEXS = MyBase.Columns("FLEXS")
+            Me.columnCreated = MyBase.Columns("Created")
+            Me.columnClientTracking = MyBase.Columns("ClientTracking")
+            Me.columnUpdated = MyBase.Columns("Updated")
+            Me.columnReporter = MyBase.Columns("Reporter")
+            Me.columnAssignee = MyBase.Columns("Assignee")
+            Me.columnFLEX = MyBase.Columns("FLEX")
+            Me.columnIssueID = MyBase.Columns("IssueID")
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Private Sub InitClass()
+            Me.columnChannel = New Global.System.Data.DataColumn("Channel", GetType(Integer), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnChannel)
+            Me.columnClient = New Global.System.Data.DataColumn("Client", GetType(Integer), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnClient)
+            Me.columnTitle = New Global.System.Data.DataColumn("Title", GetType(String), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnTitle)
+            Me.columnStatus = New Global.System.Data.DataColumn("Status", GetType(String), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnStatus)
+            Me.columnPriority = New Global.System.Data.DataColumn("Priority", GetType(String), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnPriority)
+            Me.columnDescription = New Global.System.Data.DataColumn("Description", GetType(String), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnDescription)
+            Me.columnFLEXS = New Global.System.Data.DataColumn("FLEXS", GetType(Integer), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnFLEXS)
+            Me.columnCreated = New Global.System.Data.DataColumn("Created", GetType(Date), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnCreated)
+            Me.columnClientTracking = New Global.System.Data.DataColumn("ClientTracking", GetType(String), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnClientTracking)
+            Me.columnUpdated = New Global.System.Data.DataColumn("Updated", GetType(Date), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnUpdated)
+            Me.columnReporter = New Global.System.Data.DataColumn("Reporter", GetType(Integer), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnReporter)
+            Me.columnAssignee = New Global.System.Data.DataColumn("Assignee", GetType(Integer), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnAssignee)
+            Me.columnFLEX = New Global.System.Data.DataColumn("FLEX", GetType(Integer), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnFLEX)
+            Me.columnIssueID = New Global.System.Data.DataColumn("IssueID", GetType(Integer), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnIssueID)
+            Me.Constraints.Add(New Global.System.Data.UniqueConstraint("Constraint1", New Global.System.Data.DataColumn() {Me.columnIssueID}, true))
+            Me.columnTitle.MaxLength = 150
+            Me.columnStatus.MaxLength = 50
+            Me.columnPriority.MaxLength = 50
+            Me.columnDescription.MaxLength = 536870910
+            Me.columnClientTracking.MaxLength = 255
+            Me.columnIssueID.AutoIncrement = true
+            Me.columnIssueID.AutoIncrementSeed = -1
+            Me.columnIssueID.AutoIncrementStep = -1
+            Me.columnIssueID.AllowDBNull = false
+            Me.columnIssueID.Unique = true
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public Function NewFLEXSMgmtRow() As FLEXSMgmtRow
+            Return CType(Me.NewRow,FLEXSMgmtRow)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Protected Overrides Function NewRowFromBuilder(ByVal builder As Global.System.Data.DataRowBuilder) As Global.System.Data.DataRow
+            Return New FLEXSMgmtRow(builder)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Protected Overrides Function GetRowType() As Global.System.Type
+            Return GetType(FLEXSMgmtRow)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Protected Overrides Sub OnRowChanged(ByVal e As Global.System.Data.DataRowChangeEventArgs)
+            MyBase.OnRowChanged(e)
+            If (Not (Me.FLEXSMgmtRowChangedEvent) Is Nothing) Then
+                RaiseEvent FLEXSMgmtRowChanged(Me, New FLEXSMgmtRowChangeEvent(CType(e.Row,FLEXSMgmtRow), e.Action))
+            End If
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Protected Overrides Sub OnRowChanging(ByVal e As Global.System.Data.DataRowChangeEventArgs)
+            MyBase.OnRowChanging(e)
+            If (Not (Me.FLEXSMgmtRowChangingEvent) Is Nothing) Then
+                RaiseEvent FLEXSMgmtRowChanging(Me, New FLEXSMgmtRowChangeEvent(CType(e.Row,FLEXSMgmtRow), e.Action))
+            End If
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Protected Overrides Sub OnRowDeleted(ByVal e As Global.System.Data.DataRowChangeEventArgs)
+            MyBase.OnRowDeleted(e)
+            If (Not (Me.FLEXSMgmtRowDeletedEvent) Is Nothing) Then
+                RaiseEvent FLEXSMgmtRowDeleted(Me, New FLEXSMgmtRowChangeEvent(CType(e.Row,FLEXSMgmtRow), e.Action))
+            End If
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Protected Overrides Sub OnRowDeleting(ByVal e As Global.System.Data.DataRowChangeEventArgs)
+            MyBase.OnRowDeleting(e)
+            If (Not (Me.FLEXSMgmtRowDeletingEvent) Is Nothing) Then
+                RaiseEvent FLEXSMgmtRowDeleting(Me, New FLEXSMgmtRowChangeEvent(CType(e.Row,FLEXSMgmtRow), e.Action))
+            End If
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public Sub RemoveFLEXSMgmtRow(ByVal row As FLEXSMgmtRow)
+            Me.Rows.Remove(row)
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public Shared Function GetTypedTableSchema(ByVal xs As Global.System.Xml.Schema.XmlSchemaSet) As Global.System.Xml.Schema.XmlSchemaComplexType
+            Dim type As Global.System.Xml.Schema.XmlSchemaComplexType = New Global.System.Xml.Schema.XmlSchemaComplexType()
+            Dim sequence As Global.System.Xml.Schema.XmlSchemaSequence = New Global.System.Xml.Schema.XmlSchemaSequence()
+            Dim ds As ProdSupport_DataSet = New ProdSupport_DataSet()
+            Dim any1 As Global.System.Xml.Schema.XmlSchemaAny = New Global.System.Xml.Schema.XmlSchemaAny()
+            any1.Namespace = "http://www.w3.org/2001/XMLSchema"
+            any1.MinOccurs = New Decimal(0)
+            any1.MaxOccurs = Decimal.MaxValue
+            any1.ProcessContents = Global.System.Xml.Schema.XmlSchemaContentProcessing.Lax
+            sequence.Items.Add(any1)
+            Dim any2 As Global.System.Xml.Schema.XmlSchemaAny = New Global.System.Xml.Schema.XmlSchemaAny()
+            any2.Namespace = "urn:schemas-microsoft-com:xml-diffgram-v1"
+            any2.MinOccurs = New Decimal(1)
+            any2.ProcessContents = Global.System.Xml.Schema.XmlSchemaContentProcessing.Lax
+            sequence.Items.Add(any2)
+            Dim attribute1 As Global.System.Xml.Schema.XmlSchemaAttribute = New Global.System.Xml.Schema.XmlSchemaAttribute()
+            attribute1.Name = "namespace"
+            attribute1.FixedValue = ds.Namespace
+            type.Attributes.Add(attribute1)
+            Dim attribute2 As Global.System.Xml.Schema.XmlSchemaAttribute = New Global.System.Xml.Schema.XmlSchemaAttribute()
+            attribute2.Name = "tableTypeName"
+            attribute2.FixedValue = "FLEXSMgmtDataTable"
+            type.Attributes.Add(attribute2)
+            type.Particle = sequence
+            Dim dsSchema As Global.System.Xml.Schema.XmlSchema = ds.GetSchemaSerializable
+            If xs.Contains(dsSchema.TargetNamespace) Then
+                Dim s1 As Global.System.IO.MemoryStream = New Global.System.IO.MemoryStream()
+                Dim s2 As Global.System.IO.MemoryStream = New Global.System.IO.MemoryStream()
+                Try 
+                    Dim schema As Global.System.Xml.Schema.XmlSchema = Nothing
+                    dsSchema.Write(s1)
+                    Dim schemas As Global.System.Collections.IEnumerator = xs.Schemas(dsSchema.TargetNamespace).GetEnumerator
+                    Do While schemas.MoveNext
+                        schema = CType(schemas.Current,Global.System.Xml.Schema.XmlSchema)
+                        s2.SetLength(0)
+                        schema.Write(s2)
+                        If (s1.Length = s2.Length) Then
+                            s1.Position = 0
+                            s2.Position = 0
+                            
+                            Do While ((s1.Position <> s1.Length)  _
+                                        AndAlso (s1.ReadByte = s2.ReadByte))
+                                
+                                
+                            Loop
+                            If (s1.Position = s1.Length) Then
+                                Return type
+                            End If
+                        End If
+                        
+                    Loop
+                Finally
+                    If (Not (s1) Is Nothing) Then
+                        s1.Close
+                    End If
+                    If (Not (s2) Is Nothing) Then
+                        s2.Close
+                    End If
+                End Try
+            End If
+            xs.Add(dsSchema)
+            Return type
+        End Function
+    End Class
+    
+    '''<summary>
     '''Represents strongly named DataRow class.
     '''</summary>
     Partial Public Class AuditRow
@@ -5555,6 +6070,17 @@ Partial Public Class ProdSupport_DataSet
             End Get
             Set
                 Me.SetParentRow(value, Me.Table.ParentRelations("Analysts_Audit"))
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public Property FLEXSMgmtRow() As FLEXSMgmtRow
+            Get
+                Return CType(Me.GetParentRow(Me.Table.ParentRelations("FLEXSMgmt_Audit")),FLEXSMgmtRow)
+            End Get
+            Set
+                Me.SetParentRow(value, Me.Table.ParentRelations("FLEXSMgmt_Audit"))
             End Set
         End Property
         
@@ -5735,6 +6261,16 @@ Partial Public Class ProdSupport_DataSet
                 Return CType(MyBase.GetChildRows(Me.Table.ChildRelations("ChannelsIssues")),IssuesRow())
             End If
         End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public Function GetFLEXSMgmtRows() As FLEXSMgmtRow()
+            If (Me.Table.ChildRelations("ChannelsIssues1") Is Nothing) Then
+                Return New FLEXSMgmtRow(-1) {}
+            Else
+                Return CType(MyBase.GetChildRows(Me.Table.ChildRelations("ChannelsIssues1")),FLEXSMgmtRow())
+            End If
+        End Function
     End Class
     
     '''<summary>
@@ -5797,6 +6333,16 @@ Partial Public Class ProdSupport_DataSet
                 Return New IssuesRow(-1) {}
             Else
                 Return CType(MyBase.GetChildRows(Me.Table.ChildRelations("ClientsIssues")),IssuesRow())
+            End If
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public Function GetFLEXSMgmtRows() As FLEXSMgmtRow()
+            If (Me.Table.ChildRelations("ClientsIssues1") Is Nothing) Then
+                Return New FLEXSMgmtRow(-1) {}
+            Else
+                Return CType(MyBase.GetChildRows(Me.Table.ChildRelations("ClientsIssues1")),FLEXSMgmtRow())
             End If
         End Function
     End Class
@@ -6313,6 +6859,26 @@ Partial Public Class ProdSupport_DataSet
                 Return New IssuesRow(-1) {}
             Else
                 Return CType(MyBase.GetChildRows(Me.Table.ChildRelations("ContactsIssues1")),IssuesRow())
+            End If
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public Function GetFLEXSMgmtRowsByContacts_FLEXSMgmt() As FLEXSMgmtRow()
+            If (Me.Table.ChildRelations("Contacts_FLEXSMgmt") Is Nothing) Then
+                Return New FLEXSMgmtRow(-1) {}
+            Else
+                Return CType(MyBase.GetChildRows(Me.Table.ChildRelations("Contacts_FLEXSMgmt")),FLEXSMgmtRow())
+            End If
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public Function GetFLEXSMgmtRowsByContacts_FLEXSMgmt1() As FLEXSMgmtRow()
+            If (Me.Table.ChildRelations("Contacts_FLEXSMgmt1") Is Nothing) Then
+                Return New FLEXSMgmtRow(-1) {}
+            Else
+                Return CType(MyBase.GetChildRows(Me.Table.ChildRelations("Contacts_FLEXSMgmt1")),FLEXSMgmtRow())
             End If
         End Function
     End Class
@@ -7033,6 +7599,17 @@ Partial Public Class ProdSupport_DataSet
             End Get
             Set
                 Me.SetParentRow(value, Me.Table.ParentRelations("Issuestbl_HoursWorkedLog"))
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public Property FLEXSMgmtRow() As FLEXSMgmtRow
+            Get
+                Return CType(Me.GetParentRow(Me.Table.ParentRelations("FLEXSMgmt_tbl_HoursWorkedLog")),FLEXSMgmtRow)
+            End Get
+            Set
+                Me.SetParentRow(value, Me.Table.ParentRelations("FLEXSMgmt_tbl_HoursWorkedLog"))
             End Set
         End Property
         
@@ -8391,6 +8968,448 @@ Partial Public Class ProdSupport_DataSet
     End Class
     
     '''<summary>
+    '''Represents strongly named DataRow class.
+    '''</summary>
+    Partial Public Class FLEXSMgmtRow
+        Inherits Global.System.Data.DataRow
+        
+        Private tableFLEXSMgmt As FLEXSMgmtDataTable
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Friend Sub New(ByVal rb As Global.System.Data.DataRowBuilder)
+            MyBase.New(rb)
+            Me.tableFLEXSMgmt = CType(Me.Table,FLEXSMgmtDataTable)
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public Property Channel() As Integer
+            Get
+                Try 
+                    Return CType(Me(Me.tableFLEXSMgmt.ChannelColumn),Integer)
+                Catch e As Global.System.InvalidCastException
+                    Throw New Global.System.Data.StrongTypingException("The value for column 'Channel' in table 'FLEXSMgmt' is DBNull.", e)
+                End Try
+            End Get
+            Set
+                Me(Me.tableFLEXSMgmt.ChannelColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public Property Client() As Integer
+            Get
+                Try 
+                    Return CType(Me(Me.tableFLEXSMgmt.ClientColumn),Integer)
+                Catch e As Global.System.InvalidCastException
+                    Throw New Global.System.Data.StrongTypingException("The value for column 'Client' in table 'FLEXSMgmt' is DBNull.", e)
+                End Try
+            End Get
+            Set
+                Me(Me.tableFLEXSMgmt.ClientColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public Property Title() As String
+            Get
+                Try 
+                    Return CType(Me(Me.tableFLEXSMgmt.TitleColumn),String)
+                Catch e As Global.System.InvalidCastException
+                    Throw New Global.System.Data.StrongTypingException("The value for column 'Title' in table 'FLEXSMgmt' is DBNull.", e)
+                End Try
+            End Get
+            Set
+                Me(Me.tableFLEXSMgmt.TitleColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public Property Status() As String
+            Get
+                Try 
+                    Return CType(Me(Me.tableFLEXSMgmt.StatusColumn),String)
+                Catch e As Global.System.InvalidCastException
+                    Throw New Global.System.Data.StrongTypingException("The value for column 'Status' in table 'FLEXSMgmt' is DBNull.", e)
+                End Try
+            End Get
+            Set
+                Me(Me.tableFLEXSMgmt.StatusColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public Property Priority() As String
+            Get
+                Try 
+                    Return CType(Me(Me.tableFLEXSMgmt.PriorityColumn),String)
+                Catch e As Global.System.InvalidCastException
+                    Throw New Global.System.Data.StrongTypingException("The value for column 'Priority' in table 'FLEXSMgmt' is DBNull.", e)
+                End Try
+            End Get
+            Set
+                Me(Me.tableFLEXSMgmt.PriorityColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public Property Description() As String
+            Get
+                Try 
+                    Return CType(Me(Me.tableFLEXSMgmt.DescriptionColumn),String)
+                Catch e As Global.System.InvalidCastException
+                    Throw New Global.System.Data.StrongTypingException("The value for column 'Description' in table 'FLEXSMgmt' is DBNull.", e)
+                End Try
+            End Get
+            Set
+                Me(Me.tableFLEXSMgmt.DescriptionColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public Property FLEXS() As Integer
+            Get
+                Try 
+                    Return CType(Me(Me.tableFLEXSMgmt.FLEXSColumn),Integer)
+                Catch e As Global.System.InvalidCastException
+                    Throw New Global.System.Data.StrongTypingException("The value for column 'FLEXS' in table 'FLEXSMgmt' is DBNull.", e)
+                End Try
+            End Get
+            Set
+                Me(Me.tableFLEXSMgmt.FLEXSColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public Property Created() As Date
+            Get
+                Try 
+                    Return CType(Me(Me.tableFLEXSMgmt.CreatedColumn),Date)
+                Catch e As Global.System.InvalidCastException
+                    Throw New Global.System.Data.StrongTypingException("The value for column 'Created' in table 'FLEXSMgmt' is DBNull.", e)
+                End Try
+            End Get
+            Set
+                Me(Me.tableFLEXSMgmt.CreatedColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public Property ClientTracking() As String
+            Get
+                Try 
+                    Return CType(Me(Me.tableFLEXSMgmt.ClientTrackingColumn),String)
+                Catch e As Global.System.InvalidCastException
+                    Throw New Global.System.Data.StrongTypingException("The value for column 'ClientTracking' in table 'FLEXSMgmt' is DBNull.", e)
+                End Try
+            End Get
+            Set
+                Me(Me.tableFLEXSMgmt.ClientTrackingColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public Property Updated() As Date
+            Get
+                Try 
+                    Return CType(Me(Me.tableFLEXSMgmt.UpdatedColumn),Date)
+                Catch e As Global.System.InvalidCastException
+                    Throw New Global.System.Data.StrongTypingException("The value for column 'Updated' in table 'FLEXSMgmt' is DBNull.", e)
+                End Try
+            End Get
+            Set
+                Me(Me.tableFLEXSMgmt.UpdatedColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public Property Reporter() As Integer
+            Get
+                Try 
+                    Return CType(Me(Me.tableFLEXSMgmt.ReporterColumn),Integer)
+                Catch e As Global.System.InvalidCastException
+                    Throw New Global.System.Data.StrongTypingException("The value for column 'Reporter' in table 'FLEXSMgmt' is DBNull.", e)
+                End Try
+            End Get
+            Set
+                Me(Me.tableFLEXSMgmt.ReporterColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public Property Assignee() As Integer
+            Get
+                Try 
+                    Return CType(Me(Me.tableFLEXSMgmt.AssigneeColumn),Integer)
+                Catch e As Global.System.InvalidCastException
+                    Throw New Global.System.Data.StrongTypingException("The value for column 'Assignee' in table 'FLEXSMgmt' is DBNull.", e)
+                End Try
+            End Get
+            Set
+                Me(Me.tableFLEXSMgmt.AssigneeColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public Property FLEX() As Integer
+            Get
+                Try 
+                    Return CType(Me(Me.tableFLEXSMgmt.FLEXColumn),Integer)
+                Catch e As Global.System.InvalidCastException
+                    Throw New Global.System.Data.StrongTypingException("The value for column 'FLEX' in table 'FLEXSMgmt' is DBNull.", e)
+                End Try
+            End Get
+            Set
+                Me(Me.tableFLEXSMgmt.FLEXColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public Property IssueID() As Integer
+            Get
+                Return CType(Me(Me.tableFLEXSMgmt.IssueIDColumn),Integer)
+            End Get
+            Set
+                Me(Me.tableFLEXSMgmt.IssueIDColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public Property ChannelsRow() As ChannelsRow
+            Get
+                Return CType(Me.GetParentRow(Me.Table.ParentRelations("ChannelsIssues1")),ChannelsRow)
+            End Get
+            Set
+                Me.SetParentRow(value, Me.Table.ParentRelations("ChannelsIssues1"))
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public Property ClientsRow() As ClientsRow
+            Get
+                Return CType(Me.GetParentRow(Me.Table.ParentRelations("ClientsIssues1")),ClientsRow)
+            End Get
+            Set
+                Me.SetParentRow(value, Me.Table.ParentRelations("ClientsIssues1"))
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public Property ContactsRowByContacts_FLEXSMgmt() As ContactsRow
+            Get
+                Return CType(Me.GetParentRow(Me.Table.ParentRelations("Contacts_FLEXSMgmt")),ContactsRow)
+            End Get
+            Set
+                Me.SetParentRow(value, Me.Table.ParentRelations("Contacts_FLEXSMgmt"))
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public Property ContactsRowByContacts_FLEXSMgmt1() As ContactsRow
+            Get
+                Return CType(Me.GetParentRow(Me.Table.ParentRelations("Contacts_FLEXSMgmt1")),ContactsRow)
+            End Get
+            Set
+                Me.SetParentRow(value, Me.Table.ParentRelations("Contacts_FLEXSMgmt1"))
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public Function IsChannelNull() As Boolean
+            Return Me.IsNull(Me.tableFLEXSMgmt.ChannelColumn)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public Sub SetChannelNull()
+            Me(Me.tableFLEXSMgmt.ChannelColumn) = Global.System.Convert.DBNull
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public Function IsClientNull() As Boolean
+            Return Me.IsNull(Me.tableFLEXSMgmt.ClientColumn)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public Sub SetClientNull()
+            Me(Me.tableFLEXSMgmt.ClientColumn) = Global.System.Convert.DBNull
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public Function IsTitleNull() As Boolean
+            Return Me.IsNull(Me.tableFLEXSMgmt.TitleColumn)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public Sub SetTitleNull()
+            Me(Me.tableFLEXSMgmt.TitleColumn) = Global.System.Convert.DBNull
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public Function IsStatusNull() As Boolean
+            Return Me.IsNull(Me.tableFLEXSMgmt.StatusColumn)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public Sub SetStatusNull()
+            Me(Me.tableFLEXSMgmt.StatusColumn) = Global.System.Convert.DBNull
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public Function IsPriorityNull() As Boolean
+            Return Me.IsNull(Me.tableFLEXSMgmt.PriorityColumn)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public Sub SetPriorityNull()
+            Me(Me.tableFLEXSMgmt.PriorityColumn) = Global.System.Convert.DBNull
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public Function IsDescriptionNull() As Boolean
+            Return Me.IsNull(Me.tableFLEXSMgmt.DescriptionColumn)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public Sub SetDescriptionNull()
+            Me(Me.tableFLEXSMgmt.DescriptionColumn) = Global.System.Convert.DBNull
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public Function IsFLEXSNull() As Boolean
+            Return Me.IsNull(Me.tableFLEXSMgmt.FLEXSColumn)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public Sub SetFLEXSNull()
+            Me(Me.tableFLEXSMgmt.FLEXSColumn) = Global.System.Convert.DBNull
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public Function IsCreatedNull() As Boolean
+            Return Me.IsNull(Me.tableFLEXSMgmt.CreatedColumn)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public Sub SetCreatedNull()
+            Me(Me.tableFLEXSMgmt.CreatedColumn) = Global.System.Convert.DBNull
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public Function IsClientTrackingNull() As Boolean
+            Return Me.IsNull(Me.tableFLEXSMgmt.ClientTrackingColumn)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public Sub SetClientTrackingNull()
+            Me(Me.tableFLEXSMgmt.ClientTrackingColumn) = Global.System.Convert.DBNull
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public Function IsUpdatedNull() As Boolean
+            Return Me.IsNull(Me.tableFLEXSMgmt.UpdatedColumn)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public Sub SetUpdatedNull()
+            Me(Me.tableFLEXSMgmt.UpdatedColumn) = Global.System.Convert.DBNull
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public Function IsReporterNull() As Boolean
+            Return Me.IsNull(Me.tableFLEXSMgmt.ReporterColumn)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public Sub SetReporterNull()
+            Me(Me.tableFLEXSMgmt.ReporterColumn) = Global.System.Convert.DBNull
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public Function IsAssigneeNull() As Boolean
+            Return Me.IsNull(Me.tableFLEXSMgmt.AssigneeColumn)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public Sub SetAssigneeNull()
+            Me(Me.tableFLEXSMgmt.AssigneeColumn) = Global.System.Convert.DBNull
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public Function IsFLEXNull() As Boolean
+            Return Me.IsNull(Me.tableFLEXSMgmt.FLEXColumn)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public Sub SetFLEXNull()
+            Me(Me.tableFLEXSMgmt.FLEXColumn) = Global.System.Convert.DBNull
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public Function GetAuditRows() As AuditRow()
+            If (Me.Table.ChildRelations("FLEXSMgmt_Audit") Is Nothing) Then
+                Return New AuditRow(-1) {}
+            Else
+                Return CType(MyBase.GetChildRows(Me.Table.ChildRelations("FLEXSMgmt_Audit")),AuditRow())
+            End If
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public Function Gettbl_HoursWorkedLogRows() As tbl_HoursWorkedLogRow()
+            If (Me.Table.ChildRelations("FLEXSMgmt_tbl_HoursWorkedLog") Is Nothing) Then
+                Return New tbl_HoursWorkedLogRow(-1) {}
+            Else
+                Return CType(MyBase.GetChildRows(Me.Table.ChildRelations("FLEXSMgmt_tbl_HoursWorkedLog")),tbl_HoursWorkedLogRow())
+            End If
+        End Function
+    End Class
+    
+    '''<summary>
     '''Row event argument class
     '''</summary>
     <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
@@ -8844,6 +9863,42 @@ Partial Public Class ProdSupport_DataSet
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
         Public ReadOnly Property Row() As StatusReportAudit_ALLRow
+            Get
+                Return Me.eventRow
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public ReadOnly Property Action() As Global.System.Data.DataRowAction
+            Get
+                Return Me.eventAction
+            End Get
+        End Property
+    End Class
+    
+    '''<summary>
+    '''Row event argument class
+    '''</summary>
+    <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+    Public Class FLEXSMgmtRowChangeEvent
+        Inherits Global.System.EventArgs
+        
+        Private eventRow As FLEXSMgmtRow
+        
+        Private eventAction As Global.System.Data.DataRowAction
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public Sub New(ByVal row As FLEXSMgmtRow, ByVal action As Global.System.Data.DataRowAction)
+            MyBase.New
+            Me.eventRow = row
+            Me.eventAction = action
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public ReadOnly Property Row() As FLEXSMgmtRow
             Get
                 Return Me.eventRow
             End Get
@@ -13191,6 +14246,694 @@ Namespace ProdSupport_DataSetTableAdapters
     End Class
     
     '''<summary>
+    '''Represents the connection and commands used to retrieve and save data.
+    '''</summary>
+    <Global.System.ComponentModel.DesignerCategoryAttribute("code"),  _
+     Global.System.ComponentModel.ToolboxItem(true),  _
+     Global.System.ComponentModel.DataObjectAttribute(true),  _
+     Global.System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner"& _ 
+        ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"),  _
+     Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")>  _
+    Partial Public Class FLEXSMgmtTableAdapter
+        Inherits Global.System.ComponentModel.Component
+        
+        Private WithEvents _adapter As Global.System.Data.OleDb.OleDbDataAdapter
+        
+        Private _connection As Global.System.Data.OleDb.OleDbConnection
+        
+        Private _transaction As Global.System.Data.OleDb.OleDbTransaction
+        
+        Private _commandCollection() As Global.System.Data.OleDb.OleDbCommand
+        
+        Private _clearBeforeFill As Boolean
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public Sub New()
+            MyBase.New
+            Me.ClearBeforeFill = true
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Protected Friend ReadOnly Property Adapter() As Global.System.Data.OleDb.OleDbDataAdapter
+            Get
+                If (Me._adapter Is Nothing) Then
+                    Me.InitAdapter
+                End If
+                Return Me._adapter
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Friend Property Connection() As Global.System.Data.OleDb.OleDbConnection
+            Get
+                If (Me._connection Is Nothing) Then
+                    Me.InitConnection
+                End If
+                Return Me._connection
+            End Get
+            Set
+                Me._connection = value
+                If (Not (Me.Adapter.InsertCommand) Is Nothing) Then
+                    Me.Adapter.InsertCommand.Connection = value
+                End If
+                If (Not (Me.Adapter.DeleteCommand) Is Nothing) Then
+                    Me.Adapter.DeleteCommand.Connection = value
+                End If
+                If (Not (Me.Adapter.UpdateCommand) Is Nothing) Then
+                    Me.Adapter.UpdateCommand.Connection = value
+                End If
+                Dim i As Integer = 0
+                Do While (i < Me.CommandCollection.Length)
+                    If (Not (Me.CommandCollection(i)) Is Nothing) Then
+                        CType(Me.CommandCollection(i),Global.System.Data.OleDb.OleDbCommand).Connection = value
+                    End If
+                    i = (i + 1)
+                Loop
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Friend Property Transaction() As Global.System.Data.OleDb.OleDbTransaction
+            Get
+                Return Me._transaction
+            End Get
+            Set
+                Me._transaction = value
+                Dim i As Integer = 0
+                Do While (i < Me.CommandCollection.Length)
+                    Me.CommandCollection(i).Transaction = Me._transaction
+                    i = (i + 1)
+                Loop
+                If ((Not (Me.Adapter) Is Nothing)  _
+                            AndAlso (Not (Me.Adapter.DeleteCommand) Is Nothing)) Then
+                    Me.Adapter.DeleteCommand.Transaction = Me._transaction
+                End If
+                If ((Not (Me.Adapter) Is Nothing)  _
+                            AndAlso (Not (Me.Adapter.InsertCommand) Is Nothing)) Then
+                    Me.Adapter.InsertCommand.Transaction = Me._transaction
+                End If
+                If ((Not (Me.Adapter) Is Nothing)  _
+                            AndAlso (Not (Me.Adapter.UpdateCommand) Is Nothing)) Then
+                    Me.Adapter.UpdateCommand.Transaction = Me._transaction
+                End If
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Protected ReadOnly Property CommandCollection() As Global.System.Data.OleDb.OleDbCommand()
+            Get
+                If (Me._commandCollection Is Nothing) Then
+                    Me.InitCommandCollection
+                End If
+                Return Me._commandCollection
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public Property ClearBeforeFill() As Boolean
+            Get
+                Return Me._clearBeforeFill
+            End Get
+            Set
+                Me._clearBeforeFill = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Private Sub InitAdapter()
+            Me._adapter = New Global.System.Data.OleDb.OleDbDataAdapter()
+            Dim tableMapping As Global.System.Data.Common.DataTableMapping = New Global.System.Data.Common.DataTableMapping()
+            tableMapping.SourceTable = "Table"
+            tableMapping.DataSetTable = "FLEXSMgmt"
+            tableMapping.ColumnMappings.Add("Channel", "Channel")
+            tableMapping.ColumnMappings.Add("Client", "Client")
+            tableMapping.ColumnMappings.Add("Title", "Title")
+            tableMapping.ColumnMappings.Add("Status", "Status")
+            tableMapping.ColumnMappings.Add("Priority", "Priority")
+            tableMapping.ColumnMappings.Add("Description", "Description")
+            tableMapping.ColumnMappings.Add("FLEXS", "FLEXS")
+            tableMapping.ColumnMappings.Add("Created", "Created")
+            tableMapping.ColumnMappings.Add("ClientTracking", "ClientTracking")
+            tableMapping.ColumnMappings.Add("Updated", "Updated")
+            tableMapping.ColumnMappings.Add("Reporter", "Reporter")
+            tableMapping.ColumnMappings.Add("Assignee", "Assignee")
+            tableMapping.ColumnMappings.Add("FLEX", "FLEX")
+            tableMapping.ColumnMappings.Add("IssueID", "IssueID")
+            Me._adapter.TableMappings.Add(tableMapping)
+            Me._adapter.DeleteCommand = New Global.System.Data.OleDb.OleDbCommand()
+            Me._adapter.DeleteCommand.Connection = Me.Connection
+            Me._adapter.DeleteCommand.CommandText = "DELETE FROM `Issues` WHERE (((? = 1 AND `FLEXS Ticket` IS NULL) OR (`FLEXS Ticket"& _ 
+                "` = ?)) AND ((? = 1 AND `Title` IS NULL) OR (`Title` = ?)) AND ((? = 1 AND `Date"& _ 
+                " Received` IS NULL) OR (`Date Received` = ?)) AND ((? = 1 AND `Channel` IS NULL)"& _ 
+                " OR (`Channel` = ?)) AND ((? = 1 AND `Client` IS NULL) OR (`Client` = ?)) AND (("& _ 
+                "? = 1 AND `Priority` IS NULL) OR (`Priority` = ?)) AND ((? = 1 AND `CL ID` IS NU"& _ 
+                "LL) OR (`CL ID` = ?)) AND ((? = 1 AND `Status` IS NULL) OR (`Status` = ?)) AND ("& _ 
+                "(? = 1 AND `Last Status Update` IS NULL) OR (`Last Status Update` = ?)) AND ((? "& _ 
+                "= 1 AND `Reported By` IS NULL) OR (`Reported By` = ?)) AND ((? = 1 AND `Assigned"& _ 
+                " To` IS NULL) OR (`Assigned To` = ?)) AND ((? = 1 AND `FLEX Ticket` IS NULL) OR "& _ 
+                "(`FLEX Ticket` = ?)) AND (`ID` = ?))"
+            Me._adapter.DeleteCommand.CommandType = Global.System.Data.CommandType.Text
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("IsNull_FLEXS", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "FLEXS", Global.System.Data.DataRowVersion.Original, true, Nothing))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Original_FLEXS", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "FLEXS", Global.System.Data.DataRowVersion.Original, false, Nothing))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("IsNull_Title", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "Title", Global.System.Data.DataRowVersion.Original, true, Nothing))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Original_Title", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "Title", Global.System.Data.DataRowVersion.Original, false, Nothing))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("IsNull_Created", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "Created", Global.System.Data.DataRowVersion.Original, true, Nothing))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Original_Created", Global.System.Data.OleDb.OleDbType.[Date], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "Created", Global.System.Data.DataRowVersion.Original, false, Nothing))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("IsNull_Channel", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "Channel", Global.System.Data.DataRowVersion.Original, true, Nothing))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Original_Channel", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "Channel", Global.System.Data.DataRowVersion.Original, false, Nothing))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("IsNull_Client", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "Client", Global.System.Data.DataRowVersion.Original, true, Nothing))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Original_Client", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "Client", Global.System.Data.DataRowVersion.Original, false, Nothing))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("IsNull_Priority", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "Priority", Global.System.Data.DataRowVersion.Original, true, Nothing))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Original_Priority", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "Priority", Global.System.Data.DataRowVersion.Original, false, Nothing))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("IsNull_ClientTracking", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "ClientTracking", Global.System.Data.DataRowVersion.Original, true, Nothing))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Original_ClientTracking", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "ClientTracking", Global.System.Data.DataRowVersion.Original, false, Nothing))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("IsNull_Status", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "Status", Global.System.Data.DataRowVersion.Original, true, Nothing))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Original_Status", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "Status", Global.System.Data.DataRowVersion.Original, false, Nothing))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("IsNull_Updated", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "Updated", Global.System.Data.DataRowVersion.Original, true, Nothing))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Original_Updated", Global.System.Data.OleDb.OleDbType.[Date], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "Updated", Global.System.Data.DataRowVersion.Original, false, Nothing))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("IsNull_Reporter", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "Reporter", Global.System.Data.DataRowVersion.Original, true, Nothing))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Original_Reporter", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "Reporter", Global.System.Data.DataRowVersion.Original, false, Nothing))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("IsNull_Assignee", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "Assignee", Global.System.Data.DataRowVersion.Original, true, Nothing))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Original_Assignee", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "Assignee", Global.System.Data.DataRowVersion.Original, false, Nothing))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("IsNull_FLEX", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "FLEX", Global.System.Data.DataRowVersion.Original, true, Nothing))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Original_FLEX", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "FLEX", Global.System.Data.DataRowVersion.Original, false, Nothing))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Original_IssueID", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "IssueID", Global.System.Data.DataRowVersion.Original, false, Nothing))
+            Me._adapter.InsertCommand = New Global.System.Data.OleDb.OleDbCommand()
+            Me._adapter.InsertCommand.Connection = Me.Connection
+            Me._adapter.InsertCommand.CommandText = "INSERT INTO `Issues` (`FLEXS Ticket`, `Title`, `Description`, `Date Received`, `C"& _ 
+                "hannel`, `Client`, `Priority`, `CL ID`, `Status`, `Last Status Update`, `Reporte"& _ 
+                "d By`, `Assigned To`, `FLEX Ticket`) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?,"& _ 
+                " ?)"
+            Me._adapter.InsertCommand.CommandType = Global.System.Data.CommandType.Text
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("FLEXS", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "FLEXS", Global.System.Data.DataRowVersion.Current, false, Nothing))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Title", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "Title", Global.System.Data.DataRowVersion.Current, false, Nothing))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Description", Global.System.Data.OleDb.OleDbType.LongVarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "Description", Global.System.Data.DataRowVersion.Current, false, Nothing))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Created", Global.System.Data.OleDb.OleDbType.[Date], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "Created", Global.System.Data.DataRowVersion.Current, false, Nothing))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Channel", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "Channel", Global.System.Data.DataRowVersion.Current, false, Nothing))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Client", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "Client", Global.System.Data.DataRowVersion.Current, false, Nothing))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Priority", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "Priority", Global.System.Data.DataRowVersion.Current, false, Nothing))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("ClientTracking", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "ClientTracking", Global.System.Data.DataRowVersion.Current, false, Nothing))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Status", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "Status", Global.System.Data.DataRowVersion.Current, false, Nothing))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Updated", Global.System.Data.OleDb.OleDbType.[Date], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "Updated", Global.System.Data.DataRowVersion.Current, false, Nothing))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Reporter", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "Reporter", Global.System.Data.DataRowVersion.Current, false, Nothing))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Assignee", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "Assignee", Global.System.Data.DataRowVersion.Current, false, Nothing))
+            Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("FLEX", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "FLEX", Global.System.Data.DataRowVersion.Current, false, Nothing))
+            Me._adapter.UpdateCommand = New Global.System.Data.OleDb.OleDbCommand()
+            Me._adapter.UpdateCommand.Connection = Me.Connection
+            Me._adapter.UpdateCommand.CommandText = "UPDATE `Issues` SET `FLEXS Ticket` = ?, `Title` = ?, `Description` = ?, `Date Rec"& _ 
+                "eived` = ?, `Channel` = ?, `Client` = ?, `Priority` = ?, `CL ID` = ?, `Status` ="& _ 
+                " ?, `Last Status Update` = ?, `Reported By` = ?, `Assigned To` = ?, `FLEX Ticket"& _ 
+                "` = ? WHERE (((? = 1 AND `FLEXS Ticket` IS NULL) OR (`FLEXS Ticket` = ?)) AND (("& _ 
+                "? = 1 AND `Title` IS NULL) OR (`Title` = ?)) AND ((? = 1 AND `Date Received` IS "& _ 
+                "NULL) OR (`Date Received` = ?)) AND ((? = 1 AND `Channel` IS NULL) OR (`Channel`"& _ 
+                " = ?)) AND ((? = 1 AND `Client` IS NULL) OR (`Client` = ?)) AND ((? = 1 AND `Pri"& _ 
+                "ority` IS NULL) OR (`Priority` = ?)) AND ((? = 1 AND `CL ID` IS NULL) OR (`CL ID"& _ 
+                "` = ?)) AND ((? = 1 AND `Status` IS NULL) OR (`Status` = ?)) AND ((? = 1 AND `La"& _ 
+                "st Status Update` IS NULL) OR (`Last Status Update` = ?)) AND ((? = 1 AND `Repor"& _ 
+                "ted By` IS NULL) OR (`Reported By` = ?)) AND ((? = 1 AND `Assigned To` IS NULL) "& _ 
+                "OR (`Assigned To` = ?)) AND ((? = 1 AND `FLEX Ticket` IS NULL) OR (`FLEX Ticket`"& _ 
+                " = ?)) AND (`ID` = ?))"
+            Me._adapter.UpdateCommand.CommandType = Global.System.Data.CommandType.Text
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("FLEXS", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "FLEXS", Global.System.Data.DataRowVersion.Current, false, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Title", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "Title", Global.System.Data.DataRowVersion.Current, false, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Description", Global.System.Data.OleDb.OleDbType.LongVarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "Description", Global.System.Data.DataRowVersion.Current, false, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Created", Global.System.Data.OleDb.OleDbType.[Date], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "Created", Global.System.Data.DataRowVersion.Current, false, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Channel", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "Channel", Global.System.Data.DataRowVersion.Current, false, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Client", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "Client", Global.System.Data.DataRowVersion.Current, false, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Priority", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "Priority", Global.System.Data.DataRowVersion.Current, false, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("ClientTracking", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "ClientTracking", Global.System.Data.DataRowVersion.Current, false, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Status", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "Status", Global.System.Data.DataRowVersion.Current, false, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Updated", Global.System.Data.OleDb.OleDbType.[Date], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "Updated", Global.System.Data.DataRowVersion.Current, false, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Reporter", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "Reporter", Global.System.Data.DataRowVersion.Current, false, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Assignee", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "Assignee", Global.System.Data.DataRowVersion.Current, false, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("FLEX", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "FLEX", Global.System.Data.DataRowVersion.Current, false, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("IsNull_FLEXS", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "FLEXS", Global.System.Data.DataRowVersion.Original, true, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Original_FLEXS", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "FLEXS", Global.System.Data.DataRowVersion.Original, false, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("IsNull_Title", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "Title", Global.System.Data.DataRowVersion.Original, true, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Original_Title", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "Title", Global.System.Data.DataRowVersion.Original, false, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("IsNull_Created", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "Created", Global.System.Data.DataRowVersion.Original, true, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Original_Created", Global.System.Data.OleDb.OleDbType.[Date], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "Created", Global.System.Data.DataRowVersion.Original, false, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("IsNull_Channel", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "Channel", Global.System.Data.DataRowVersion.Original, true, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Original_Channel", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "Channel", Global.System.Data.DataRowVersion.Original, false, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("IsNull_Client", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "Client", Global.System.Data.DataRowVersion.Original, true, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Original_Client", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "Client", Global.System.Data.DataRowVersion.Original, false, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("IsNull_Priority", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "Priority", Global.System.Data.DataRowVersion.Original, true, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Original_Priority", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "Priority", Global.System.Data.DataRowVersion.Original, false, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("IsNull_ClientTracking", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "ClientTracking", Global.System.Data.DataRowVersion.Original, true, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Original_ClientTracking", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "ClientTracking", Global.System.Data.DataRowVersion.Original, false, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("IsNull_Status", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "Status", Global.System.Data.DataRowVersion.Original, true, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Original_Status", Global.System.Data.OleDb.OleDbType.VarWChar, 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "Status", Global.System.Data.DataRowVersion.Original, false, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("IsNull_Updated", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "Updated", Global.System.Data.DataRowVersion.Original, true, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Original_Updated", Global.System.Data.OleDb.OleDbType.[Date], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "Updated", Global.System.Data.DataRowVersion.Original, false, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("IsNull_Reporter", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "Reporter", Global.System.Data.DataRowVersion.Original, true, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Original_Reporter", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "Reporter", Global.System.Data.DataRowVersion.Original, false, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("IsNull_Assignee", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "Assignee", Global.System.Data.DataRowVersion.Original, true, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Original_Assignee", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "Assignee", Global.System.Data.DataRowVersion.Original, false, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("IsNull_FLEX", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "FLEX", Global.System.Data.DataRowVersion.Original, true, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Original_FLEX", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "FLEX", Global.System.Data.DataRowVersion.Original, false, Nothing))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("Original_IssueID", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "IssueID", Global.System.Data.DataRowVersion.Original, false, Nothing))
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Private Sub InitConnection()
+            Me._connection = New Global.System.Data.OleDb.OleDbConnection()
+            Me._connection.ConnectionString = Global.RequestsManager.My.MySettings.Default.DB_Connection
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Private Sub InitCommandCollection()
+            Me._commandCollection = New Global.System.Data.OleDb.OleDbCommand(3) {}
+            Me._commandCollection(0) = New Global.System.Data.OleDb.OleDbCommand()
+            Me._commandCollection(0).Connection = Me.Connection
+            Me._commandCollection(0).CommandText = "SELECT        [FLEXS Ticket] AS FLEXS, Title, Description, [Date Received] AS Cre"& _ 
+                "ated, Channel, Client, Priority, [CL ID] AS ClientTracking, Status, [Last Status"& _ 
+                " Update] AS Updated, [Reported By] AS Reporter, [Assigned To] AS Assignee, "&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"   "& _ 
+                "                      [FLEX Ticket] AS FLEX, ID AS IssueID"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"FROM            Issu"& _ 
+                "es"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"WHERE        (NOT ([FLEXS Ticket] IS NULL)) AND (Status IN ('AODA - Confirme"& _ 
+                "d Defect', 'AODA - Confirmed Defect Fixed', 'AODA - Enhancement', 'AODA - Enhanc"& _ 
+                "ement Released', 'Confirmed Defect', 'Confirmed Defect - Fixed', "&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"             "& _ 
+                "            'Enhancement - Escalated to Product', 'Enhancement - Released'))"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"OR"& _ 
+                "DER BY [FLEXS Ticket] DESC"
+            Me._commandCollection(0).CommandType = Global.System.Data.CommandType.Text
+            Me._commandCollection(1) = New Global.System.Data.OleDb.OleDbCommand()
+            Me._commandCollection(1).Connection = Me.Connection
+            Me._commandCollection(1).CommandText = "SELECT        [FLEXS Ticket] AS FLEXS, Title, Description, [Date Received] AS Cre"& _ 
+                "ated, Channel, Client, Priority, [CL ID] AS ClientTracking, Status, [Last Status"& _ 
+                " Update] AS Updated, [Reported By] AS Reporter, [Assigned To] AS Assignee, "&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"   "& _ 
+                "                      [FLEX Ticket] AS FLEX, ID AS IssueID"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"FROM            Issu"& _ 
+                "es"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"WHERE        (NOT ([FLEXS Ticket] IS NULL)) AND (Status IN ('AODA - Confirme"& _ 
+                "d Defect', 'Confirmed Defect'))"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"ORDER BY [FLEXS Ticket] DESC"
+            Me._commandCollection(1).CommandType = Global.System.Data.CommandType.Text
+            Me._commandCollection(2) = New Global.System.Data.OleDb.OleDbCommand()
+            Me._commandCollection(2).Connection = Me.Connection
+            Me._commandCollection(2).CommandText = "SELECT        [FLEXS Ticket] AS FLEXS, Title, Description, [Date Received] AS Cre"& _ 
+                "ated, Channel, Client, Priority, [CL ID] AS ClientTracking, Status, [Last Status"& _ 
+                " Update] AS Updated, [Reported By] AS Reporter, [Assigned To] AS Assignee, "&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"   "& _ 
+                "                      [FLEX Ticket] AS FLEX, ID AS IssueID"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"FROM            Issu"& _ 
+                "es"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"WHERE        (NOT ([FLEXS Ticket] IS NULL)) AND (Status IN ('AODA - Enhancem"& _ 
+                "ent', 'Enhancement - Escalated to Product'))"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"ORDER BY [FLEXS Ticket] DESC"
+            Me._commandCollection(2).CommandType = Global.System.Data.CommandType.Text
+            Me._commandCollection(3) = New Global.System.Data.OleDb.OleDbCommand()
+            Me._commandCollection(3).Connection = Me.Connection
+            Me._commandCollection(3).CommandText = "SELECT        [FLEXS Ticket] AS FLEXS, Title, Description, [Date Received] AS Cre"& _ 
+                "ated, Channel, Client, Priority, [CL ID] AS ClientTracking, Status, [Last Status"& _ 
+                " Update] AS Updated, [Reported By] AS Reporter, [Assigned To] AS Assignee, "&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"   "& _ 
+                "                      [FLEX Ticket] AS FLEX, ID AS IssueID"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"FROM            Issu"& _ 
+                "es"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"WHERE        (NOT ([FLEXS Ticket] IS NULL)) AND (Status IN ('AODA - Confirme"& _ 
+                "d Defect', 'AODA - Enhancement', 'Confirmed Defect', 'Enhancement - Escalated to"& _ 
+                " Product'))"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"ORDER BY [FLEXS Ticket] DESC"
+            Me._commandCollection(3).CommandType = Global.System.Data.CommandType.Text
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0"),  _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
+         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Fill, true)>  _
+        Public Overloads Overridable Function Fill(ByVal dataTable As ProdSupport_DataSet.FLEXSMgmtDataTable) As Integer
+            Me.Adapter.SelectCommand = Me.CommandCollection(0)
+            If (Me.ClearBeforeFill = true) Then
+                dataTable.Clear
+            End If
+            Dim returnValue As Integer = Me.Adapter.Fill(dataTable)
+            Return returnValue
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0"),  _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
+         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.[Select], true)>  _
+        Public Overloads Overridable Function GetData() As ProdSupport_DataSet.FLEXSMgmtDataTable
+            Me.Adapter.SelectCommand = Me.CommandCollection(0)
+            Dim dataTable As ProdSupport_DataSet.FLEXSMgmtDataTable = New ProdSupport_DataSet.FLEXSMgmtDataTable()
+            Me.Adapter.Fill(dataTable)
+            Return dataTable
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0"),  _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
+         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Fill, false)>  _
+        Public Overloads Overridable Function FillActiveDefects(ByVal dataTable As ProdSupport_DataSet.FLEXSMgmtDataTable) As Integer
+            Me.Adapter.SelectCommand = Me.CommandCollection(1)
+            If (Me.ClearBeforeFill = true) Then
+                dataTable.Clear
+            End If
+            Dim returnValue As Integer = Me.Adapter.Fill(dataTable)
+            Return returnValue
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0"),  _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
+         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.[Select], false)>  _
+        Public Overloads Overridable Function GetActiveDefects() As ProdSupport_DataSet.FLEXSMgmtDataTable
+            Me.Adapter.SelectCommand = Me.CommandCollection(1)
+            Dim dataTable As ProdSupport_DataSet.FLEXSMgmtDataTable = New ProdSupport_DataSet.FLEXSMgmtDataTable()
+            Me.Adapter.Fill(dataTable)
+            Return dataTable
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0"),  _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
+         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Fill, false)>  _
+        Public Overloads Overridable Function FillActiveEnhancements(ByVal dataTable As ProdSupport_DataSet.FLEXSMgmtDataTable) As Integer
+            Me.Adapter.SelectCommand = Me.CommandCollection(2)
+            If (Me.ClearBeforeFill = true) Then
+                dataTable.Clear
+            End If
+            Dim returnValue As Integer = Me.Adapter.Fill(dataTable)
+            Return returnValue
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0"),  _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
+         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.[Select], false)>  _
+        Public Overloads Overridable Function GetActiveEnhancements() As ProdSupport_DataSet.FLEXSMgmtDataTable
+            Me.Adapter.SelectCommand = Me.CommandCollection(2)
+            Dim dataTable As ProdSupport_DataSet.FLEXSMgmtDataTable = New ProdSupport_DataSet.FLEXSMgmtDataTable()
+            Me.Adapter.Fill(dataTable)
+            Return dataTable
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0"),  _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
+         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Fill, false)>  _
+        Public Overloads Overridable Function FillActiveFLEXS(ByVal dataTable As ProdSupport_DataSet.FLEXSMgmtDataTable) As Integer
+            Me.Adapter.SelectCommand = Me.CommandCollection(3)
+            If (Me.ClearBeforeFill = true) Then
+                dataTable.Clear
+            End If
+            Dim returnValue As Integer = Me.Adapter.Fill(dataTable)
+            Return returnValue
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0"),  _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
+         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.[Select], false)>  _
+        Public Overloads Overridable Function GetActiveFLEXS() As ProdSupport_DataSet.FLEXSMgmtDataTable
+            Me.Adapter.SelectCommand = Me.CommandCollection(3)
+            Dim dataTable As ProdSupport_DataSet.FLEXSMgmtDataTable = New ProdSupport_DataSet.FLEXSMgmtDataTable()
+            Me.Adapter.Fill(dataTable)
+            Return dataTable
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0"),  _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")>  _
+        Public Overloads Overridable Function Update(ByVal dataTable As ProdSupport_DataSet.FLEXSMgmtDataTable) As Integer
+            Return Me.Adapter.Update(dataTable)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0"),  _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")>  _
+        Public Overloads Overridable Function Update(ByVal dataSet As ProdSupport_DataSet) As Integer
+            Return Me.Adapter.Update(dataSet, "FLEXSMgmt")
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0"),  _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")>  _
+        Public Overloads Overridable Function Update(ByVal dataRow As Global.System.Data.DataRow) As Integer
+            Return Me.Adapter.Update(New Global.System.Data.DataRow() {dataRow})
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0"),  _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")>  _
+        Public Overloads Overridable Function Update(ByVal dataRows() As Global.System.Data.DataRow) As Integer
+            Return Me.Adapter.Update(dataRows)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0"),  _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
+         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Delete, true)>  _
+        Public Overloads Overridable Function Delete(ByVal Original_FLEXS As Integer, ByVal Original_Title As String, ByVal Original_Created As Date, ByVal Original_Channel As Global.System.Nullable(Of Integer), ByVal Original_Client As Integer, ByVal Original_Priority As String, ByVal Original_ClientTracking As String, ByVal Original_Status As String, ByVal Original_Updated As Date, ByVal Original_Reporter As Integer, ByVal Original_Assignee As Integer, ByVal Original_FLEX As Integer, ByVal Original_IssueID As Integer) As Integer
+            Me.Adapter.DeleteCommand.Parameters(0).Value = CType(0,Object)
+            Me.Adapter.DeleteCommand.Parameters(1).Value = CType(Original_FLEXS,Integer)
+            If (Original_Title Is Nothing) Then
+                Throw New Global.System.ArgumentNullException("Original_Title")
+            Else
+                Me.Adapter.DeleteCommand.Parameters(2).Value = CType(0,Object)
+                Me.Adapter.DeleteCommand.Parameters(3).Value = CType(Original_Title,String)
+            End If
+            Me.Adapter.DeleteCommand.Parameters(4).Value = CType(0,Object)
+            Me.Adapter.DeleteCommand.Parameters(5).Value = CType(Original_Created,Date)
+            If (Original_Channel.HasValue = true) Then
+                Me.Adapter.DeleteCommand.Parameters(6).Value = CType(0,Object)
+                Me.Adapter.DeleteCommand.Parameters(7).Value = CType(Original_Channel.Value,Integer)
+            Else
+                Me.Adapter.DeleteCommand.Parameters(6).Value = CType(1,Object)
+                Me.Adapter.DeleteCommand.Parameters(7).Value = Global.System.DBNull.Value
+            End If
+            Me.Adapter.DeleteCommand.Parameters(8).Value = CType(0,Object)
+            Me.Adapter.DeleteCommand.Parameters(9).Value = CType(Original_Client,Integer)
+            If (Original_Priority Is Nothing) Then
+                Me.Adapter.DeleteCommand.Parameters(10).Value = CType(1,Object)
+                Me.Adapter.DeleteCommand.Parameters(11).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.DeleteCommand.Parameters(10).Value = CType(0,Object)
+                Me.Adapter.DeleteCommand.Parameters(11).Value = CType(Original_Priority,String)
+            End If
+            If (Original_ClientTracking Is Nothing) Then
+                Throw New Global.System.ArgumentNullException("Original_ClientTracking")
+            Else
+                Me.Adapter.DeleteCommand.Parameters(12).Value = CType(0,Object)
+                Me.Adapter.DeleteCommand.Parameters(13).Value = CType(Original_ClientTracking,String)
+            End If
+            If (Original_Status Is Nothing) Then
+                Throw New Global.System.ArgumentNullException("Original_Status")
+            Else
+                Me.Adapter.DeleteCommand.Parameters(14).Value = CType(0,Object)
+                Me.Adapter.DeleteCommand.Parameters(15).Value = CType(Original_Status,String)
+            End If
+            Me.Adapter.DeleteCommand.Parameters(16).Value = CType(0,Object)
+            Me.Adapter.DeleteCommand.Parameters(17).Value = CType(Original_Updated,Date)
+            Me.Adapter.DeleteCommand.Parameters(18).Value = CType(0,Object)
+            Me.Adapter.DeleteCommand.Parameters(19).Value = CType(Original_Reporter,Integer)
+            Me.Adapter.DeleteCommand.Parameters(20).Value = CType(0,Object)
+            Me.Adapter.DeleteCommand.Parameters(21).Value = CType(Original_Assignee,Integer)
+            Me.Adapter.DeleteCommand.Parameters(22).Value = CType(0,Object)
+            Me.Adapter.DeleteCommand.Parameters(23).Value = CType(Original_FLEX,Integer)
+            Me.Adapter.DeleteCommand.Parameters(24).Value = CType(Original_IssueID,Integer)
+            Dim previousConnectionState As Global.System.Data.ConnectionState = Me.Adapter.DeleteCommand.Connection.State
+            If ((Me.Adapter.DeleteCommand.Connection.State And Global.System.Data.ConnectionState.Open)  _
+                        <> Global.System.Data.ConnectionState.Open) Then
+                Me.Adapter.DeleteCommand.Connection.Open
+            End If
+            Try 
+                Dim returnValue As Integer = Me.Adapter.DeleteCommand.ExecuteNonQuery
+                Return returnValue
+            Finally
+                If (previousConnectionState = Global.System.Data.ConnectionState.Closed) Then
+                    Me.Adapter.DeleteCommand.Connection.Close
+                End If
+            End Try
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0"),  _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
+         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Insert, true)>  _
+        Public Overloads Overridable Function Insert(ByVal FLEXS As Integer, ByVal Title As String, ByVal Description As String, ByVal Created As Date, ByVal Channel As Global.System.Nullable(Of Integer), ByVal Client As Integer, ByVal Priority As String, ByVal ClientTracking As String, ByVal Status As String, ByVal Updated As Date, ByVal Reporter As Integer, ByVal Assignee As Integer, ByVal FLEX As Integer) As Integer
+            Me.Adapter.InsertCommand.Parameters(0).Value = CType(FLEXS,Integer)
+            If (Title Is Nothing) Then
+                Throw New Global.System.ArgumentNullException("Title")
+            Else
+                Me.Adapter.InsertCommand.Parameters(1).Value = CType(Title,String)
+            End If
+            If (Description Is Nothing) Then
+                Me.Adapter.InsertCommand.Parameters(2).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.InsertCommand.Parameters(2).Value = CType(Description,String)
+            End If
+            Me.Adapter.InsertCommand.Parameters(3).Value = CType(Created,Date)
+            If (Channel.HasValue = true) Then
+                Me.Adapter.InsertCommand.Parameters(4).Value = CType(Channel.Value,Integer)
+            Else
+                Me.Adapter.InsertCommand.Parameters(4).Value = Global.System.DBNull.Value
+            End If
+            Me.Adapter.InsertCommand.Parameters(5).Value = CType(Client,Integer)
+            If (Priority Is Nothing) Then
+                Me.Adapter.InsertCommand.Parameters(6).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.InsertCommand.Parameters(6).Value = CType(Priority,String)
+            End If
+            If (ClientTracking Is Nothing) Then
+                Throw New Global.System.ArgumentNullException("ClientTracking")
+            Else
+                Me.Adapter.InsertCommand.Parameters(7).Value = CType(ClientTracking,String)
+            End If
+            If (Status Is Nothing) Then
+                Throw New Global.System.ArgumentNullException("Status")
+            Else
+                Me.Adapter.InsertCommand.Parameters(8).Value = CType(Status,String)
+            End If
+            Me.Adapter.InsertCommand.Parameters(9).Value = CType(Updated,Date)
+            Me.Adapter.InsertCommand.Parameters(10).Value = CType(Reporter,Integer)
+            Me.Adapter.InsertCommand.Parameters(11).Value = CType(Assignee,Integer)
+            Me.Adapter.InsertCommand.Parameters(12).Value = CType(FLEX,Integer)
+            Dim previousConnectionState As Global.System.Data.ConnectionState = Me.Adapter.InsertCommand.Connection.State
+            If ((Me.Adapter.InsertCommand.Connection.State And Global.System.Data.ConnectionState.Open)  _
+                        <> Global.System.Data.ConnectionState.Open) Then
+                Me.Adapter.InsertCommand.Connection.Open
+            End If
+            Try 
+                Dim returnValue As Integer = Me.Adapter.InsertCommand.ExecuteNonQuery
+                Return returnValue
+            Finally
+                If (previousConnectionState = Global.System.Data.ConnectionState.Closed) Then
+                    Me.Adapter.InsertCommand.Connection.Close
+                End If
+            End Try
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0"),  _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
+         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Update, true)>  _
+        Public Overloads Overridable Function Update( _
+                    ByVal FLEXS As Integer,  _
+                    ByVal Title As String,  _
+                    ByVal Description As String,  _
+                    ByVal Created As Date,  _
+                    ByVal Channel As Global.System.Nullable(Of Integer),  _
+                    ByVal Client As Integer,  _
+                    ByVal Priority As String,  _
+                    ByVal ClientTracking As String,  _
+                    ByVal Status As String,  _
+                    ByVal Updated As Date,  _
+                    ByVal Reporter As Integer,  _
+                    ByVal Assignee As Integer,  _
+                    ByVal FLEX As Integer,  _
+                    ByVal Original_FLEXS As Integer,  _
+                    ByVal Original_Title As String,  _
+                    ByVal Original_Created As Date,  _
+                    ByVal Original_Channel As Global.System.Nullable(Of Integer),  _
+                    ByVal Original_Client As Integer,  _
+                    ByVal Original_Priority As String,  _
+                    ByVal Original_ClientTracking As String,  _
+                    ByVal Original_Status As String,  _
+                    ByVal Original_Updated As Date,  _
+                    ByVal Original_Reporter As Integer,  _
+                    ByVal Original_Assignee As Integer,  _
+                    ByVal Original_FLEX As Integer,  _
+                    ByVal Original_IssueID As Integer) As Integer
+            Me.Adapter.UpdateCommand.Parameters(0).Value = CType(FLEXS,Integer)
+            If (Title Is Nothing) Then
+                Throw New Global.System.ArgumentNullException("Title")
+            Else
+                Me.Adapter.UpdateCommand.Parameters(1).Value = CType(Title,String)
+            End If
+            If (Description Is Nothing) Then
+                Me.Adapter.UpdateCommand.Parameters(2).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.UpdateCommand.Parameters(2).Value = CType(Description,String)
+            End If
+            Me.Adapter.UpdateCommand.Parameters(3).Value = CType(Created,Date)
+            If (Channel.HasValue = true) Then
+                Me.Adapter.UpdateCommand.Parameters(4).Value = CType(Channel.Value,Integer)
+            Else
+                Me.Adapter.UpdateCommand.Parameters(4).Value = Global.System.DBNull.Value
+            End If
+            Me.Adapter.UpdateCommand.Parameters(5).Value = CType(Client,Integer)
+            If (Priority Is Nothing) Then
+                Me.Adapter.UpdateCommand.Parameters(6).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.UpdateCommand.Parameters(6).Value = CType(Priority,String)
+            End If
+            If (ClientTracking Is Nothing) Then
+                Throw New Global.System.ArgumentNullException("ClientTracking")
+            Else
+                Me.Adapter.UpdateCommand.Parameters(7).Value = CType(ClientTracking,String)
+            End If
+            If (Status Is Nothing) Then
+                Throw New Global.System.ArgumentNullException("Status")
+            Else
+                Me.Adapter.UpdateCommand.Parameters(8).Value = CType(Status,String)
+            End If
+            Me.Adapter.UpdateCommand.Parameters(9).Value = CType(Updated,Date)
+            Me.Adapter.UpdateCommand.Parameters(10).Value = CType(Reporter,Integer)
+            Me.Adapter.UpdateCommand.Parameters(11).Value = CType(Assignee,Integer)
+            Me.Adapter.UpdateCommand.Parameters(12).Value = CType(FLEX,Integer)
+            Me.Adapter.UpdateCommand.Parameters(13).Value = CType(0,Object)
+            Me.Adapter.UpdateCommand.Parameters(14).Value = CType(Original_FLEXS,Integer)
+            If (Original_Title Is Nothing) Then
+                Throw New Global.System.ArgumentNullException("Original_Title")
+            Else
+                Me.Adapter.UpdateCommand.Parameters(15).Value = CType(0,Object)
+                Me.Adapter.UpdateCommand.Parameters(16).Value = CType(Original_Title,String)
+            End If
+            Me.Adapter.UpdateCommand.Parameters(17).Value = CType(0,Object)
+            Me.Adapter.UpdateCommand.Parameters(18).Value = CType(Original_Created,Date)
+            If (Original_Channel.HasValue = true) Then
+                Me.Adapter.UpdateCommand.Parameters(19).Value = CType(0,Object)
+                Me.Adapter.UpdateCommand.Parameters(20).Value = CType(Original_Channel.Value,Integer)
+            Else
+                Me.Adapter.UpdateCommand.Parameters(19).Value = CType(1,Object)
+                Me.Adapter.UpdateCommand.Parameters(20).Value = Global.System.DBNull.Value
+            End If
+            Me.Adapter.UpdateCommand.Parameters(21).Value = CType(0,Object)
+            Me.Adapter.UpdateCommand.Parameters(22).Value = CType(Original_Client,Integer)
+            If (Original_Priority Is Nothing) Then
+                Me.Adapter.UpdateCommand.Parameters(23).Value = CType(1,Object)
+                Me.Adapter.UpdateCommand.Parameters(24).Value = Global.System.DBNull.Value
+            Else
+                Me.Adapter.UpdateCommand.Parameters(23).Value = CType(0,Object)
+                Me.Adapter.UpdateCommand.Parameters(24).Value = CType(Original_Priority,String)
+            End If
+            If (Original_ClientTracking Is Nothing) Then
+                Throw New Global.System.ArgumentNullException("Original_ClientTracking")
+            Else
+                Me.Adapter.UpdateCommand.Parameters(25).Value = CType(0,Object)
+                Me.Adapter.UpdateCommand.Parameters(26).Value = CType(Original_ClientTracking,String)
+            End If
+            If (Original_Status Is Nothing) Then
+                Throw New Global.System.ArgumentNullException("Original_Status")
+            Else
+                Me.Adapter.UpdateCommand.Parameters(27).Value = CType(0,Object)
+                Me.Adapter.UpdateCommand.Parameters(28).Value = CType(Original_Status,String)
+            End If
+            Me.Adapter.UpdateCommand.Parameters(29).Value = CType(0,Object)
+            Me.Adapter.UpdateCommand.Parameters(30).Value = CType(Original_Updated,Date)
+            Me.Adapter.UpdateCommand.Parameters(31).Value = CType(0,Object)
+            Me.Adapter.UpdateCommand.Parameters(32).Value = CType(Original_Reporter,Integer)
+            Me.Adapter.UpdateCommand.Parameters(33).Value = CType(0,Object)
+            Me.Adapter.UpdateCommand.Parameters(34).Value = CType(Original_Assignee,Integer)
+            Me.Adapter.UpdateCommand.Parameters(35).Value = CType(0,Object)
+            Me.Adapter.UpdateCommand.Parameters(36).Value = CType(Original_FLEX,Integer)
+            Me.Adapter.UpdateCommand.Parameters(37).Value = CType(Original_IssueID,Integer)
+            Dim previousConnectionState As Global.System.Data.ConnectionState = Me.Adapter.UpdateCommand.Connection.State
+            If ((Me.Adapter.UpdateCommand.Connection.State And Global.System.Data.ConnectionState.Open)  _
+                        <> Global.System.Data.ConnectionState.Open) Then
+                Me.Adapter.UpdateCommand.Connection.Open
+            End If
+            Try 
+                Dim returnValue As Integer = Me.Adapter.UpdateCommand.ExecuteNonQuery
+                Return returnValue
+            Finally
+                If (previousConnectionState = Global.System.Data.ConnectionState.Closed) Then
+                    Me.Adapter.UpdateCommand.Connection.Close
+                End If
+            End Try
+        End Function
+    End Class
+    
+    '''<summary>
     '''TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
     '''</summary>
     <Global.System.ComponentModel.DesignerCategoryAttribute("code"),  _
@@ -13216,6 +14959,8 @@ Namespace ProdSupport_DataSetTableAdapters
         Private _statusesTableAdapter As StatusesTableAdapter
         
         Private _tbl_HoursWorkedLogTableAdapter As tbl_HoursWorkedLogTableAdapter
+        
+        Private _fLEXSMgmtTableAdapter As FLEXSMgmtTableAdapter
         
         Private _backupDataSetBeforeUpdate As Boolean
         
@@ -13331,6 +15076,20 @@ Namespace ProdSupport_DataSetTableAdapters
         End Property
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0"),  _
+         Global.System.ComponentModel.EditorAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterManagerPropertyEditor, Microso"& _ 
+            "ft.VSDesigner, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3"& _ 
+            "a", "System.Drawing.Design.UITypeEditor")>  _
+        Public Property FLEXSMgmtTableAdapter() As FLEXSMgmtTableAdapter
+            Get
+                Return Me._fLEXSMgmtTableAdapter
+            End Get
+            Set
+                Me._fLEXSMgmtTableAdapter = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
         Public Property BackupDataSetBeforeUpdate() As Boolean
             Get
@@ -13377,6 +15136,10 @@ Namespace ProdSupport_DataSetTableAdapters
                             AndAlso (Not (Me._tbl_HoursWorkedLogTableAdapter.Connection) Is Nothing)) Then
                     Return Me._tbl_HoursWorkedLogTableAdapter.Connection
                 End If
+                If ((Not (Me._fLEXSMgmtTableAdapter) Is Nothing)  _
+                            AndAlso (Not (Me._fLEXSMgmtTableAdapter.Connection) Is Nothing)) Then
+                    Return Me._fLEXSMgmtTableAdapter.Connection
+                End If
                 Return Nothing
             End Get
             Set
@@ -13409,6 +15172,9 @@ Namespace ProdSupport_DataSetTableAdapters
                     count = (count + 1)
                 End If
                 If (Not (Me._tbl_HoursWorkedLogTableAdapter) Is Nothing) Then
+                    count = (count + 1)
+                End If
+                If (Not (Me._fLEXSMgmtTableAdapter) Is Nothing) Then
                     count = (count + 1)
                 End If
                 Return count
@@ -13455,6 +15221,15 @@ Namespace ProdSupport_DataSetTableAdapters
                 If ((Not (updatedRows) Is Nothing)  _
                             AndAlso (0 < updatedRows.Length)) Then
                     result = (result + Me._issuesTableAdapter.Update(updatedRows))
+                    allChangedRows.AddRange(updatedRows)
+                End If
+            End If
+            If (Not (Me._fLEXSMgmtTableAdapter) Is Nothing) Then
+                Dim updatedRows() As Global.System.Data.DataRow = dataSet.FLEXSMgmt.Select(Nothing, Nothing, Global.System.Data.DataViewRowState.ModifiedCurrent)
+                updatedRows = Me.GetRealUpdatedRows(updatedRows, allAddedRows)
+                If ((Not (updatedRows) Is Nothing)  _
+                            AndAlso (0 < updatedRows.Length)) Then
+                    result = (result + Me._fLEXSMgmtTableAdapter.Update(updatedRows))
                     allChangedRows.AddRange(updatedRows)
                 End If
             End If
@@ -13527,6 +15302,14 @@ Namespace ProdSupport_DataSetTableAdapters
                     allAddedRows.AddRange(addedRows)
                 End If
             End If
+            If (Not (Me._fLEXSMgmtTableAdapter) Is Nothing) Then
+                Dim addedRows() As Global.System.Data.DataRow = dataSet.FLEXSMgmt.Select(Nothing, Nothing, Global.System.Data.DataViewRowState.Added)
+                If ((Not (addedRows) Is Nothing)  _
+                            AndAlso (0 < addedRows.Length)) Then
+                    result = (result + Me._fLEXSMgmtTableAdapter.Update(addedRows))
+                    allAddedRows.AddRange(addedRows)
+                End If
+            End If
             If (Not (Me._categoriesTableAdapter) Is Nothing) Then
                 Dim addedRows() As Global.System.Data.DataRow = dataSet.Categories.Select(Nothing, Nothing, Global.System.Data.DataViewRowState.Added)
                 If ((Not (addedRows) Is Nothing)  _
@@ -13582,6 +15365,14 @@ Namespace ProdSupport_DataSetTableAdapters
                 If ((Not (deletedRows) Is Nothing)  _
                             AndAlso (0 < deletedRows.Length)) Then
                     result = (result + Me._categoriesTableAdapter.Update(deletedRows))
+                    allChangedRows.AddRange(deletedRows)
+                End If
+            End If
+            If (Not (Me._fLEXSMgmtTableAdapter) Is Nothing) Then
+                Dim deletedRows() As Global.System.Data.DataRow = dataSet.FLEXSMgmt.Select(Nothing, Nothing, Global.System.Data.DataViewRowState.Deleted)
+                If ((Not (deletedRows) Is Nothing)  _
+                            AndAlso (0 < deletedRows.Length)) Then
+                    result = (result + Me._fLEXSMgmtTableAdapter.Update(deletedRows))
                     allChangedRows.AddRange(deletedRows)
                 End If
             End If
@@ -13693,6 +15484,11 @@ Namespace ProdSupport_DataSetTableAdapters
                 Throw New Global.System.ArgumentException("All TableAdapters managed by a TableAdapterManager must use the same connection s"& _ 
                         "tring.")
             End If
+            If ((Not (Me._fLEXSMgmtTableAdapter) Is Nothing)  _
+                        AndAlso (Me.MatchTableAdapterConnection(Me._fLEXSMgmtTableAdapter.Connection) = false)) Then
+                Throw New Global.System.ArgumentException("All TableAdapters managed by a TableAdapterManager must use the same connection s"& _ 
+                        "tring.")
+            End If
             Dim workConnection As Global.System.Data.IDbConnection = Me.Connection
             If (workConnection Is Nothing) Then
                 Throw New Global.System.ApplicationException("TableAdapterManager contains no connection information. Set each TableAdapterMana"& _ 
@@ -13788,6 +15584,15 @@ Namespace ProdSupport_DataSetTableAdapters
                         adaptersWithAcceptChangesDuringUpdate.Add(Me._tbl_HoursWorkedLogTableAdapter.Adapter)
                     End If
                 End If
+                If (Not (Me._fLEXSMgmtTableAdapter) Is Nothing) Then
+                    revertConnections.Add(Me._fLEXSMgmtTableAdapter, Me._fLEXSMgmtTableAdapter.Connection)
+                    Me._fLEXSMgmtTableAdapter.Connection = CType(workConnection,Global.System.Data.OleDb.OleDbConnection)
+                    Me._fLEXSMgmtTableAdapter.Transaction = CType(workTransaction,Global.System.Data.OleDb.OleDbTransaction)
+                    If Me._fLEXSMgmtTableAdapter.Adapter.AcceptChangesDuringUpdate Then
+                        Me._fLEXSMgmtTableAdapter.Adapter.AcceptChangesDuringUpdate = false
+                        adaptersWithAcceptChangesDuringUpdate.Add(Me._fLEXSMgmtTableAdapter.Adapter)
+                    End If
+                End If
                 '
                 '---- Perform updates -----------
                 '
@@ -13875,6 +15680,10 @@ Namespace ProdSupport_DataSetTableAdapters
                 If (Not (Me._tbl_HoursWorkedLogTableAdapter) Is Nothing) Then
                     Me._tbl_HoursWorkedLogTableAdapter.Connection = CType(revertConnections(Me._tbl_HoursWorkedLogTableAdapter),Global.System.Data.OleDb.OleDbConnection)
                     Me._tbl_HoursWorkedLogTableAdapter.Transaction = Nothing
+                End If
+                If (Not (Me._fLEXSMgmtTableAdapter) Is Nothing) Then
+                    Me._fLEXSMgmtTableAdapter.Connection = CType(revertConnections(Me._fLEXSMgmtTableAdapter),Global.System.Data.OleDb.OleDbConnection)
+                    Me._fLEXSMgmtTableAdapter.Transaction = Nothing
                 End If
                 If (0 < adaptersWithAcceptChangesDuringUpdate.Count) Then
                     Dim adapters((adaptersWithAcceptChangesDuringUpdate.Count) - 1) As Global.System.Data.Common.DataAdapter

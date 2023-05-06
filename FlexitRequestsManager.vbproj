@@ -245,6 +245,18 @@
     <Compile Include="Forms\SplashScreen.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="SplashScreenFinal.Designer.vb">
+      <DependentUpon>SplashScreenFinal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SplashScreenFinal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WaitForm1.Designer.vb">
+      <DependentUpon>WaitForm1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="WaitForm1.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <EmbeddedResource Include="Forms\FLEXS_Mgmt.en-CA.resx">
       <DependentUpon>FLEXS_Mgmt.vb</DependentUpon>
     </EmbeddedResource>
@@ -302,6 +314,12 @@
     <EmbeddedResource Include="Forms\SplashScreen.resx">
       <DependentUpon>SplashScreen.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="SplashScreenFinal.resx">
+      <DependentUpon>SplashScreenFinal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WaitForm1.resx">
+      <DependentUpon>WaitForm1.vb</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="My Project\Resources.resx">
@@ -337,6 +355,9 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\LogoJIRA.svg" />
+    <None Include="Resources\JIRA32.svg" />
+    <None Include="Resources\THH_Logo_English.svg" />
     <Content Include="Themes\Office2019LightPurple_DockSplitContainer.xml" />
     <Content Include="Themes\Office2019LightPurple_RadCheckmark.xml" />
     <Content Include="Themes\Office2019LightPurple_RadPageView_Telerik_WinControls_RootRadElement.xml" />
