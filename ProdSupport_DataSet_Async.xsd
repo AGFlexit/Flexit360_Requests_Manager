@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<xs:schema id="ProdSupport_DataSet" targetNamespace="http://tempuri.org/ProdSupport_DataSet.xsd" xmlns:mstns="http://tempuri.org/ProdSupport_DataSet.xsd" xmlns="http://tempuri.org/ProdSupport_DataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+<xs:schema id="ProdSupport_DataSet_Async" targetNamespace="http://tempuri.org/ProdSupport_DataSet.xsd" xmlns:mstns="http://tempuri.org/ProdSupport_DataSet.xsd" xmlns="http://tempuri.org/ProdSupport_DataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
   <xs:annotation>
     <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
       <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
@@ -1070,7 +1070,7 @@ FROM            Audit</CommandText>
       </DataSource>
     </xs:appinfo>
   </xs:annotation>
-  <xs:element name="ProdSupport_DataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="ProdSupport_DataSet" msprop:Generator_UserDSName="ProdSupport_DataSet">
+  <xs:element name="ProdSupport_DataSet_Async" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="ProdSupport_DataSet_Async" msprop:Generator_UserDSName="ProdSupport_DataSet_Async">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
         <xs:element name="Audit" msprop:Generator_TableClassName="AuditDataTable" msprop:Generator_TableVarName="tableAudit" msprop:Generator_TablePropName="Audit" msprop:Generator_RowDeletingName="AuditRowDeleting" msprop:Generator_RowChangingName="AuditRowChanging" msprop:Generator_RowEvHandlerName="AuditRowChangeEventHandler" msprop:Generator_RowDeletedName="AuditRowDeleted" msprop:Generator_UserTableName="Audit" msprop:Generator_RowChangedName="AuditRowChanged" msprop:Generator_RowEvArgName="AuditRowChangeEvent" msprop:Generator_RowClassName="AuditRow">

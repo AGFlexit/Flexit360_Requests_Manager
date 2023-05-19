@@ -10,7 +10,7 @@
     <OutputType>WinExe</OutputType>
     <StartupObject>RequestsManager.My.MyApplication</StartupObject>
     <RootNamespace>RequestsManager</RootNamespace>
-    <AssemblyName>Requests_Manager</AssemblyName>
+    <AssemblyName>Flexit360_Requests_Manager</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <MyType>WindowsForms</MyType>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
@@ -37,7 +37,7 @@
     <DefineDebug>true</DefineDebug>
     <DefineTrace>true</DefineTrace>
     <OutputPath>bin\Debug\</OutputPath>
-    <DocumentationFile>Requests_Manager.xml</DocumentationFile>
+    <DocumentationFile>Flexit360_Requests_Manager.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
@@ -47,7 +47,7 @@
     <DefineTrace>true</DefineTrace>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
-    <DocumentationFile>Requests_Manager.xml</DocumentationFile>
+    <DocumentationFile>Flexit360_Requests_Manager.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <PropertyGroup>
@@ -106,7 +106,9 @@
     </Reference>
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
-    <Reference Include="System" />
+    <Reference Include="System">
+      <HintPath>C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.dll</HintPath>
+    </Reference>
     <Reference Include="System.ComponentModel.Composition" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Data" />
@@ -205,6 +207,14 @@
     </Compile>
     <Compile Include="MenuV2.vb">
       <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProdSupport_DataSet_Async.Designer.vb">
+      <DependentUpon>ProdSupport_DataSet_Async.xsd</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="ProdSupport_DataSet_Async.vb">
+      <DependentUpon>ProdSupport_DataSet_Async.xsd</DependentUpon>
     </Compile>
     <Compile Include="ProdSupport_DataSet.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -342,13 +352,24 @@
     </None>
     <None Include="App.config" />
     <EmbeddedResource Include="Themes\Office2019LightPurple.tssp" />
+    <None Include="ProdSupport_DataSet_Async.xsc">
+      <DependentUpon>ProdSupport_DataSet_Async.xsd</DependentUpon>
+    </None>
+    <None Include="ProdSupport_DataSet_Async.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ProdSupport_DataSet_Async.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ProdSupport_DataSet_Async.xss">
+      <DependentUpon>ProdSupport_DataSet_Async.xsd</DependentUpon>
+    </None>
     <None Include="ProdSupport_DataSet.xsc">
       <DependentUpon>ProdSupport_DataSet.xsd</DependentUpon>
     </None>
     <None Include="ProdSupport_DataSet.xsd">
       <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>ProdSupport_DataSet.Designer.vb</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>ProdSupport_DataSet.Designer.vb</LastGenOutput>
     </None>
     <None Include="ProdSupport_DataSet.xss">
       <DependentUpon>ProdSupport_DataSet.xsd</DependentUpon>
