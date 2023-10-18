@@ -12791,7 +12791,7 @@ Namespace ProdSupport_DataSetTableAdapters
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
         Private Sub InitCommandCollection()
-            Me._commandCollection = New Global.System.Data.OleDb.OleDbCommand(7) {}
+            Me._commandCollection = New Global.System.Data.OleDb.OleDbCommand(8) {}
             Me._commandCollection(0) = New Global.System.Data.OleDb.OleDbCommand()
             Me._commandCollection(0).Connection = Me.Connection
             Me._commandCollection(0).CommandText = "SELECT        ID, [CL ID], Channel, Client, Title, [Assigned To], [Reported By], "& _ 
@@ -12847,7 +12847,13 @@ Namespace ProdSupport_DataSetTableAdapters
             Me._commandCollection(6).Parameters.Add(New Global.System.Data.OleDb.OleDbParameter("@Assignee", Global.System.Data.OleDb.OleDbType.[Integer], 0, Global.System.Data.ParameterDirection.Input, CType(0,Byte), CType(0,Byte), "Assigned To", Global.System.Data.DataRowVersion.Current, false, Nothing))
             Me._commandCollection(7) = New Global.System.Data.OleDb.OleDbCommand()
             Me._commandCollection(7).Connection = Me.Connection
-            Me._commandCollection(7).CommandText = "SELECT [Assigned To], [CL ID], Category, Channel, Client, [Date Received], Descri"& _ 
+            Me._commandCollection(7).CommandText = "SELECT TOP 1 ID, [CL ID], Channel, Client, Title, [Assigned To], [Reported By], ["& _ 
+                "Date Received], Status, Category, Priority, Description, [Last Status Update], ["& _ 
+                "FLEX Ticket], [FLEXS Ticket]"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"FROM            Issues"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"ORDER BY ID DESC"
+            Me._commandCollection(7).CommandType = Global.System.Data.CommandType.Text
+            Me._commandCollection(8) = New Global.System.Data.OleDb.OleDbCommand()
+            Me._commandCollection(8).Connection = Me.Connection
+            Me._commandCollection(8).CommandText = "SELECT [Assigned To], [CL ID], Category, Channel, Client, [Date Received], Descri"& _ 
                 "ption, [FLEX Ticket], [FLEXS Ticket], ID, [Last Status Update], Priority, [Repor"& _ 
                 "ted By], Status, Title FROM Issues WHERE (NOT (Status IN ('AODA - Confirmed Defe"& _ 
                 "ct Fixed', 'AODA - Enhancement Released', 'Cancelled', 'Completed', 'Confirmed D"& _ 
@@ -12855,7 +12861,7 @@ Namespace ProdSupport_DataSetTableAdapters
                 "leted - Defect Created', 'Completed - Enhancement Requested'))) AND (NOT ([Assig"& _ 
                 "ned To] IN (1, 2, 3, 4, 25, 107, 112, 138, 188, 189, 194, 198, 200))) ORDER BY I"& _ 
                 "D DESC"
-            Me._commandCollection(7).CommandType = Global.System.Data.CommandType.Text
+            Me._commandCollection(8).CommandType = Global.System.Data.CommandType.Text
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
@@ -13040,7 +13046,7 @@ Namespace ProdSupport_DataSetTableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0"),  _
          Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
          Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Fill, false)>  _
-        Public Overloads Overridable Function FillProductTeam(ByVal dataTable As ProdSupport_DataSet.IssuesDataTable) As Integer
+        Public Overloads Overridable Function FillLastAdded(ByVal dataTable As ProdSupport_DataSet.IssuesDataTable) As Integer
             Me.Adapter.SelectCommand = Me.CommandCollection(7)
             If (Me.ClearBeforeFill = true) Then
                 dataTable.Clear
@@ -13053,8 +13059,32 @@ Namespace ProdSupport_DataSetTableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0"),  _
          Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
          Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.[Select], false)>  _
-        Public Overloads Overridable Function GetDataProductTeam() As ProdSupport_DataSet.IssuesDataTable
+        Public Overloads Overridable Function GetLastAdded() As ProdSupport_DataSet.IssuesDataTable
             Me.Adapter.SelectCommand = Me.CommandCollection(7)
+            Dim dataTable As ProdSupport_DataSet.IssuesDataTable = New ProdSupport_DataSet.IssuesDataTable()
+            Me.Adapter.Fill(dataTable)
+            Return dataTable
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0"),  _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
+         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Fill, false)>  _
+        Public Overloads Overridable Function FillProductTeam(ByVal dataTable As ProdSupport_DataSet.IssuesDataTable) As Integer
+            Me.Adapter.SelectCommand = Me.CommandCollection(8)
+            If (Me.ClearBeforeFill = true) Then
+                dataTable.Clear
+            End If
+            Dim returnValue As Integer = Me.Adapter.Fill(dataTable)
+            Return returnValue
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0"),  _
+         Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
+         Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.[Select], false)>  _
+        Public Overloads Overridable Function GetDataProductTeam() As ProdSupport_DataSet.IssuesDataTable
+            Me.Adapter.SelectCommand = Me.CommandCollection(8)
             Dim dataTable As ProdSupport_DataSet.IssuesDataTable = New ProdSupport_DataSet.IssuesDataTable()
             Me.Adapter.Fill(dataTable)
             Return dataTable
