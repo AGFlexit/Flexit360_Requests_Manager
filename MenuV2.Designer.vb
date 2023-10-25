@@ -147,6 +147,8 @@ Partial Public Class MenuV2
         Me.BarBtnAddHoursFly = New DevExpress.XtraBars.BarButtonItem()
         Me.BarEditItem1 = New DevExpress.XtraBars.BarEditItem()
         Me.RepositoryItemTimeSpanEdit1 = New DevExpress.XtraEditors.Repository.RepositoryItemTimeSpanEdit()
+        Me.StatBarUPDSuccess = New DevExpress.XtraBars.BarStaticItem()
+        Me.StatBarUPDFail = New DevExpress.XtraBars.BarStaticItem()
         Me.ribbonPage = New DevExpress.XtraBars.Ribbon.RibbonPage()
         Me.ribbonPageGroupNavigation = New DevExpress.XtraBars.Ribbon.RibbonPageGroup()
         Me.ribbonPageGroup = New DevExpress.XtraBars.Ribbon.RibbonPageGroup()
@@ -280,17 +282,17 @@ Partial Public Class MenuV2
         Me.tabbedView = New DevExpress.XtraBars.Docking2010.Views.Tabbed.TabbedView(Me.components)
         Me.officeNavigationBar = New DevExpress.XtraBars.Navigation.OfficeNavigationBar()
         Me.navBarControl = New DevExpress.XtraNavBar.NavBarControl()
-        Me.RequestsNavBarGroup = New DevExpress.XtraNavBar.NavBarGroup()
-        Me.NavBarUnresolved = New DevExpress.XtraNavBar.NavBarItem()
-        Me.NavBarAssignedMe = New DevExpress.XtraNavBar.NavBarItem()
-        Me.NavBarResolved = New DevExpress.XtraNavBar.NavBarItem()
-        Me.NavBarAllRequests = New DevExpress.XtraNavBar.NavBarItem()
         Me.DefectsNavBarGroup = New DevExpress.XtraNavBar.NavBarGroup()
         Me.NavBarDefects = New DevExpress.XtraNavBar.NavBarItem()
         Me.NavBarEnh = New DevExpress.XtraNavBar.NavBarItem()
         Me.NavBarFLEXS = New DevExpress.XtraNavBar.NavBarItem()
         Me.NavBarFLEXSDone = New DevExpress.XtraNavBar.NavBarItem()
         Me.NavBarJIRASync = New DevExpress.XtraNavBar.NavBarItem()
+        Me.RequestsNavBarGroup = New DevExpress.XtraNavBar.NavBarGroup()
+        Me.NavBarUnresolved = New DevExpress.XtraNavBar.NavBarItem()
+        Me.NavBarAssignedMe = New DevExpress.XtraNavBar.NavBarItem()
+        Me.NavBarResolved = New DevExpress.XtraNavBar.NavBarItem()
+        Me.NavBarAllRequests = New DevExpress.XtraNavBar.NavBarItem()
         Me.navigationFrame = New DevExpress.XtraBars.Navigation.NavigationFrame()
         Me.RequestsNavigationPage = New DevExpress.XtraBars.Navigation.NavigationPage()
         Me.MemoEdit2 = New DevExpress.XtraEditors.MemoEdit()
@@ -648,6 +650,7 @@ Partial Public Class MenuV2
         Me.GVIssues.DetailHeight = 458
         Me.GVIssues.FocusRectStyle = DevExpress.XtraGrid.Views.Grid.DrawFocusRectStyle.RowFocus
         Me.GVIssues.GridControl = Me.GCtrlRequests
+        Me.GVIssues.GroupSummary.AddRange(New DevExpress.XtraGrid.GridSummaryItem() {New DevExpress.XtraGrid.GridGroupSummaryItem(DevExpress.Data.SummaryItemType.Count, "Status", Nothing, "(Status: Count={0})")})
         Me.GVIssues.Name = "GVIssues"
         Me.GVIssues.OptionsBehavior.AllowAddRows = DevExpress.Utils.DefaultBoolean.[True]
         Me.GVIssues.OptionsBehavior.AllowDeleteRows = DevExpress.Utils.DefaultBoolean.[False]
@@ -1156,17 +1159,17 @@ Partial Public Class MenuV2
         '
         Me.ribbonControl.EmptyAreaImageOptions.ImagePadding = New System.Windows.Forms.Padding(35, 39, 35, 39)
         Me.ribbonControl.ExpandCollapseItem.Id = 0
-        Me.ribbonControl.Items.AddRange(New DevExpress.XtraBars.BarItem() {Me.ribbonControl.ExpandCollapseItem, Me.ribbonControl.SearchEditItem, Me.skinRibbonGalleryBarItem, Me.barSubItemNavigation, Me.requestsBarButtonItem, Me.DefectsBarButtonItem, Me.SkinDropDownButtonItem, Me.SkinPaletteRibbonGalleryBarItem1, Me.barSubItemHours, Me.RevHoursBarStaticItem, Me.BarStaticItem1, Me.BarButtonItem1, Me.BarToggleSwitchPreview, Me.btnJQLSnippets, Me.BarBtnAddHoursFly, Me.BarEditItem1})
+        Me.ribbonControl.Items.AddRange(New DevExpress.XtraBars.BarItem() {Me.ribbonControl.ExpandCollapseItem, Me.ribbonControl.SearchEditItem, Me.skinRibbonGalleryBarItem, Me.barSubItemNavigation, Me.requestsBarButtonItem, Me.DefectsBarButtonItem, Me.SkinDropDownButtonItem, Me.SkinPaletteRibbonGalleryBarItem1, Me.barSubItemHours, Me.RevHoursBarStaticItem, Me.BarStaticItem1, Me.BarButtonItem1, Me.BarToggleSwitchPreview, Me.btnJQLSnippets, Me.BarBtnAddHoursFly, Me.BarEditItem1, Me.StatBarUPDSuccess, Me.StatBarUPDFail})
         Me.ribbonControl.Location = New System.Drawing.Point(0, 0)
         Me.ribbonControl.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me.ribbonControl.MaxItemId = 57
+        Me.ribbonControl.MaxItemId = 59
         Me.ribbonControl.MdiMergeStyle = DevExpress.XtraBars.Ribbon.RibbonMdiMergeStyle.Always
         Me.ribbonControl.Name = "ribbonControl"
         Me.ribbonControl.OptionsMenuMinWidth = 385
         Me.ribbonControl.Pages.AddRange(New DevExpress.XtraBars.Ribbon.RibbonPage() {Me.ribbonPage})
         Me.ribbonControl.RepositoryItems.AddRange(New DevExpress.XtraEditors.Repository.RepositoryItem() {Me.RepositoryItemTimeEdit1, Me.RepositoryItemTimeSpanEdit1})
         Me.ribbonControl.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonControlStyle.Office2013
-        Me.ribbonControl.ShowApplicationButton = DevExpress.Utils.DefaultBoolean.[False]
+        Me.ribbonControl.ShowApplicationButton = DevExpress.Utils.DefaultBoolean.[True]
         Me.ribbonControl.Size = New System.Drawing.Size(1364, 170)
         Me.ribbonControl.StatusBar = Me.ribbonStatusBar
         Me.ribbonControl.ToolbarLocation = DevExpress.XtraBars.Ribbon.RibbonQuickAccessToolbarLocation.Hidden
@@ -1314,7 +1317,7 @@ Partial Public Class MenuV2
         '
         'BarButtonItem1
         '
-        Me.BarButtonItem1.Caption = "BarButtonItem1"
+        Me.BarButtonItem1.Caption = "Restart"
         Me.BarButtonItem1.Id = 51
         Me.BarButtonItem1.Name = "BarButtonItem1"
         '
@@ -1354,6 +1357,37 @@ Partial Public Class MenuV2
         Me.RepositoryItemTimeSpanEdit1.AutoHeight = False
         Me.RepositoryItemTimeSpanEdit1.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
         Me.RepositoryItemTimeSpanEdit1.Name = "RepositoryItemTimeSpanEdit1"
+        '
+        'StatBarUPDSuccess
+        '
+        Me.StatBarUPDSuccess.Alignment = DevExpress.XtraBars.BarItemLinkAlignment.Right
+        Me.StatBarUPDSuccess.AllowFocus = DevExpress.Utils.DefaultBoolean.[False]
+        Me.StatBarUPDSuccess.AllowRightClickInMenu = False
+        Me.StatBarUPDSuccess.Caption = "Update successful"
+        Me.StatBarUPDSuccess.CategoryGuid = New System.Guid("75e54f03-3bb3-4ec3-abff-895e369e5eed")
+        Me.StatBarUPDSuccess.Id = 57
+        Me.StatBarUPDSuccess.ImageOptions.Image = CType(resources.GetObject("StatBarUPDSuccess.ImageOptions.Image"), System.Drawing.Image)
+        Me.StatBarUPDSuccess.ImageOptions.LargeImage = CType(resources.GetObject("StatBarUPDSuccess.ImageOptions.LargeImage"), System.Drawing.Image)
+        Me.StatBarUPDSuccess.Name = "StatBarUPDSuccess"
+        Me.StatBarUPDSuccess.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph
+        Me.StatBarUPDSuccess.Visibility = DevExpress.XtraBars.BarItemVisibility.Never
+        Me.StatBarUPDSuccess.VisibleInSearchMenu = False
+        '
+        'StatBarUPDFail
+        '
+        Me.StatBarUPDFail.Alignment = DevExpress.XtraBars.BarItemLinkAlignment.Right
+        Me.StatBarUPDFail.AllowFocus = DevExpress.Utils.DefaultBoolean.[False]
+        Me.StatBarUPDFail.AllowRightClickInMenu = False
+        Me.StatBarUPDFail.Caption = "Update failed!"
+        Me.StatBarUPDFail.CategoryGuid = New System.Guid("75e54f03-3bb3-4ec3-abff-895e369e5eed")
+        Me.StatBarUPDFail.Id = 58
+        Me.StatBarUPDFail.ImageOptions.Image = CType(resources.GetObject("StatBarUPDFail.ImageOptions.Image"), System.Drawing.Image)
+        Me.StatBarUPDFail.ImageOptions.LargeImage = CType(resources.GetObject("StatBarUPDFail.ImageOptions.LargeImage"), System.Drawing.Image)
+        Me.StatBarUPDFail.Name = "StatBarUPDFail"
+        Me.StatBarUPDFail.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph
+        Me.StatBarUPDFail.ShowItemShortcut = DevExpress.Utils.DefaultBoolean.[False]
+        Me.StatBarUPDFail.Visibility = DevExpress.XtraBars.BarItemVisibility.Never
+        Me.StatBarUPDFail.VisibleInSearchMenu = False
         '
         'ribbonPage
         '
@@ -1407,6 +1441,8 @@ Partial Public Class MenuV2
         '
         'ribbonStatusBar
         '
+        Me.ribbonStatusBar.ItemLinks.Add(Me.StatBarUPDSuccess)
+        Me.ribbonStatusBar.ItemLinks.Add(Me.StatBarUPDFail)
         Me.ribbonStatusBar.Location = New System.Drawing.Point(0, 697)
         Me.ribbonStatusBar.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.ribbonStatusBar.Name = "ribbonStatusBar"
@@ -2753,7 +2789,7 @@ Partial Public Class MenuV2
         '
         'navBarControl
         '
-        Me.navBarControl.ActiveGroup = Me.RequestsNavBarGroup
+        Me.navBarControl.ActiveGroup = Me.DefectsNavBarGroup
         Me.navBarControl.Dock = System.Windows.Forms.DockStyle.Left
         Me.navBarControl.Groups.AddRange(New DevExpress.XtraNavBar.NavBarGroup() {Me.RequestsNavBarGroup, Me.DefectsNavBarGroup})
         Me.navBarControl.Items.AddRange(New DevExpress.XtraNavBar.NavBarItem() {Me.NavBarUnresolved, Me.NavBarAssignedMe, Me.NavBarDefects, Me.NavBarEnh, Me.NavBarResolved, Me.NavBarFLEXS, Me.NavBarAllRequests, Me.NavBarFLEXSDone, Me.NavBarJIRASync})
@@ -2766,41 +2802,10 @@ Partial Public Class MenuV2
         Me.navBarControl.TabIndex = 0
         Me.navBarControl.Text = "navBarControl"
         '
-        'RequestsNavBarGroup
-        '
-        Me.RequestsNavBarGroup.Caption = "Requests"
-        Me.RequestsNavBarGroup.Expanded = True
-        Me.RequestsNavBarGroup.GroupStyle = DevExpress.XtraNavBar.NavBarGroupStyle.SmallIconsList
-        Me.RequestsNavBarGroup.ItemLinks.AddRange(New DevExpress.XtraNavBar.NavBarItemLink() {New DevExpress.XtraNavBar.NavBarItemLink(Me.NavBarUnresolved), New DevExpress.XtraNavBar.NavBarItemLink(Me.NavBarAssignedMe), New DevExpress.XtraNavBar.NavBarItemLink(Me.NavBarResolved), New DevExpress.XtraNavBar.NavBarItemLink(Me.NavBarAllRequests)})
-        Me.RequestsNavBarGroup.Name = "RequestsNavBarGroup"
-        '
-        'NavBarUnresolved
-        '
-        Me.NavBarUnresolved.Caption = "Unresolved"
-        Me.NavBarUnresolved.ImageOptions.SvgImage = CType(resources.GetObject("NavBarUnresolved.ImageOptions.SvgImage"), DevExpress.Utils.Svg.SvgImage)
-        Me.NavBarUnresolved.Name = "NavBarUnresolved"
-        '
-        'NavBarAssignedMe
-        '
-        Me.NavBarAssignedMe.Caption = "Assigned To Me"
-        Me.NavBarAssignedMe.ImageOptions.SvgImage = CType(resources.GetObject("NavBarAssignedMe.ImageOptions.SvgImage"), DevExpress.Utils.Svg.SvgImage)
-        Me.NavBarAssignedMe.Name = "NavBarAssignedMe"
-        '
-        'NavBarResolved
-        '
-        Me.NavBarResolved.Caption = "Resolved"
-        Me.NavBarResolved.ImageOptions.SvgImage = CType(resources.GetObject("NavBarResolved.ImageOptions.SvgImage"), DevExpress.Utils.Svg.SvgImage)
-        Me.NavBarResolved.Name = "NavBarResolved"
-        '
-        'NavBarAllRequests
-        '
-        Me.NavBarAllRequests.Caption = "All Requests"
-        Me.NavBarAllRequests.ImageOptions.SvgImage = CType(resources.GetObject("NavBarAllRequests.ImageOptions.SvgImage"), DevExpress.Utils.Svg.SvgImage)
-        Me.NavBarAllRequests.Name = "NavBarAllRequests"
-        '
         'DefectsNavBarGroup
         '
         Me.DefectsNavBarGroup.Caption = "Defects & Enhancements"
+        Me.DefectsNavBarGroup.Expanded = True
         Me.DefectsNavBarGroup.ItemLinks.AddRange(New DevExpress.XtraNavBar.NavBarItemLink() {New DevExpress.XtraNavBar.NavBarItemLink(Me.NavBarDefects), New DevExpress.XtraNavBar.NavBarItemLink(Me.NavBarEnh), New DevExpress.XtraNavBar.NavBarItemLink(Me.NavBarFLEXS), New DevExpress.XtraNavBar.NavBarItemLink(Me.NavBarFLEXSDone), New DevExpress.XtraNavBar.NavBarItemLink(Me.NavBarJIRASync)})
         Me.DefectsNavBarGroup.Name = "DefectsNavBarGroup"
         '
@@ -2833,6 +2838,37 @@ Partial Public Class MenuV2
         Me.NavBarJIRASync.Caption = "JIRA Sync"
         Me.NavBarJIRASync.ImageOptions.SvgImage = CType(resources.GetObject("NavBarJIRASync.ImageOptions.SvgImage"), DevExpress.Utils.Svg.SvgImage)
         Me.NavBarJIRASync.Name = "NavBarJIRASync"
+        '
+        'RequestsNavBarGroup
+        '
+        Me.RequestsNavBarGroup.Caption = "Requests"
+        Me.RequestsNavBarGroup.GroupStyle = DevExpress.XtraNavBar.NavBarGroupStyle.SmallIconsList
+        Me.RequestsNavBarGroup.ItemLinks.AddRange(New DevExpress.XtraNavBar.NavBarItemLink() {New DevExpress.XtraNavBar.NavBarItemLink(Me.NavBarUnresolved), New DevExpress.XtraNavBar.NavBarItemLink(Me.NavBarAssignedMe), New DevExpress.XtraNavBar.NavBarItemLink(Me.NavBarResolved), New DevExpress.XtraNavBar.NavBarItemLink(Me.NavBarAllRequests)})
+        Me.RequestsNavBarGroup.Name = "RequestsNavBarGroup"
+        '
+        'NavBarUnresolved
+        '
+        Me.NavBarUnresolved.Caption = "Unresolved"
+        Me.NavBarUnresolved.ImageOptions.SvgImage = CType(resources.GetObject("NavBarUnresolved.ImageOptions.SvgImage"), DevExpress.Utils.Svg.SvgImage)
+        Me.NavBarUnresolved.Name = "NavBarUnresolved"
+        '
+        'NavBarAssignedMe
+        '
+        Me.NavBarAssignedMe.Caption = "Assigned To Me"
+        Me.NavBarAssignedMe.ImageOptions.SvgImage = CType(resources.GetObject("NavBarAssignedMe.ImageOptions.SvgImage"), DevExpress.Utils.Svg.SvgImage)
+        Me.NavBarAssignedMe.Name = "NavBarAssignedMe"
+        '
+        'NavBarResolved
+        '
+        Me.NavBarResolved.Caption = "Resolved"
+        Me.NavBarResolved.ImageOptions.SvgImage = CType(resources.GetObject("NavBarResolved.ImageOptions.SvgImage"), DevExpress.Utils.Svg.SvgImage)
+        Me.NavBarResolved.Name = "NavBarResolved"
+        '
+        'NavBarAllRequests
+        '
+        Me.NavBarAllRequests.Caption = "All Requests"
+        Me.NavBarAllRequests.ImageOptions.SvgImage = CType(resources.GetObject("NavBarAllRequests.ImageOptions.SvgImage"), DevExpress.Utils.Svg.SvgImage)
+        Me.NavBarAllRequests.Name = "NavBarAllRequests"
         '
         'navigationFrame
         '
@@ -3374,4 +3410,6 @@ Partial Public Class MenuV2
     Friend WithEvents AuditTableAdapter_Async As ProdSupport_DataSet_AsyncTableAdapters.AuditTableAdapter
     Friend WithEvents Tbl_HoursWorkedLogTableAdapter_Async As ProdSupport_DataSet_AsyncTableAdapters.tbl_HoursWorkedLogTableAdapter
     Friend WithEvents repoDateEdit As DevExpress.XtraEditors.Repository.RepositoryItemDateEdit
+    Friend WithEvents StatBarUPDSuccess As DevExpress.XtraBars.BarStaticItem
+    Friend WithEvents StatBarUPDFail As DevExpress.XtraBars.BarStaticItem
 End Class

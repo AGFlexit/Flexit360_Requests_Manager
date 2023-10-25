@@ -33,6 +33,9 @@ Partial Public Class MenuV2
                                                   ' The 'e.BindableControls' collection contains the editors in the Edit Form.
                                                   Dim RichTxtEdit As Control = e.BindableControls(GridColumn34)
                                                   Dim row As DataRow = GVIssues.GetDataRow(e.RowHandle)
+                                                  'MsgBox(row("Description").ToString())
+                                                  'RichTxtEdit.
+                                                  'RichTxtEdit.
                                                   RichTxtEdit.Text = If(String.IsNullOrEmpty(row("Description").ToString()), String.Empty, String.Format(StripTags(row("Description").ToString()))) 'StripTags(row("Description").ToString())
                                                   NewCommentIssueID = CInt(row("ID").ToString)
                                               End Sub
@@ -61,12 +64,13 @@ Partial Public Class MenuV2
     End Function
 
     Private Sub RepositoryItemRichTextEdit1_EditValueChanged(sender As Object, e As EventArgs) Handles RepositoryItemRichTextEdit1.EditValueChanged
-
+        'RepositoryItemRichTextEdit1.
     End Sub
 
     Private Sub BarButtonItem1_ItemClick(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles BarButtonItem1.ItemClick
-        Dim oFrm As New RadForm1
-        oFrm.Show()
+        'Dim oFrm As New RadForm1
+        'oFrm.Show()
+        Application.Restart()
     End Sub
 
     Private Sub BarToggleSwitchPreview_CheckedChanged(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles BarToggleSwitchPreview.CheckedChanged
@@ -245,9 +249,11 @@ Partial Public Class MenuV2
                 Me.IssuesTableAdapter1.ClearBeforeFill = False
             End If
         Catch Ex As Exception
+            Me.StatBarUPDFail.Visibility = DevExpress.XtraBars.BarItemVisibility.Always
             MsgBox("Update failed!" & vbNewLine & vbNewLine & Ex.Message, MsgBoxStyle.Critical, "Error")
             Exit Sub
         End Try
+        Me.StatBarUPDSuccess.Visibility = DevExpress.XtraBars.BarItemVisibility.Always
         MsgBox("Successfully updated the record!", MsgBoxStyle.Information, "Success")
 
 
@@ -255,6 +261,12 @@ Partial Public Class MenuV2
 
     End Sub
 
+    Private Sub wait(ByVal seconds As Integer)
+        For i As Integer = 0 To seconds * 100
+            System.Threading.Thread.Sleep(10)
+            Application.DoEvents()
+        Next
+    End Sub
 
     Private Sub GVIssues_HiddenEditor(sender As Object, e As EventArgs) Handles GVIssues.HiddenEditor
 
@@ -267,6 +279,13 @@ Partial Public Class MenuV2
     Private NewCommentIssueID As Integer = Nothing
 
     Private Sub GVIssues_EditFormHidden(sender As Object, e As EditFormHiddenEventArgs) Handles GVIssues.EditFormHidden
+        wait(5)
+
+        If Me.StatBarUPDSuccess.Visibility = DevExpress.XtraBars.BarItemVisibility.Always Then
+            Me.StatBarUPDSuccess.Visibility = DevExpress.XtraBars.BarItemVisibility.Never
+        ElseIf Me.StatBarUPDFail.Visibility = DevExpress.XtraBars.BarItemVisibility.Always Then
+            Me.StatBarUPDFail.Visibility = DevExpress.XtraBars.BarItemVisibility.Never
+        End If
     End Sub
 
     Private Sub SimpleButton1_Click(sender As Object, e As EventArgs) Handles SimpleButton1.Click
@@ -514,7 +533,7 @@ Partial Public Class MenuV2
         Me.GVIssues.HideLoadingPanel()
     End Sub
 
-    Private Sub LoadDataAsync_NavBar(ByVal FillWhat As String)
+    Sub LoadDataAsync_NavBar(ByVal FillWhat As String)
 
         ' Start a new thread to load the data asynchronously
         Dim loadThread As New Thread(Sub()
@@ -1172,7 +1191,16 @@ Partial Public Class MenuV2
     End Sub
 
     Private Sub GVIssues_EditFormPrepared(sender As Object, e As EditFormPreparedEventArgs) Handles GVIssues.EditFormPrepared
-        Me.repoDateEdit.TodayDate = CDate("08/16/2023") 'Now
+        'Me.repoDateEdit.TodayDate = CDate("08/16/2023") 'Now
+    End Sub
+
+    Private Sub BarBtnAddHoursFly_ItemClick(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles BarBtnAddHoursFly.ItemClick
+        Dim frmHoursEdit As New HoursEdit
+        frmHoursEdit.Show()
+    End Sub
+
+    Private Sub ribbonStatusBar_Click(sender As Object, e As EventArgs) Handles ribbonStatusBar.Click
+
     End Sub
 End Class
 

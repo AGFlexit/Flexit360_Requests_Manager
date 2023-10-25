@@ -11,7 +11,7 @@ Public Class SplashScreenFinal
         My.Settings.Item("Local_Prod_SupportConnectionString") = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" & GoogleSharedDrvPath() & "\Flexit360 Apps (Alain)\Access DBs\Local_RequestLog.accdb"
 
         My.Settings.Item("DB_Connection") = If(UCase(Environment.UserName) = "HELLF",
-            "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=I:\Shared drives\Flexit360 Apps (Alain)\Access DBs\Backups\Tests_Dev\20230505.190022.Prod_Support_Issue_Tracking_be.accdb",
+            "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=I:\Shared drives\Flexit360 Apps (Alain)\Access DBs\Backups\Tests_Dev\20231020.160013.Prod_Support_Issue_Tracking_be.accdb",
             "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=\\l4pncdot01svm02\WebsInc\Access DB - Prod Support\Prod Support Issue Tracking_be.accdb")
     End Sub
 
