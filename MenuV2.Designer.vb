@@ -27,6 +27,12 @@ Partial Public Class MenuV2
         Me.components = New System.ComponentModel.Container()
         Dim GridLevelNode1 As DevExpress.XtraGrid.GridLevelNode = New DevExpress.XtraGrid.GridLevelNode()
         Dim GridLevelNode2 As DevExpress.XtraGrid.GridLevelNode = New DevExpress.XtraGrid.GridLevelNode()
+        Dim GridFormatRule1 As DevExpress.XtraGrid.GridFormatRule = New DevExpress.XtraGrid.GridFormatRule()
+        Dim FormatConditionRuleExpression1 As DevExpress.XtraEditors.FormatConditionRuleExpression = New DevExpress.XtraEditors.FormatConditionRuleExpression()
+        Dim GridFormatRule2 As DevExpress.XtraGrid.GridFormatRule = New DevExpress.XtraGrid.GridFormatRule()
+        Dim FormatConditionRuleExpression2 As DevExpress.XtraEditors.FormatConditionRuleExpression = New DevExpress.XtraEditors.FormatConditionRuleExpression()
+        Dim GridFormatRule3 As DevExpress.XtraGrid.GridFormatRule = New DevExpress.XtraGrid.GridFormatRule()
+        Dim FormatConditionRuleExpression3 As DevExpress.XtraEditors.FormatConditionRuleExpression = New DevExpress.XtraEditors.FormatConditionRuleExpression()
         Dim EditorButtonImageOptions1 As DevExpress.XtraEditors.Controls.EditorButtonImageOptions = New DevExpress.XtraEditors.Controls.EditorButtonImageOptions()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(MenuV2))
         Dim SerializableAppearanceObject1 As DevExpress.Utils.SerializableAppearanceObject = New DevExpress.Utils.SerializableAppearanceObject()
@@ -149,11 +155,25 @@ Partial Public Class MenuV2
         Me.RepositoryItemTimeSpanEdit1 = New DevExpress.XtraEditors.Repository.RepositoryItemTimeSpanEdit()
         Me.StatBarUPDSuccess = New DevExpress.XtraBars.BarStaticItem()
         Me.StatBarUPDFail = New DevExpress.XtraBars.BarStaticItem()
+        Me.BarButtonItem2 = New DevExpress.XtraBars.BarButtonItem()
+        Me.BarButtonItem3 = New DevExpress.XtraBars.BarButtonItem()
+        Me.BarBtnNewClient = New DevExpress.XtraBars.BarButtonItem()
+        Me.BarBtnRefresh = New DevExpress.XtraBars.BarButtonItem()
+        Me.BarBtnNewContact = New DevExpress.XtraBars.BarButtonItem()
+        Me.PopupControlContainer1 = New DevExpress.XtraBars.PopupControlContainer(Me.components)
+        Me.BtnAddContactConfirm = New DevExpress.XtraEditors.SimpleButton()
+        Me.TxtAddContactTID = New DevExpress.XtraEditors.TextEdit()
+        Me.TxtAddContactEmail = New DevExpress.XtraEditors.TextEdit()
+        Me.TxtAddContactLName = New DevExpress.XtraEditors.TextEdit()
+        Me.TxtAddContactFName = New DevExpress.XtraEditors.TextEdit()
         Me.ribbonPage = New DevExpress.XtraBars.Ribbon.RibbonPage()
         Me.ribbonPageGroupNavigation = New DevExpress.XtraBars.Ribbon.RibbonPageGroup()
         Me.ribbonPageGroup = New DevExpress.XtraBars.Ribbon.RibbonPageGroup()
         Me.RibbonPageGroupTime = New DevExpress.XtraBars.Ribbon.RibbonPageGroup()
         Me.RibPgGrpDisplay = New DevExpress.XtraBars.Ribbon.RibbonPageGroup()
+        Me.RibbonPageGroup1 = New DevExpress.XtraBars.Ribbon.RibbonPageGroup()
+        Me.RibbonPageGroup2 = New DevExpress.XtraBars.Ribbon.RibbonPageGroup()
+        Me.RibbonPageGroup3 = New DevExpress.XtraBars.Ribbon.RibbonPageGroup()
         Me.RepositoryItemTimeEdit1 = New DevExpress.XtraEditors.Repository.RepositoryItemTimeEdit()
         Me.ribbonStatusBar = New DevExpress.XtraBars.Ribbon.RibbonStatusBar()
         Me.TxtJQLString = New DevExpress.XtraEditors.ButtonEdit()
@@ -347,6 +367,12 @@ Partial Public Class MenuV2
         CType(Me.RepoBtnAddComment, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ribbonControl, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.RepositoryItemTimeSpanEdit1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PopupControlContainer1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.PopupControlContainer1.SuspendLayout()
+        CType(Me.TxtAddContactTID.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.TxtAddContactEmail.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.TxtAddContactLName.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.TxtAddContactFName.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.RepositoryItemTimeEdit1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.TxtJQLString.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.LayoutControl1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -552,7 +578,7 @@ Partial Public Class MenuV2
         Me.GCtrlRequests.Name = "GCtrlRequests"
         Me.GCtrlRequests.RepositoryItems.AddRange(New DevExpress.XtraEditors.Repository.RepositoryItem() {Me.RepositoryItemGridLookUpEdit1, Me.ClCbo, Me.ChanCbo, Me.RepositoryItemCheckedComboBoxEdit1, Me.AssigneeCbo, Me.RepoMemoCurrAudit, Me.RepositoryItemRichTextEdit1, Me.RepositoryItemTextEdit1, Me.RepositoryItemPopupContainerEdit1, Me.RepositoryItemButtonEdit1, Me.RepositoryItemHyperLinkEdit1, Me.RepositoryItemHypertextLabel1, Me.RepoButtonHours, Me.PriorityCbo, Me.StatusCbo, Me.CategoryCbo, Me.ReporterCbo, Me.RepositoryItemRichTextEdit3, Me.RepoPopupComment, Me.RepositoryItemLookUpEdit1, Me.RepoGrdLkupAudit, Me.RepositoryItemLookUpEdit2, Me.RepoBtnAddComment, Me.RepoChkDefect, Me.repoDateEdit})
         Me.GCtrlRequests.ShowOnlyPredefinedDetails = True
-        Me.GCtrlRequests.Size = New System.Drawing.Size(1179, 480)
+        Me.GCtrlRequests.Size = New System.Drawing.Size(1179, 501)
         Me.GCtrlRequests.TabIndex = 1
         Me.GCtrlRequests.UseDirectXPaint = DevExpress.Utils.DefaultBoolean.[True]
         Me.GCtrlRequests.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.GVHours, Me.GVIssues, Me.GVAudit})
@@ -575,6 +601,7 @@ Partial Public Class MenuV2
         Me.GVHours.Name = "GVHours"
         Me.GVHours.OptionsView.EnableAppearanceEvenRow = True
         Me.GVHours.OptionsView.RowAutoHeight = True
+        Me.GVHours.OptionsView.ShowFooter = True
         Me.GVHours.OptionsView.ShowIndicator = False
         Me.GVHours.SortInfo.AddRange(New DevExpress.XtraGrid.Columns.GridColumnSortInfo() {New DevExpress.XtraGrid.Columns.GridColumnSortInfo(Me.colHours_Worked_Date, DevExpress.Data.ColumnSortOrder.Descending)})
         Me.GVHours.ViewCaption = "Hours"
@@ -609,6 +636,7 @@ Partial Public Class MenuV2
         Me.colHours_Worked_Amt.FieldName = "Hours_Worked_Amt"
         Me.colHours_Worked_Amt.MinWidth = 23
         Me.colHours_Worked_Amt.Name = "colHours_Worked_Amt"
+        Me.colHours_Worked_Amt.Summary.AddRange(New DevExpress.XtraGrid.GridSummaryItem() {New DevExpress.XtraGrid.GridColumnSummaryItem(DevExpress.Data.SummaryItemType.Sum, "Hours_Worked_Amt", "{0:0.##}")})
         Me.colHours_Worked_Amt.Visible = True
         Me.colHours_Worked_Amt.VisibleIndex = 2
         Me.colHours_Worked_Amt.Width = 92
@@ -639,6 +667,10 @@ Partial Public Class MenuV2
         '
         Me.GVIssues.Appearance.EvenRow.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.GVIssues.Appearance.EvenRow.Options.UseBackColor = True
+        Me.GVIssues.Appearance.FooterPanel.FontSizeDelta = -1
+        Me.GVIssues.Appearance.FooterPanel.Options.UseFont = True
+        Me.GVIssues.Appearance.FooterPanel.Options.UseTextOptions = True
+        Me.GVIssues.Appearance.FooterPanel.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center
         Me.GVIssues.Appearance.Preview.FontSizeDelta = -2
         Me.GVIssues.Appearance.Preview.Options.UseFont = True
         Me.GVIssues.Appearance.Row.BackColor = System.Drawing.Color.FromArgb(CType(CType(227, Byte), Integer), CType(CType(230, Byte), Integer), CType(CType(232, Byte), Integer))
@@ -649,13 +681,40 @@ Partial Public Class MenuV2
         Me.GVIssues.CustomizationFormBounds = New System.Drawing.Rectangle(1027, 336, 264, 313)
         Me.GVIssues.DetailHeight = 458
         Me.GVIssues.FocusRectStyle = DevExpress.XtraGrid.Views.Grid.DrawFocusRectStyle.RowFocus
+        GridFormatRule1.ApplyToRow = True
+        GridFormatRule1.Column = Me.colLastStatusUpdate
+        GridFormatRule1.Enabled = False
+        GridFormatRule1.Name = "CL Urgent Late"
+        FormatConditionRuleExpression1.AllowAnimation = DevExpress.Utils.DefaultBoolean.[True]
+        FormatConditionRuleExpression1.Expression = "[Channel] = 2 And [Priority] = '(0) Urgent' And [Last Status Update] < Today()"
+        FormatConditionRuleExpression1.PredefinedName = "Red Fill, Red Text"
+        GridFormatRule1.Rule = FormatConditionRuleExpression1
+        GridFormatRule2.ApplyToRow = True
+        GridFormatRule2.Enabled = False
+        GridFormatRule2.Name = "CL High Late"
+        FormatConditionRuleExpression2.Expression = "[Channel] = 2 And [Priority] = '(1) High' And [Last Status Update] < LocalDateTim" &
+    "eYesterday()"
+        FormatConditionRuleExpression2.PredefinedName = "Red Fill"
+        GridFormatRule2.Rule = FormatConditionRuleExpression2
+        GridFormatRule3.ApplyToRow = True
+        GridFormatRule3.Enabled = False
+        GridFormatRule3.Name = "Medium Late"
+        FormatConditionRuleExpression3.Expression = "[Channel] <> 2 And [Priority] = '(2) Medium' And ([Last Status Update] < AddDays(" &
+    "Today(), -5) Or [Last Status Update] Is Null And [Date Received] < AddDays([Date" &
+    " Received], -5))"
+        FormatConditionRuleExpression3.PredefinedName = "Yellow Fill, Yellow Text"
+        GridFormatRule3.Rule = FormatConditionRuleExpression3
+        Me.GVIssues.FormatRules.Add(GridFormatRule1)
+        Me.GVIssues.FormatRules.Add(GridFormatRule2)
+        Me.GVIssues.FormatRules.Add(GridFormatRule3)
         Me.GVIssues.GridControl = Me.GCtrlRequests
-        Me.GVIssues.GroupSummary.AddRange(New DevExpress.XtraGrid.GridSummaryItem() {New DevExpress.XtraGrid.GridGroupSummaryItem(DevExpress.Data.SummaryItemType.Count, "Status", Nothing, "(Status: Count={0})")})
+        Me.GVIssues.GroupSummary.AddRange(New DevExpress.XtraGrid.GridSummaryItem() {New DevExpress.XtraGrid.GridGroupSummaryItem(DevExpress.Data.SummaryItemType.Count, "ID", Nothing, "→ ({0} issue(s)"), New DevExpress.XtraGrid.GridGroupSummaryItem(DevExpress.Data.SummaryItemType.Min, "Last Status Update", Nothing, "Oldest ► {0:d})")})
         Me.GVIssues.Name = "GVIssues"
         Me.GVIssues.OptionsBehavior.AllowAddRows = DevExpress.Utils.DefaultBoolean.[True]
         Me.GVIssues.OptionsBehavior.AllowDeleteRows = DevExpress.Utils.DefaultBoolean.[False]
         Me.GVIssues.OptionsBehavior.EditingMode = DevExpress.XtraGrid.Views.Grid.GridEditingMode.EditFormInplace
         Me.GVIssues.OptionsBehavior.EditorShowMode = DevExpress.Utils.EditorShowMode.Click
+        Me.GVIssues.OptionsBehavior.SummariesIgnoreNullValues = True
         Me.GVIssues.OptionsCustomization.AllowRowSizing = True
         Me.GVIssues.OptionsDetail.AllowOnlyOneMasterRowExpanded = True
         Me.GVIssues.OptionsEditForm.ActionOnModifiedRowChange = DevExpress.XtraGrid.Views.Grid.EditFormModifiedAction.Save
@@ -665,17 +724,23 @@ Partial Public Class MenuV2
         Me.GVIssues.OptionsEditForm.ShowOnDoubleClick = DevExpress.Utils.DefaultBoolean.[True]
         Me.GVIssues.OptionsEditForm.ShowUpdateCancelPanel = DevExpress.Utils.DefaultBoolean.[True]
         Me.GVIssues.OptionsFind.SearchInPreview = True
+        Me.GVIssues.OptionsMenu.EnableGroupRowMenu = True
+        Me.GVIssues.OptionsMenu.ShowConditionalFormattingItem = True
+        Me.GVIssues.OptionsMenu.ShowFooterItem = True
+        Me.GVIssues.OptionsMenu.ShowGroupSummaryEditorItem = True
         Me.GVIssues.OptionsScrollAnnotations.ShowFocusedRow = DevExpress.Utils.DefaultBoolean.[True]
         Me.GVIssues.OptionsSelection.EnableAppearanceHotTrackedRow = DevExpress.Utils.DefaultBoolean.[True]
         Me.GVIssues.OptionsView.AutoCalcPreviewLineCount = True
         Me.GVIssues.OptionsView.ColumnAutoWidth = False
+        Me.GVIssues.OptionsView.FilterCriteriaDisplayStyle = DevExpress.XtraEditors.FilterCriteriaDisplayStyle.Text
         Me.GVIssues.OptionsView.NewItemRowPosition = DevExpress.XtraGrid.Views.Grid.NewItemRowPosition.Top
         Me.GVIssues.OptionsView.RowAutoHeight = True
+        Me.GVIssues.OptionsView.ShowFooter = True
         Me.GVIssues.OptionsView.ShowIndicator = False
         Me.GVIssues.OptionsView.ShowPreviewRowLines = DevExpress.Utils.DefaultBoolean.[True]
         Me.GVIssues.PreviewFieldName = "Description"
         Me.GVIssues.PreviewLineCount = 8
-        Me.GVIssues.SortInfo.AddRange(New DevExpress.XtraGrid.Columns.GridColumnSortInfo() {New DevExpress.XtraGrid.Columns.GridColumnSortInfo(Me.colID, DevExpress.Data.ColumnSortOrder.Descending)})
+        Me.GVIssues.SortInfo.AddRange(New DevExpress.XtraGrid.Columns.GridColumnSortInfo() {New DevExpress.XtraGrid.Columns.GridColumnSortInfo(Me.colDateReceived, DevExpress.Data.ColumnSortOrder.Descending)})
         '
         'colID
         '
@@ -690,9 +755,10 @@ Partial Public Class MenuV2
         Me.colID.OptionsColumn.ReadOnly = True
         Me.colID.OptionsEditForm.UseEditorColRowSpan = False
         Me.colID.OptionsEditForm.VisibleIndex = -1
+        Me.colID.Summary.AddRange(New DevExpress.XtraGrid.GridSummaryItem() {New DevExpress.XtraGrid.GridColumnSummaryItem(DevExpress.Data.SummaryItemType.Count, "ID", "{0}")})
         Me.colID.Visible = True
         Me.colID.VisibleIndex = 0
-        Me.colID.Width = 62
+        Me.colID.Width = 68
         '
         'colCLID
         '
@@ -704,7 +770,7 @@ Partial Public Class MenuV2
         Me.colCLID.OptionsEditForm.VisibleIndex = -1
         Me.colCLID.Visible = True
         Me.colCLID.VisibleIndex = 1
-        Me.colCLID.Width = 80
+        Me.colCLID.Width = 50
         '
         'ChannelName
         '
@@ -718,7 +784,7 @@ Partial Public Class MenuV2
         Me.ChannelName.OptionsEditForm.UseEditorColRowSpan = False
         Me.ChannelName.Visible = True
         Me.ChannelName.VisibleIndex = 2
-        Me.ChannelName.Width = 122
+        Me.ChannelName.Width = 83
         '
         'ChanCbo
         '
@@ -773,7 +839,7 @@ Partial Public Class MenuV2
         Me.ClientName.SortMode = DevExpress.XtraGrid.ColumnSortMode.DisplayText
         Me.ClientName.Visible = True
         Me.ClientName.VisibleIndex = 3
-        Me.ClientName.Width = 129
+        Me.ClientName.Width = 105
         '
         'ClCbo
         '
@@ -825,6 +891,7 @@ Partial Public Class MenuV2
         Me.colDateReceived.OptionsEditForm.StartNewRow = True
         Me.colDateReceived.OptionsEditForm.UseEditorColRowSpan = False
         Me.colDateReceived.OptionsEditForm.VisibleIndex = 1
+        Me.colDateReceived.Summary.AddRange(New DevExpress.XtraGrid.GridSummaryItem() {New DevExpress.XtraGrid.GridColumnSummaryItem(DevExpress.Data.SummaryItemType.Min, "Date Received", "Old: {0:d}")})
         Me.colDateReceived.Visible = True
         Me.colDateReceived.VisibleIndex = 8
         Me.colDateReceived.Width = 100
@@ -841,7 +908,7 @@ Partial Public Class MenuV2
         Me.ReporterName.SortMode = DevExpress.XtraGrid.ColumnSortMode.DisplayText
         Me.ReporterName.Visible = True
         Me.ReporterName.VisibleIndex = 4
-        Me.ReporterName.Width = 141
+        Me.ReporterName.Width = 71
         '
         'ReporterCbo
         '
@@ -886,7 +953,7 @@ Partial Public Class MenuV2
         Me.colTitle.OptionsEditForm.VisibleIndex = -1
         Me.colTitle.Visible = True
         Me.colTitle.VisibleIndex = 6
-        Me.colTitle.Width = 255
+        Me.colTitle.Width = 179
         '
         'colPriority
         '
@@ -899,7 +966,7 @@ Partial Public Class MenuV2
         Me.colPriority.OptionsEditForm.VisibleIndex = 1
         Me.colPriority.Visible = True
         Me.colPriority.VisibleIndex = 5
-        Me.colPriority.Width = 72
+        Me.colPriority.Width = 60
         '
         'PriorityCbo
         '
@@ -920,7 +987,7 @@ Partial Public Class MenuV2
         Me.colCategory.OptionsEditForm.VisibleIndex = 2
         Me.colCategory.Visible = True
         Me.colCategory.VisibleIndex = 10
-        Me.colCategory.Width = 166
+        Me.colCategory.Width = 72
         '
         'CategoryCbo
         '
@@ -945,7 +1012,7 @@ Partial Public Class MenuV2
         Me.AssigneeName.SortMode = DevExpress.XtraGrid.ColumnSortMode.DisplayText
         Me.AssigneeName.Visible = True
         Me.AssigneeName.VisibleIndex = 7
-        Me.AssigneeName.Width = 132
+        Me.AssigneeName.Width = 99
         '
         'AssigneeCbo
         '
@@ -994,7 +1061,7 @@ Partial Public Class MenuV2
         Me.colStatus.OptionsEditForm.VisibleIndex = 3
         Me.colStatus.Visible = True
         Me.colStatus.VisibleIndex = 9
-        Me.colStatus.Width = 170
+        Me.colStatus.Width = 130
         '
         'StatusCbo
         '
@@ -1010,13 +1077,17 @@ Partial Public Class MenuV2
         '
         Me.colLastStatusUpdate.ColumnEdit = Me.repoDateEdit
         Me.colLastStatusUpdate.FieldName = "Last Status Update"
+        Me.colLastStatusUpdate.GroupFormat.FormatString = "d"
+        Me.colLastStatusUpdate.GroupFormat.FormatType = DevExpress.Utils.FormatType.DateTime
         Me.colLastStatusUpdate.MinWidth = 23
         Me.colLastStatusUpdate.Name = "colLastStatusUpdate"
         Me.colLastStatusUpdate.OptionsEditForm.ColumnSpan = 2
         Me.colLastStatusUpdate.OptionsEditForm.UseEditorColRowSpan = False
         Me.colLastStatusUpdate.OptionsEditForm.VisibleIndex = 3
+        Me.colLastStatusUpdate.Summary.AddRange(New DevExpress.XtraGrid.GridSummaryItem() {New DevExpress.XtraGrid.GridColumnSummaryItem(DevExpress.Data.SummaryItemType.Min, "Last Status Update", "Old: {0:d}")})
         Me.colLastStatusUpdate.Visible = True
         Me.colLastStatusUpdate.VisibleIndex = 11
+        Me.colLastStatusUpdate.Width = 105
         '
         'repoDateEdit
         '
@@ -1054,7 +1125,7 @@ Partial Public Class MenuV2
         Me.colFLEXTicket.OptionsEditForm.VisibleIndex = 4
         Me.colFLEXTicket.Visible = True
         Me.colFLEXTicket.VisibleIndex = 12
-        Me.colFLEXTicket.Width = 64
+        Me.colFLEXTicket.Width = 43
         '
         'colFLEXSTicket
         '
@@ -1064,7 +1135,7 @@ Partial Public Class MenuV2
         Me.colFLEXSTicket.OptionsEditForm.VisibleIndex = 4
         Me.colFLEXSTicket.Visible = True
         Me.colFLEXSTicket.VisibleIndex = 13
-        Me.colFLEXSTicket.Width = 72
+        Me.colFLEXSTicket.Width = 52
         '
         'GridColumn34
         '
@@ -1157,12 +1228,16 @@ Partial Public Class MenuV2
         '
         'ribbonControl
         '
+        Me.ribbonControl.AutoHideEmptyItems = True
+        Me.ribbonControl.ButtonGroupsVertAlign = DevExpress.Utils.VertAlignment.Center
+        Me.ribbonControl.DrawGroupCaptions = DevExpress.Utils.DefaultBoolean.[False]
         Me.ribbonControl.EmptyAreaImageOptions.ImagePadding = New System.Windows.Forms.Padding(35, 39, 35, 39)
         Me.ribbonControl.ExpandCollapseItem.Id = 0
-        Me.ribbonControl.Items.AddRange(New DevExpress.XtraBars.BarItem() {Me.ribbonControl.ExpandCollapseItem, Me.ribbonControl.SearchEditItem, Me.skinRibbonGalleryBarItem, Me.barSubItemNavigation, Me.requestsBarButtonItem, Me.DefectsBarButtonItem, Me.SkinDropDownButtonItem, Me.SkinPaletteRibbonGalleryBarItem1, Me.barSubItemHours, Me.RevHoursBarStaticItem, Me.BarStaticItem1, Me.BarButtonItem1, Me.BarToggleSwitchPreview, Me.btnJQLSnippets, Me.BarBtnAddHoursFly, Me.BarEditItem1, Me.StatBarUPDSuccess, Me.StatBarUPDFail})
+        Me.ribbonControl.Items.AddRange(New DevExpress.XtraBars.BarItem() {Me.ribbonControl.ExpandCollapseItem, Me.ribbonControl.SearchEditItem, Me.skinRibbonGalleryBarItem, Me.barSubItemNavigation, Me.requestsBarButtonItem, Me.DefectsBarButtonItem, Me.SkinDropDownButtonItem, Me.SkinPaletteRibbonGalleryBarItem1, Me.barSubItemHours, Me.RevHoursBarStaticItem, Me.BarStaticItem1, Me.BarButtonItem1, Me.BarToggleSwitchPreview, Me.btnJQLSnippets, Me.BarBtnAddHoursFly, Me.BarEditItem1, Me.StatBarUPDSuccess, Me.StatBarUPDFail, Me.BarButtonItem2, Me.BarButtonItem3, Me.BarBtnNewClient, Me.BarBtnRefresh, Me.BarBtnNewContact})
+        Me.ribbonControl.ItemsVertAlign = DevExpress.Utils.VertAlignment.Center
         Me.ribbonControl.Location = New System.Drawing.Point(0, 0)
         Me.ribbonControl.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me.ribbonControl.MaxItemId = 59
+        Me.ribbonControl.MaxItemId = 68
         Me.ribbonControl.MdiMergeStyle = DevExpress.XtraBars.Ribbon.RibbonMdiMergeStyle.Always
         Me.ribbonControl.Name = "ribbonControl"
         Me.ribbonControl.OptionsMenuMinWidth = 385
@@ -1170,7 +1245,7 @@ Partial Public Class MenuV2
         Me.ribbonControl.RepositoryItems.AddRange(New DevExpress.XtraEditors.Repository.RepositoryItem() {Me.RepositoryItemTimeEdit1, Me.RepositoryItemTimeSpanEdit1})
         Me.ribbonControl.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonControlStyle.Office2013
         Me.ribbonControl.ShowApplicationButton = DevExpress.Utils.DefaultBoolean.[True]
-        Me.ribbonControl.Size = New System.Drawing.Size(1364, 170)
+        Me.ribbonControl.Size = New System.Drawing.Size(1364, 149)
         Me.ribbonControl.StatusBar = Me.ribbonStatusBar
         Me.ribbonControl.ToolbarLocation = DevExpress.XtraBars.Ribbon.RibbonQuickAccessToolbarLocation.Hidden
         '
@@ -1297,6 +1372,7 @@ Partial Public Class MenuV2
         Me.barSubItemHours.ImageOptions.SvgImage = CType(resources.GetObject("barSubItemHours.ImageOptions.SvgImage"), DevExpress.Utils.Svg.SvgImage)
         Me.barSubItemHours.LinksPersistInfo.AddRange(New DevExpress.XtraBars.LinkPersistInfo() {New DevExpress.XtraBars.LinkPersistInfo(Me.RevHoursBarStaticItem)})
         Me.barSubItemHours.Name = "barSubItemHours"
+        Me.barSubItemHours.Visibility = DevExpress.XtraBars.BarItemVisibility.OnlyInCustomizing
         '
         'RevHoursBarStaticItem
         '
@@ -1340,10 +1416,15 @@ Partial Public Class MenuV2
         '
         'BarBtnAddHoursFly
         '
+        Me.BarBtnAddHoursFly.AllowDrawArrow = False
+        Me.BarBtnAddHoursFly.AllowDrawArrowInMenu = False
         Me.BarBtnAddHoursFly.Caption = "Time"
+        Me.BarBtnAddHoursFly.DropDownEnabled = False
         Me.BarBtnAddHoursFly.Id = 54
         Me.BarBtnAddHoursFly.ImageOptions.SvgImage = CType(resources.GetObject("BarBtnAddHoursFly.ImageOptions.SvgImage"), DevExpress.Utils.Svg.SvgImage)
         Me.BarBtnAddHoursFly.Name = "BarBtnAddHoursFly"
+        Me.BarBtnAddHoursFly.RibbonStyle = CType(((DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large Or DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText) _
+            Or DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithoutText), DevExpress.XtraBars.Ribbon.RibbonItemStyles)
         '
         'BarEditItem1
         '
@@ -1389,9 +1470,116 @@ Partial Public Class MenuV2
         Me.StatBarUPDFail.Visibility = DevExpress.XtraBars.BarItemVisibility.Never
         Me.StatBarUPDFail.VisibleInSearchMenu = False
         '
+        'BarButtonItem2
+        '
+        Me.BarButtonItem2.Caption = "New JIRA DB Refresh"
+        Me.BarButtonItem2.Id = 63
+        Me.BarButtonItem2.ImageOptions.SvgImage = Global.RequestsManager.My.Resources.Resources.JIRA32
+        Me.BarButtonItem2.Name = "BarButtonItem2"
+        '
+        'BarButtonItem3
+        '
+        Me.BarButtonItem3.Caption = "Test Dashboard"
+        Me.BarButtonItem3.Id = 64
+        Me.BarButtonItem3.Name = "BarButtonItem3"
+        '
+        'BarBtnNewClient
+        '
+        Me.BarBtnNewClient.Caption = "New Client"
+        Me.BarBtnNewClient.Id = 65
+        Me.BarBtnNewClient.ImageOptions.SvgImage = Global.RequestsManager.My.Resources.Resources.Office_2
+        Me.BarBtnNewClient.Name = "BarBtnNewClient"
+        '
+        'BarBtnRefresh
+        '
+        Me.BarBtnRefresh.Caption = "Refresh Data"
+        Me.BarBtnRefresh.Id = 66
+        Me.BarBtnRefresh.ImageOptions.Image = Global.RequestsManager.My.Resources.Resources.refresh
+        Me.BarBtnRefresh.Name = "BarBtnRefresh"
+        Me.BarBtnRefresh.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large
+        '
+        'BarBtnNewContact
+        '
+        Me.BarBtnNewContact.ActAsDropDown = True
+        Me.BarBtnNewContact.ButtonStyle = DevExpress.XtraBars.BarButtonStyle.DropDown
+        Me.BarBtnNewContact.Caption = "New Contact"
+        Me.BarBtnNewContact.DropDownControl = Me.PopupControlContainer1
+        Me.BarBtnNewContact.Id = 67
+        Me.BarBtnNewContact.ImageOptions.SvgImage = CType(resources.GetObject("BarBtnNewContact.ImageOptions.SvgImage"), DevExpress.Utils.Svg.SvgImage)
+        Me.BarBtnNewContact.Name = "BarBtnNewContact"
+        '
+        'PopupControlContainer1
+        '
+        Me.PopupControlContainer1.AutoSize = True
+        Me.PopupControlContainer1.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder
+        Me.PopupControlContainer1.Controls.Add(Me.BtnAddContactConfirm)
+        Me.PopupControlContainer1.Controls.Add(Me.TxtAddContactTID)
+        Me.PopupControlContainer1.Controls.Add(Me.TxtAddContactEmail)
+        Me.PopupControlContainer1.Controls.Add(Me.TxtAddContactLName)
+        Me.PopupControlContainer1.Controls.Add(Me.TxtAddContactFName)
+        Me.PopupControlContainer1.Location = New System.Drawing.Point(191, 12)
+        Me.PopupControlContainer1.Name = "PopupControlContainer1"
+        Me.PopupControlContainer1.Ribbon = Me.ribbonControl
+        Me.PopupControlContainer1.Size = New System.Drawing.Size(322, 104)
+        Me.PopupControlContainer1.TabIndex = 4
+        Me.PopupControlContainer1.Visible = False
+        '
+        'BtnAddContactConfirm
+        '
+        Me.BtnAddContactConfirm.Location = New System.Drawing.Point(110, 78)
+        Me.BtnAddContactConfirm.Name = "BtnAddContactConfirm"
+        Me.BtnAddContactConfirm.Size = New System.Drawing.Size(104, 23)
+        Me.BtnAddContactConfirm.TabIndex = 5
+        Me.BtnAddContactConfirm.Text = "Confirm"
+        '
+        'TxtAddContactTID
+        '
+        Me.TxtAddContactTID.Location = New System.Drawing.Point(219, 9)
+        Me.TxtAddContactTID.MenuManager = Me.ribbonControl
+        Me.TxtAddContactTID.Name = "TxtAddContactTID"
+        Me.TxtAddContactTID.Properties.NullValuePrompt = "TID (Telus Emp.)"
+        Me.TxtAddContactTID.Properties.ShowNullValuePrompt = CType((DevExpress.XtraEditors.ShowNullValuePromptOptions.EmptyValue Or DevExpress.XtraEditors.ShowNullValuePromptOptions.EditorFocused), DevExpress.XtraEditors.ShowNullValuePromptOptions)
+        Me.TxtAddContactTID.Properties.UseReadOnlyAppearance = False
+        Me.TxtAddContactTID.Size = New System.Drawing.Size(100, 24)
+        Me.TxtAddContactTID.TabIndex = 8
+        '
+        'TxtAddContactEmail
+        '
+        Me.TxtAddContactEmail.Location = New System.Drawing.Point(6, 39)
+        Me.TxtAddContactEmail.MenuManager = Me.ribbonControl
+        Me.TxtAddContactEmail.Name = "TxtAddContactEmail"
+        Me.TxtAddContactEmail.Properties.AllowNullInput = DevExpress.Utils.DefaultBoolean.[False]
+        Me.TxtAddContactEmail.Properties.NullValuePrompt = "Email"
+        Me.TxtAddContactEmail.Properties.ShowNullValuePrompt = CType((DevExpress.XtraEditors.ShowNullValuePromptOptions.EmptyValue Or DevExpress.XtraEditors.ShowNullValuePromptOptions.EditorFocused), DevExpress.XtraEditors.ShowNullValuePromptOptions)
+        Me.TxtAddContactEmail.Properties.UseReadOnlyAppearance = False
+        Me.TxtAddContactEmail.Size = New System.Drawing.Size(312, 24)
+        Me.TxtAddContactEmail.TabIndex = 7
+        '
+        'TxtAddContactLName
+        '
+        Me.TxtAddContactLName.Location = New System.Drawing.Point(113, 9)
+        Me.TxtAddContactLName.MenuManager = Me.ribbonControl
+        Me.TxtAddContactLName.Name = "TxtAddContactLName"
+        Me.TxtAddContactLName.Properties.NullValuePrompt = "Last Name"
+        Me.TxtAddContactLName.Properties.ShowNullValuePrompt = CType((DevExpress.XtraEditors.ShowNullValuePromptOptions.EmptyValue Or DevExpress.XtraEditors.ShowNullValuePromptOptions.EditorFocused), DevExpress.XtraEditors.ShowNullValuePromptOptions)
+        Me.TxtAddContactLName.Properties.UseReadOnlyAppearance = False
+        Me.TxtAddContactLName.Size = New System.Drawing.Size(100, 24)
+        Me.TxtAddContactLName.TabIndex = 6
+        '
+        'TxtAddContactFName
+        '
+        Me.TxtAddContactFName.Location = New System.Drawing.Point(6, 9)
+        Me.TxtAddContactFName.MenuManager = Me.ribbonControl
+        Me.TxtAddContactFName.Name = "TxtAddContactFName"
+        Me.TxtAddContactFName.Properties.NullValuePrompt = "First Name"
+        Me.TxtAddContactFName.Properties.ShowNullValuePrompt = CType((DevExpress.XtraEditors.ShowNullValuePromptOptions.EmptyValue Or DevExpress.XtraEditors.ShowNullValuePromptOptions.EditorFocused), DevExpress.XtraEditors.ShowNullValuePromptOptions)
+        Me.TxtAddContactFName.Properties.UseReadOnlyAppearance = False
+        Me.TxtAddContactFName.Size = New System.Drawing.Size(100, 24)
+        Me.TxtAddContactFName.TabIndex = 5
+        '
         'ribbonPage
         '
-        Me.ribbonPage.Groups.AddRange(New DevExpress.XtraBars.Ribbon.RibbonPageGroup() {Me.ribbonPageGroupNavigation, Me.ribbonPageGroup, Me.RibbonPageGroupTime, Me.RibPgGrpDisplay})
+        Me.ribbonPage.Groups.AddRange(New DevExpress.XtraBars.Ribbon.RibbonPageGroup() {Me.ribbonPageGroupNavigation, Me.ribbonPageGroup, Me.RibbonPageGroupTime, Me.RibPgGrpDisplay, Me.RibbonPageGroup1, Me.RibbonPageGroup2, Me.RibbonPageGroup3})
         Me.ribbonPage.Name = "ribbonPage"
         ReduceOperation1.Behavior = DevExpress.XtraBars.Ribbon.ReduceOperationBehavior.[Single]
         ReduceOperation1.GroupName = Nothing
@@ -1405,7 +1593,7 @@ Partial Public Class MenuV2
         '
         Me.ribbonPageGroupNavigation.ItemLinks.Add(Me.barSubItemNavigation)
         Me.ribbonPageGroupNavigation.Name = "ribbonPageGroupNavigation"
-        Me.ribbonPageGroupNavigation.Text = "Module"
+        Me.ribbonPageGroupNavigation.Visible = False
         '
         'ribbonPageGroup
         '
@@ -1420,18 +1608,37 @@ Partial Public Class MenuV2
         'RibbonPageGroupTime
         '
         Me.RibbonPageGroupTime.ItemLinks.Add(Me.barSubItemHours)
-        Me.RibbonPageGroupTime.ItemLinks.Add(Me.BarButtonItem1)
-        Me.RibbonPageGroupTime.ItemLinks.Add(Me.BarBtnAddHoursFly)
         Me.RibbonPageGroupTime.Name = "RibbonPageGroupTime"
         Me.RibbonPageGroupTime.State = DevExpress.XtraBars.Ribbon.RibbonPageGroupState.Collapsed
         Me.RibbonPageGroupTime.Text = "Time Tracking"
+        Me.RibbonPageGroupTime.Visible = False
         '
         'RibPgGrpDisplay
         '
         Me.RibPgGrpDisplay.ItemLinks.Add(Me.BarToggleSwitchPreview)
         Me.RibPgGrpDisplay.Name = "RibPgGrpDisplay"
         Me.RibPgGrpDisplay.State = DevExpress.XtraBars.Ribbon.RibbonPageGroupState.Expanded
-        Me.RibPgGrpDisplay.Text = "Display"
+        '
+        'RibbonPageGroup1
+        '
+        Me.RibbonPageGroup1.ItemLinks.Add(Me.BarBtnAddHoursFly)
+        Me.RibbonPageGroup1.ItemLinks.Add(Me.BarButtonItem2)
+        Me.RibbonPageGroup1.Name = "RibbonPageGroup1"
+        '
+        'RibbonPageGroup2
+        '
+        Me.RibbonPageGroup2.ItemLinks.Add(Me.BarBtnNewClient)
+        Me.RibbonPageGroup2.ItemLinks.Add(Me.BarBtnNewContact)
+        Me.RibbonPageGroup2.ItemLinks.Add(Me.BarBtnRefresh)
+        Me.RibbonPageGroup2.Name = "RibbonPageGroup2"
+        Me.RibbonPageGroup2.Text = "RibbonPageGroup2"
+        '
+        'RibbonPageGroup3
+        '
+        Me.RibbonPageGroup3.ItemLinks.Add(Me.BarButtonItem1)
+        Me.RibbonPageGroup3.ItemLinks.Add(Me.BarButtonItem3)
+        Me.RibbonPageGroup3.Name = "RibbonPageGroup3"
+        Me.RibbonPageGroup3.Text = "RibbonPageGroup3"
         '
         'RepositoryItemTimeEdit1
         '
@@ -1453,7 +1660,7 @@ Partial Public Class MenuV2
         '
         Me.TxtJQLString.EditValue = "project = Flexit360Scrum AND fixVersion = 2023.2 AND issuetype in (Bug,Story,Task" &
     ")"
-        Me.TxtJQLString.Location = New System.Drawing.Point(168, 121)
+        Me.TxtJQLString.Location = New System.Drawing.Point(156, 87)
         Me.TxtJQLString.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.TxtJQLString.MenuManager = Me.ribbonControl
         Me.TxtJQLString.Name = "TxtJQLString"
@@ -1475,9 +1682,9 @@ Partial Public Class MenuV2
         Me.LayoutControl1.Location = New System.Drawing.Point(0, 0)
         Me.LayoutControl1.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.LayoutControl1.Name = "LayoutControl1"
-        Me.LayoutControl1.OptionsCustomizationForm.DesignTimeCustomizationFormPositionAndSize = New System.Drawing.Rectangle(582, 334, 1050, 506)
+        Me.LayoutControl1.OptionsCustomizationForm.DesignTimeCustomizationFormPositionAndSize = New System.Drawing.Rectangle(771, 237, 1050, 506)
         Me.LayoutControl1.Root = Me.Root
-        Me.LayoutControl1.Size = New System.Drawing.Size(1179, 480)
+        Me.LayoutControl1.Size = New System.Drawing.Size(1179, 501)
         Me.LayoutControl1.TabIndex = 1
         Me.LayoutControl1.Text = "LayoutControl1"
         '
@@ -1487,7 +1694,7 @@ Partial Public Class MenuV2
         Me.btnSearchFLEXS.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter
         Me.btnSearchFLEXS.ImageOptions.SvgImage = CType(resources.GetObject("btnSearchFLEXS.ImageOptions.SvgImage"), DevExpress.Utils.Svg.SvgImage)
         Me.btnSearchFLEXS.ImageOptions.SvgImageSize = New System.Drawing.Size(20, 20)
-        Me.btnSearchFLEXS.Location = New System.Drawing.Point(1106, 120)
+        Me.btnSearchFLEXS.Location = New System.Drawing.Point(1094, 86)
         Me.btnSearchFLEXS.Name = "btnSearchFLEXS"
         Me.btnSearchFLEXS.PaintStyle = DevExpress.XtraEditors.Controls.PaintStyles.Light
         Me.btnSearchFLEXS.Size = New System.Drawing.Size(37, 24)
@@ -1497,14 +1704,14 @@ Partial Public Class MenuV2
         'GCtrlJIRASearch
         '
         Me.GCtrlJIRASearch.EmbeddedNavigator.Margin = New System.Windows.Forms.Padding(3, 5, 3, 5)
-        Me.GCtrlJIRASearch.Location = New System.Drawing.Point(12, 291)
+        Me.GCtrlJIRASearch.Location = New System.Drawing.Point(12, 82)
         Me.GCtrlJIRASearch.MainView = Me.GVJIRASearch
         Me.GCtrlJIRASearch.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.GCtrlJIRASearch.MenuManager = Me.ribbonControl
         Me.GCtrlJIRASearch.Name = "GCtrlJIRASearch"
         Me.GCtrlJIRASearch.RepositoryItems.AddRange(New DevExpress.XtraEditors.Repository.RepositoryItem() {Me.RepositoryItemGridLookUpEdit3, Me.RepositoryItemGridLookUpEdit5, Me.RepositoryItemGridLookUpEdit4, Me.RepositoryItemCheckedComboBoxEdit3, Me.RepositoryItemGridLookUpEdit6, Me.RepositoryItemMemoEdit2, Me.RepositoryItemRichTextEdit2, Me.RepositoryItemTextEdit2, Me.RepositoryItemPopupContainerEdit2, Me.RepositoryItemButtonEdit2, Me.RepositoryItemHyperLinkEdit2, Me.RepositoryItemHypertextLabel2})
         Me.GCtrlJIRASearch.ShowOnlyPredefinedDetails = True
-        Me.GCtrlJIRASearch.Size = New System.Drawing.Size(1155, 177)
+        Me.GCtrlJIRASearch.Size = New System.Drawing.Size(1155, 407)
         Me.GCtrlJIRASearch.TabIndex = 8
         Me.GCtrlJIRASearch.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.GVJIRASearch, Me.GridView13, Me.GridView15})
         '
@@ -1540,6 +1747,7 @@ Partial Public Class MenuV2
         Me.GVJIRASearch.OptionsView.AutoCalcPreviewLineCount = True
         Me.GVJIRASearch.OptionsView.RowAutoHeight = True
         Me.GVJIRASearch.OptionsView.ShowDetailButtons = False
+        Me.GVJIRASearch.OptionsView.ShowFooter = True
         Me.GVJIRASearch.OptionsView.ShowPreviewRowLines = DevExpress.Utils.DefaultBoolean.[False]
         Me.GVJIRASearch.PreviewFieldName = "Description"
         Me.GVJIRASearch.PreviewLineCount = 8
@@ -1884,7 +2092,7 @@ Partial Public Class MenuV2
         '
         'ChkRelease
         '
-        Me.ChkRelease.Location = New System.Drawing.Point(36, 150)
+        Me.ChkRelease.Location = New System.Drawing.Point(24, 116)
         Me.ChkRelease.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.ChkRelease.Name = "ChkRelease"
         Me.ChkRelease.Size = New System.Drawing.Size(551, 20)
@@ -1921,7 +2129,7 @@ Partial Public Class MenuV2
         '
         'TextEdit1
         '
-        Me.TextEdit1.Location = New System.Drawing.Point(933, 150)
+        Me.TextEdit1.Location = New System.Drawing.Point(921, 116)
         Me.TextEdit1.MenuManager = Me.ribbonControl
         Me.TextEdit1.Name = "TextEdit1"
         Me.TextEdit1.Properties.AllowMultiSelect = True
@@ -1936,7 +2144,7 @@ Partial Public Class MenuV2
         Me.Root.GroupBordersVisible = False
         Me.Root.Items.AddRange(New DevExpress.XtraLayout.BaseLayoutItem() {Me.SimpleLabelItem1, Me.LayoutControlItem1, Me.LayoutControlGroup1, Me.LayoutControlItem3})
         Me.Root.Name = "Root"
-        Me.Root.Size = New System.Drawing.Size(1179, 480)
+        Me.Root.Size = New System.Drawing.Size(1179, 501)
         Me.Root.TextVisible = False
         '
         'SimpleLabelItem1
@@ -1983,12 +2191,13 @@ Partial Public Class MenuV2
         Me.LayoutControlGroup1.AppearanceTabPage.HeaderActive.BackColor = System.Drawing.Color.FromArgb(CType(CType(75, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(109, Byte), Integer))
         Me.LayoutControlGroup1.AppearanceTabPage.HeaderActive.Options.UseBackColor = True
         Me.LayoutControlGroup1.ExpandButtonVisible = True
+        Me.LayoutControlGroup1.Expanded = False
         Me.LayoutControlGroup1.GroupStyle = DevExpress.Utils.GroupStyle.Title
         Me.LayoutControlGroup1.HeaderButtonsLocation = DevExpress.Utils.GroupElementLocation.AfterText
         Me.LayoutControlGroup1.Items.AddRange(New DevExpress.XtraLayout.BaseLayoutItem() {Me.EmptySpaceItem3, Me.LayoutControlGroup2})
         Me.LayoutControlGroup1.Location = New System.Drawing.Point(0, 41)
         Me.LayoutControlGroup1.Name = "LayoutControlGroup1"
-        Me.LayoutControlGroup1.Size = New System.Drawing.Size(1159, 238)
+        Me.LayoutControlGroup1.Size = New System.Drawing.Size(1159, 29)
         Me.LayoutControlGroup1.Text = "Search Parameters"
         '
         'EmptySpaceItem3
@@ -1996,7 +2205,7 @@ Partial Public Class MenuV2
         Me.EmptySpaceItem3.AllowHotTrack = False
         Me.EmptySpaceItem3.Location = New System.Drawing.Point(0, 103)
         Me.EmptySpaceItem3.Name = "EmptySpaceItem3"
-        Me.EmptySpaceItem3.Size = New System.Drawing.Size(1135, 89)
+        Me.EmptySpaceItem3.Size = New System.Drawing.Size(1135, 13)
         Me.EmptySpaceItem3.TextSize = New System.Drawing.Size(0, 0)
         '
         'LayoutControlGroup2
@@ -2048,9 +2257,9 @@ Partial Public Class MenuV2
         'LayoutControlItem3
         '
         Me.LayoutControlItem3.Control = Me.GCtrlJIRASearch
-        Me.LayoutControlItem3.Location = New System.Drawing.Point(0, 279)
+        Me.LayoutControlItem3.Location = New System.Drawing.Point(0, 70)
         Me.LayoutControlItem3.Name = "LayoutControlItem3"
-        Me.LayoutControlItem3.Size = New System.Drawing.Size(1159, 181)
+        Me.LayoutControlItem3.Size = New System.Drawing.Size(1159, 411)
         Me.LayoutControlItem3.TextSize = New System.Drawing.Size(0, 0)
         Me.LayoutControlItem3.TextVisible = False
         '
@@ -2152,7 +2361,7 @@ Partial Public Class MenuV2
         Me.TextEdit2.Location = New System.Drawing.Point(3, 29)
         Me.TextEdit2.MenuManager = Me.ribbonControl
         Me.TextEdit2.Name = "TextEdit2"
-        Me.TextEdit2.Size = New System.Drawing.Size(329, 20)
+        Me.TextEdit2.Size = New System.Drawing.Size(329, 24)
         Me.TextEdit2.TabIndex = 0
         '
         'RepositoryItemLookUpEdit1
@@ -2376,7 +2585,7 @@ Partial Public Class MenuV2
         Me.GridControl2.Name = "GridControl2"
         Me.GridControl2.RepositoryItems.AddRange(New DevExpress.XtraEditors.Repository.RepositoryItem() {Me.RepositoryItemGridLookUpEdit2, Me.RepoItemGridLookUpEditClients, Me.RepoItemGridLookUpEditChannels, Me.RepositoryItemCheckedComboBoxEdit2, Me.RepoItemGridLookUpEditAnalysts, Me.RepoItemGridLookUpEditReporter})
         Me.GridControl2.ShowOnlyPredefinedDetails = True
-        Me.GridControl2.Size = New System.Drawing.Size(1179, 480)
+        Me.GridControl2.Size = New System.Drawing.Size(1179, 501)
         Me.GridControl2.TabIndex = 2
         Me.GridControl2.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.GridView7, Me.GridView9, Me.GridView6})
         '
@@ -2793,12 +3002,12 @@ Partial Public Class MenuV2
         Me.navBarControl.Dock = System.Windows.Forms.DockStyle.Left
         Me.navBarControl.Groups.AddRange(New DevExpress.XtraNavBar.NavBarGroup() {Me.RequestsNavBarGroup, Me.DefectsNavBarGroup})
         Me.navBarControl.Items.AddRange(New DevExpress.XtraNavBar.NavBarItem() {Me.NavBarUnresolved, Me.NavBarAssignedMe, Me.NavBarDefects, Me.NavBarEnh, Me.NavBarResolved, Me.NavBarFLEXS, Me.NavBarAllRequests, Me.NavBarFLEXSDone, Me.NavBarJIRASync})
-        Me.navBarControl.Location = New System.Drawing.Point(0, 170)
+        Me.navBarControl.Location = New System.Drawing.Point(0, 149)
         Me.navBarControl.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.navBarControl.Name = "navBarControl"
         Me.navBarControl.OptionsNavPane.ExpandedWidth = 185
         Me.navBarControl.PaintStyleKind = DevExpress.XtraNavBar.NavBarViewKind.NavigationPane
-        Me.navBarControl.Size = New System.Drawing.Size(185, 480)
+        Me.navBarControl.Size = New System.Drawing.Size(185, 501)
         Me.navBarControl.TabIndex = 0
         Me.navBarControl.Text = "navBarControl"
         '
@@ -2878,13 +3087,13 @@ Partial Public Class MenuV2
         Me.navigationFrame.Controls.Add(Me.DefectsNavigationPage)
         Me.navigationFrame.Controls.Add(Me.JIRASyncNavigationPage)
         Me.navigationFrame.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.navigationFrame.Location = New System.Drawing.Point(185, 170)
+        Me.navigationFrame.Location = New System.Drawing.Point(185, 149)
         Me.navigationFrame.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.navigationFrame.Name = "navigationFrame"
         Me.navigationFrame.Pages.AddRange(New DevExpress.XtraBars.Navigation.NavigationPageBase() {Me.RequestsNavigationPage, Me.DefectsNavigationPage, Me.JIRASyncNavigationPage})
         Me.navigationFrame.RibbonAndBarsMergeStyle = DevExpress.XtraBars.Docking2010.Views.RibbonAndBarsMergeStyle.Always
         Me.navigationFrame.SelectedPage = Me.RequestsNavigationPage
-        Me.navigationFrame.Size = New System.Drawing.Size(1179, 480)
+        Me.navigationFrame.Size = New System.Drawing.Size(1179, 501)
         Me.navigationFrame.TabIndex = 0
         Me.navigationFrame.Text = "navigationFrame"
         '
@@ -2896,15 +3105,15 @@ Partial Public Class MenuV2
         Me.RequestsNavigationPage.Controls.Add(Me.employeesLabelControl)
         Me.RequestsNavigationPage.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.RequestsNavigationPage.Name = "RequestsNavigationPage"
-        Me.RequestsNavigationPage.Size = New System.Drawing.Size(1179, 480)
+        Me.RequestsNavigationPage.Size = New System.Drawing.Size(1179, 501)
         '
         'MemoEdit2
         '
-        Me.MemoEdit2.Location = New System.Drawing.Point(169, 7)
+        Me.MemoEdit2.Location = New System.Drawing.Point(38, 292)
         Me.MemoEdit2.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.MemoEdit2.MenuManager = Me.ribbonControl
         Me.MemoEdit2.Name = "MemoEdit2"
-        Me.MemoEdit2.Size = New System.Drawing.Size(238, 167)
+        Me.MemoEdit2.Size = New System.Drawing.Size(127, 39)
         Me.MemoEdit2.TabIndex = 3
         Me.MemoEdit2.Visible = False
         '
@@ -2932,7 +3141,7 @@ Partial Public Class MenuV2
         Me.employeesLabelControl.Location = New System.Drawing.Point(0, 0)
         Me.employeesLabelControl.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.employeesLabelControl.Name = "employeesLabelControl"
-        Me.employeesLabelControl.Size = New System.Drawing.Size(1179, 480)
+        Me.employeesLabelControl.Size = New System.Drawing.Size(1179, 501)
         Me.employeesLabelControl.TabIndex = 0
         Me.employeesLabelControl.Text = "Employees"
         '
@@ -2942,7 +3151,7 @@ Partial Public Class MenuV2
         Me.DefectsNavigationPage.Controls.Add(Me.customersLabelControl)
         Me.DefectsNavigationPage.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.DefectsNavigationPage.Name = "DefectsNavigationPage"
-        Me.DefectsNavigationPage.Size = New System.Drawing.Size(1179, 480)
+        Me.DefectsNavigationPage.Size = New System.Drawing.Size(1179, 501)
         '
         'customersLabelControl
         '
@@ -2958,7 +3167,7 @@ Partial Public Class MenuV2
         Me.customersLabelControl.Location = New System.Drawing.Point(0, 0)
         Me.customersLabelControl.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.customersLabelControl.Name = "customersLabelControl"
-        Me.customersLabelControl.Size = New System.Drawing.Size(1179, 480)
+        Me.customersLabelControl.Size = New System.Drawing.Size(1179, 501)
         Me.customersLabelControl.TabIndex = 1
         Me.customersLabelControl.Text = "Customers"
         '
@@ -2967,7 +3176,7 @@ Partial Public Class MenuV2
         Me.JIRASyncNavigationPage.Controls.Add(Me.LayoutControl1)
         Me.JIRASyncNavigationPage.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.JIRASyncNavigationPage.Name = "JIRASyncNavigationPage"
-        Me.JIRASyncNavigationPage.Size = New System.Drawing.Size(1179, 480)
+        Me.JIRASyncNavigationPage.Size = New System.Drawing.Size(1179, 501)
         '
         'IssuesTableAdapter1
         '
@@ -3038,6 +3247,7 @@ Partial Public Class MenuV2
         Me.Controls.Add(Me.navBarControl)
         Me.Controls.Add(Me.officeNavigationBar)
         Me.Controls.Add(Me.ribbonStatusBar)
+        Me.Controls.Add(Me.PopupControlContainer1)
         Me.Controls.Add(Me.ribbonControl)
         Me.EnableAcrylicAccent = True
         Me.IconOptions.Image = CType(resources.GetObject("MenuV2.IconOptions.Image"), System.Drawing.Image)
@@ -3077,6 +3287,12 @@ Partial Public Class MenuV2
         CType(Me.RepoBtnAddComment, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.ribbonControl, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.RepositoryItemTimeSpanEdit1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PopupControlContainer1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.PopupControlContainer1.ResumeLayout(False)
+        CType(Me.TxtAddContactTID.Properties, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.TxtAddContactEmail.Properties, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.TxtAddContactLName.Properties, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.TxtAddContactFName.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.RepositoryItemTimeEdit1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.TxtJQLString.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.LayoutControl1, System.ComponentModel.ISupportInitialize).EndInit()
@@ -3412,4 +3628,18 @@ Partial Public Class MenuV2
     Friend WithEvents repoDateEdit As DevExpress.XtraEditors.Repository.RepositoryItemDateEdit
     Friend WithEvents StatBarUPDSuccess As DevExpress.XtraBars.BarStaticItem
     Friend WithEvents StatBarUPDFail As DevExpress.XtraBars.BarStaticItem
+    Friend WithEvents RibbonPageGroup1 As DevExpress.XtraBars.Ribbon.RibbonPageGroup
+    Friend WithEvents BarButtonItem2 As DevExpress.XtraBars.BarButtonItem
+    Friend WithEvents BarButtonItem3 As DevExpress.XtraBars.BarButtonItem
+    Friend WithEvents BarBtnNewClient As DevExpress.XtraBars.BarButtonItem
+    Friend WithEvents BarBtnRefresh As DevExpress.XtraBars.BarButtonItem
+    Friend WithEvents BarBtnNewContact As DevExpress.XtraBars.BarButtonItem
+    Friend WithEvents PopupControlContainer1 As DevExpress.XtraBars.PopupControlContainer
+    Friend WithEvents TxtAddContactFName As DevExpress.XtraEditors.TextEdit
+    Friend WithEvents TxtAddContactLName As DevExpress.XtraEditors.TextEdit
+    Friend WithEvents TxtAddContactEmail As DevExpress.XtraEditors.TextEdit
+    Friend WithEvents TxtAddContactTID As DevExpress.XtraEditors.TextEdit
+    Friend WithEvents BtnAddContactConfirm As DevExpress.XtraEditors.SimpleButton
+    Friend WithEvents RibbonPageGroup2 As DevExpress.XtraBars.Ribbon.RibbonPageGroup
+    Friend WithEvents RibbonPageGroup3 As DevExpress.XtraBars.Ribbon.RibbonPageGroup
 End Class

@@ -43,59 +43,59 @@ Partial Class FLEXS_Mgmt
         Me.RadTitleBar1 = New Telerik.WinControls.UI.RadTitleBar()
         Me.RadLayoutControl1 = New Telerik.WinControls.UI.RadLayoutControl()
         Me.RadGridView1 = New Telerik.WinControls.UI.RadGridView()
+        Me.AuditGridControl = New DevExpress.XtraGrid.GridControl()
+        Me.AuditBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.ProdSupport_DataSet_Async = New RequestsManager.ProdSupport_DataSet_Async()
+        Me.GridView5 = New DevExpress.XtraGrid.Views.Grid.GridView()
+        Me.Tbl_HoursWorkedLogGridControl = New DevExpress.XtraGrid.GridControl()
+        Me.Tbl_HoursWorkedLogBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.GridView4 = New DevExpress.XtraGrid.Views.Grid.GridView()
+        Me.ClientsGridControl = New DevExpress.XtraGrid.GridControl()
+        Me.ClientsBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.GridView3 = New DevExpress.XtraGrid.Views.Grid.GridView()
+        Me.ChannelsGridControl = New DevExpress.XtraGrid.GridControl()
+        Me.ChannelsBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.GridView2 = New DevExpress.XtraGrid.Views.Grid.GridView()
         Me.StatusReportAuditALLBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.ProdSupport_DataSet = New RequestsManager.ProdSupport_DataSet()
+        Me.AnalystsGridControl = New DevExpress.XtraGrid.GridControl()
+        Me.AnalystsBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.GridView1 = New DevExpress.XtraGrid.Views.Grid.GridView()
         Me.LayoutControlLabelItem1 = New Telerik.WinControls.UI.LayoutControlLabelItem()
         Me.LayoutControlItem1 = New Telerik.WinControls.UI.LayoutControlItem()
+        Me.LayoutControlItem2 = New Telerik.WinControls.UI.LayoutControlItem()
         Me.StatusReportAudit_ALLTableAdapter = New RequestsManager.ProdSupport_DataSetTableAdapters.StatusReportAudit_ALLTableAdapter()
-        Me.ProdSupport_DataSet_Async = New RequestsManager.ProdSupport_DataSet_Async()
-        Me.AnalystsBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.AnalystsTableAdapter_Async = New RequestsManager.ProdSupport_DataSet_AsyncTableAdapters.AnalystsTableAdapter()
         Me.TableAdapterManager = New RequestsManager.ProdSupport_DataSet_AsyncTableAdapters.TableAdapterManager()
-        Me.AnalystsGridControl = New DevExpress.XtraGrid.GridControl()
-        Me.GridView1 = New DevExpress.XtraGrid.Views.Grid.GridView()
-        Me.LayoutControlItem2 = New Telerik.WinControls.UI.LayoutControlItem()
-        Me.Contacts_ExtendedTableAdapter_Async = New RequestsManager.ProdSupport_DataSet_AsyncTableAdapters.Contacts_ExtendedTableAdapter()
-        Me.ChannelsBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.ChannelsTableAdapter_Async = New RequestsManager.ProdSupport_DataSet_AsyncTableAdapters.ChannelsTableAdapter()
-        Me.ChannelsGridControl = New DevExpress.XtraGrid.GridControl()
-        Me.GridView2 = New DevExpress.XtraGrid.Views.Grid.GridView()
-        Me.ClientsBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.ClientsTableAdapter_Async = New RequestsManager.ProdSupport_DataSet_AsyncTableAdapters.ClientsTableAdapter()
-        Me.ClientsGridControl = New DevExpress.XtraGrid.GridControl()
-        Me.GridView3 = New DevExpress.XtraGrid.Views.Grid.GridView()
-        Me.Tbl_HoursWorkedLogBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.Tbl_HoursWorkedLogTableAdapter_Async = New RequestsManager.ProdSupport_DataSet_AsyncTableAdapters.tbl_HoursWorkedLogTableAdapter()
-        Me.Tbl_HoursWorkedLogGridControl = New DevExpress.XtraGrid.GridControl()
-        Me.GridView4 = New DevExpress.XtraGrid.Views.Grid.GridView()
-        Me.AuditBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.AuditTableAdapter_Async = New RequestsManager.ProdSupport_DataSet_AsyncTableAdapters.AuditTableAdapter()
-        Me.AuditGridControl = New DevExpress.XtraGrid.GridControl()
-        Me.GridView5 = New DevExpress.XtraGrid.Views.Grid.GridView()
+        Me.ChannelsTableAdapter_Async = New RequestsManager.ProdSupport_DataSet_AsyncTableAdapters.ChannelsTableAdapter()
+        Me.ClientsTableAdapter_Async = New RequestsManager.ProdSupport_DataSet_AsyncTableAdapters.ClientsTableAdapter()
+        Me.Tbl_HoursWorkedLogTableAdapter_Async = New RequestsManager.ProdSupport_DataSet_AsyncTableAdapters.tbl_HoursWorkedLogTableAdapter()
+        Me.Contacts_ExtendedTableAdapter_Async = New RequestsManager.ProdSupport_DataSet_AsyncTableAdapters.Contacts_ExtendedTableAdapter()
         CType(Me.RadTitleBar1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.RadLayoutControl1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.RadLayoutControl1.SuspendLayout()
         CType(Me.RadGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.RadGridView1.MasterTemplate, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.RadGridView1.SuspendLayout()
+        CType(Me.AuditGridControl, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.AuditBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.ProdSupport_DataSet_Async, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.GridView5, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Tbl_HoursWorkedLogGridControl, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Tbl_HoursWorkedLogBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.GridView4, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.ClientsGridControl, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.ClientsBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.GridView3, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.ChannelsGridControl, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.ChannelsBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.GridView2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.StatusReportAuditALLBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ProdSupport_DataSet, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.ProdSupport_DataSet_Async, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.AnalystsBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.AnalystsGridControl, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.AnalystsBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.GridView1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.ChannelsBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.ChannelsGridControl, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.GridView2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.ClientsBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.ClientsGridControl, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.GridView3, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Tbl_HoursWorkedLogBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Tbl_HoursWorkedLogGridControl, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.GridView4, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.AuditBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.AuditGridControl, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.GridView5, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'RoundRectShapeTitle
@@ -265,6 +265,91 @@ Partial Class FLEXS_Mgmt
         Me.RadGridView1.Size = New System.Drawing.Size(1313, 558)
         Me.RadGridView1.TabIndex = 3
         '
+        'AuditGridControl
+        '
+        Me.AuditGridControl.DataSource = Me.AuditBindingSource
+        Me.AuditGridControl.Location = New System.Drawing.Point(994, 291)
+        Me.AuditGridControl.MainView = Me.GridView5
+        Me.AuditGridControl.Name = "AuditGridControl"
+        Me.AuditGridControl.Size = New System.Drawing.Size(300, 220)
+        Me.AuditGridControl.TabIndex = 3
+        Me.AuditGridControl.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.GridView5})
+        '
+        'AuditBindingSource
+        '
+        Me.AuditBindingSource.DataMember = "Audit"
+        Me.AuditBindingSource.DataSource = Me.ProdSupport_DataSet_Async
+        '
+        'ProdSupport_DataSet_Async
+        '
+        Me.ProdSupport_DataSet_Async.DataSetName = "ProdSupport_DataSet_Async"
+        Me.ProdSupport_DataSet_Async.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        '
+        'GridView5
+        '
+        Me.GridView5.GridControl = Me.AuditGridControl
+        Me.GridView5.Name = "GridView5"
+        '
+        'Tbl_HoursWorkedLogGridControl
+        '
+        Me.Tbl_HoursWorkedLogGridControl.DataSource = Me.Tbl_HoursWorkedLogBindingSource
+        Me.Tbl_HoursWorkedLogGridControl.Location = New System.Drawing.Point(419, 246)
+        Me.Tbl_HoursWorkedLogGridControl.MainView = Me.GridView4
+        Me.Tbl_HoursWorkedLogGridControl.Name = "Tbl_HoursWorkedLogGridControl"
+        Me.Tbl_HoursWorkedLogGridControl.Size = New System.Drawing.Size(300, 220)
+        Me.Tbl_HoursWorkedLogGridControl.TabIndex = 2
+        Me.Tbl_HoursWorkedLogGridControl.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.GridView4})
+        '
+        'Tbl_HoursWorkedLogBindingSource
+        '
+        Me.Tbl_HoursWorkedLogBindingSource.DataMember = "tbl_HoursWorkedLog"
+        Me.Tbl_HoursWorkedLogBindingSource.DataSource = Me.ProdSupport_DataSet_Async
+        '
+        'GridView4
+        '
+        Me.GridView4.GridControl = Me.Tbl_HoursWorkedLogGridControl
+        Me.GridView4.Name = "GridView4"
+        '
+        'ClientsGridControl
+        '
+        Me.ClientsGridControl.DataSource = Me.ClientsBindingSource
+        Me.ClientsGridControl.Location = New System.Drawing.Point(619, 242)
+        Me.ClientsGridControl.MainView = Me.GridView3
+        Me.ClientsGridControl.Name = "ClientsGridControl"
+        Me.ClientsGridControl.Size = New System.Drawing.Size(300, 220)
+        Me.ClientsGridControl.TabIndex = 1
+        Me.ClientsGridControl.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.GridView3})
+        '
+        'ClientsBindingSource
+        '
+        Me.ClientsBindingSource.DataMember = "Clients"
+        Me.ClientsBindingSource.DataSource = Me.ProdSupport_DataSet_Async
+        '
+        'GridView3
+        '
+        Me.GridView3.GridControl = Me.ClientsGridControl
+        Me.GridView3.Name = "GridView3"
+        '
+        'ChannelsGridControl
+        '
+        Me.ChannelsGridControl.DataSource = Me.ChannelsBindingSource
+        Me.ChannelsGridControl.Location = New System.Drawing.Point(226, 391)
+        Me.ChannelsGridControl.MainView = Me.GridView2
+        Me.ChannelsGridControl.Name = "ChannelsGridControl"
+        Me.ChannelsGridControl.Size = New System.Drawing.Size(300, 220)
+        Me.ChannelsGridControl.TabIndex = 0
+        Me.ChannelsGridControl.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.GridView2})
+        '
+        'ChannelsBindingSource
+        '
+        Me.ChannelsBindingSource.DataMember = "Channels"
+        Me.ChannelsBindingSource.DataSource = Me.ProdSupport_DataSet_Async
+        '
+        'GridView2
+        '
+        Me.GridView2.GridControl = Me.ChannelsGridControl
+        Me.GridView2.Name = "GridView2"
+        '
         'StatusReportAuditALLBindingSource
         '
         Me.StatusReportAuditALLBindingSource.DataMember = "StatusReportAudit_ALL"
@@ -274,6 +359,26 @@ Partial Class FLEXS_Mgmt
         '
         Me.ProdSupport_DataSet.DataSetName = "ProdSupport_DataSet"
         Me.ProdSupport_DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        '
+        'AnalystsGridControl
+        '
+        Me.AnalystsGridControl.DataSource = Me.AnalystsBindingSource
+        Me.AnalystsGridControl.Location = New System.Drawing.Point(4, 186)
+        Me.AnalystsGridControl.MainView = Me.GridView1
+        Me.AnalystsGridControl.Name = "AnalystsGridControl"
+        Me.AnalystsGridControl.Size = New System.Drawing.Size(1313, 20)
+        Me.AnalystsGridControl.TabIndex = 0
+        Me.AnalystsGridControl.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.GridView1})
+        '
+        'AnalystsBindingSource
+        '
+        Me.AnalystsBindingSource.DataMember = "Analysts"
+        Me.AnalystsBindingSource.DataSource = Me.ProdSupport_DataSet_Async
+        '
+        'GridView1
+        '
+        Me.GridView1.GridControl = Me.AnalystsGridControl
+        Me.GridView1.Name = "GridView1"
         '
         'LayoutControlLabelItem1
         '
@@ -288,19 +393,16 @@ Partial Class FLEXS_Mgmt
         Me.LayoutControlItem1.Name = "LayoutControlItem1"
         Me.LayoutControlItem1.Text = "LayoutControlItem1"
         '
+        'LayoutControlItem2
+        '
+        Me.LayoutControlItem2.AssociatedControl = Me.AnalystsGridControl
+        Me.LayoutControlItem2.Bounds = New System.Drawing.Rectangle(0, 182, 1319, 26)
+        Me.LayoutControlItem2.Name = "LayoutControlItem2"
+        Me.LayoutControlItem2.Text = "LayoutControlItem2"
+        '
         'StatusReportAudit_ALLTableAdapter
         '
         Me.StatusReportAudit_ALLTableAdapter.ClearBeforeFill = True
-        '
-        'ProdSupport_DataSet_Async
-        '
-        Me.ProdSupport_DataSet_Async.DataSetName = "ProdSupport_DataSet_Async"
-        Me.ProdSupport_DataSet_Async.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
-        '
-        'AnalystsBindingSource
-        '
-        Me.AnalystsBindingSource.DataMember = "Analysts"
-        Me.AnalystsBindingSource.DataSource = Me.ProdSupport_DataSet_Async
         '
         'AnalystsTableAdapter_Async
         '
@@ -321,127 +423,25 @@ Partial Class FLEXS_Mgmt
         Me.TableAdapterManager.tbl_HoursWorkedLogTableAdapter = Me.Tbl_HoursWorkedLogTableAdapter_Async
         Me.TableAdapterManager.UpdateOrder = RequestsManager.ProdSupport_DataSet_AsyncTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
         '
-        'AnalystsGridControl
+        'AuditTableAdapter_Async
         '
-        Me.AnalystsGridControl.DataSource = Me.AnalystsBindingSource
-        Me.AnalystsGridControl.Location = New System.Drawing.Point(4, 186)
-        Me.AnalystsGridControl.MainView = Me.GridView1
-        Me.AnalystsGridControl.Name = "AnalystsGridControl"
-        Me.AnalystsGridControl.Size = New System.Drawing.Size(1313, 20)
-        Me.AnalystsGridControl.TabIndex = 0
-        Me.AnalystsGridControl.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.GridView1})
-        '
-        'GridView1
-        '
-        Me.GridView1.GridControl = Me.AnalystsGridControl
-        Me.GridView1.Name = "GridView1"
-        '
-        'LayoutControlItem2
-        '
-        Me.LayoutControlItem2.AssociatedControl = Me.AnalystsGridControl
-        Me.LayoutControlItem2.Bounds = New System.Drawing.Rectangle(0, 182, 1319, 26)
-        Me.LayoutControlItem2.Name = "LayoutControlItem2"
-        Me.LayoutControlItem2.Text = "LayoutControlItem2"
-        '
-        'Contacts_ExtendedTableAdapter_Async
-        '
-        Me.Contacts_ExtendedTableAdapter_Async.ClearBeforeFill = True
-        '
-        'ChannelsBindingSource
-        '
-        Me.ChannelsBindingSource.DataMember = "Channels"
-        Me.ChannelsBindingSource.DataSource = Me.ProdSupport_DataSet_Async
+        Me.AuditTableAdapter_Async.ClearBeforeFill = True
         '
         'ChannelsTableAdapter_Async
         '
         Me.ChannelsTableAdapter_Async.ClearBeforeFill = True
         '
-        'ChannelsGridControl
-        '
-        Me.ChannelsGridControl.DataSource = Me.ChannelsBindingSource
-        Me.ChannelsGridControl.Location = New System.Drawing.Point(226, 391)
-        Me.ChannelsGridControl.MainView = Me.GridView2
-        Me.ChannelsGridControl.Name = "ChannelsGridControl"
-        Me.ChannelsGridControl.Size = New System.Drawing.Size(300, 220)
-        Me.ChannelsGridControl.TabIndex = 0
-        Me.ChannelsGridControl.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.GridView2})
-        '
-        'GridView2
-        '
-        Me.GridView2.GridControl = Me.ChannelsGridControl
-        Me.GridView2.Name = "GridView2"
-        '
-        'ClientsBindingSource
-        '
-        Me.ClientsBindingSource.DataMember = "Clients"
-        Me.ClientsBindingSource.DataSource = Me.ProdSupport_DataSet_Async
-        '
         'ClientsTableAdapter_Async
         '
         Me.ClientsTableAdapter_Async.ClearBeforeFill = True
-        '
-        'ClientsGridControl
-        '
-        Me.ClientsGridControl.DataSource = Me.ClientsBindingSource
-        Me.ClientsGridControl.Location = New System.Drawing.Point(619, 242)
-        Me.ClientsGridControl.MainView = Me.GridView3
-        Me.ClientsGridControl.Name = "ClientsGridControl"
-        Me.ClientsGridControl.Size = New System.Drawing.Size(300, 220)
-        Me.ClientsGridControl.TabIndex = 1
-        Me.ClientsGridControl.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.GridView3})
-        '
-        'GridView3
-        '
-        Me.GridView3.GridControl = Me.ClientsGridControl
-        Me.GridView3.Name = "GridView3"
-        '
-        'Tbl_HoursWorkedLogBindingSource
-        '
-        Me.Tbl_HoursWorkedLogBindingSource.DataMember = "tbl_HoursWorkedLog"
-        Me.Tbl_HoursWorkedLogBindingSource.DataSource = Me.ProdSupport_DataSet_Async
         '
         'Tbl_HoursWorkedLogTableAdapter_Async
         '
         Me.Tbl_HoursWorkedLogTableAdapter_Async.ClearBeforeFill = True
         '
-        'Tbl_HoursWorkedLogGridControl
+        'Contacts_ExtendedTableAdapter_Async
         '
-        Me.Tbl_HoursWorkedLogGridControl.DataSource = Me.Tbl_HoursWorkedLogBindingSource
-        Me.Tbl_HoursWorkedLogGridControl.Location = New System.Drawing.Point(419, 246)
-        Me.Tbl_HoursWorkedLogGridControl.MainView = Me.GridView4
-        Me.Tbl_HoursWorkedLogGridControl.Name = "Tbl_HoursWorkedLogGridControl"
-        Me.Tbl_HoursWorkedLogGridControl.Size = New System.Drawing.Size(300, 220)
-        Me.Tbl_HoursWorkedLogGridControl.TabIndex = 2
-        Me.Tbl_HoursWorkedLogGridControl.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.GridView4})
-        '
-        'GridView4
-        '
-        Me.GridView4.GridControl = Me.Tbl_HoursWorkedLogGridControl
-        Me.GridView4.Name = "GridView4"
-        '
-        'AuditBindingSource
-        '
-        Me.AuditBindingSource.DataMember = "Audit"
-        Me.AuditBindingSource.DataSource = Me.ProdSupport_DataSet_Async
-        '
-        'AuditTableAdapter_Async
-        '
-        Me.AuditTableAdapter_Async.ClearBeforeFill = True
-        '
-        'AuditGridControl
-        '
-        Me.AuditGridControl.DataSource = Me.AuditBindingSource
-        Me.AuditGridControl.Location = New System.Drawing.Point(994, 291)
-        Me.AuditGridControl.MainView = Me.GridView5
-        Me.AuditGridControl.Name = "AuditGridControl"
-        Me.AuditGridControl.Size = New System.Drawing.Size(300, 220)
-        Me.AuditGridControl.TabIndex = 3
-        Me.AuditGridControl.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.GridView5})
-        '
-        'GridView5
-        '
-        Me.GridView5.GridControl = Me.AuditGridControl
-        Me.GridView5.Name = "GridView5"
+        Me.Contacts_ExtendedTableAdapter_Async.ClearBeforeFill = True
         '
         'FLEXS_Mgmt
         '
@@ -465,24 +465,24 @@ Partial Class FLEXS_Mgmt
         CType(Me.RadGridView1.MasterTemplate, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.RadGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.RadGridView1.ResumeLayout(False)
+        CType(Me.AuditGridControl, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.AuditBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.ProdSupport_DataSet_Async, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.GridView5, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Tbl_HoursWorkedLogGridControl, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Tbl_HoursWorkedLogBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.GridView4, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.ClientsGridControl, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.ClientsBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.GridView3, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.ChannelsGridControl, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.ChannelsBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.GridView2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.StatusReportAuditALLBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.ProdSupport_DataSet, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.ProdSupport_DataSet_Async, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.AnalystsBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.AnalystsGridControl, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.AnalystsBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.GridView1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.ChannelsBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.ChannelsGridControl, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.GridView2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.ClientsBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.ClientsGridControl, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.GridView3, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Tbl_HoursWorkedLogBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Tbl_HoursWorkedLogGridControl, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.GridView4, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.AuditBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.AuditGridControl, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.GridView5, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub

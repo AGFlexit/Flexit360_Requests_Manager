@@ -60,26 +60,26 @@ Partial Class HoursSummary
         Me.Hours_Summary_DetailsTableAdapter = New RequestsManager.ProdSupport_DataSetTableAdapters.Hours_Summary_DetailsTableAdapter()
         Me.RadLayoutControl1 = New Telerik.WinControls.UI.RadLayoutControl()
         Me.CboAnalysts = New Telerik.WinControls.UI.RadDropDownList()
+        Me.TileBar1 = New DevExpress.XtraBars.Navigation.TileBar()
+        Me.TileBarGroup2 = New DevExpress.XtraBars.Navigation.TileBarGroup()
+        Me.TileBarItem1 = New DevExpress.XtraBars.Navigation.TileBarItem()
+        Me.TileBarItem2 = New DevExpress.XtraBars.Navigation.TileBarItem()
+        Me.TileControl1 = New DevExpress.XtraEditors.TileControl()
+        Me.TileGroup2 = New DevExpress.XtraEditors.TileGroup()
+        Me.TileItem1 = New DevExpress.XtraEditors.TileItem()
+        Me.TileItem2 = New DevExpress.XtraEditors.TileItem()
+        Me.TileGroup3 = New DevExpress.XtraEditors.TileGroup()
+        Me.TileItem3 = New DevExpress.XtraEditors.TileItem()
+        Me.TileItem4 = New DevExpress.XtraEditors.TileItem()
+        Me.TileItem5 = New DevExpress.XtraEditors.TileItem()
         Me.LayoutControlLabelItem1 = New Telerik.WinControls.UI.LayoutControlLabelItem()
         Me.LCTitle = New Telerik.WinControls.UI.LayoutControlLabelItem()
         Me.LayoutControlItem1 = New Telerik.WinControls.UI.LayoutControlItem()
         Me.LayoutControlItem2 = New Telerik.WinControls.UI.LayoutControlItem()
         Me.LayoutControlItem3 = New Telerik.WinControls.UI.LayoutControlItem()
-        Me.TileBar1 = New DevExpress.XtraBars.Navigation.TileBar()
         Me.LayoutControlItem4 = New Telerik.WinControls.UI.LayoutControlItem()
-        Me.TileBarGroup2 = New DevExpress.XtraBars.Navigation.TileBarGroup()
-        Me.TileBarItem1 = New DevExpress.XtraBars.Navigation.TileBarItem()
-        Me.TileBarItem2 = New DevExpress.XtraBars.Navigation.TileBarItem()
-        Me.TileControl1 = New DevExpress.XtraEditors.TileControl()
         Me.LayoutControlItem5 = New Telerik.WinControls.UI.LayoutControlItem()
-        Me.TileGroup2 = New DevExpress.XtraEditors.TileGroup()
-        Me.TileItem1 = New DevExpress.XtraEditors.TileItem()
-        Me.TileItem2 = New DevExpress.XtraEditors.TileItem()
         Me.BehaviorManager1 = New DevExpress.Utils.Behaviors.BehaviorManager(Me.components)
-        Me.TileGroup3 = New DevExpress.XtraEditors.TileGroup()
-        Me.TileItem3 = New DevExpress.XtraEditors.TileItem()
-        Me.TileItem4 = New DevExpress.XtraEditors.TileItem()
-        Me.TileItem5 = New DevExpress.XtraEditors.TileItem()
         CType(Me.RadTitleBar1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.RadGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.RadGridView1.MasterTemplate, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -273,40 +273,6 @@ Partial Class HoursSummary
         Me.CboAnalysts.TabIndex = 4
         Me.CboAnalysts.Text = "RadDropDownList1"
         '
-        'LayoutControlLabelItem1
-        '
-        Me.LayoutControlLabelItem1.Bounds = New System.Drawing.Rectangle(530, 184, 264, 43)
-        Me.LayoutControlLabelItem1.DrawText = False
-        Me.LayoutControlLabelItem1.Name = "LayoutControlLabelItem1"
-        '
-        'LCTitle
-        '
-        Me.LCTitle.Bounds = New System.Drawing.Rectangle(0, 152, 1059, 32)
-        Me.LCTitle.Name = "LCTitle"
-        Me.LCTitle.Text = "LayoutControlLabelItem2"
-        '
-        'LayoutControlItem1
-        '
-        Me.LayoutControlItem1.AssociatedControl = Me.RadGridView1
-        Me.LayoutControlItem1.Bounds = New System.Drawing.Rectangle(0, 227, 1059, 396)
-        Me.LayoutControlItem1.Name = "LayoutControlItem1"
-        Me.LayoutControlItem1.Text = "LayoutControlItem1"
-        '
-        'LayoutControlItem2
-        '
-        Me.LayoutControlItem2.AssociatedControl = Me.CboAnalysts
-        Me.LayoutControlItem2.Bounds = New System.Drawing.Rectangle(0, 184, 530, 43)
-        Me.LayoutControlItem2.ControlVerticalAlignment = Telerik.WinControls.UI.RadVerticalAlignment.Center
-        Me.LayoutControlItem2.Name = "LayoutControlItem2"
-        Me.LayoutControlItem2.Text = "LayoutControlItem2"
-        '
-        'LayoutControlItem3
-        '
-        Me.LayoutControlItem3.AssociatedControl = Me.RadButton1
-        Me.LayoutControlItem3.Bounds = New System.Drawing.Rectangle(794, 184, 265, 43)
-        Me.LayoutControlItem3.Name = "LayoutControlItem3"
-        Me.LayoutControlItem3.Text = "LayoutControlItem3"
-        '
         'TileBar1
         '
         Me.TileBar1.Dock = System.Windows.Forms.DockStyle.Top
@@ -319,13 +285,6 @@ Partial Class HoursSummary
         Me.TileBar1.Size = New System.Drawing.Size(140, 146)
         Me.TileBar1.TabIndex = 7
         Me.TileBar1.Text = "TileBar1"
-        '
-        'LayoutControlItem4
-        '
-        Me.LayoutControlItem4.AssociatedControl = Me.TileBar1
-        Me.LayoutControlItem4.Bounds = New System.Drawing.Rectangle(913, 0, 146, 152)
-        Me.LayoutControlItem4.Name = "LayoutControlItem4"
-        Me.LayoutControlItem4.Text = "LayoutControlItem4"
         '
         'TileBarGroup2
         '
@@ -374,13 +333,6 @@ Partial Class HoursSummary
         Me.TileControl1.TabIndex = 8
         Me.TileControl1.Text = "Élément"
         '
-        'LayoutControlItem5
-        '
-        Me.LayoutControlItem5.AssociatedControl = Me.TileControl1
-        Me.LayoutControlItem5.Bounds = New System.Drawing.Rectangle(0, 0, 913, 152)
-        Me.LayoutControlItem5.Name = "LayoutControlItem5"
-        Me.LayoutControlItem5.Text = "LayoutControlItem5"
-        '
         'TileGroup2
         '
         Me.TileGroup2.Items.Add(Me.TileItem1)
@@ -391,7 +343,6 @@ Partial Class HoursSummary
         'TileItem1
         '
         Me.TileItem1.AllowGlyphSkinning = DevExpress.Utils.DefaultBoolean.[True]
-        Me.TileItem1.CurrentFrameIndex = 1
         TileItemElement4.Appearance.Hovered.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         TileItemElement4.Appearance.Hovered.Options.UseFont = True
         TileItemElement4.Appearance.Hovered.Options.UseTextOptions = True
@@ -530,6 +481,54 @@ Partial Class HoursSummary
         Me.TileItem5.Id = 7
         Me.TileItem5.ItemSize = DevExpress.XtraEditors.TileItemSize.Wide
         Me.TileItem5.Name = "TileItem5"
+        '
+        'LayoutControlLabelItem1
+        '
+        Me.LayoutControlLabelItem1.Bounds = New System.Drawing.Rectangle(530, 184, 264, 43)
+        Me.LayoutControlLabelItem1.DrawText = False
+        Me.LayoutControlLabelItem1.Name = "LayoutControlLabelItem1"
+        '
+        'LCTitle
+        '
+        Me.LCTitle.Bounds = New System.Drawing.Rectangle(0, 152, 1059, 32)
+        Me.LCTitle.Name = "LCTitle"
+        Me.LCTitle.Text = "LayoutControlLabelItem2"
+        '
+        'LayoutControlItem1
+        '
+        Me.LayoutControlItem1.AssociatedControl = Me.RadGridView1
+        Me.LayoutControlItem1.Bounds = New System.Drawing.Rectangle(0, 227, 1059, 396)
+        Me.LayoutControlItem1.Name = "LayoutControlItem1"
+        Me.LayoutControlItem1.Text = "LayoutControlItem1"
+        '
+        'LayoutControlItem2
+        '
+        Me.LayoutControlItem2.AssociatedControl = Me.CboAnalysts
+        Me.LayoutControlItem2.Bounds = New System.Drawing.Rectangle(0, 184, 530, 43)
+        Me.LayoutControlItem2.ControlVerticalAlignment = Telerik.WinControls.UI.RadVerticalAlignment.Center
+        Me.LayoutControlItem2.Name = "LayoutControlItem2"
+        Me.LayoutControlItem2.Text = "LayoutControlItem2"
+        '
+        'LayoutControlItem3
+        '
+        Me.LayoutControlItem3.AssociatedControl = Me.RadButton1
+        Me.LayoutControlItem3.Bounds = New System.Drawing.Rectangle(794, 184, 265, 43)
+        Me.LayoutControlItem3.Name = "LayoutControlItem3"
+        Me.LayoutControlItem3.Text = "LayoutControlItem3"
+        '
+        'LayoutControlItem4
+        '
+        Me.LayoutControlItem4.AssociatedControl = Me.TileBar1
+        Me.LayoutControlItem4.Bounds = New System.Drawing.Rectangle(913, 0, 146, 152)
+        Me.LayoutControlItem4.Name = "LayoutControlItem4"
+        Me.LayoutControlItem4.Text = "LayoutControlItem4"
+        '
+        'LayoutControlItem5
+        '
+        Me.LayoutControlItem5.AssociatedControl = Me.TileControl1
+        Me.LayoutControlItem5.Bounds = New System.Drawing.Rectangle(0, 0, 913, 152)
+        Me.LayoutControlItem5.Name = "LayoutControlItem5"
+        Me.LayoutControlItem5.Text = "LayoutControlItem5"
         '
         'HoursSummary
         '

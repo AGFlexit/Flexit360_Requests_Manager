@@ -68,4 +68,8 @@ Public Class JIRADetails
 
 
     End Sub
+
+    Private Sub txtFLEXNb_TextChanged(sender As Object, e As EventArgs) 
+
+    End Sub
 End Class

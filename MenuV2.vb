@@ -1,5 +1,6 @@
 ﻿Imports DevExpress.XtraEditors
 Imports DevExpress.XtraEditors.Controls
+Imports DevExpress.XtraGrid.Columns
 Imports DevExpress.XtraGrid.Views.Base
 Imports DevExpress.XtraGrid.Views.Grid
 Imports DevExpress.XtraLayout
@@ -13,6 +14,7 @@ Imports System.Net
 Imports System.Text
 Imports System.Text.RegularExpressions
 Imports System.Threading
+Imports Telerik.Windows.Documents.Spreadsheet.Expressions.Functions
 
 Partial Public Class MenuV2
     Private CurrentUserID As Integer
@@ -193,39 +195,63 @@ Partial Public Class MenuV2
                 Me.StatusCbo.CancelUpdate()
                 GVIssues.SetFocusedRowCellValue("Status", OldValuectrl) ' = OldValuectrl 'Me.StatusCbo.Tag
             End If
+        ElseIf NewValuectrl = "Completed" Then
+            If GVIssues.GetFocusedRowCellValue("Category") = "Troubleshooting" Then
+                Me.StatusCbo.CancelUpdate()
+                GVIssues.SetFocusedRowCellValue("Status", OldValuectrl)
+                GVIssues.FocusedColumn = GVIssues.Columns("Category")
+                Exit Sub
+            End If
         Else
-            Exit Sub
+                Exit Sub
         End If
 
     End Sub
 
 
-    Private Sub GVIssues_ValidatingEditor(sender As Object, e As BaseContainerValidateEditorEventArgs) Handles GVIssues.ValidatingEditor
+    Private Sub GVIssues_ValidatingEditor(sender As Object, e As DevExpress.XtraEditors.Controls.BaseContainerValidateEditorEventArgs) Handles GVIssues.ValidatingEditor
 
-        Dim view As ColumnView = sender
-        Dim column As DevExpress.XtraGrid.Columns.GridColumn = If(TryCast(e, EditFormValidateEditorEventArgs)?.Column, view.FocusedColumn)
-        If column.Name <> "colStatus" Then Exit Sub
-        If NewValuectrl = "Completed - Defect Created" Or NewValuectrl = "Completed - Enhancement Requested" Then
-            If GVIssues.GetFocusedRowCellValue("FLEXS Ticket") Is String.Empty Or IsNothing(GVIssues.GetFocusedRowCellValue("FLEXS Ticket")) Or IsDBNull(GVIssues.GetFocusedRowCellValue("FLEXS Ticket")) Then
-                e.Valid = False
-            End If
-        End If
+        'Dim view As ColumnView = sender
+        'Dim column As DevExpress.XtraGrid.Columns.GridColumn = If(TryCast(e, EditFormValidateEditorEventArgs)?.Column, view.FocusedColumn)
+        'If column.Name <> "colStatus" Then Exit Sub
+        'If NewValuectrl = "Completed - Defect Created" Or NewValuectrl = "Completed - Enhancement Requested" Then
+        '    If GVIssues.GetFocusedRowCellValue("FLEXS Ticket") Is String.Empty Or IsNothing(GVIssues.GetFocusedRowCellValue("FLEXS Ticket")) Or IsDBNull(GVIssues.GetFocusedRowCellValue("FLEXS Ticket")) Then
+        '        ExcValid = "NoFLEXS"
+        '        e.Valid = False
+        '    End If
+        'ElseIf NewValuectrl = "Completed" Then
+        '    If GVIssues.GetFocusedRowCellValue("Category") = "Troubleshooting" Then
+        '        ExcValid = "CompAndTroubleshoot"
+        '        e.Valid = False
+        '        e.ErrorText = "A request cannot be marked as Completed while category is Troubleshooting."
+        '    End If
+        'End If
         'If (Convert.ToInt32(e.Value) < 0) Or (Convert.ToInt32(e.Value) > 1000000) Then
         '    e.Valid = False
         'End If
     End Sub
 
+    Dim ExcValid As String = ""
 
-    Private Sub GVIssues_InvalidValueException(sender As Object, e As InvalidValueExceptionEventArgs) Handles GVIssues.InvalidValueException
+    Private Sub GVIssues_InvalidValueException(sender As Object, e As DevExpress.XtraEditors.Controls.InvalidValueExceptionEventArgs) Handles GVIssues.InvalidValueException
         Dim view As ColumnView = sender
         If view Is Nothing Then
             Return
         End If
         'e.ExceptionMode = ExceptionMode.DisplayError
 
-        e.ExceptionMode = ExceptionMode.Ignore
-        e.WindowCaption = "No FLEXS number!"
-        e.ErrorText = "The FLEXS ticket field cannot be blank when using this status!"
+        e.ExceptionMode = ExceptionMode.DisplayError 'Ignore
+        Select Case ExcValid
+            Case "NoFLEXS"
+                e.WindowCaption = "FLEXS required!"
+                e.ErrorText = "The FLEXS ticket field cannot be left blank when using this status!"
+                ExcValid = ""
+            Case "CompAndTroubleshoot"
+                e.WindowCaption = "Completed request cannot be categorized as Troubleshooting"
+                e.ErrorText = "Update the category with the appropriate value and try again"
+                ExcValid = ""
+        End Select
+
     End Sub
 
     'XtraMessageBox.Show("The FLEXS ticket field cannot be blank when using this status!", "No FLEXS number!", MessageBoxButtons.OK, MessageBoxIcon.Error)
@@ -254,7 +280,7 @@ Partial Public Class MenuV2
             Exit Sub
         End Try
         Me.StatBarUPDSuccess.Visibility = DevExpress.XtraBars.BarItemVisibility.Always
-        MsgBox("Successfully updated the record!", MsgBoxStyle.Information, "Success")
+        'MsgBox("Successfully updated the record!", MsgBoxStyle.Information, "Success")
 
 
 
@@ -279,13 +305,13 @@ Partial Public Class MenuV2
     Private NewCommentIssueID As Integer = Nothing
 
     Private Sub GVIssues_EditFormHidden(sender As Object, e As EditFormHiddenEventArgs) Handles GVIssues.EditFormHidden
-        wait(5)
+        'wait(5)
 
-        If Me.StatBarUPDSuccess.Visibility = DevExpress.XtraBars.BarItemVisibility.Always Then
-            Me.StatBarUPDSuccess.Visibility = DevExpress.XtraBars.BarItemVisibility.Never
-        ElseIf Me.StatBarUPDFail.Visibility = DevExpress.XtraBars.BarItemVisibility.Always Then
-            Me.StatBarUPDFail.Visibility = DevExpress.XtraBars.BarItemVisibility.Never
-        End If
+        'If Me.StatBarUPDSuccess.Visibility = DevExpress.XtraBars.BarItemVisibility.Always Then
+        '    Me.StatBarUPDSuccess.Visibility = DevExpress.XtraBars.BarItemVisibility.Never
+        'ElseIf Me.StatBarUPDFail.Visibility = DevExpress.XtraBars.BarItemVisibility.Always Then
+        '    Me.StatBarUPDFail.Visibility = DevExpress.XtraBars.BarItemVisibility.Never
+        'End If
     End Sub
 
     Private Sub SimpleButton1_Click(sender As Object, e As EventArgs) Handles SimpleButton1.Click
@@ -354,7 +380,7 @@ Partial Public Class MenuV2
 
     Private Sub LoadDataAsync()
 
-        Telerik.WinControls.UI.RadOverlayManager.Show(navBarControl)
+        'Telerik.WinControls.UI.RadOverlayManager.Show(navBarControl)
         Me.GVIssues.ShowLoadingPanel()
 
         ' Start a new thread to load the data asynchronously
@@ -378,23 +404,25 @@ Partial Public Class MenuV2
                                                                   'MsgBox("Starting to merge!")
                                                                   Me.ProdSupport_DataSet1.Merge(newDataSet)
                                                                   'Me.Enabled = True
-                                                                  Telerik.WinControls.UI.RadOverlayManager.Close()
+                                                                  'Telerik.WinControls.UI.RadOverlayManager.Close()
                                                                   Me.GVIssues.HideLoadingPanel()
-                                                                  'SplashScreenManager1.CloseWaitForm()
-                                                                  Dim conn As New OleDbConnection(My.Settings.DB_Connection)
-                                                                  Dim cmd As New OleDbCommand("SELECT ID, [Contact Name] FROM [Contacts Extended] WHERE TELUS_ID = @username", conn)
-                                                                  cmd.Parameters.AddWithValue("@username", UCase(Environment.UserName))
+                                                                  If IsNothing(Me.Tag) Then
+                                                                      'SplashScreenManager1.CloseWaitForm()
+                                                                      Dim conn As New OleDbConnection(My.Settings.DB_Connection)
+                                                                      Dim cmd As New OleDbCommand("SELECT ID, [Contact Name] FROM [Contacts Extended] WHERE TELUS_ID = @username", conn)
+                                                                      cmd.Parameters.AddWithValue("@username", UCase(Environment.UserName))
 
-                                                                  Using conn
-                                                                      conn.Open()
-                                                                      'Me.Tag = cmd.ExecuteScalar.ToString
-                                                                      Dim reader As OleDbDataReader = cmd.ExecuteReader()
-                                                                      If reader.Read() Then
-                                                                          CurrentUserID = CInt(reader("ID").ToString())
-                                                                          Me.Tag = reader("Contact Name").ToString()
-                                                                      End If
-                                                                  End Using
-                                                                  conn.Close()
+                                                                      Using conn
+                                                                          conn.Open()
+                                                                          'Me.Tag = cmd.ExecuteScalar.ToString
+                                                                          Dim reader As OleDbDataReader = cmd.ExecuteReader()
+                                                                          If reader.Read() Then
+                                                                              CurrentUserID = CInt(reader("ID").ToString())
+                                                                              Me.Tag = reader("Contact Name").ToString()
+                                                                          End If
+                                                                      End Using
+                                                                      conn.Close()
+                                                                  End If
                                                               End Sub))
                                      End Sub)
 
@@ -443,6 +471,33 @@ Partial Public Class MenuV2
 
         ElseIf fillMethod = "FillHours" Then
             Me.Tbl_HoursWorkedLogTableAdapter_Async.Fill(newDataSet.tbl_HoursWorkedLog)
+        ElseIf fillMethod = "AddClient" Then
+            Dim conn As New OleDbConnection(My.Settings.DB_Connection)
+            Dim cmd As New OleDbCommand(QryUpdHoursComments, conn)
+
+            Using conn
+                conn.Open()
+                If CInt(cmd.ExecuteNonQuery) > 0 Then
+                    MsgBox("Client created!", , "Success!")
+                Else
+                    MsgBox("Client failed to save!", "Error!")
+                End If
+            End Using
+            Me.ClientsTableAdapter_Async.Fill(newDataSet.Clients)
+        ElseIf fillMethod = "AddContact" Then
+            Dim conn As New OleDbConnection(My.Settings.DB_Connection)
+            Dim cmd As New OleDbCommand(QryUpdHoursComments, conn)
+
+            Using conn
+                conn.Open()
+                If CInt(cmd.ExecuteNonQuery) > 0 Then
+                    MsgBox("Contact created!", , "Success!")
+                Else
+                    MsgBox("Contact failed to save!", "Error!")
+                End If
+            End Using
+            Me.Contacts_ExtendedTableAdapter_Async.Fill(newDataSet.Contacts_Extended)
+            Me.AnalystsTableAdapter_Async.Fill(newDataSet.Analysts)
         Else
             Exit Function
         End If
@@ -504,8 +559,18 @@ Partial Public Class MenuV2
                     IssuesTableAdapter1.FillByAll(ProdSupport_DataSet1.Issues)
                     issuesBindingSource.Filter = "Status NOT IN ('Escalated - Production Script', 'Escalated to IT', 'Escalated to Product', 'Future Work', 'In Progress', 'Not Started', 'On Hold (Client)', 'Projects', 'Recurring Task','AODA - Confirmed Defect','AODA - Enhancement','Confirmed Defect','Enhancement - Escalated to Product','AODA - Confirmed Defect Fixed','AODA - Enhancement Released','Confirmed Defect - Fixed','Enhancement - Released')"
                 Case Me.NavBarAllRequests.Caption 'All Requests
-                    IssuesTableAdapter1.FillByAll(ProdSupport_DataSet1.Issues)
-                    issuesBindingSource.RemoveFilter()
+                    Dim Choice As DialogResult
+                    Choice = MessageBox.Show("Retrieving all records will take some time!" & vbCrLf & "Are you sure you want to continue?", "Long operation warning", MessageBoxButtons.YesNo, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button2, MessageBoxOptions.DefaultDesktopOnly)
+                    If Choice = DialogResult.Yes Then
+                        UseWaitCursor = True
+                        Me.GVIssues.LoadingPanelVisible = True
+                        Me.GVIssues.ShowLoadingPanel()
+                        IssuesTableAdapter1.FillByAll(ProdSupport_DataSet1.Issues)
+                        issuesBindingSource.RemoveFilter()
+                        Me.GVIssues.HideLoadingPanel()
+                        Me.GVIssues.LoadingPanelVisible = False
+                        UseWaitCursor = False
+                    End If
                 Case Me.NavBarAssignedMe.Caption 'Assigned To Me
                     IssuesTableAdapter1.FillByAnalyst(ProdSupport_DataSet1.Issues, CurrentUserID)
                     issuesBindingSource.Filter = "Status IN ('Escalated - Production Script', 'Escalated to IT', 'Escalated to Product', 'Future Work', 'In Progress', 'Not Started', 'On Hold (Client)', 'Projects', 'Recurring Task') AND [Assigned To] = " & CurrentUserID
@@ -547,6 +612,12 @@ Partial Public Class MenuV2
                                                                   ElseIf FillWhat = "FillHours" Then
 
                                                                       Me.ProdSupport_DataSet1.Merge(newDataSet)
+                                                                  ElseIf FillWhat = "AddClient" Then
+
+                                                                      Me.ProdSupport_DataSet1.Merge(newDataSet)
+                                                                  ElseIf FillWhat = "AddContact" Then
+
+                                                                      Me.ProdSupport_DataSet1.Merge(newDataSet)
                                                                   Else
                                                                       FillData_NavBar(FillWhat)
                                                                   End If
@@ -568,7 +639,7 @@ Partial Public Class MenuV2
         Dim sqlQuery As String = "INSERT INTO tbl_HoursWorkedLog (Issue_ID, Hours_Worked_Date, Hours_Worked_Amt, Employee, Billable, Details) VALUES (?, ?, ?, ?, ?, ?)"
 
         Using command As New OleDb.OleDbCommand(sqlQuery, connection)
-            command.Parameters.Add(New OleDb.OleDbParameter("Issue_ID", Convert.ToInt32(issueID)))
+            command.Parameters.Add(New OleDb.OleDbParameter("Issue_ID", CInt(issueID))) 'Convert.ToInt32(issueID)))
             command.Parameters.Add(New OleDb.OleDbParameter("Hours_Worked_Date", OleDb.OleDbType.Date))
             command.Parameters("Hours_Worked_Date").Value = hoursWorked.WorkDate
             command.Parameters.Add(New OleDb.OleDbParameter("Hours_Worked_Amt", CDec(hoursWorked.Quantity).ToString("N", nfi)))
@@ -590,7 +661,7 @@ Partial Public Class MenuV2
         Dim sqlQuery As String = "INSERT INTO tbl_HoursWorkedLog (Issue_ID, Hours_Worked_Date, Hours_Worked_Amt, Employee, Billable, Details) VALUES (?, ?, ?, ?, ?, ?)"
 
         Using command As New OleDb.OleDbCommand(sqlQuery, connection)
-            command.Parameters.Add(New OleDb.OleDbParameter("Issue_ID", Convert.ToInt32(issueID)))
+            command.Parameters.Add(New OleDb.OleDbParameter("Issue_ID", CInt(issueID))) 'Convert.ToInt32(issueID)))
             command.Parameters.Add(New OleDb.OleDbParameter("Hours_Worked_Date", OleDb.OleDbType.Date))
             command.Parameters("Hours_Worked_Date").Value = currentDate
             command.Parameters.Add(New OleDb.OleDbParameter("Hours_Worked_Amt", CDec(quantity).ToString("N", nfi)))
@@ -730,7 +801,7 @@ Partial Public Class MenuV2
                 Dim Reporter As String = issue("fields")("reporter")("displayName").ToString()
                 Dim Created As DateTime = CDate(issue("fields")("created").ToString())
                 Dim Updated As DateTime = CDate(issue("fields")("updated").ToString())
-                Dim Labels As String = Trim(Replace(Replace(Replace(Replace(Replace(issue("fields")("labels").ToString(), """", String.Empty), "[" & vbCrLf, String.Empty), vbCrLf & "]", String.Empty), vbCrLf, String.Empty), "  ", " "))
+                Dim Labels As String = Strings.Trim(Replace(Replace(Replace(Replace(Replace(issue("fields")("labels").ToString(), """", String.Empty), "[" & vbCrLf, String.Empty), vbCrLf & "]", String.Empty), vbCrLf, String.Empty), "  ", " "))
                 Dim Carriers As String = String.Empty
                 If issue("fields")("customfield_12704").Count <> 0 Then
                     For i = 0 To issue("fields")("customfield_12704").Count - 1
@@ -741,7 +812,7 @@ Partial Public Class MenuV2
                         End If
                     Next
                 End If
-                Dim FLEXSClients As String = Trim(Replace(Replace(Replace(Replace(Replace(issue("fields")("customfield_12705").ToString(), """", String.Empty), "[" & vbCrLf, String.Empty), vbCrLf & "]", String.Empty), vbCrLf, String.Empty), "  ", " "))
+                Dim FLEXSClients As String = Strings.Trim(Replace(Replace(Replace(Replace(Replace(issue("fields")("customfield_12705").ToString(), """", String.Empty), "[" & vbCrLf, String.Empty), vbCrLf & "]", String.Empty), vbCrLf, String.Empty), "  ", " "))
 
                 Dim EpicName As String = String.Empty
                 Dim EpicLink As String = String.Empty
@@ -906,14 +977,25 @@ Partial Public Class MenuV2
 
 #End Region
 
-    Private Sub GVIssues_CalcRowHeight(sender As Object, e As RowHeightEventArgs) Handles GVIssues.CalcRowHeight
-    End Sub
+    'Private Sub GVIssues_CalcRowHeight(sender As Object, e As RowHeightEventArgs) Handles GVIssues.CalcRowHeight
+    'End Sub
 
     Private Sub repoDateEdit_TodayClick(sender As Object, e As EventArgs) Handles repoDateEdit.TodayClick
-        If currentEditor IsNot Nothing Then
-            currentEditor.DateTime = DateTime.Now
-            currentEditor.RefreshEditValue()
-        End If
+        'If currentEditor IsNot Nothing Then
+        'currentEditor.DateTime = DateTime.Now
+        'currentEditor.EditValue = Now
+
+        'currentEditor.RefreshEditValue()
+
+        'currentEditor = TryCast(sender, DateEdit)
+
+        'repoDateEdit.NullDateCalendarValue = Now
+        'If IsDBNull(currentEditor.EditValue) Then
+
+        currentEditor.EditValue = DateTime.Now
+        'End If
+
+        'End If
     End Sub
 
     Private Sub GVIssues_InitNewRow(sender As Object, e As InitNewRowEventArgs) Handles GVIssues.InitNewRow
@@ -923,13 +1005,13 @@ Partial Public Class MenuV2
         view.SetRowCellValue(e.RowHandle, view.Columns("Date Received"), Now())
     End Sub
 
-    Private Sub repoDateEdit_BeforePopup(sender As Object, e As EventArgs) Handles repoDateEdit.BeforePopup
-        currentEditor = TryCast(sender, DateEdit)
-    End Sub
+    'Private Sub repoDateEdit_BeforePopup(sender As Object, e As EventArgs) Handles repoDateEdit.BeforePopup
+    '    'currentEditor = TryCast(sender, DateEdit)
+    'End Sub
 
     Dim currentEditor As DateEdit
-    Private Sub GVIssues_ShownEditor(sender As Object, e As EventArgs) Handles GVIssues.ShownEditor
-    End Sub
+    'Private Sub GVIssues_ShownEditor(sender As Object, e As EventArgs) Handles GVIssues.ShownEditor
+    'End Sub
 
     Public Class AddHoursUserControl
         Inherits DevExpress.XtraEditors.XtraUserControl
@@ -1179,9 +1261,43 @@ Partial Public Class MenuV2
             lc.GetItemByControl(meComment).Control.Focus()
         End Sub
 
+
         Public ReadOnly Property Comment() As String
             Get
                 Return meComment.Text
+            End Get
+        End Property
+    End Class
+
+    Public Class AddClientUserControl
+        Inherits DevExpress.XtraEditors.XtraUserControl
+
+        Private meClient As TextEdit
+        Private meClientID As TextEdit
+
+        Public Sub New()
+            Dim lc As New DevExpress.XtraLayout.LayoutControl()
+            lc.Dock = DockStyle.Fill
+            Me.meClient = New TextEdit
+            Me.meClientID = New TextEdit
+            lc.AddItem("Client Name", meClient).TextVisible = True
+            lc.AddItem("Client ID", meClientID).TextVisible = True
+            Me.Controls.Add(lc)
+            Me.Height = 85
+            Me.Dock = DockStyle.Top
+            Me.meClient.Focus()
+            lc.GetItemByControl(meClient).Control.Focus()
+        End Sub
+
+
+        Public ReadOnly Property Client() As String
+            Get
+                Return meClient.Text
+            End Get
+        End Property
+        Public ReadOnly Property ClientID() As String
+            Get
+                Return meClientID.Text
             End Get
         End Property
     End Class
@@ -1190,9 +1306,9 @@ Partial Public Class MenuV2
 
     End Sub
 
-    Private Sub GVIssues_EditFormPrepared(sender As Object, e As EditFormPreparedEventArgs) Handles GVIssues.EditFormPrepared
-        'Me.repoDateEdit.TodayDate = CDate("08/16/2023") 'Now
-    End Sub
+    'Private Sub GVIssues_EditFormPrepared(sender As Object, e As EditFormPreparedEventArgs) Handles GVIssues.EditFormPrepared
+    '    'Me.repoDateEdit.TodayDate = CDate("08/16/2023") 'Now
+    'End Sub
 
     Private Sub BarBtnAddHoursFly_ItemClick(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles BarBtnAddHoursFly.ItemClick
         Dim frmHoursEdit As New HoursEdit
@@ -1202,5 +1318,92 @@ Partial Public Class MenuV2
     Private Sub ribbonStatusBar_Click(sender As Object, e As EventArgs) Handles ribbonStatusBar.Click
 
     End Sub
+
+    Private Sub GVIssues_FocusedRowChanged(sender As Object, e As FocusedRowChangedEventArgs) Handles GVIssues.FocusedRowChanged
+        If Me.StatBarUPDSuccess.Visibility = DevExpress.XtraBars.BarItemVisibility.Always Then
+            Me.StatBarUPDSuccess.Visibility = DevExpress.XtraBars.BarItemVisibility.Never
+        ElseIf Me.StatBarUPDFail.Visibility = DevExpress.XtraBars.BarItemVisibility.Always Then
+            Me.StatBarUPDFail.Visibility = DevExpress.XtraBars.BarItemVisibility.Never
+        End If
+    End Sub
+
+    Private Sub repoDateEdit_QueryPopUp(sender As Object, e As CancelEventArgs) Handles repoDateEdit.QueryPopUp
+
+        currentEditor = TryCast(sender, DateEdit)
+
+        repoDateEdit.NullDateCalendarValue = Now
+        If IsDBNull(currentEditor.EditValue) Then
+            currentEditor.EditValue = DateTime.Now
+        End If
+        'repoDateEdit.edit
+    End Sub
+
+    'Private Sub repoDateEdit_Popup(sender As Object, e As EventArgs) Handles repoDateEdit.Popup
+    '    'If repoDateEdit.ed Then
+    'End Sub
+
+    'Private Sub repoDateEdit_ParseEditValue(sender As Object, e As ConvertEditValueEventArgs) Handles repoDateEdit.ParseEditValue
+
+    'End Sub
+
+    Private Sub GVIssues_InvalidRowException(sender As Object, e As InvalidRowExceptionEventArgs) Handles GVIssues.InvalidRowException
+        e.ExceptionMode = ExceptionMode.DisplayError 'Ignore
+        Select Case ExcValid
+            Case "NoFLEXS"
+                e.WindowCaption = "FLEXS required!"
+                e.ErrorText = "The FLEXS ticket field cannot be left blank when using this status!"
+                ExcValid = ""
+            Case "CompAndTroubleshoot"
+                e.WindowCaption = "Completed request cannot be categorized as Troubleshooting"
+                e.ErrorText = "Update the category with the appropriate value and try again"
+                ExcValid = ""
+        End Select
+    End Sub
+
+    Private Sub GVIssues_ValidateRow(sender As Object, e As ValidateRowEventArgs) Handles GVIssues.ValidateRow
+        Dim View As GridView = CType(sender, GridView)
+        Dim reqStatus As GridColumn = View.Columns("Status")
+        Dim reqCat As GridColumn = View.Columns("Category")
+        If View.GetRowCellValue(e.RowHandle, reqStatus).ToString = "Completed" And View.GetRowCellValue(e.RowHandle, reqCat).ToString = "Troubleshooting" Then
+            e.Valid = False
+            ExcValid = "CompAndTroubleshoot"
+            'Set errors with specific descriptions for the columns
+            'View.SetColumnError(reqStatus, "The value must be greater than Units On Order")
+            View.SetColumnError(reqCat, "Completed request cannot have a Troubleshooting category.")
+            e.ErrorText = "Completed request cannot have a Troubleshooting category."
+        End If
+    End Sub
+
+    Private Sub BarButtonItem2_ItemClick(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles BarButtonItem2.ItemClick
+        Dim frmNewJIRA As New CreateFLEX
+
+
+        frmNewJIRA.Show()
+        frmNewJIRA.TxtClientID.EditValue = GVIssues.GetFocusedRowCellValue("Client")
+        frmNewJIRA.CboClientName.EditValue = GVIssues.GetFocusedRowCellDisplayText("Client")
+    End Sub
+
+    Private Sub BarButtonItem3_ItemClick(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles BarButtonItem3.ItemClick
+        Dim frmDashBrd As New TestDashBoard
+        frmDashBrd.Show()
+    End Sub
+
+    Private Sub BarBtnNewClient_ItemClick(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles BarBtnNewClient.ItemClick
+        Dim myControl As New AddClientUserControl()
+        If XtraDialog.Show(myControl, "Enter Client Names and Flexit ID", MessageBoxButtons.OKCancel) = System.Windows.Forms.DialogResult.OK Then
+            QryUpdHoursComments = "INSERT INTO Clients ([Client Name], IDFlexit) VALUES ('" & Replace(myControl.Client, "'", "''") & "', " & myControl.ClientID & ")"
+            LoadDataAsync_NavBar("AddClient")
+        End If
+    End Sub
+
+    Private Sub BarBtnRefresh_ItemClick(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles BarBtnRefresh.ItemClick
+        LoadDataAsync()
+    End Sub
+
+    Private Sub BtnAddContactConfirm_Click(sender As Object, e As EventArgs) Handles BtnAddContactConfirm.Click
+        QryUpdHoursComments = "INSERT INTO Contacts ([First Name], [Last Name], [E-mail Address], TELUS_ID) VALUES (" & If(String.IsNullOrEmpty(Me.TxtAddContactFName.Text), "NULL", "'" & Replace(Me.TxtAddContactFName.Text, "'", "''") & "'") & ", " & If(String.IsNullOrEmpty(Me.TxtAddContactLName.Text), "NULL", "'" & Replace(Me.TxtAddContactLName.Text, "'", "''") & "'") & ", '" & Me.TxtAddContactEmail.Text & "' , " & If(String.IsNullOrEmpty(Me.TxtAddContactTID.Text), "NULL", "'" & Me.TxtAddContactTID.Text & "'") & ")"
+        LoadDataAsync_NavBar("AddContact")
+    End Sub
+
 End Class
 

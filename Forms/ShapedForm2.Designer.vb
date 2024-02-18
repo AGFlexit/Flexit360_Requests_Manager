@@ -26,6 +26,151 @@ Partial Class ShapedForm2
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(ShapedForm2))
         Dim AppointmentMappingInfo1 As Telerik.WinControls.UI.AppointmentMappingInfo = New Telerik.WinControls.UI.AppointmentMappingInfo()
         Dim ResourceMappingInfo1 As Telerik.WinControls.UI.ResourceMappingInfo = New Telerik.WinControls.UI.ResourceMappingInfo()
+        Dim Access2007ConnectionParameters1 As DevExpress.DataAccess.ConnectionParameters.Access2007ConnectionParameters = New DevExpress.DataAccess.ConnectionParameters.Access2007ConnectionParameters()
+        Dim SelectQuery1 As DevExpress.DataAccess.Sql.SelectQuery = New DevExpress.DataAccess.Sql.SelectQuery()
+        Dim Column1 As DevExpress.DataAccess.Sql.Column = New DevExpress.DataAccess.Sql.Column()
+        Dim ColumnExpression1 As DevExpress.DataAccess.Sql.ColumnExpression = New DevExpress.DataAccess.Sql.ColumnExpression()
+        Dim Table1 As DevExpress.DataAccess.Sql.Table = New DevExpress.DataAccess.Sql.Table()
+        Dim Column2 As DevExpress.DataAccess.Sql.Column = New DevExpress.DataAccess.Sql.Column()
+        Dim ColumnExpression2 As DevExpress.DataAccess.Sql.ColumnExpression = New DevExpress.DataAccess.Sql.ColumnExpression()
+        Dim Column3 As DevExpress.DataAccess.Sql.Column = New DevExpress.DataAccess.Sql.Column()
+        Dim ColumnExpression3 As DevExpress.DataAccess.Sql.ColumnExpression = New DevExpress.DataAccess.Sql.ColumnExpression()
+        Dim Table2 As DevExpress.DataAccess.Sql.Table = New DevExpress.DataAccess.Sql.Table()
+        Dim Column4 As DevExpress.DataAccess.Sql.Column = New DevExpress.DataAccess.Sql.Column()
+        Dim ColumnExpression4 As DevExpress.DataAccess.Sql.ColumnExpression = New DevExpress.DataAccess.Sql.ColumnExpression()
+        Dim Table3 As DevExpress.DataAccess.Sql.Table = New DevExpress.DataAccess.Sql.Table()
+        Dim Column5 As DevExpress.DataAccess.Sql.Column = New DevExpress.DataAccess.Sql.Column()
+        Dim ColumnExpression5 As DevExpress.DataAccess.Sql.ColumnExpression = New DevExpress.DataAccess.Sql.ColumnExpression()
+        Dim Column6 As DevExpress.DataAccess.Sql.Column = New DevExpress.DataAccess.Sql.Column()
+        Dim ColumnExpression6 As DevExpress.DataAccess.Sql.ColumnExpression = New DevExpress.DataAccess.Sql.ColumnExpression()
+        Dim Table4 As DevExpress.DataAccess.Sql.Table = New DevExpress.DataAccess.Sql.Table()
+        Dim Column7 As DevExpress.DataAccess.Sql.Column = New DevExpress.DataAccess.Sql.Column()
+        Dim ColumnExpression7 As DevExpress.DataAccess.Sql.ColumnExpression = New DevExpress.DataAccess.Sql.ColumnExpression()
+        Dim Column8 As DevExpress.DataAccess.Sql.Column = New DevExpress.DataAccess.Sql.Column()
+        Dim ColumnExpression8 As DevExpress.DataAccess.Sql.ColumnExpression = New DevExpress.DataAccess.Sql.ColumnExpression()
+        Dim Column9 As DevExpress.DataAccess.Sql.Column = New DevExpress.DataAccess.Sql.Column()
+        Dim ColumnExpression9 As DevExpress.DataAccess.Sql.ColumnExpression = New DevExpress.DataAccess.Sql.ColumnExpression()
+        Dim Column10 As DevExpress.DataAccess.Sql.Column = New DevExpress.DataAccess.Sql.Column()
+        Dim ColumnExpression10 As DevExpress.DataAccess.Sql.ColumnExpression = New DevExpress.DataAccess.Sql.ColumnExpression()
+        Dim Table5 As DevExpress.DataAccess.Sql.Table = New DevExpress.DataAccess.Sql.Table()
+        Dim Column11 As DevExpress.DataAccess.Sql.Column = New DevExpress.DataAccess.Sql.Column()
+        Dim ColumnExpression11 As DevExpress.DataAccess.Sql.ColumnExpression = New DevExpress.DataAccess.Sql.ColumnExpression()
+        Dim Column12 As DevExpress.DataAccess.Sql.Column = New DevExpress.DataAccess.Sql.Column()
+        Dim ColumnExpression12 As DevExpress.DataAccess.Sql.ColumnExpression = New DevExpress.DataAccess.Sql.ColumnExpression()
+        Dim Column13 As DevExpress.DataAccess.Sql.Column = New DevExpress.DataAccess.Sql.Column()
+        Dim ColumnExpression13 As DevExpress.DataAccess.Sql.ColumnExpression = New DevExpress.DataAccess.Sql.ColumnExpression()
+        Dim Column14 As DevExpress.DataAccess.Sql.Column = New DevExpress.DataAccess.Sql.Column()
+        Dim ColumnExpression14 As DevExpress.DataAccess.Sql.ColumnExpression = New DevExpress.DataAccess.Sql.ColumnExpression()
+        Dim Join1 As DevExpress.DataAccess.Sql.Join = New DevExpress.DataAccess.Sql.Join()
+        Dim RelationColumnInfo1 As DevExpress.DataAccess.Sql.RelationColumnInfo = New DevExpress.DataAccess.Sql.RelationColumnInfo()
+        Dim Join2 As DevExpress.DataAccess.Sql.Join = New DevExpress.DataAccess.Sql.Join()
+        Dim RelationColumnInfo2 As DevExpress.DataAccess.Sql.RelationColumnInfo = New DevExpress.DataAccess.Sql.RelationColumnInfo()
+        Dim Join3 As DevExpress.DataAccess.Sql.Join = New DevExpress.DataAccess.Sql.Join()
+        Dim RelationColumnInfo3 As DevExpress.DataAccess.Sql.RelationColumnInfo = New DevExpress.DataAccess.Sql.RelationColumnInfo()
+        Dim Join4 As DevExpress.DataAccess.Sql.Join = New DevExpress.DataAccess.Sql.Join()
+        Dim RelationColumnInfo4 As DevExpress.DataAccess.Sql.RelationColumnInfo = New DevExpress.DataAccess.Sql.RelationColumnInfo()
+        Dim Sorting1 As DevExpress.DataAccess.Sql.Sorting = New DevExpress.DataAccess.Sql.Sorting()
+        Dim ColumnExpression15 As DevExpress.DataAccess.Sql.ColumnExpression = New DevExpress.DataAccess.Sql.ColumnExpression()
+        Dim UriJsonSource1 As DevExpress.DataAccess.Json.UriJsonSource = New DevExpress.DataAccess.Json.UriJsonSource()
+        Dim JsonSchemaNode1 As DevExpress.DataAccess.Json.JsonSchemaNode = New DevExpress.DataAccess.Json.JsonSchemaNode("root", True)
+        Dim JsonSchemaNode2 As DevExpress.DataAccess.Json.JsonSchemaNode = New DevExpress.DataAccess.Json.JsonSchemaNode("clients", True)
+        Dim JsonSchemaNode3 As DevExpress.DataAccess.Json.JsonSchemaNode = New DevExpress.DataAccess.Json.JsonSchemaNode("Canada Life", True)
+        Dim JsonSchemaNode4 As DevExpress.DataAccess.Json.JsonSchemaNode = New DevExpress.DataAccess.Json.JsonSchemaNode("language", True, DevExpress.DataAccess.Json.JsonNodeType.[Property], GetType(String))
+        Dim JsonSchemaNode5 As DevExpress.DataAccess.Json.JsonSchemaNode = New DevExpress.DataAccess.Json.JsonSchemaNode("recipients", True)
+        Dim JsonSchemaNode6 As DevExpress.DataAccess.Json.JsonSchemaNode = New DevExpress.DataAccess.Json.JsonSchemaNode("to", True, DevExpress.DataAccess.Json.JsonNodeType.Array, GetType(String()))
+        Dim JsonSchemaNode7 As DevExpress.DataAccess.Json.JsonSchemaNode = New DevExpress.DataAccess.Json.JsonSchemaNode("cc", True, DevExpress.DataAccess.Json.JsonNodeType.Array, GetType(String()))
+        Dim JsonSchemaNode8 As DevExpress.DataAccess.Json.JsonSchemaNode = New DevExpress.DataAccess.Json.JsonSchemaNode("schedule", True, DevExpress.DataAccess.Json.JsonNodeType.Array)
+        Dim JsonSchemaNode9 As DevExpress.DataAccess.Json.JsonSchemaNode = New DevExpress.DataAccess.Json.JsonSchemaNode("weekday", True, DevExpress.DataAccess.Json.JsonNodeType.[Property], GetType(String))
+        Dim JsonSchemaNode10 As DevExpress.DataAccess.Json.JsonSchemaNode = New DevExpress.DataAccess.Json.JsonSchemaNode("time", True, DevExpress.DataAccess.Json.JsonNodeType.[Property], GetType(String))
+        Dim JsonSchemaNode11 As DevExpress.DataAccess.Json.JsonSchemaNode = New DevExpress.DataAccess.Json.JsonSchemaNode("customization", True)
+        Dim JsonSchemaNode12 As DevExpress.DataAccess.Json.JsonSchemaNode = New DevExpress.DataAccess.Json.JsonSchemaNode("customized", True, DevExpress.DataAccess.Json.JsonNodeType.[Property], GetType(String))
+        Dim JsonSchemaNode13 As DevExpress.DataAccess.Json.JsonSchemaNode = New DevExpress.DataAccess.Json.JsonSchemaNode("customsubject", True, DevExpress.DataAccess.Json.JsonNodeType.[Property], GetType(String))
+        Dim JsonSchemaNode14 As DevExpress.DataAccess.Json.JsonSchemaNode = New DevExpress.DataAccess.Json.JsonSchemaNode("custombody", True, DevExpress.DataAccess.Json.JsonNodeType.[Property], GetType(String))
+        Dim JsonSchemaNode15 As DevExpress.DataAccess.Json.JsonSchemaNode = New DevExpress.DataAccess.Json.JsonSchemaNode("Desjardins", True)
+        Dim JsonSchemaNode16 As DevExpress.DataAccess.Json.JsonSchemaNode = New DevExpress.DataAccess.Json.JsonSchemaNode("language", True, DevExpress.DataAccess.Json.JsonNodeType.[Property], GetType(String))
+        Dim JsonSchemaNode17 As DevExpress.DataAccess.Json.JsonSchemaNode = New DevExpress.DataAccess.Json.JsonSchemaNode("recipients", True)
+        Dim JsonSchemaNode18 As DevExpress.DataAccess.Json.JsonSchemaNode = New DevExpress.DataAccess.Json.JsonSchemaNode("to", True, DevExpress.DataAccess.Json.JsonNodeType.Array, GetType(String()))
+        Dim JsonSchemaNode19 As DevExpress.DataAccess.Json.JsonSchemaNode = New DevExpress.DataAccess.Json.JsonSchemaNode("cc", True, DevExpress.DataAccess.Json.JsonNodeType.Array, GetType(String()))
+        Dim JsonSchemaNode20 As DevExpress.DataAccess.Json.JsonSchemaNode = New DevExpress.DataAccess.Json.JsonSchemaNode("schedule", True, DevExpress.DataAccess.Json.JsonNodeType.Array)
+        Dim JsonSchemaNode21 As DevExpress.DataAccess.Json.JsonSchemaNode = New DevExpress.DataAccess.Json.JsonSchemaNode("weekday", True, DevExpress.DataAccess.Json.JsonNodeType.[Property], GetType(String))
+        Dim JsonSchemaNode22 As DevExpress.DataAccess.Json.JsonSchemaNode = New DevExpress.DataAccess.Json.JsonSchemaNode("time", True, DevExpress.DataAccess.Json.JsonNodeType.[Property], GetType(String))
+        Dim JsonSchemaNode23 As DevExpress.DataAccess.Json.JsonSchemaNode = New DevExpress.DataAccess.Json.JsonSchemaNode("customization", True)
+        Dim JsonSchemaNode24 As DevExpress.DataAccess.Json.JsonSchemaNode = New DevExpress.DataAccess.Json.JsonSchemaNode("customized", True, DevExpress.DataAccess.Json.JsonNodeType.[Property], GetType(String))
+        Dim JsonSchemaNode25 As DevExpress.DataAccess.Json.JsonSchemaNode = New DevExpress.DataAccess.Json.JsonSchemaNode("customsubject", True, DevExpress.DataAccess.Json.JsonNodeType.[Property], GetType(String))
+        Dim JsonSchemaNode26 As DevExpress.DataAccess.Json.JsonSchemaNode = New DevExpress.DataAccess.Json.JsonSchemaNode("custombody", True, DevExpress.DataAccess.Json.JsonNodeType.[Property], GetType(String))
+        Dim JsonSchemaNode27 As DevExpress.DataAccess.Json.JsonSchemaNode = New DevExpress.DataAccess.Json.JsonSchemaNode("iA", True)
+        Dim JsonSchemaNode28 As DevExpress.DataAccess.Json.JsonSchemaNode = New DevExpress.DataAccess.Json.JsonSchemaNode("language", True, DevExpress.DataAccess.Json.JsonNodeType.[Property], GetType(String))
+        Dim JsonSchemaNode29 As DevExpress.DataAccess.Json.JsonSchemaNode = New DevExpress.DataAccess.Json.JsonSchemaNode("recipients", True)
+        Dim JsonSchemaNode30 As DevExpress.DataAccess.Json.JsonSchemaNode = New DevExpress.DataAccess.Json.JsonSchemaNode("to", True, DevExpress.DataAccess.Json.JsonNodeType.Array, GetType(String()))
+        Dim JsonSchemaNode31 As DevExpress.DataAccess.Json.JsonSchemaNode = New DevExpress.DataAccess.Json.JsonSchemaNode("cc", True, DevExpress.DataAccess.Json.JsonNodeType.Array, GetType(String()))
+        Dim JsonSchemaNode32 As DevExpress.DataAccess.Json.JsonSchemaNode = New DevExpress.DataAccess.Json.JsonSchemaNode("schedule", True, DevExpress.DataAccess.Json.JsonNodeType.Array)
+        Dim JsonSchemaNode33 As DevExpress.DataAccess.Json.JsonSchemaNode = New DevExpress.DataAccess.Json.JsonSchemaNode("weekday", True, DevExpress.DataAccess.Json.JsonNodeType.[Property], GetType(String))
+        Dim JsonSchemaNode34 As DevExpress.DataAccess.Json.JsonSchemaNode = New DevExpress.DataAccess.Json.JsonSchemaNode("time", True, DevExpress.DataAccess.Json.JsonNodeType.[Property], GetType(String))
+        Dim JsonSchemaNode35 As DevExpress.DataAccess.Json.JsonSchemaNode = New DevExpress.DataAccess.Json.JsonSchemaNode("customization", True)
+        Dim JsonSchemaNode36 As DevExpress.DataAccess.Json.JsonSchemaNode = New DevExpress.DataAccess.Json.JsonSchemaNode("customized", True, DevExpress.DataAccess.Json.JsonNodeType.[Property], GetType(String))
+        Dim JsonSchemaNode37 As DevExpress.DataAccess.Json.JsonSchemaNode = New DevExpress.DataAccess.Json.JsonSchemaNode("customsubject", True, DevExpress.DataAccess.Json.JsonNodeType.[Property], GetType(String))
+        Dim JsonSchemaNode38 As DevExpress.DataAccess.Json.JsonSchemaNode = New DevExpress.DataAccess.Json.JsonSchemaNode("custombody", True, DevExpress.DataAccess.Json.JsonNodeType.[Property], GetType(String))
+        Dim JsonSchemaNode39 As DevExpress.DataAccess.Json.JsonSchemaNode = New DevExpress.DataAccess.Json.JsonSchemaNode("Medavie", True)
+        Dim JsonSchemaNode40 As DevExpress.DataAccess.Json.JsonSchemaNode = New DevExpress.DataAccess.Json.JsonSchemaNode("language", True, DevExpress.DataAccess.Json.JsonNodeType.[Property], GetType(String))
+        Dim JsonSchemaNode41 As DevExpress.DataAccess.Json.JsonSchemaNode = New DevExpress.DataAccess.Json.JsonSchemaNode("recipients", True)
+        Dim JsonSchemaNode42 As DevExpress.DataAccess.Json.JsonSchemaNode = New DevExpress.DataAccess.Json.JsonSchemaNode("to", True, DevExpress.DataAccess.Json.JsonNodeType.Array, GetType(String()))
+        Dim JsonSchemaNode43 As DevExpress.DataAccess.Json.JsonSchemaNode = New DevExpress.DataAccess.Json.JsonSchemaNode("cc", True, DevExpress.DataAccess.Json.JsonNodeType.Array, GetType(String()))
+        Dim JsonSchemaNode44 As DevExpress.DataAccess.Json.JsonSchemaNode = New DevExpress.DataAccess.Json.JsonSchemaNode("schedule", True, DevExpress.DataAccess.Json.JsonNodeType.Array)
+        Dim JsonSchemaNode45 As DevExpress.DataAccess.Json.JsonSchemaNode = New DevExpress.DataAccess.Json.JsonSchemaNode("weekday", True, DevExpress.DataAccess.Json.JsonNodeType.[Property], GetType(String))
+        Dim JsonSchemaNode46 As DevExpress.DataAccess.Json.JsonSchemaNode = New DevExpress.DataAccess.Json.JsonSchemaNode("time", True, DevExpress.DataAccess.Json.JsonNodeType.[Property], GetType(String))
+        Dim JsonSchemaNode47 As DevExpress.DataAccess.Json.JsonSchemaNode = New DevExpress.DataAccess.Json.JsonSchemaNode("customization", True)
+        Dim JsonSchemaNode48 As DevExpress.DataAccess.Json.JsonSchemaNode = New DevExpress.DataAccess.Json.JsonSchemaNode("customized", True, DevExpress.DataAccess.Json.JsonNodeType.[Property], GetType(String))
+        Dim JsonSchemaNode49 As DevExpress.DataAccess.Json.JsonSchemaNode = New DevExpress.DataAccess.Json.JsonSchemaNode("customsubject", True, DevExpress.DataAccess.Json.JsonNodeType.[Property], GetType(String))
+        Dim JsonSchemaNode50 As DevExpress.DataAccess.Json.JsonSchemaNode = New DevExpress.DataAccess.Json.JsonSchemaNode("custombody", True, DevExpress.DataAccess.Json.JsonNodeType.[Property], GetType(String))
+        Dim JsonSchemaNode51 As DevExpress.DataAccess.Json.JsonSchemaNode = New DevExpress.DataAccess.Json.JsonSchemaNode("People Corp", True)
+        Dim JsonSchemaNode52 As DevExpress.DataAccess.Json.JsonSchemaNode = New DevExpress.DataAccess.Json.JsonSchemaNode("language", True, DevExpress.DataAccess.Json.JsonNodeType.[Property], GetType(String))
+        Dim JsonSchemaNode53 As DevExpress.DataAccess.Json.JsonSchemaNode = New DevExpress.DataAccess.Json.JsonSchemaNode("recipients", True)
+        Dim JsonSchemaNode54 As DevExpress.DataAccess.Json.JsonSchemaNode = New DevExpress.DataAccess.Json.JsonSchemaNode("to", True, DevExpress.DataAccess.Json.JsonNodeType.Array, GetType(String()))
+        Dim JsonSchemaNode55 As DevExpress.DataAccess.Json.JsonSchemaNode = New DevExpress.DataAccess.Json.JsonSchemaNode("cc", True, DevExpress.DataAccess.Json.JsonNodeType.Array, GetType(String()))
+        Dim JsonSchemaNode56 As DevExpress.DataAccess.Json.JsonSchemaNode = New DevExpress.DataAccess.Json.JsonSchemaNode("schedule", True, DevExpress.DataAccess.Json.JsonNodeType.Array)
+        Dim JsonSchemaNode57 As DevExpress.DataAccess.Json.JsonSchemaNode = New DevExpress.DataAccess.Json.JsonSchemaNode("weekday", True, DevExpress.DataAccess.Json.JsonNodeType.[Property], GetType(String))
+        Dim JsonSchemaNode58 As DevExpress.DataAccess.Json.JsonSchemaNode = New DevExpress.DataAccess.Json.JsonSchemaNode("time", True, DevExpress.DataAccess.Json.JsonNodeType.[Property], GetType(String))
+        Dim JsonSchemaNode59 As DevExpress.DataAccess.Json.JsonSchemaNode = New DevExpress.DataAccess.Json.JsonSchemaNode("customization", True)
+        Dim JsonSchemaNode60 As DevExpress.DataAccess.Json.JsonSchemaNode = New DevExpress.DataAccess.Json.JsonSchemaNode("customized", True, DevExpress.DataAccess.Json.JsonNodeType.[Property], GetType(String))
+        Dim JsonSchemaNode61 As DevExpress.DataAccess.Json.JsonSchemaNode = New DevExpress.DataAccess.Json.JsonSchemaNode("customsubject", True, DevExpress.DataAccess.Json.JsonNodeType.[Property], GetType(String))
+        Dim JsonSchemaNode62 As DevExpress.DataAccess.Json.JsonSchemaNode = New DevExpress.DataAccess.Json.JsonSchemaNode("custombody", True, DevExpress.DataAccess.Json.JsonNodeType.[Property], GetType(String))
+        Dim JsonSchemaNode63 As DevExpress.DataAccess.Json.JsonSchemaNode = New DevExpress.DataAccess.Json.JsonSchemaNode("TELUS", True)
+        Dim JsonSchemaNode64 As DevExpress.DataAccess.Json.JsonSchemaNode = New DevExpress.DataAccess.Json.JsonSchemaNode("language", True, DevExpress.DataAccess.Json.JsonNodeType.[Property], GetType(String))
+        Dim JsonSchemaNode65 As DevExpress.DataAccess.Json.JsonSchemaNode = New DevExpress.DataAccess.Json.JsonSchemaNode("recipients", True)
+        Dim JsonSchemaNode66 As DevExpress.DataAccess.Json.JsonSchemaNode = New DevExpress.DataAccess.Json.JsonSchemaNode("to", True, DevExpress.DataAccess.Json.JsonNodeType.Array, GetType(String()))
+        Dim JsonSchemaNode67 As DevExpress.DataAccess.Json.JsonSchemaNode = New DevExpress.DataAccess.Json.JsonSchemaNode("cc", True, DevExpress.DataAccess.Json.JsonNodeType.Array, GetType(String()))
+        Dim JsonSchemaNode68 As DevExpress.DataAccess.Json.JsonSchemaNode = New DevExpress.DataAccess.Json.JsonSchemaNode("schedule", True, DevExpress.DataAccess.Json.JsonNodeType.Array)
+        Dim JsonSchemaNode69 As DevExpress.DataAccess.Json.JsonSchemaNode = New DevExpress.DataAccess.Json.JsonSchemaNode("weekday", True, DevExpress.DataAccess.Json.JsonNodeType.[Property], GetType(String))
+        Dim JsonSchemaNode70 As DevExpress.DataAccess.Json.JsonSchemaNode = New DevExpress.DataAccess.Json.JsonSchemaNode("time", True, DevExpress.DataAccess.Json.JsonNodeType.[Property], GetType(String))
+        Dim JsonSchemaNode71 As DevExpress.DataAccess.Json.JsonSchemaNode = New DevExpress.DataAccess.Json.JsonSchemaNode("customization", True)
+        Dim JsonSchemaNode72 As DevExpress.DataAccess.Json.JsonSchemaNode = New DevExpress.DataAccess.Json.JsonSchemaNode("customized", True, DevExpress.DataAccess.Json.JsonNodeType.[Property], GetType(String))
+        Dim JsonSchemaNode73 As DevExpress.DataAccess.Json.JsonSchemaNode = New DevExpress.DataAccess.Json.JsonSchemaNode("customsubject", True, DevExpress.DataAccess.Json.JsonNodeType.[Property], GetType(String))
+        Dim JsonSchemaNode74 As DevExpress.DataAccess.Json.JsonSchemaNode = New DevExpress.DataAccess.Json.JsonSchemaNode("custombody", True, DevExpress.DataAccess.Json.JsonNodeType.[Property], GetType(String))
+        Dim JsonSchemaNode75 As DevExpress.DataAccess.Json.JsonSchemaNode = New DevExpress.DataAccess.Json.JsonSchemaNode("Billable Reminder", True)
+        Dim JsonSchemaNode76 As DevExpress.DataAccess.Json.JsonSchemaNode = New DevExpress.DataAccess.Json.JsonSchemaNode("language", True, DevExpress.DataAccess.Json.JsonNodeType.[Property], GetType(String))
+        Dim JsonSchemaNode77 As DevExpress.DataAccess.Json.JsonSchemaNode = New DevExpress.DataAccess.Json.JsonSchemaNode("recipients", True)
+        Dim JsonSchemaNode78 As DevExpress.DataAccess.Json.JsonSchemaNode = New DevExpress.DataAccess.Json.JsonSchemaNode("to", True, DevExpress.DataAccess.Json.JsonNodeType.Array, GetType(String()))
+        Dim JsonSchemaNode79 As DevExpress.DataAccess.Json.JsonSchemaNode = New DevExpress.DataAccess.Json.JsonSchemaNode("cc", True, DevExpress.DataAccess.Json.JsonNodeType.Array, GetType(String()))
+        Dim JsonSchemaNode80 As DevExpress.DataAccess.Json.JsonSchemaNode = New DevExpress.DataAccess.Json.JsonSchemaNode("schedule", True, DevExpress.DataAccess.Json.JsonNodeType.Array)
+        Dim JsonSchemaNode81 As DevExpress.DataAccess.Json.JsonSchemaNode = New DevExpress.DataAccess.Json.JsonSchemaNode("weekday", True, DevExpress.DataAccess.Json.JsonNodeType.[Property], GetType(String))
+        Dim JsonSchemaNode82 As DevExpress.DataAccess.Json.JsonSchemaNode = New DevExpress.DataAccess.Json.JsonSchemaNode("time", True, DevExpress.DataAccess.Json.JsonNodeType.[Property], GetType(String))
+        Dim JsonSchemaNode83 As DevExpress.DataAccess.Json.JsonSchemaNode = New DevExpress.DataAccess.Json.JsonSchemaNode("customization", True)
+        Dim JsonSchemaNode84 As DevExpress.DataAccess.Json.JsonSchemaNode = New DevExpress.DataAccess.Json.JsonSchemaNode("customized", True, DevExpress.DataAccess.Json.JsonNodeType.[Property], GetType(String))
+        Dim JsonSchemaNode85 As DevExpress.DataAccess.Json.JsonSchemaNode = New DevExpress.DataAccess.Json.JsonSchemaNode("customsubject", True, DevExpress.DataAccess.Json.JsonNodeType.[Property], GetType(String))
+        Dim JsonSchemaNode86 As DevExpress.DataAccess.Json.JsonSchemaNode = New DevExpress.DataAccess.Json.JsonSchemaNode("custombody", True, DevExpress.DataAccess.Json.JsonNodeType.[Property], GetType(String))
+        Dim JsonSchemaNode87 As DevExpress.DataAccess.Json.JsonSchemaNode = New DevExpress.DataAccess.Json.JsonSchemaNode("CAPEX Reminder", True)
+        Dim JsonSchemaNode88 As DevExpress.DataAccess.Json.JsonSchemaNode = New DevExpress.DataAccess.Json.JsonSchemaNode("language", True, DevExpress.DataAccess.Json.JsonNodeType.[Property], GetType(String))
+        Dim JsonSchemaNode89 As DevExpress.DataAccess.Json.JsonSchemaNode = New DevExpress.DataAccess.Json.JsonSchemaNode("recipients", True)
+        Dim JsonSchemaNode90 As DevExpress.DataAccess.Json.JsonSchemaNode = New DevExpress.DataAccess.Json.JsonSchemaNode("to", True, DevExpress.DataAccess.Json.JsonNodeType.Array, GetType(String()))
+        Dim JsonSchemaNode91 As DevExpress.DataAccess.Json.JsonSchemaNode = New DevExpress.DataAccess.Json.JsonSchemaNode("cc", True, DevExpress.DataAccess.Json.JsonNodeType.Array, GetType(String()))
+        Dim JsonSchemaNode92 As DevExpress.DataAccess.Json.JsonSchemaNode = New DevExpress.DataAccess.Json.JsonSchemaNode("schedule", True, DevExpress.DataAccess.Json.JsonNodeType.Array)
+        Dim JsonSchemaNode93 As DevExpress.DataAccess.Json.JsonSchemaNode = New DevExpress.DataAccess.Json.JsonSchemaNode("weekday", True, DevExpress.DataAccess.Json.JsonNodeType.[Property], GetType(String))
+        Dim JsonSchemaNode94 As DevExpress.DataAccess.Json.JsonSchemaNode = New DevExpress.DataAccess.Json.JsonSchemaNode("time", True, DevExpress.DataAccess.Json.JsonNodeType.[Property], GetType(String))
+        Dim JsonSchemaNode95 As DevExpress.DataAccess.Json.JsonSchemaNode = New DevExpress.DataAccess.Json.JsonSchemaNode("customization", True)
+        Dim JsonSchemaNode96 As DevExpress.DataAccess.Json.JsonSchemaNode = New DevExpress.DataAccess.Json.JsonSchemaNode("customized", True, DevExpress.DataAccess.Json.JsonNodeType.[Property], GetType(String))
+        Dim JsonSchemaNode97 As DevExpress.DataAccess.Json.JsonSchemaNode = New DevExpress.DataAccess.Json.JsonSchemaNode("customsubject", True, DevExpress.DataAccess.Json.JsonNodeType.[Property], GetType(String))
+        Dim JsonSchemaNode98 As DevExpress.DataAccess.Json.JsonSchemaNode = New DevExpress.DataAccess.Json.JsonSchemaNode("custombody", True, DevExpress.DataAccess.Json.JsonNodeType.[Property], GetType(String))
+        Dim JsonSchemaNode99 As DevExpress.DataAccess.Json.JsonSchemaNode = New DevExpress.DataAccess.Json.JsonSchemaNode("holidays", True, DevExpress.DataAccess.Json.JsonNodeType.Array, GetType(String()))
         Me.RoundRectShapeTitle = New Telerik.WinControls.RoundRectShape(Me.components)
         Me.RadTitleBar1 = New Telerik.WinControls.UI.RadTitleBar()
         Me.RadButton1 = New Telerik.WinControls.UI.RadButton()
@@ -109,7 +254,17 @@ Partial Class ShapedForm2
         Me.ChamferedRectShape1 = New Telerik.WinControls.ChamferedRectShape()
         Me.RadPictureBox1 = New Telerik.WinControls.UI.RadPictureBox()
         Me.RadRichTextEditor1 = New Telerik.WinControls.UI.RadRichTextEditor()
-        Me.RichTextEditorRibbonBar1 = New Telerik.WinControls.UI.RichTextEditorRibbonBar()
+        Me.SqlDataSource1 = New DevExpress.DataAccess.Sql.SqlDataSource(Me.components)
+        Me.JsonDataSource1 = New DevExpress.DataAccess.Json.JsonDataSource(Me.components)
+        Me.RadTextBox7 = New Telerik.WinControls.UI.RadTextBox()
+        Me.RadTextBox8 = New Telerik.WinControls.UI.RadTextBox()
+        Me.RadPanel16 = New Telerik.WinControls.UI.RadPanel()
+        Me.RadLabel31 = New Telerik.WinControls.UI.RadLabel()
+        Me.RadLabel32 = New Telerik.WinControls.UI.RadLabel()
+        Me.RadPanel17 = New Telerik.WinControls.UI.RadPanel()
+        Me.RadLabel33 = New Telerik.WinControls.UI.RadLabel()
+        Me.RadLabel34 = New Telerik.WinControls.UI.RadLabel()
+        Me.DashboardDesigner1 = New DevExpress.DashboardWin.DashboardDesigner()
         CType(Me.RadTitleBar1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.RadButton1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.RadDataEntry1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -193,7 +348,6 @@ Partial Class ShapedForm2
         CType(Me.RadLabel29, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.RadLabel30, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.RadPopupContainer1, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.RadPopupContainer1.PanelContainer.SuspendLayout()
         Me.RadPopupContainer1.SuspendLayout()
         CType(Me.RadPopupEditor1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.SchedulerBindingDataSource1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -205,7 +359,17 @@ Partial Class ShapedForm2
         CType(Me.RadButtonTextBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.RadPictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.RadRichTextEditor1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.RichTextEditorRibbonBar1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.RadTextBox7, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.RadTextBox8, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.RadPanel16, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.RadPanel16.SuspendLayout()
+        CType(Me.RadLabel31, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.RadLabel32, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.RadPanel17, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.RadPanel17.SuspendLayout()
+        CType(Me.RadLabel33, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.RadLabel34, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DashboardDesigner1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'RoundRectShapeTitle
@@ -233,7 +397,7 @@ Partial Class ShapedForm2
         Me.RadButton1.ImageAlignment = System.Drawing.ContentAlignment.MiddleRight
         Me.RadButton1.ImageKey = "hiclipart.com (6).png"
         Me.RadButton1.ImageList = Me.ImageList1
-        Me.RadButton1.Location = New System.Drawing.Point(458, 430)
+        Me.RadButton1.Location = New System.Drawing.Point(516, 407)
         Me.RadButton1.Name = "RadButton1"
         Me.RadButton1.Padding = New System.Windows.Forms.Padding(5)
         '
@@ -270,28 +434,15 @@ Partial Class ShapedForm2
         'RadDataEntry1
         '
         Me.RadDataEntry1.ColumnCount = 3
-        Me.RadDataEntry1.DataSource = Me.IssuesBindingSource
+        Me.RadDataEntry1.DataSource = Me.JsonDataSource1
         Me.RadDataEntry1.FitToParentWidth = True
-        Me.RadDataEntry1.Location = New System.Drawing.Point(12, 25)
+        Me.RadDataEntry1.Location = New System.Drawing.Point(588, 246)
         Me.RadDataEntry1.Name = "RadDataEntry1"
         '
         'RadDataEntry1.PanelContainer
         '
-        Me.RadDataEntry1.PanelContainer.Controls.Add(Me.RadPanel1)
-        Me.RadDataEntry1.PanelContainer.Controls.Add(Me.RadPanel2)
-        Me.RadDataEntry1.PanelContainer.Controls.Add(Me.RadPanel3)
-        Me.RadDataEntry1.PanelContainer.Controls.Add(Me.RadPanel4)
-        Me.RadDataEntry1.PanelContainer.Controls.Add(Me.RadPanel5)
-        Me.RadDataEntry1.PanelContainer.Controls.Add(Me.RadPanel6)
-        Me.RadDataEntry1.PanelContainer.Controls.Add(Me.RadPanel7)
-        Me.RadDataEntry1.PanelContainer.Controls.Add(Me.RadPanel8)
-        Me.RadDataEntry1.PanelContainer.Controls.Add(Me.RadPanel9)
-        Me.RadDataEntry1.PanelContainer.Controls.Add(Me.RadPanel10)
-        Me.RadDataEntry1.PanelContainer.Controls.Add(Me.RadPanel11)
-        Me.RadDataEntry1.PanelContainer.Controls.Add(Me.RadPanel12)
-        Me.RadDataEntry1.PanelContainer.Controls.Add(Me.RadPanel13)
-        Me.RadDataEntry1.PanelContainer.Controls.Add(Me.RadPanel14)
-        Me.RadDataEntry1.PanelContainer.Controls.Add(Me.RadPanel15)
+        Me.RadDataEntry1.PanelContainer.Controls.Add(Me.RadPanel16)
+        Me.RadDataEntry1.PanelContainer.Controls.Add(Me.RadPanel17)
         Me.RadDataEntry1.PanelContainer.Size = New System.Drawing.Size(578, 185)
         Me.RadDataEntry1.Size = New System.Drawing.Size(580, 187)
         Me.RadDataEntry1.TabIndex = 3
@@ -943,9 +1094,8 @@ Partial Class ShapedForm2
         '
         'RadPopupContainer1.PanelContainer
         '
-        Me.RadPopupContainer1.PanelContainer.Controls.Add(Me.RadDataEntry1)
-        Me.RadPopupContainer1.PanelContainer.Size = New System.Drawing.Size(586, 57)
-        Me.RadPopupContainer1.Size = New System.Drawing.Size(605, 76)
+        Me.RadPopupContainer1.PanelContainer.Size = New System.Drawing.Size(237, 70)
+        Me.RadPopupContainer1.Size = New System.Drawing.Size(239, 72)
         Me.RadPopupContainer1.TabIndex = 4
         '
         'RadPopupEditor1
@@ -996,7 +1146,7 @@ Partial Class ShapedForm2
         'RadButtonTextBox1
         '
         Me.RadButtonTextBox1.LeftButtonItems.AddRange(New Telerik.WinControls.RadItem() {Me.RadButtonElement1})
-        Me.RadButtonTextBox1.Location = New System.Drawing.Point(415, 375)
+        Me.RadButtonTextBox1.Location = New System.Drawing.Point(473, 352)
         Me.RadButtonTextBox1.Name = "RadButtonTextBox1"
         Me.RadButtonTextBox1.Size = New System.Drawing.Size(153, 66)
         Me.RadButtonTextBox1.TabIndex = 9
@@ -1016,17 +1166,17 @@ Partial Class ShapedForm2
         '
         Me.RadPropertyGrid1.ItemHeight = 28
         Me.RadPropertyGrid1.ItemIndent = 28
-        Me.RadPropertyGrid1.Location = New System.Drawing.Point(19, 167)
+        Me.RadPropertyGrid1.Location = New System.Drawing.Point(35, 215)
         Me.RadPropertyGrid1.Name = "RadPropertyGrid1"
         Me.RadPropertyGrid1.PropertySort = System.Windows.Forms.PropertySort.CategorizedAlphabetical
         Me.RadPropertyGrid1.SelectedObject = Me.RadButtonElement1
-        Me.RadPropertyGrid1.Size = New System.Drawing.Size(378, 373)
+        Me.RadPropertyGrid1.Size = New System.Drawing.Size(189, 188)
         Me.RadPropertyGrid1.SortOrder = System.Windows.Forms.SortOrder.Ascending
         Me.RadPropertyGrid1.TabIndex = 10
         '
         'RadButtonTextBox2
         '
-        Me.RadButtonTextBox2.Location = New System.Drawing.Point(446, 297)
+        Me.RadButtonTextBox2.Location = New System.Drawing.Point(504, 274)
         Me.RadButtonTextBox2.Name = "RadButtonTextBox2"
         Me.RadButtonTextBox2.RightButtonItems.AddRange(New Telerik.WinControls.RadItem() {Me.RadButtonElement2})
         '
@@ -1060,7 +1210,7 @@ Partial Class ShapedForm2
         'RadPictureBox1
         '
         Me.RadPictureBox1.DefaultSvgImageXml = ""
-        Me.RadPictureBox1.Location = New System.Drawing.Point(389, 113)
+        Me.RadPictureBox1.Location = New System.Drawing.Point(447, 90)
         Me.RadPictureBox1.Name = "RadPictureBox1"
         Me.RadPictureBox1.Size = New System.Drawing.Size(223, 141)
         Me.RadPictureBox1.SvgImageXml = resources.GetString("RadPictureBox1.SvgImageXml")
@@ -1076,26 +1226,331 @@ Partial Class ShapedForm2
         'RadRichTextEditor1
         '
         Me.RadRichTextEditor1.BorderColor = System.Drawing.Color.FromArgb(CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer), CType(CType(204, Byte), Integer))
-        Me.RadRichTextEditor1.Location = New System.Drawing.Point(745, 205)
+        Me.RadRichTextEditor1.Location = New System.Drawing.Point(803, 182)
         Me.RadRichTextEditor1.Name = "RadRichTextEditor1"
         Me.RadRichTextEditor1.SelectionFill = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(179, Byte), Integer), CType(CType(236, Byte), Integer), CType(CType(248, Byte), Integer))
         Me.RadRichTextEditor1.SelectionStroke = System.Drawing.Color.FromArgb(CType(CType(179, Byte), Integer), CType(CType(236, Byte), Integer), CType(CType(248, Byte), Integer))
         Me.RadRichTextEditor1.Size = New System.Drawing.Size(299, 286)
         Me.RadRichTextEditor1.TabIndex = 13
         '
-        'RichTextEditorRibbonBar1
+        'SqlDataSource1
         '
-        Me.RichTextEditorRibbonBar1.ApplicationMenuStyle = Telerik.WinControls.UI.ApplicationMenuStyle.BackstageView
-        Me.RichTextEditorRibbonBar1.AssociatedRichTextEditor = Me.RadRichTextEditor1
-        Me.RichTextEditorRibbonBar1.BuiltInStylesVersion = Telerik.WinForms.Documents.Model.Styles.BuiltInStylesVersion.Office2013
-        Me.RichTextEditorRibbonBar1.EnableKeyMap = False
-        Me.RichTextEditorRibbonBar1.Location = New System.Drawing.Point(0, 23)
-        Me.RichTextEditorRibbonBar1.Name = "RichTextEditorRibbonBar1"
-        Me.RichTextEditorRibbonBar1.ShowLayoutModeButton = True
-        Me.RichTextEditorRibbonBar1.Size = New System.Drawing.Size(1180, 166)
-        Me.RichTextEditorRibbonBar1.TabIndex = 14
-        Me.RichTextEditorRibbonBar1.TabStop = False
-        Me.RichTextEditorRibbonBar1.Text = "RichTextEditorRibbonBar1"
+        Me.SqlDataSource1.ConnectionName = "20240125.190013.Prod_Support_Issue_Tracking_be"
+        Access2007ConnectionParameters1.FileName = "I:\Shared drives\Flexit360 Apps (Alain)\Access DBs\Backups\Tests_Dev\20240125.190" &
+    "013.Prod_Support_Issue_Tracking_be.accdb"
+        Me.SqlDataSource1.ConnectionParameters = Access2007ConnectionParameters1
+        Me.SqlDataSource1.Name = "SqlDataSource1"
+        ColumnExpression1.ColumnName = "ID"
+        Table1.MetaSerializable = "<Meta X=""30"" Y=""30"" Width=""125"" Height=""385"" />"
+        Table1.Name = "Issues"
+        ColumnExpression1.Table = Table1
+        Column1.Expression = ColumnExpression1
+        ColumnExpression2.ColumnName = "CL ID"
+        ColumnExpression2.Table = Table1
+        Column2.Expression = ColumnExpression2
+        ColumnExpression3.ColumnName = "Channel Name"
+        Table2.MetaSerializable = "<Meta X=""185"" Y=""30"" Width=""125"" Height=""105"" />"
+        Table2.Name = "Channels"
+        ColumnExpression3.Table = Table2
+        Column3.Expression = ColumnExpression3
+        ColumnExpression4.ColumnName = "Client Name"
+        Table3.MetaSerializable = "<Meta X=""190"" Y=""250"" Width=""125"" Height=""125"" />"
+        Table3.Name = "Clients"
+        ColumnExpression4.Table = Table3
+        Column4.Expression = ColumnExpression4
+        ColumnExpression5.ColumnName = "Date Received"
+        ColumnExpression5.Table = Table1
+        Column5.Expression = ColumnExpression5
+        ColumnExpression6.ColumnName = "Contact Name"
+        Table4.MetaSerializable = "<Meta X=""345"" Y=""30"" Width=""125"" Height=""465"" />"
+        Table4.Name = "Contacts Extended"
+        ColumnExpression6.Table = Table4
+        Column6.Expression = ColumnExpression6
+        ColumnExpression7.ColumnName = "Priority"
+        ColumnExpression7.Table = Table1
+        Column7.Expression = ColumnExpression7
+        ColumnExpression8.ColumnName = "Title"
+        ColumnExpression8.Table = Table1
+        Column8.Expression = ColumnExpression8
+        ColumnExpression9.ColumnName = "Category"
+        ColumnExpression9.Table = Table1
+        Column9.Expression = ColumnExpression9
+        Column10.Alias = "Analyst"
+        ColumnExpression10.ColumnName = "Contact Name"
+        Table5.Alias = "Contacts Extended_1"
+        Table5.MetaSerializable = "<Meta X=""500"" Y=""30"" Width=""125"" Height=""465"" />"
+        Table5.Name = "Contacts Extended"
+        ColumnExpression10.Table = Table5
+        Column10.Expression = ColumnExpression10
+        ColumnExpression11.ColumnName = "Status"
+        ColumnExpression11.Table = Table1
+        Column11.Expression = ColumnExpression11
+        ColumnExpression12.ColumnName = "Last Status Update"
+        ColumnExpression12.Table = Table1
+        Column12.Expression = ColumnExpression12
+        ColumnExpression13.ColumnName = "FLEX Ticket"
+        ColumnExpression13.Table = Table1
+        Column13.Expression = ColumnExpression13
+        ColumnExpression14.ColumnName = "FLEXS Ticket"
+        ColumnExpression14.Table = Table1
+        Column14.Expression = ColumnExpression14
+        SelectQuery1.Columns.Add(Column1)
+        SelectQuery1.Columns.Add(Column2)
+        SelectQuery1.Columns.Add(Column3)
+        SelectQuery1.Columns.Add(Column4)
+        SelectQuery1.Columns.Add(Column5)
+        SelectQuery1.Columns.Add(Column6)
+        SelectQuery1.Columns.Add(Column7)
+        SelectQuery1.Columns.Add(Column8)
+        SelectQuery1.Columns.Add(Column9)
+        SelectQuery1.Columns.Add(Column10)
+        SelectQuery1.Columns.Add(Column11)
+        SelectQuery1.Columns.Add(Column12)
+        SelectQuery1.Columns.Add(Column13)
+        SelectQuery1.Columns.Add(Column14)
+        SelectQuery1.Name = "Issues"
+        RelationColumnInfo1.NestedKeyColumn = "ID"
+        RelationColumnInfo1.ParentKeyColumn = "Channel"
+        Join1.KeyColumns.Add(RelationColumnInfo1)
+        Join1.Nested = Table2
+        Join1.Parent = Table1
+        RelationColumnInfo2.NestedKeyColumn = "ID"
+        RelationColumnInfo2.ParentKeyColumn = "Client"
+        Join2.KeyColumns.Add(RelationColumnInfo2)
+        Join2.Nested = Table3
+        Join2.Parent = Table1
+        RelationColumnInfo3.NestedKeyColumn = "ID"
+        RelationColumnInfo3.ParentKeyColumn = "Reported By"
+        Join3.KeyColumns.Add(RelationColumnInfo3)
+        Join3.Nested = Table4
+        Join3.Parent = Table1
+        Join3.SqlJoinType = CType(DevExpress.DataAccess.Sql.SqlJoinType.LeftOuter, DevExpress.DataAccess.Sql.SqlJoinType)
+        RelationColumnInfo4.NestedKeyColumn = "ID"
+        RelationColumnInfo4.ParentKeyColumn = "Assigned To"
+        Join4.KeyColumns.Add(RelationColumnInfo4)
+        Join4.Nested = Table5
+        Join4.Parent = Table1
+        Join4.SqlJoinType = CType(DevExpress.DataAccess.Sql.SqlJoinType.LeftOuter, DevExpress.DataAccess.Sql.SqlJoinType)
+        SelectQuery1.Relations.Add(Join1)
+        SelectQuery1.Relations.Add(Join2)
+        SelectQuery1.Relations.Add(Join3)
+        SelectQuery1.Relations.Add(Join4)
+        Sorting1.Direction = System.ComponentModel.ListSortDirection.Descending
+        ColumnExpression15.ColumnName = "ID"
+        ColumnExpression15.Table = Table1
+        Sorting1.Expression = ColumnExpression15
+        SelectQuery1.Sorting.Add(Sorting1)
+        SelectQuery1.Tables.Add(Table1)
+        SelectQuery1.Tables.Add(Table2)
+        SelectQuery1.Tables.Add(Table3)
+        SelectQuery1.Tables.Add(Table4)
+        SelectQuery1.Tables.Add(Table5)
+        Me.SqlDataSource1.Queries.AddRange(New DevExpress.DataAccess.Sql.SqlQuery() {SelectQuery1})
+        Me.SqlDataSource1.ResultSchemaSerializable = resources.GetString("SqlDataSource1.ResultSchemaSerializable")
+        '
+        'JsonDataSource1
+        '
+        Me.JsonDataSource1.ConnectionName = Nothing
+        UriJsonSource1.Uri = New System.Uri("I:\Shared drives\Flexit360 Team Drive\Clients\Status Reports\Flexit360_Status_Rep" &
+        "orts_Settings - 20240206.json", System.UriKind.Absolute)
+        Me.JsonDataSource1.JsonSource = UriJsonSource1
+        Me.JsonDataSource1.Name = "JsonDataSource1"
+        JsonSchemaNode5.Nodes.Add(JsonSchemaNode6)
+        JsonSchemaNode5.Nodes.Add(JsonSchemaNode7)
+        JsonSchemaNode8.Nodes.Add(JsonSchemaNode9)
+        JsonSchemaNode8.Nodes.Add(JsonSchemaNode10)
+        JsonSchemaNode11.Nodes.Add(JsonSchemaNode12)
+        JsonSchemaNode11.Nodes.Add(JsonSchemaNode13)
+        JsonSchemaNode11.Nodes.Add(JsonSchemaNode14)
+        JsonSchemaNode3.Nodes.Add(JsonSchemaNode4)
+        JsonSchemaNode3.Nodes.Add(JsonSchemaNode5)
+        JsonSchemaNode3.Nodes.Add(JsonSchemaNode8)
+        JsonSchemaNode3.Nodes.Add(JsonSchemaNode11)
+        JsonSchemaNode17.Nodes.Add(JsonSchemaNode18)
+        JsonSchemaNode17.Nodes.Add(JsonSchemaNode19)
+        JsonSchemaNode20.Nodes.Add(JsonSchemaNode21)
+        JsonSchemaNode20.Nodes.Add(JsonSchemaNode22)
+        JsonSchemaNode23.Nodes.Add(JsonSchemaNode24)
+        JsonSchemaNode23.Nodes.Add(JsonSchemaNode25)
+        JsonSchemaNode23.Nodes.Add(JsonSchemaNode26)
+        JsonSchemaNode15.Nodes.Add(JsonSchemaNode16)
+        JsonSchemaNode15.Nodes.Add(JsonSchemaNode17)
+        JsonSchemaNode15.Nodes.Add(JsonSchemaNode20)
+        JsonSchemaNode15.Nodes.Add(JsonSchemaNode23)
+        JsonSchemaNode29.Nodes.Add(JsonSchemaNode30)
+        JsonSchemaNode29.Nodes.Add(JsonSchemaNode31)
+        JsonSchemaNode32.Nodes.Add(JsonSchemaNode33)
+        JsonSchemaNode32.Nodes.Add(JsonSchemaNode34)
+        JsonSchemaNode35.Nodes.Add(JsonSchemaNode36)
+        JsonSchemaNode35.Nodes.Add(JsonSchemaNode37)
+        JsonSchemaNode35.Nodes.Add(JsonSchemaNode38)
+        JsonSchemaNode27.Nodes.Add(JsonSchemaNode28)
+        JsonSchemaNode27.Nodes.Add(JsonSchemaNode29)
+        JsonSchemaNode27.Nodes.Add(JsonSchemaNode32)
+        JsonSchemaNode27.Nodes.Add(JsonSchemaNode35)
+        JsonSchemaNode41.Nodes.Add(JsonSchemaNode42)
+        JsonSchemaNode41.Nodes.Add(JsonSchemaNode43)
+        JsonSchemaNode44.Nodes.Add(JsonSchemaNode45)
+        JsonSchemaNode44.Nodes.Add(JsonSchemaNode46)
+        JsonSchemaNode47.Nodes.Add(JsonSchemaNode48)
+        JsonSchemaNode47.Nodes.Add(JsonSchemaNode49)
+        JsonSchemaNode47.Nodes.Add(JsonSchemaNode50)
+        JsonSchemaNode39.Nodes.Add(JsonSchemaNode40)
+        JsonSchemaNode39.Nodes.Add(JsonSchemaNode41)
+        JsonSchemaNode39.Nodes.Add(JsonSchemaNode44)
+        JsonSchemaNode39.Nodes.Add(JsonSchemaNode47)
+        JsonSchemaNode53.Nodes.Add(JsonSchemaNode54)
+        JsonSchemaNode53.Nodes.Add(JsonSchemaNode55)
+        JsonSchemaNode56.Nodes.Add(JsonSchemaNode57)
+        JsonSchemaNode56.Nodes.Add(JsonSchemaNode58)
+        JsonSchemaNode59.Nodes.Add(JsonSchemaNode60)
+        JsonSchemaNode59.Nodes.Add(JsonSchemaNode61)
+        JsonSchemaNode59.Nodes.Add(JsonSchemaNode62)
+        JsonSchemaNode51.Nodes.Add(JsonSchemaNode52)
+        JsonSchemaNode51.Nodes.Add(JsonSchemaNode53)
+        JsonSchemaNode51.Nodes.Add(JsonSchemaNode56)
+        JsonSchemaNode51.Nodes.Add(JsonSchemaNode59)
+        JsonSchemaNode65.Nodes.Add(JsonSchemaNode66)
+        JsonSchemaNode65.Nodes.Add(JsonSchemaNode67)
+        JsonSchemaNode68.Nodes.Add(JsonSchemaNode69)
+        JsonSchemaNode68.Nodes.Add(JsonSchemaNode70)
+        JsonSchemaNode71.Nodes.Add(JsonSchemaNode72)
+        JsonSchemaNode71.Nodes.Add(JsonSchemaNode73)
+        JsonSchemaNode71.Nodes.Add(JsonSchemaNode74)
+        JsonSchemaNode63.Nodes.Add(JsonSchemaNode64)
+        JsonSchemaNode63.Nodes.Add(JsonSchemaNode65)
+        JsonSchemaNode63.Nodes.Add(JsonSchemaNode68)
+        JsonSchemaNode63.Nodes.Add(JsonSchemaNode71)
+        JsonSchemaNode77.Nodes.Add(JsonSchemaNode78)
+        JsonSchemaNode77.Nodes.Add(JsonSchemaNode79)
+        JsonSchemaNode80.Nodes.Add(JsonSchemaNode81)
+        JsonSchemaNode80.Nodes.Add(JsonSchemaNode82)
+        JsonSchemaNode83.Nodes.Add(JsonSchemaNode84)
+        JsonSchemaNode83.Nodes.Add(JsonSchemaNode85)
+        JsonSchemaNode83.Nodes.Add(JsonSchemaNode86)
+        JsonSchemaNode75.Nodes.Add(JsonSchemaNode76)
+        JsonSchemaNode75.Nodes.Add(JsonSchemaNode77)
+        JsonSchemaNode75.Nodes.Add(JsonSchemaNode80)
+        JsonSchemaNode75.Nodes.Add(JsonSchemaNode83)
+        JsonSchemaNode89.Nodes.Add(JsonSchemaNode90)
+        JsonSchemaNode89.Nodes.Add(JsonSchemaNode91)
+        JsonSchemaNode92.Nodes.Add(JsonSchemaNode93)
+        JsonSchemaNode92.Nodes.Add(JsonSchemaNode94)
+        JsonSchemaNode95.Nodes.Add(JsonSchemaNode96)
+        JsonSchemaNode95.Nodes.Add(JsonSchemaNode97)
+        JsonSchemaNode95.Nodes.Add(JsonSchemaNode98)
+        JsonSchemaNode87.Nodes.Add(JsonSchemaNode88)
+        JsonSchemaNode87.Nodes.Add(JsonSchemaNode89)
+        JsonSchemaNode87.Nodes.Add(JsonSchemaNode92)
+        JsonSchemaNode87.Nodes.Add(JsonSchemaNode95)
+        JsonSchemaNode2.Nodes.Add(JsonSchemaNode3)
+        JsonSchemaNode2.Nodes.Add(JsonSchemaNode15)
+        JsonSchemaNode2.Nodes.Add(JsonSchemaNode27)
+        JsonSchemaNode2.Nodes.Add(JsonSchemaNode39)
+        JsonSchemaNode2.Nodes.Add(JsonSchemaNode51)
+        JsonSchemaNode2.Nodes.Add(JsonSchemaNode63)
+        JsonSchemaNode2.Nodes.Add(JsonSchemaNode75)
+        JsonSchemaNode2.Nodes.Add(JsonSchemaNode87)
+        JsonSchemaNode1.Nodes.Add(JsonSchemaNode2)
+        JsonSchemaNode1.Nodes.Add(JsonSchemaNode99)
+        Me.JsonDataSource1.Schema = JsonSchemaNode1
+        '
+        'RadTextBox7
+        '
+        Me.RadTextBox7.AutoSize = False
+        Me.RadTextBox7.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.JsonDataSource1, "clients", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.RadTextBox7.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.RadTextBox7.Location = New System.Drawing.Point(42, 0)
+        Me.RadTextBox7.Name = "RadTextBox7"
+        Me.RadTextBox7.Size = New System.Drawing.Size(128, 22)
+        Me.RadTextBox7.TabIndex = 15
+        '
+        'RadTextBox8
+        '
+        Me.RadTextBox8.AutoSize = False
+        Me.RadTextBox8.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.JsonDataSource1, "holidays", True, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged))
+        Me.RadTextBox8.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.RadTextBox8.Location = New System.Drawing.Point(51, 0)
+        Me.RadTextBox8.Name = "RadTextBox8"
+        Me.RadTextBox8.Size = New System.Drawing.Size(119, 22)
+        Me.RadTextBox8.TabIndex = 16
+        '
+        'RadPanel16
+        '
+        Me.RadPanel16.Controls.Add(Me.RadTextBox7)
+        Me.RadPanel16.Controls.Add(Me.RadLabel31)
+        Me.RadPanel16.Controls.Add(Me.RadLabel32)
+        Me.RadPanel16.Location = New System.Drawing.Point(5, 5)
+        Me.RadPanel16.Name = "RadPanel16"
+        Me.RadPanel16.Size = New System.Drawing.Size(190, 22)
+        Me.RadPanel16.TabIndex = 0
+        '
+        'RadLabel31
+        '
+        Me.RadLabel31.AutoSize = False
+        Me.RadLabel31.Dock = System.Windows.Forms.DockStyle.Left
+        Me.RadLabel31.Location = New System.Drawing.Point(0, 0)
+        Me.RadLabel31.Name = "RadLabel31"
+        Me.RadLabel31.Size = New System.Drawing.Size(42, 22)
+        Me.RadLabel31.TabIndex = 16
+        Me.RadLabel31.Text = "clients"
+        Me.RadLabel31.TextWrap = False
+        '
+        'RadLabel32
+        '
+        Me.RadLabel32.Dock = System.Windows.Forms.DockStyle.Right
+        Me.RadLabel32.Location = New System.Drawing.Point(170, 0)
+        Me.RadLabel32.Name = "RadLabel32"
+        Me.RadLabel32.Size = New System.Drawing.Size(20, 2)
+        Me.RadLabel32.TabIndex = 17
+        Me.RadLabel32.TextWrap = False
+        '
+        'RadPanel17
+        '
+        Me.RadPanel17.Controls.Add(Me.RadTextBox8)
+        Me.RadPanel17.Controls.Add(Me.RadLabel33)
+        Me.RadPanel17.Controls.Add(Me.RadLabel34)
+        Me.RadPanel17.Location = New System.Drawing.Point(195, 5)
+        Me.RadPanel17.Name = "RadPanel17"
+        Me.RadPanel17.Size = New System.Drawing.Size(190, 22)
+        Me.RadPanel17.TabIndex = 1
+        '
+        'RadLabel33
+        '
+        Me.RadLabel33.AutoSize = False
+        Me.RadLabel33.Dock = System.Windows.Forms.DockStyle.Left
+        Me.RadLabel33.Location = New System.Drawing.Point(0, 0)
+        Me.RadLabel33.Name = "RadLabel33"
+        Me.RadLabel33.Size = New System.Drawing.Size(51, 22)
+        Me.RadLabel33.TabIndex = 17
+        Me.RadLabel33.Text = "holidays"
+        Me.RadLabel33.TextWrap = False
+        '
+        'RadLabel34
+        '
+        Me.RadLabel34.Dock = System.Windows.Forms.DockStyle.Right
+        Me.RadLabel34.Location = New System.Drawing.Point(170, 0)
+        Me.RadLabel34.Name = "RadLabel34"
+        Me.RadLabel34.Size = New System.Drawing.Size(20, 2)
+        Me.RadLabel34.TabIndex = 18
+        Me.RadLabel34.TextWrap = False
+        '
+        'DashboardDesigner1
+        '
+        Me.DashboardDesigner1.AsyncMode = True
+        Me.DashboardDesigner1.DataSourceWizard.AvailableDataSourceTypes = CType(((((DevExpress.DashboardWin.DashboardDesignerDataSourceType.Sql Or DevExpress.DashboardWin.DashboardDesignerDataSourceType.[Object]) _
+            Or DevExpress.DashboardWin.DashboardDesignerDataSourceType.Excel) _
+            Or DevExpress.DashboardWin.DashboardDesignerDataSourceType.Extract) _
+            Or DevExpress.DashboardWin.DashboardDesignerDataSourceType.Json), DevExpress.DashboardWin.DashboardDesignerDataSourceType)
+        Me.DashboardDesigner1.DataSourceWizard.SqlWizardSettings.AvailableDataProviders = CType((((DevExpress.DataAccess.UI.Wizard.SqlDataProviders.CustomConnectionString Or DevExpress.DataAccess.UI.Wizard.SqlDataProviders.Access) _
+            Or DevExpress.DataAccess.UI.Wizard.SqlDataProviders.SQLite) _
+            Or DevExpress.DataAccess.UI.Wizard.SqlDataProviders.XmlFile), DevExpress.DataAccess.UI.Wizard.SqlDataProviders)
+        Me.DashboardDesigner1.DataSourceWizard.SqlWizardSettings.EnableCustomSql = True
+        Me.DashboardDesigner1.Location = New System.Drawing.Point(199, 35)
+        Me.DashboardDesigner1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.DashboardDesigner1.Name = "DashboardDesigner1"
+        Me.DashboardDesigner1.Size = New System.Drawing.Size(868, 506)
+        Me.DashboardDesigner1.TabIndex = 15
         '
         'ShapedForm2
         '
@@ -1103,8 +1558,9 @@ Partial Class ShapedForm2
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.BorderColor = System.Drawing.Color.White
-        Me.ClientSize = New System.Drawing.Size(1180, 544)
-        Me.Controls.Add(Me.RichTextEditorRibbonBar1)
+        Me.ClientSize = New System.Drawing.Size(1180, 759)
+        Me.Controls.Add(Me.DashboardDesigner1)
+        Me.Controls.Add(Me.RadDataEntry1)
         Me.Controls.Add(Me.RadRichTextEditor1)
         Me.Controls.Add(Me.RadPictureBox1)
         Me.Controls.Add(Me.RadButtonTextBox2)
@@ -1213,7 +1669,6 @@ Partial Class ShapedForm2
         CType(Me.RadSpinEditor7, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.RadLabel29, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.RadLabel30, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.RadPopupContainer1.PanelContainer.ResumeLayout(False)
         CType(Me.RadPopupContainer1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.RadPopupContainer1.ResumeLayout(False)
         CType(Me.RadPopupEditor1, System.ComponentModel.ISupportInitialize).EndInit()
@@ -1226,7 +1681,19 @@ Partial Class ShapedForm2
         CType(Me.RadButtonTextBox2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.RadPictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.RadRichTextEditor1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.RichTextEditorRibbonBar1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.RadTextBox7, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.RadTextBox8, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.RadPanel16, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.RadPanel16.ResumeLayout(False)
+        Me.RadPanel16.PerformLayout()
+        CType(Me.RadLabel31, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.RadLabel32, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.RadPanel17, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.RadPanel17.ResumeLayout(False)
+        Me.RadPanel17.PerformLayout()
+        CType(Me.RadLabel33, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.RadLabel34, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DashboardDesigner1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -1314,6 +1781,16 @@ Partial Class ShapedForm2
     Friend WithEvents ChamferedRectShape1 As Telerik.WinControls.ChamferedRectShape
     Friend WithEvents RadPictureBox1 As Telerik.WinControls.UI.RadPictureBox
     Friend WithEvents RadRichTextEditor1 As Telerik.WinControls.UI.RadRichTextEditor
-    Friend WithEvents RichTextEditorRibbonBar1 As Telerik.WinControls.UI.RichTextEditorRibbonBar
+    Friend WithEvents SqlDataSource1 As DevExpress.DataAccess.Sql.SqlDataSource
+    Friend WithEvents JsonDataSource1 As DevExpress.DataAccess.Json.JsonDataSource
+    Friend WithEvents RadPanel16 As Telerik.WinControls.UI.RadPanel
+    Friend WithEvents RadTextBox7 As Telerik.WinControls.UI.RadTextBox
+    Friend WithEvents RadLabel31 As Telerik.WinControls.UI.RadLabel
+    Friend WithEvents RadLabel32 As Telerik.WinControls.UI.RadLabel
+    Friend WithEvents RadPanel17 As Telerik.WinControls.UI.RadPanel
+    Friend WithEvents RadTextBox8 As Telerik.WinControls.UI.RadTextBox
+    Friend WithEvents RadLabel33 As Telerik.WinControls.UI.RadLabel
+    Friend WithEvents RadLabel34 As Telerik.WinControls.UI.RadLabel
+    Friend WithEvents DashboardDesigner1 As DevExpress.DashboardWin.DashboardDesigner
 End Class
 

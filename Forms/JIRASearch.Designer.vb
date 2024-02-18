@@ -24,11 +24,11 @@ Partial Class JIRASearch
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Dim TableViewDefinition1 As Telerik.WinControls.UI.TableViewDefinition = New Telerik.WinControls.UI.TableViewDefinition()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(JIRASearch))
         Dim RadListDataItem1 As Telerik.WinControls.UI.RadListDataItem = New Telerik.WinControls.UI.RadListDataItem()
         Dim RadListDataItem2 As Telerik.WinControls.UI.RadListDataItem = New Telerik.WinControls.UI.RadListDataItem()
         Dim RadListDataItem3 As Telerik.WinControls.UI.RadListDataItem = New Telerik.WinControls.UI.RadListDataItem()
         Dim RadListDataItem4 As Telerik.WinControls.UI.RadListDataItem = New Telerik.WinControls.UI.RadListDataItem()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(JIRASearch))
         Me.RoundRectShapeForm = New Telerik.WinControls.RoundRectShape(Me.components)
         Me.RoundRectShapeTitle = New Telerik.WinControls.RoundRectShape(Me.components)
         Me.RadTitleBar1 = New Telerik.WinControls.UI.RadTitleBar()
@@ -45,6 +45,9 @@ Partial Class JIRASearch
         Me.ChkUpdComment = New Telerik.WinControls.UI.RadCheckBox()
         Me.BtnExists = New Telerik.WinControls.UI.RadButton()
         Me.BtnImport = New Telerik.WinControls.UI.RadButton()
+        Me.CboChannel = New Telerik.WinControls.UI.RadDropDownList()
+        Me.CboClient = New Telerik.WinControls.UI.RadDropDownList()
+        Me.CboStatus = New Telerik.WinControls.UI.RadDropDownList()
         Me.LayoutControlLabelItem3 = New Telerik.WinControls.UI.LayoutControlLabelItem()
         Me.LayoutControlLabelItem5 = New Telerik.WinControls.UI.LayoutControlLabelItem()
         Me.LayoutControlLabelItem8 = New Telerik.WinControls.UI.LayoutControlLabelItem()
@@ -66,19 +69,18 @@ Partial Class JIRASearch
         Me.LayoutControlItem13 = New Telerik.WinControls.UI.LayoutControlItem()
         Me.LayoutControlLabelItem10 = New Telerik.WinControls.UI.LayoutControlLabelItem()
         Me.LayoutControlItem14 = New Telerik.WinControls.UI.LayoutControlItem()
+        Me.LayoutControlLabelItem11 = New Telerik.WinControls.UI.LayoutControlLabelItem()
+        Me.LayoutControlLabelItem12 = New Telerik.WinControls.UI.LayoutControlLabelItem()
+        Me.LayoutControlItem15 = New Telerik.WinControls.UI.LayoutControlItem()
+        Me.LayoutControlLabelItem13 = New Telerik.WinControls.UI.LayoutControlLabelItem()
+        Me.LayoutControlItem16 = New Telerik.WinControls.UI.LayoutControlItem()
+        Me.LayoutControlLabelItem14 = New Telerik.WinControls.UI.LayoutControlLabelItem()
+        Me.LayoutControlItem17 = New Telerik.WinControls.UI.LayoutControlItem()
         Me.LayoutControlLabelItem1 = New Telerik.WinControls.UI.LayoutControlLabelItem()
         Me.LayoutControlItem1 = New Telerik.WinControls.UI.LayoutControlItem()
         Me.LayoutControlItem2 = New Telerik.WinControls.UI.LayoutControlItem()
-        Me.LayoutControlLabelItem11 = New Telerik.WinControls.UI.LayoutControlLabelItem()
-        Me.LayoutControlLabelItem12 = New Telerik.WinControls.UI.LayoutControlLabelItem()
-        Me.CboChannel = New Telerik.WinControls.UI.RadDropDownList()
-        Me.LayoutControlItem15 = New Telerik.WinControls.UI.LayoutControlItem()
-        Me.LayoutControlLabelItem13 = New Telerik.WinControls.UI.LayoutControlLabelItem()
-        Me.CboClient = New Telerik.WinControls.UI.RadDropDownList()
-        Me.LayoutControlItem16 = New Telerik.WinControls.UI.LayoutControlItem()
-        Me.LayoutControlLabelItem14 = New Telerik.WinControls.UI.LayoutControlLabelItem()
-        Me.CboStatus = New Telerik.WinControls.UI.RadDropDownList()
-        Me.LayoutControlItem17 = New Telerik.WinControls.UI.LayoutControlItem()
+        Me.SimpleButton1 = New DevExpress.XtraEditors.SimpleButton()
+        Me.LayoutControlItem18 = New Telerik.WinControls.UI.LayoutControlItem()
         CType(Me.RadTitleBar1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.RadGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.RadGridView1.MasterTemplate, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -162,9 +164,10 @@ Partial Class JIRASearch
         Me.RadLayoutControl1.Controls.Add(Me.CboChannel)
         Me.RadLayoutControl1.Controls.Add(Me.CboClient)
         Me.RadLayoutControl1.Controls.Add(Me.CboStatus)
+        Me.RadLayoutControl1.Controls.Add(Me.SimpleButton1)
         Me.RadLayoutControl1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.RadLayoutControl1.HiddenItems.AddRange(New Telerik.WinControls.RadItem() {Me.LayoutControlLabelItem3, Me.LayoutControlLabelItem5, Me.LayoutControlLabelItem8, Me.LayoutControlLabelItem6})
-        Me.RadLayoutControl1.Items.AddRange(New Telerik.WinControls.RadItem() {Me.LayoutControlItem3, Me.LayoutControlItem4, Me.LayoutControlItem5, Me.LayoutControlLabelItem2, Me.LayoutControlLabelItem4, Me.LayoutControlItem6, Me.LayoutControlItem7, Me.LayoutControlItem8, Me.LayoutControlItem9, Me.LayoutControlItem10, Me.LayoutControlLabelItem7, Me.LayoutControlItem11, Me.LayoutControlItem12, Me.LayoutControlLabelItem9, Me.LayoutControlItem13, Me.LayoutControlLabelItem10, Me.LayoutControlItem14, Me.LayoutControlLabelItem11, Me.LayoutControlLabelItem12, Me.LayoutControlItem15, Me.LayoutControlLabelItem13, Me.LayoutControlItem16, Me.LayoutControlLabelItem14, Me.LayoutControlItem17})
+        Me.RadLayoutControl1.Items.AddRange(New Telerik.WinControls.RadItem() {Me.LayoutControlItem3, Me.LayoutControlItem4, Me.LayoutControlItem5, Me.LayoutControlLabelItem2, Me.LayoutControlLabelItem4, Me.LayoutControlItem6, Me.LayoutControlItem7, Me.LayoutControlItem8, Me.LayoutControlItem9, Me.LayoutControlItem10, Me.LayoutControlLabelItem7, Me.LayoutControlItem11, Me.LayoutControlItem12, Me.LayoutControlLabelItem9, Me.LayoutControlItem13, Me.LayoutControlLabelItem10, Me.LayoutControlItem14, Me.LayoutControlLabelItem11, Me.LayoutControlLabelItem12, Me.LayoutControlItem15, Me.LayoutControlLabelItem13, Me.LayoutControlItem16, Me.LayoutControlLabelItem14, Me.LayoutControlItem17, Me.LayoutControlItem18})
         Me.RadLayoutControl1.Location = New System.Drawing.Point(0, 23)
         Me.RadLayoutControl1.Name = "RadLayoutControl1"
         Me.RadLayoutControl1.Size = New System.Drawing.Size(1354, 597)
@@ -186,7 +189,7 @@ Partial Class JIRASearch
         Me.btnSearch.ForeColor = System.Drawing.Color.FromArgb(CType(CType(75, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(109, Byte), Integer))
         Me.btnSearch.Location = New System.Drawing.Point(4, 66)
         Me.btnSearch.Name = "btnSearch"
-        Me.btnSearch.Size = New System.Drawing.Size(135, 25)
+        Me.btnSearch.Size = New System.Drawing.Size(49, 25)
         Me.btnSearch.TabIndex = 6
         Me.btnSearch.Text = "Search"
         '
@@ -274,6 +277,49 @@ Partial Class JIRASearch
         Me.BtnImport.TabIndex = 18
         Me.BtnImport.Text = "Import"
         '
+        'CboChannel
+        '
+        Me.CboChannel.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend
+        Me.CboChannel.DefaultItemsCountInDropDown = 15
+        Me.CboChannel.DropDownAnimationEnabled = True
+        Me.CboChannel.Location = New System.Drawing.Point(4, 147)
+        Me.CboChannel.MaximumSize = New System.Drawing.Size(0, 26)
+        Me.CboChannel.Name = "CboChannel"
+        Me.CboChannel.NullText = "Select Channel"
+        Me.CboChannel.Size = New System.Drawing.Size(143, 24)
+        Me.CboChannel.TabIndex = 20
+        '
+        'CboClient
+        '
+        Me.CboClient.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend
+        Me.CboClient.DefaultItemsCountInDropDown = 15
+        Me.CboClient.DropDownAnimationEnabled = True
+        Me.CboClient.Location = New System.Drawing.Point(153, 147)
+        Me.CboClient.MaximumSize = New System.Drawing.Size(0, 26)
+        Me.CboClient.Name = "CboClient"
+        Me.CboClient.NullText = "Select Client"
+        Me.CboClient.Size = New System.Drawing.Size(151, 24)
+        Me.CboClient.TabIndex = 21
+        '
+        'CboStatus
+        '
+        Me.CboStatus.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend
+        Me.CboStatus.DropDownAnimationEnabled = True
+        RadListDataItem1.Text = "AODA - Confirmed Defect"
+        RadListDataItem2.Text = "AODA - Enhancement"
+        RadListDataItem3.Text = "Confirmed Defect"
+        RadListDataItem4.Text = "Enhancement - Escalated to Product"
+        Me.CboStatus.Items.Add(RadListDataItem1)
+        Me.CboStatus.Items.Add(RadListDataItem2)
+        Me.CboStatus.Items.Add(RadListDataItem3)
+        Me.CboStatus.Items.Add(RadListDataItem4)
+        Me.CboStatus.Location = New System.Drawing.Point(310, 147)
+        Me.CboStatus.MaximumSize = New System.Drawing.Size(0, 26)
+        Me.CboStatus.Name = "CboStatus"
+        Me.CboStatus.NullText = "Select Status"
+        Me.CboStatus.Size = New System.Drawing.Size(208, 24)
+        Me.CboStatus.TabIndex = 22
+        '
         'LayoutControlLabelItem3
         '
         Me.LayoutControlLabelItem3.Bounds = New System.Drawing.Rectangle(792, 0, 106, 78)
@@ -310,7 +356,7 @@ Partial Class JIRASearch
         'LayoutControlItem4
         '
         Me.LayoutControlItem4.AssociatedControl = Me.btnSearch
-        Me.LayoutControlItem4.Bounds = New System.Drawing.Rectangle(0, 62, 141, 31)
+        Me.LayoutControlItem4.Bounds = New System.Drawing.Rectangle(0, 62, 55, 31)
         Me.LayoutControlItem4.MaxSize = New System.Drawing.Size(0, 31)
         Me.LayoutControlItem4.Name = "LayoutControlItem4"
         Me.LayoutControlItem4.Text = "LayoutControlItem4"
@@ -447,6 +493,60 @@ Partial Class JIRASearch
         Me.LayoutControlItem14.Name = "LayoutControlItem14"
         Me.LayoutControlItem14.Text = "LayoutControlItem14"
         '
+        'LayoutControlLabelItem11
+        '
+        Me.LayoutControlLabelItem11.Bounds = New System.Drawing.Rectangle(520, 119, 832, 52)
+        Me.LayoutControlLabelItem11.DrawText = False
+        Me.LayoutControlLabelItem11.Name = "LayoutControlLabelItem11"
+        '
+        'LayoutControlLabelItem12
+        '
+        Me.LayoutControlLabelItem12.Bounds = New System.Drawing.Rectangle(0, 119, 149, 26)
+        Me.LayoutControlLabelItem12.MaxSize = New System.Drawing.Size(149, 26)
+        Me.LayoutControlLabelItem12.Name = "LayoutControlLabelItem12"
+        Me.LayoutControlLabelItem12.Text = "Channel"
+        '
+        'LayoutControlItem15
+        '
+        Me.LayoutControlItem15.AssociatedControl = Me.CboChannel
+        Me.LayoutControlItem15.Bounds = New System.Drawing.Rectangle(0, 145, 149, 26)
+        Me.LayoutControlItem15.ControlVerticalAlignment = Telerik.WinControls.UI.RadVerticalAlignment.Center
+        Me.LayoutControlItem15.MaxSize = New System.Drawing.Size(149, 26)
+        Me.LayoutControlItem15.Name = "LayoutControlItem15"
+        Me.LayoutControlItem15.Text = "LayoutControlItem15"
+        '
+        'LayoutControlLabelItem13
+        '
+        Me.LayoutControlLabelItem13.Bounds = New System.Drawing.Rectangle(149, 119, 157, 26)
+        Me.LayoutControlLabelItem13.MaxSize = New System.Drawing.Size(157, 26)
+        Me.LayoutControlLabelItem13.Name = "LayoutControlLabelItem13"
+        Me.LayoutControlLabelItem13.Text = "Client"
+        '
+        'LayoutControlItem16
+        '
+        Me.LayoutControlItem16.AssociatedControl = Me.CboClient
+        Me.LayoutControlItem16.Bounds = New System.Drawing.Rectangle(149, 145, 157, 26)
+        Me.LayoutControlItem16.ControlVerticalAlignment = Telerik.WinControls.UI.RadVerticalAlignment.Center
+        Me.LayoutControlItem16.MaxSize = New System.Drawing.Size(157, 26)
+        Me.LayoutControlItem16.Name = "LayoutControlItem16"
+        Me.LayoutControlItem16.Text = "LayoutControlItem16"
+        '
+        'LayoutControlLabelItem14
+        '
+        Me.LayoutControlLabelItem14.Bounds = New System.Drawing.Rectangle(306, 119, 214, 26)
+        Me.LayoutControlLabelItem14.MaxSize = New System.Drawing.Size(214, 26)
+        Me.LayoutControlLabelItem14.Name = "LayoutControlLabelItem14"
+        Me.LayoutControlLabelItem14.Text = "Status"
+        '
+        'LayoutControlItem17
+        '
+        Me.LayoutControlItem17.AssociatedControl = Me.CboStatus
+        Me.LayoutControlItem17.Bounds = New System.Drawing.Rectangle(306, 145, 214, 26)
+        Me.LayoutControlItem17.ControlVerticalAlignment = Telerik.WinControls.UI.RadVerticalAlignment.Center
+        Me.LayoutControlItem17.MaxSize = New System.Drawing.Size(214, 26)
+        Me.LayoutControlItem17.Name = "LayoutControlItem17"
+        Me.LayoutControlItem17.Text = "LayoutControlItem17"
+        '
         'LayoutControlLabelItem1
         '
         Me.LayoutControlLabelItem1.Bounds = New System.Drawing.Rectangle(0, 0, 46, 26)
@@ -473,102 +573,20 @@ Partial Class JIRASearch
         Me.LayoutControlItem2.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault
         Me.LayoutControlItem2.UseCompatibleTextRendering = False
         '
-        'LayoutControlLabelItem11
+        'SimpleButton1
         '
-        Me.LayoutControlLabelItem11.Bounds = New System.Drawing.Rectangle(520, 119, 832, 52)
-        Me.LayoutControlLabelItem11.DrawText = False
-        Me.LayoutControlLabelItem11.Name = "LayoutControlLabelItem11"
+        Me.SimpleButton1.Location = New System.Drawing.Point(59, 66)
+        Me.SimpleButton1.Name = "SimpleButton1"
+        Me.SimpleButton1.Size = New System.Drawing.Size(80, 25)
+        Me.SimpleButton1.TabIndex = 24
+        Me.SimpleButton1.Text = "SimpleButton1"
         '
-        'LayoutControlLabelItem12
+        'LayoutControlItem18
         '
-        Me.LayoutControlLabelItem12.Bounds = New System.Drawing.Rectangle(0, 119, 149, 26)
-        Me.LayoutControlLabelItem12.MaxSize = New System.Drawing.Size(149, 26)
-        Me.LayoutControlLabelItem12.Name = "LayoutControlLabelItem12"
-        Me.LayoutControlLabelItem12.Text = "Channel"
-        '
-        'CboChannel
-        '
-        Me.CboChannel.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend
-        Me.CboChannel.DefaultItemsCountInDropDown = 15
-        Me.CboChannel.DropDownAnimationEnabled = True
-        Me.CboChannel.Location = New System.Drawing.Point(4, 147)
-        Me.CboChannel.MaximumSize = New System.Drawing.Size(0, 26)
-        Me.CboChannel.Name = "CboChannel"
-        Me.CboChannel.NullText = "Select Channel"
-        Me.CboChannel.Size = New System.Drawing.Size(143, 24)
-        Me.CboChannel.TabIndex = 20
-        '
-        'LayoutControlItem15
-        '
-        Me.LayoutControlItem15.AssociatedControl = Me.CboChannel
-        Me.LayoutControlItem15.Bounds = New System.Drawing.Rectangle(0, 145, 149, 26)
-        Me.LayoutControlItem15.ControlVerticalAlignment = Telerik.WinControls.UI.RadVerticalAlignment.Center
-        Me.LayoutControlItem15.MaxSize = New System.Drawing.Size(149, 26)
-        Me.LayoutControlItem15.Name = "LayoutControlItem15"
-        Me.LayoutControlItem15.Text = "LayoutControlItem15"
-        '
-        'LayoutControlLabelItem13
-        '
-        Me.LayoutControlLabelItem13.Bounds = New System.Drawing.Rectangle(149, 119, 157, 26)
-        Me.LayoutControlLabelItem13.MaxSize = New System.Drawing.Size(157, 26)
-        Me.LayoutControlLabelItem13.Name = "LayoutControlLabelItem13"
-        Me.LayoutControlLabelItem13.Text = "Client"
-        '
-        'CboClient
-        '
-        Me.CboClient.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend
-        Me.CboClient.DefaultItemsCountInDropDown = 15
-        Me.CboClient.DropDownAnimationEnabled = True
-        Me.CboClient.Location = New System.Drawing.Point(153, 147)
-        Me.CboClient.MaximumSize = New System.Drawing.Size(0, 26)
-        Me.CboClient.Name = "CboClient"
-        Me.CboClient.NullText = "Select Client"
-        Me.CboClient.Size = New System.Drawing.Size(151, 24)
-        Me.CboClient.TabIndex = 21
-        '
-        'LayoutControlItem16
-        '
-        Me.LayoutControlItem16.AssociatedControl = Me.CboClient
-        Me.LayoutControlItem16.Bounds = New System.Drawing.Rectangle(149, 145, 157, 26)
-        Me.LayoutControlItem16.ControlVerticalAlignment = Telerik.WinControls.UI.RadVerticalAlignment.Center
-        Me.LayoutControlItem16.MaxSize = New System.Drawing.Size(157, 26)
-        Me.LayoutControlItem16.Name = "LayoutControlItem16"
-        Me.LayoutControlItem16.Text = "LayoutControlItem16"
-        '
-        'LayoutControlLabelItem14
-        '
-        Me.LayoutControlLabelItem14.Bounds = New System.Drawing.Rectangle(306, 119, 214, 26)
-        Me.LayoutControlLabelItem14.MaxSize = New System.Drawing.Size(214, 26)
-        Me.LayoutControlLabelItem14.Name = "LayoutControlLabelItem14"
-        Me.LayoutControlLabelItem14.Text = "Status"
-        '
-        'CboStatus
-        '
-        Me.CboStatus.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend
-        Me.CboStatus.DropDownAnimationEnabled = True
-        RadListDataItem1.Text = "AODA - Confirmed Defect"
-        RadListDataItem2.Text = "AODA - Enhancement"
-        RadListDataItem3.Text = "Confirmed Defect"
-        RadListDataItem4.Text = "Enhancement - Escalated to Product"
-        Me.CboStatus.Items.Add(RadListDataItem1)
-        Me.CboStatus.Items.Add(RadListDataItem2)
-        Me.CboStatus.Items.Add(RadListDataItem3)
-        Me.CboStatus.Items.Add(RadListDataItem4)
-        Me.CboStatus.Location = New System.Drawing.Point(310, 147)
-        Me.CboStatus.MaximumSize = New System.Drawing.Size(0, 26)
-        Me.CboStatus.Name = "CboStatus"
-        Me.CboStatus.NullText = "Select Status"
-        Me.CboStatus.Size = New System.Drawing.Size(208, 24)
-        Me.CboStatus.TabIndex = 22
-        '
-        'LayoutControlItem17
-        '
-        Me.LayoutControlItem17.AssociatedControl = Me.CboStatus
-        Me.LayoutControlItem17.Bounds = New System.Drawing.Rectangle(306, 145, 214, 26)
-        Me.LayoutControlItem17.ControlVerticalAlignment = Telerik.WinControls.UI.RadVerticalAlignment.Center
-        Me.LayoutControlItem17.MaxSize = New System.Drawing.Size(214, 26)
-        Me.LayoutControlItem17.Name = "LayoutControlItem17"
-        Me.LayoutControlItem17.Text = "LayoutControlItem17"
+        Me.LayoutControlItem18.AssociatedControl = Me.SimpleButton1
+        Me.LayoutControlItem18.Bounds = New System.Drawing.Rectangle(55, 62, 86, 31)
+        Me.LayoutControlItem18.Name = "LayoutControlItem18"
+        Me.LayoutControlItem18.Text = "LayoutControlItem18"
         '
         'JIRASearch
         '
@@ -654,5 +672,7 @@ Partial Class JIRASearch
     Friend WithEvents CboStatus As Telerik.WinControls.UI.RadDropDownList
     Friend WithEvents LayoutControlLabelItem14 As Telerik.WinControls.UI.LayoutControlLabelItem
     Friend WithEvents LayoutControlItem17 As Telerik.WinControls.UI.LayoutControlItem
+    Friend WithEvents SimpleButton1 As DevExpress.XtraEditors.SimpleButton
+    Friend WithEvents LayoutControlItem18 As Telerik.WinControls.UI.LayoutControlItem
 End Class
 
