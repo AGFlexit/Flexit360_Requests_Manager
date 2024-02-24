@@ -158,9 +158,15 @@ Partial Public Class MenuV2
         Me.BarButtonItem2 = New DevExpress.XtraBars.BarButtonItem()
         Me.BarButtonItem3 = New DevExpress.XtraBars.BarButtonItem()
         Me.BarBtnNewClient = New DevExpress.XtraBars.BarButtonItem()
+        Me.PopupControlContainer2 = New DevExpress.XtraBars.PopupControlContainer(Me.components)
+        Me.BtnAddClientConfirm = New DevExpress.XtraEditors.SimpleButton()
+        Me.lblNewClient = New DevExpress.XtraEditors.LabelControl()
+        Me.TxtAddClientName = New DevExpress.XtraEditors.TextEdit()
+        Me.TxtAddClientID = New DevExpress.XtraEditors.TextEdit()
         Me.BarBtnRefresh = New DevExpress.XtraBars.BarButtonItem()
         Me.BarBtnNewContact = New DevExpress.XtraBars.BarButtonItem()
         Me.PopupControlContainer1 = New DevExpress.XtraBars.PopupControlContainer(Me.components)
+        Me.lblNewContact = New DevExpress.XtraEditors.LabelControl()
         Me.BtnAddContactConfirm = New DevExpress.XtraEditors.SimpleButton()
         Me.TxtAddContactTID = New DevExpress.XtraEditors.TextEdit()
         Me.TxtAddContactEmail = New DevExpress.XtraEditors.TextEdit()
@@ -302,17 +308,17 @@ Partial Public Class MenuV2
         Me.tabbedView = New DevExpress.XtraBars.Docking2010.Views.Tabbed.TabbedView(Me.components)
         Me.officeNavigationBar = New DevExpress.XtraBars.Navigation.OfficeNavigationBar()
         Me.navBarControl = New DevExpress.XtraNavBar.NavBarControl()
+        Me.RequestsNavBarGroup = New DevExpress.XtraNavBar.NavBarGroup()
+        Me.NavBarUnresolved = New DevExpress.XtraNavBar.NavBarItem()
+        Me.NavBarAssignedMe = New DevExpress.XtraNavBar.NavBarItem()
+        Me.NavBarResolved = New DevExpress.XtraNavBar.NavBarItem()
+        Me.NavBarAllRequests = New DevExpress.XtraNavBar.NavBarItem()
         Me.DefectsNavBarGroup = New DevExpress.XtraNavBar.NavBarGroup()
         Me.NavBarDefects = New DevExpress.XtraNavBar.NavBarItem()
         Me.NavBarEnh = New DevExpress.XtraNavBar.NavBarItem()
         Me.NavBarFLEXS = New DevExpress.XtraNavBar.NavBarItem()
         Me.NavBarFLEXSDone = New DevExpress.XtraNavBar.NavBarItem()
         Me.NavBarJIRASync = New DevExpress.XtraNavBar.NavBarItem()
-        Me.RequestsNavBarGroup = New DevExpress.XtraNavBar.NavBarGroup()
-        Me.NavBarUnresolved = New DevExpress.XtraNavBar.NavBarItem()
-        Me.NavBarAssignedMe = New DevExpress.XtraNavBar.NavBarItem()
-        Me.NavBarResolved = New DevExpress.XtraNavBar.NavBarItem()
-        Me.NavBarAllRequests = New DevExpress.XtraNavBar.NavBarItem()
         Me.navigationFrame = New DevExpress.XtraBars.Navigation.NavigationFrame()
         Me.RequestsNavigationPage = New DevExpress.XtraBars.Navigation.NavigationPage()
         Me.MemoEdit2 = New DevExpress.XtraEditors.MemoEdit()
@@ -367,6 +373,10 @@ Partial Public Class MenuV2
         CType(Me.RepoBtnAddComment, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ribbonControl, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.RepositoryItemTimeSpanEdit1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PopupControlContainer2, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.PopupControlContainer2.SuspendLayout()
+        CType(Me.TxtAddClientName.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.TxtAddClientID.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PopupControlContainer1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.PopupControlContainer1.SuspendLayout()
         CType(Me.TxtAddContactTID.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -1401,7 +1411,10 @@ Partial Public Class MenuV2
         '
         Me.BarToggleSwitchPreview.Caption = "Preview"
         Me.BarToggleSwitchPreview.Id = 52
+        Me.BarToggleSwitchPreview.ImageOptions.SvgImage = CType(resources.GetObject("BarToggleSwitchPreview.ImageOptions.SvgImage"), DevExpress.Utils.Svg.SvgImage)
         Me.BarToggleSwitchPreview.Name = "BarToggleSwitchPreview"
+        Me.BarToggleSwitchPreview.RibbonStyle = CType(((DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large Or DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText) _
+            Or DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithoutText), DevExpress.XtraBars.Ribbon.RibbonItemStyles)
         '
         'btnJQLSnippets
         '
@@ -1418,7 +1431,7 @@ Partial Public Class MenuV2
         '
         Me.BarBtnAddHoursFly.AllowDrawArrow = False
         Me.BarBtnAddHoursFly.AllowDrawArrowInMenu = False
-        Me.BarBtnAddHoursFly.Caption = "Time"
+        Me.BarBtnAddHoursFly.Caption = "Time Entries Edit"
         Me.BarBtnAddHoursFly.DropDownEnabled = False
         Me.BarBtnAddHoursFly.Id = 54
         Me.BarBtnAddHoursFly.ImageOptions.SvgImage = CType(resources.GetObject("BarBtnAddHoursFly.ImageOptions.SvgImage"), DevExpress.Utils.Svg.SvgImage)
@@ -1474,7 +1487,7 @@ Partial Public Class MenuV2
         '
         Me.BarButtonItem2.Caption = "New JIRA DB Refresh"
         Me.BarButtonItem2.Id = 63
-        Me.BarButtonItem2.ImageOptions.SvgImage = Global.RequestsManager.My.Resources.Resources.JIRA32
+        Me.BarButtonItem2.ImageOptions.SvgImage = Global.RequestsManager.My.Resources.Resources.NewJIRA
         Me.BarButtonItem2.Name = "BarButtonItem2"
         '
         'BarButtonItem3
@@ -1485,16 +1498,76 @@ Partial Public Class MenuV2
         '
         'BarBtnNewClient
         '
+        Me.BarBtnNewClient.ActAsDropDown = True
+        Me.BarBtnNewClient.ButtonStyle = DevExpress.XtraBars.BarButtonStyle.DropDown
         Me.BarBtnNewClient.Caption = "New Client"
+        Me.BarBtnNewClient.DropDownControl = Me.PopupControlContainer2
         Me.BarBtnNewClient.Id = 65
-        Me.BarBtnNewClient.ImageOptions.SvgImage = Global.RequestsManager.My.Resources.Resources.Office_2
+        Me.BarBtnNewClient.ImageOptions.SvgImage = Global.RequestsManager.My.Resources.Resources.AddClient
         Me.BarBtnNewClient.Name = "BarBtnNewClient"
+        '
+        'PopupControlContainer2
+        '
+        Me.PopupControlContainer2.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder
+        Me.PopupControlContainer2.Controls.Add(Me.BtnAddClientConfirm)
+        Me.PopupControlContainer2.Controls.Add(Me.lblNewClient)
+        Me.PopupControlContainer2.Controls.Add(Me.TxtAddClientName)
+        Me.PopupControlContainer2.Controls.Add(Me.TxtAddClientID)
+        Me.PopupControlContainer2.Location = New System.Drawing.Point(875, 12)
+        Me.PopupControlContainer2.Name = "PopupControlContainer2"
+        Me.PopupControlContainer2.Ribbon = Me.ribbonControl
+        Me.PopupControlContainer2.Size = New System.Drawing.Size(262, 130)
+        Me.PopupControlContainer2.TabIndex = 6
+        Me.PopupControlContainer2.Visible = False
+        '
+        'BtnAddClientConfirm
+        '
+        Me.BtnAddClientConfirm.Location = New System.Drawing.Point(79, 92)
+        Me.BtnAddClientConfirm.Name = "BtnAddClientConfirm"
+        Me.BtnAddClientConfirm.Size = New System.Drawing.Size(104, 23)
+        Me.BtnAddClientConfirm.TabIndex = 10
+        Me.BtnAddClientConfirm.Text = "Confirm"
+        '
+        'lblNewClient
+        '
+        Me.lblNewClient.Appearance.Font = New System.Drawing.Font("HelveticaNowDisplay Regular", 11.0!, System.Drawing.FontStyle.Bold)
+        Me.lblNewClient.Appearance.Options.UseFont = True
+        Me.lblNewClient.Location = New System.Drawing.Point(10, 15)
+        Me.lblNewClient.Name = "lblNewClient"
+        Me.lblNewClient.Size = New System.Drawing.Size(136, 22)
+        Me.lblNewClient.TabIndex = 9
+        Me.lblNewClient.Text = "Create New Client"
+        '
+        'TxtAddClientName
+        '
+        Me.TxtAddClientName.Location = New System.Drawing.Point(68, 53)
+        Me.TxtAddClientName.MenuManager = Me.ribbonControl
+        Me.TxtAddClientName.Name = "TxtAddClientName"
+        Me.TxtAddClientName.Properties.AllowNullInput = DevExpress.Utils.DefaultBoolean.[False]
+        Me.TxtAddClientName.Properties.NullValuePrompt = "Client Name"
+        Me.TxtAddClientName.Properties.ShowNullValuePrompt = CType((DevExpress.XtraEditors.ShowNullValuePromptOptions.EmptyValue Or DevExpress.XtraEditors.ShowNullValuePromptOptions.EditorFocused), DevExpress.XtraEditors.ShowNullValuePromptOptions)
+        Me.TxtAddClientName.Properties.UseReadOnlyAppearance = False
+        Me.TxtAddClientName.Size = New System.Drawing.Size(185, 24)
+        Me.TxtAddClientName.TabIndex = 8
+        '
+        'TxtAddClientID
+        '
+        Me.TxtAddClientID.EditValue = ""
+        Me.TxtAddClientID.Location = New System.Drawing.Point(9, 53)
+        Me.TxtAddClientID.MenuManager = Me.ribbonControl
+        Me.TxtAddClientID.Name = "TxtAddClientID"
+        Me.TxtAddClientID.Properties.AllowNullInput = DevExpress.Utils.DefaultBoolean.[False]
+        Me.TxtAddClientID.Properties.NullValuePrompt = "Flexit ID"
+        Me.TxtAddClientID.Properties.ShowNullValuePrompt = CType((DevExpress.XtraEditors.ShowNullValuePromptOptions.EmptyValue Or DevExpress.XtraEditors.ShowNullValuePromptOptions.EditorFocused), DevExpress.XtraEditors.ShowNullValuePromptOptions)
+        Me.TxtAddClientID.Properties.UseReadOnlyAppearance = False
+        Me.TxtAddClientID.Size = New System.Drawing.Size(53, 24)
+        Me.TxtAddClientID.TabIndex = 7
         '
         'BarBtnRefresh
         '
         Me.BarBtnRefresh.Caption = "Refresh Data"
         Me.BarBtnRefresh.Id = 66
-        Me.BarBtnRefresh.ImageOptions.Image = Global.RequestsManager.My.Resources.Resources.refresh
+        Me.BarBtnRefresh.ImageOptions.SvgImage = Global.RequestsManager.My.Resources.Resources.RefreshData
         Me.BarBtnRefresh.Name = "BarBtnRefresh"
         Me.BarBtnRefresh.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large
         '
@@ -1512,21 +1585,32 @@ Partial Public Class MenuV2
         '
         Me.PopupControlContainer1.AutoSize = True
         Me.PopupControlContainer1.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder
+        Me.PopupControlContainer1.Controls.Add(Me.lblNewContact)
         Me.PopupControlContainer1.Controls.Add(Me.BtnAddContactConfirm)
         Me.PopupControlContainer1.Controls.Add(Me.TxtAddContactTID)
         Me.PopupControlContainer1.Controls.Add(Me.TxtAddContactEmail)
         Me.PopupControlContainer1.Controls.Add(Me.TxtAddContactLName)
         Me.PopupControlContainer1.Controls.Add(Me.TxtAddContactFName)
-        Me.PopupControlContainer1.Location = New System.Drawing.Point(191, 12)
+        Me.PopupControlContainer1.Location = New System.Drawing.Point(803, 12)
         Me.PopupControlContainer1.Name = "PopupControlContainer1"
         Me.PopupControlContainer1.Ribbon = Me.ribbonControl
-        Me.PopupControlContainer1.Size = New System.Drawing.Size(322, 104)
+        Me.PopupControlContainer1.Size = New System.Drawing.Size(344, 167)
         Me.PopupControlContainer1.TabIndex = 4
         Me.PopupControlContainer1.Visible = False
         '
+        'lblNewContact
+        '
+        Me.lblNewContact.Appearance.Font = New System.Drawing.Font("HelveticaNowDisplay Regular", 11.0!, System.Drawing.FontStyle.Bold)
+        Me.lblNewContact.Appearance.Options.UseFont = True
+        Me.lblNewContact.Location = New System.Drawing.Point(16, 15)
+        Me.lblNewContact.Name = "lblNewContact"
+        Me.lblNewContact.Size = New System.Drawing.Size(153, 22)
+        Me.lblNewContact.TabIndex = 10
+        Me.lblNewContact.Text = "Create New Contact"
+        '
         'BtnAddContactConfirm
         '
-        Me.BtnAddContactConfirm.Location = New System.Drawing.Point(110, 78)
+        Me.BtnAddContactConfirm.Location = New System.Drawing.Point(120, 122)
         Me.BtnAddContactConfirm.Name = "BtnAddContactConfirm"
         Me.BtnAddContactConfirm.Size = New System.Drawing.Size(104, 23)
         Me.BtnAddContactConfirm.TabIndex = 5
@@ -1534,7 +1618,7 @@ Partial Public Class MenuV2
         '
         'TxtAddContactTID
         '
-        Me.TxtAddContactTID.Location = New System.Drawing.Point(219, 9)
+        Me.TxtAddContactTID.Location = New System.Drawing.Point(229, 53)
         Me.TxtAddContactTID.MenuManager = Me.ribbonControl
         Me.TxtAddContactTID.Name = "TxtAddContactTID"
         Me.TxtAddContactTID.Properties.NullValuePrompt = "TID (Telus Emp.)"
@@ -1545,7 +1629,7 @@ Partial Public Class MenuV2
         '
         'TxtAddContactEmail
         '
-        Me.TxtAddContactEmail.Location = New System.Drawing.Point(6, 39)
+        Me.TxtAddContactEmail.Location = New System.Drawing.Point(16, 83)
         Me.TxtAddContactEmail.MenuManager = Me.ribbonControl
         Me.TxtAddContactEmail.Name = "TxtAddContactEmail"
         Me.TxtAddContactEmail.Properties.AllowNullInput = DevExpress.Utils.DefaultBoolean.[False]
@@ -1557,7 +1641,7 @@ Partial Public Class MenuV2
         '
         'TxtAddContactLName
         '
-        Me.TxtAddContactLName.Location = New System.Drawing.Point(113, 9)
+        Me.TxtAddContactLName.Location = New System.Drawing.Point(123, 53)
         Me.TxtAddContactLName.MenuManager = Me.ribbonControl
         Me.TxtAddContactLName.Name = "TxtAddContactLName"
         Me.TxtAddContactLName.Properties.NullValuePrompt = "Last Name"
@@ -1568,7 +1652,7 @@ Partial Public Class MenuV2
         '
         'TxtAddContactFName
         '
-        Me.TxtAddContactFName.Location = New System.Drawing.Point(6, 9)
+        Me.TxtAddContactFName.Location = New System.Drawing.Point(16, 53)
         Me.TxtAddContactFName.MenuManager = Me.ribbonControl
         Me.TxtAddContactFName.Name = "TxtAddContactFName"
         Me.TxtAddContactFName.Properties.NullValuePrompt = "First Name"
@@ -2998,7 +3082,7 @@ Partial Public Class MenuV2
         '
         'navBarControl
         '
-        Me.navBarControl.ActiveGroup = Me.DefectsNavBarGroup
+        Me.navBarControl.ActiveGroup = Me.RequestsNavBarGroup
         Me.navBarControl.Dock = System.Windows.Forms.DockStyle.Left
         Me.navBarControl.Groups.AddRange(New DevExpress.XtraNavBar.NavBarGroup() {Me.RequestsNavBarGroup, Me.DefectsNavBarGroup})
         Me.navBarControl.Items.AddRange(New DevExpress.XtraNavBar.NavBarItem() {Me.NavBarUnresolved, Me.NavBarAssignedMe, Me.NavBarDefects, Me.NavBarEnh, Me.NavBarResolved, Me.NavBarFLEXS, Me.NavBarAllRequests, Me.NavBarFLEXSDone, Me.NavBarJIRASync})
@@ -3011,10 +3095,41 @@ Partial Public Class MenuV2
         Me.navBarControl.TabIndex = 0
         Me.navBarControl.Text = "navBarControl"
         '
+        'RequestsNavBarGroup
+        '
+        Me.RequestsNavBarGroup.Caption = "Requests"
+        Me.RequestsNavBarGroup.Expanded = True
+        Me.RequestsNavBarGroup.GroupStyle = DevExpress.XtraNavBar.NavBarGroupStyle.SmallIconsList
+        Me.RequestsNavBarGroup.ItemLinks.AddRange(New DevExpress.XtraNavBar.NavBarItemLink() {New DevExpress.XtraNavBar.NavBarItemLink(Me.NavBarUnresolved), New DevExpress.XtraNavBar.NavBarItemLink(Me.NavBarAssignedMe), New DevExpress.XtraNavBar.NavBarItemLink(Me.NavBarResolved), New DevExpress.XtraNavBar.NavBarItemLink(Me.NavBarAllRequests)})
+        Me.RequestsNavBarGroup.Name = "RequestsNavBarGroup"
+        '
+        'NavBarUnresolved
+        '
+        Me.NavBarUnresolved.Caption = "Unresolved"
+        Me.NavBarUnresolved.ImageOptions.SvgImage = CType(resources.GetObject("NavBarUnresolved.ImageOptions.SvgImage"), DevExpress.Utils.Svg.SvgImage)
+        Me.NavBarUnresolved.Name = "NavBarUnresolved"
+        '
+        'NavBarAssignedMe
+        '
+        Me.NavBarAssignedMe.Caption = "Assigned To Me"
+        Me.NavBarAssignedMe.ImageOptions.SvgImage = CType(resources.GetObject("NavBarAssignedMe.ImageOptions.SvgImage"), DevExpress.Utils.Svg.SvgImage)
+        Me.NavBarAssignedMe.Name = "NavBarAssignedMe"
+        '
+        'NavBarResolved
+        '
+        Me.NavBarResolved.Caption = "Resolved"
+        Me.NavBarResolved.ImageOptions.SvgImage = CType(resources.GetObject("NavBarResolved.ImageOptions.SvgImage"), DevExpress.Utils.Svg.SvgImage)
+        Me.NavBarResolved.Name = "NavBarResolved"
+        '
+        'NavBarAllRequests
+        '
+        Me.NavBarAllRequests.Caption = "All Requests"
+        Me.NavBarAllRequests.ImageOptions.SvgImage = CType(resources.GetObject("NavBarAllRequests.ImageOptions.SvgImage"), DevExpress.Utils.Svg.SvgImage)
+        Me.NavBarAllRequests.Name = "NavBarAllRequests"
+        '
         'DefectsNavBarGroup
         '
         Me.DefectsNavBarGroup.Caption = "Defects & Enhancements"
-        Me.DefectsNavBarGroup.Expanded = True
         Me.DefectsNavBarGroup.ItemLinks.AddRange(New DevExpress.XtraNavBar.NavBarItemLink() {New DevExpress.XtraNavBar.NavBarItemLink(Me.NavBarDefects), New DevExpress.XtraNavBar.NavBarItemLink(Me.NavBarEnh), New DevExpress.XtraNavBar.NavBarItemLink(Me.NavBarFLEXS), New DevExpress.XtraNavBar.NavBarItemLink(Me.NavBarFLEXSDone), New DevExpress.XtraNavBar.NavBarItemLink(Me.NavBarJIRASync)})
         Me.DefectsNavBarGroup.Name = "DefectsNavBarGroup"
         '
@@ -3047,37 +3162,6 @@ Partial Public Class MenuV2
         Me.NavBarJIRASync.Caption = "JIRA Sync"
         Me.NavBarJIRASync.ImageOptions.SvgImage = CType(resources.GetObject("NavBarJIRASync.ImageOptions.SvgImage"), DevExpress.Utils.Svg.SvgImage)
         Me.NavBarJIRASync.Name = "NavBarJIRASync"
-        '
-        'RequestsNavBarGroup
-        '
-        Me.RequestsNavBarGroup.Caption = "Requests"
-        Me.RequestsNavBarGroup.GroupStyle = DevExpress.XtraNavBar.NavBarGroupStyle.SmallIconsList
-        Me.RequestsNavBarGroup.ItemLinks.AddRange(New DevExpress.XtraNavBar.NavBarItemLink() {New DevExpress.XtraNavBar.NavBarItemLink(Me.NavBarUnresolved), New DevExpress.XtraNavBar.NavBarItemLink(Me.NavBarAssignedMe), New DevExpress.XtraNavBar.NavBarItemLink(Me.NavBarResolved), New DevExpress.XtraNavBar.NavBarItemLink(Me.NavBarAllRequests)})
-        Me.RequestsNavBarGroup.Name = "RequestsNavBarGroup"
-        '
-        'NavBarUnresolved
-        '
-        Me.NavBarUnresolved.Caption = "Unresolved"
-        Me.NavBarUnresolved.ImageOptions.SvgImage = CType(resources.GetObject("NavBarUnresolved.ImageOptions.SvgImage"), DevExpress.Utils.Svg.SvgImage)
-        Me.NavBarUnresolved.Name = "NavBarUnresolved"
-        '
-        'NavBarAssignedMe
-        '
-        Me.NavBarAssignedMe.Caption = "Assigned To Me"
-        Me.NavBarAssignedMe.ImageOptions.SvgImage = CType(resources.GetObject("NavBarAssignedMe.ImageOptions.SvgImage"), DevExpress.Utils.Svg.SvgImage)
-        Me.NavBarAssignedMe.Name = "NavBarAssignedMe"
-        '
-        'NavBarResolved
-        '
-        Me.NavBarResolved.Caption = "Resolved"
-        Me.NavBarResolved.ImageOptions.SvgImage = CType(resources.GetObject("NavBarResolved.ImageOptions.SvgImage"), DevExpress.Utils.Svg.SvgImage)
-        Me.NavBarResolved.Name = "NavBarResolved"
-        '
-        'NavBarAllRequests
-        '
-        Me.NavBarAllRequests.Caption = "All Requests"
-        Me.NavBarAllRequests.ImageOptions.SvgImage = CType(resources.GetObject("NavBarAllRequests.ImageOptions.SvgImage"), DevExpress.Utils.Svg.SvgImage)
-        Me.NavBarAllRequests.Name = "NavBarAllRequests"
         '
         'navigationFrame
         '
@@ -3248,6 +3332,7 @@ Partial Public Class MenuV2
         Me.Controls.Add(Me.officeNavigationBar)
         Me.Controls.Add(Me.ribbonStatusBar)
         Me.Controls.Add(Me.PopupControlContainer1)
+        Me.Controls.Add(Me.PopupControlContainer2)
         Me.Controls.Add(Me.ribbonControl)
         Me.EnableAcrylicAccent = True
         Me.IconOptions.Image = CType(resources.GetObject("MenuV2.IconOptions.Image"), System.Drawing.Image)
@@ -3287,8 +3372,14 @@ Partial Public Class MenuV2
         CType(Me.RepoBtnAddComment, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.ribbonControl, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.RepositoryItemTimeSpanEdit1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PopupControlContainer2, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.PopupControlContainer2.ResumeLayout(False)
+        Me.PopupControlContainer2.PerformLayout()
+        CType(Me.TxtAddClientName.Properties, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.TxtAddClientID.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PopupControlContainer1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.PopupControlContainer1.ResumeLayout(False)
+        Me.PopupControlContainer1.PerformLayout()
         CType(Me.TxtAddContactTID.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.TxtAddContactEmail.Properties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.TxtAddContactLName.Properties, System.ComponentModel.ISupportInitialize).EndInit()
@@ -3642,4 +3733,10 @@ Partial Public Class MenuV2
     Friend WithEvents BtnAddContactConfirm As DevExpress.XtraEditors.SimpleButton
     Friend WithEvents RibbonPageGroup2 As DevExpress.XtraBars.Ribbon.RibbonPageGroup
     Friend WithEvents RibbonPageGroup3 As DevExpress.XtraBars.Ribbon.RibbonPageGroup
+    Friend WithEvents PopupControlContainer2 As DevExpress.XtraBars.PopupControlContainer
+    Friend WithEvents TxtAddClientName As DevExpress.XtraEditors.TextEdit
+    Friend WithEvents TxtAddClientID As DevExpress.XtraEditors.TextEdit
+    Friend WithEvents BtnAddClientConfirm As DevExpress.XtraEditors.SimpleButton
+    Friend WithEvents lblNewClient As DevExpress.XtraEditors.LabelControl
+    Friend WithEvents lblNewContact As DevExpress.XtraEditors.LabelControl
 End Class

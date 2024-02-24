@@ -239,6 +239,12 @@
     <Compile Include="Forms\HoursSummary.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="HoursReport.Designer.vb">
+      <DependentUpon>HoursReport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="HoursReport.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Jira.vb" />
     <Compile Include="Forms\JIRADetails.Designer.vb">
       <DependentUpon>JIRADetails.vb</DependentUpon>
@@ -364,6 +370,9 @@
       <DependentUpon>HoursEdit.vb</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="HoursReport.resx">
+      <DependentUpon>HoursReport.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MenuV2.resx">
       <DependentUpon>MenuV2.vb</DependentUpon>
       <SubType>Designer</SubType>
@@ -461,6 +470,9 @@
     <None Include="Resources\THH_Logo_English.svg" />
     <None Include="Resources\TimeBulkEdit.svg" />
     <None Include="Resources\Office 2.svg" />
+    <None Include="Resources\RefreshData.svg" />
+    <None Include="Resources\AddClient.svg" />
+    <None Include="Resources\NewJIRA.svg" />
     <Content Include="Themes\Office2019LightPurple_DockSplitContainer.xml" />
     <Content Include="Themes\Office2019LightPurple_RadCheckmark.xml" />
     <Content Include="Themes\Office2019LightPurple_RadPageView_Telerik_WinControls_RootRadElement.xml" />

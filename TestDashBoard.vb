@@ -32,7 +32,12 @@ Public Class TestDashBoard
         GridView1.PopulateColumns()
     End Sub
 
-    Private Sub FilterControl1_Click(sender As Object, e As EventArgs)
+    Private Sub btExportXLSX_Click(sender As Object, e As EventArgs) Handles btExportXLSX.Click
+        Dim Path As String = "TestExport.xlsx"
+
+        GridControl1.ExportToXlsx(Path)
+
+        Process.Start(Path)
 
     End Sub
 End Class

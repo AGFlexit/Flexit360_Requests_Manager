@@ -70,9 +70,9 @@ Partial Public Class MenuV2
     End Sub
 
     Private Sub BarButtonItem1_ItemClick(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles BarButtonItem1.ItemClick
-        'Dim oFrm As New RadForm1
-        'oFrm.Show()
-        Application.Restart()
+        Dim frmHoursRpt As New HoursReport
+        frmHoursRpt.Show()
+        'Application.Restart()
     End Sub
 
     Private Sub BarToggleSwitchPreview_CheckedChanged(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles BarToggleSwitchPreview.CheckedChanged
@@ -1388,12 +1388,12 @@ Partial Public Class MenuV2
         frmDashBrd.Show()
     End Sub
 
-    Private Sub BarBtnNewClient_ItemClick(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles BarBtnNewClient.ItemClick
-        Dim myControl As New AddClientUserControl()
-        If XtraDialog.Show(myControl, "Enter Client Names and Flexit ID", MessageBoxButtons.OKCancel) = System.Windows.Forms.DialogResult.OK Then
-            QryUpdHoursComments = "INSERT INTO Clients ([Client Name], IDFlexit) VALUES ('" & Replace(myControl.Client, "'", "''") & "', " & myControl.ClientID & ")"
-            LoadDataAsync_NavBar("AddClient")
-        End If
+    Private Sub BarBtnNewClient_ItemClick(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs)
+        'Dim myControl As New AddClientUserControl()
+        'If XtraDialog.Show(myControl, "Enter Client Names and Flexit ID", MessageBoxButtons.OKCancel) = System.Windows.Forms.DialogResult.OK Then
+        '    QryUpdHoursComments = "INSERT INTO Clients ([Client Name], IDFlexit) VALUES ('" & Replace(myControl.Client, "'", "''") & "', " & myControl.ClientID & ")"
+        '    LoadDataAsync_NavBar("AddClient")
+        'End If
     End Sub
 
     Private Sub BarBtnRefresh_ItemClick(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles BarBtnRefresh.ItemClick
@@ -1405,5 +1405,9 @@ Partial Public Class MenuV2
         LoadDataAsync_NavBar("AddContact")
     End Sub
 
+    Private Sub BtnAddClientConfirm_Click(sender As Object, e As EventArgs) Handles BtnAddClientConfirm.Click
+        QryUpdHoursComments = "INSERT INTO Clients ([Client Name], IDFlexit) VALUES ('" & Replace(Me.TxtAddClientName.Text, "'", "''") & "', " & Me.TxtAddClientID.Text & ")"
+        LoadDataAsync_NavBar("AddClient")
+    End Sub
 End Class
 
